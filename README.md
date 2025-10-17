@@ -46,32 +46,33 @@ Where to change it: in `gemini_search/test_gemini.py`, update the `model` parame
 ### CLI usage
 Both scripts accept either a direct query or a file of queries with the `@` prefix. Examples (run from project root):
 
-- Single query (Gemini):
+#### Gemini:
+- Single query:
 ```bash
 python gemini_search/test_gemini.py --query "Philips 196V4"
 ```
 
-- Queries from file (Gemini):
+- Queries from file:
 ```bash
 python gemini_search/test_gemini.py @queries.txt
 ```
 
-- Specify output directory (Gemini) and model:
+- Specify output directory and model:
 ```bash
 python gemini_search/test_gemini.py @queries.txt --output-dir gemini_search/gemini_results --model gemini-2.5-pro
 ```
-
-- Single query (Groq):
+#### Groq:
+- Single query:
 ```bash
 python groq_compound_search/test_groq.py --query "Philips 196V4"
 ```
 
-- Queries from file (Groq):
+- Queries from file:
 ```bash
 python groq_compound_search/test_groq.py @queries.txt
 ```
 
-- Specify output directory and skip existing (Groq):
+- Specify output directory and skip existing:
 ```bash
 python groq_compound_search/test_groq.py @queries.txt --output-dir groq_compound_search/groq_results 
 ```
