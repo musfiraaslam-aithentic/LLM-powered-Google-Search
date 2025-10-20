@@ -1,0 +1,16 @@
+Philips 196V4 
+Acer One 14 Z8-415-A
+MS-7817
+HP 24yh
+t3a.medium Amazon
+H610M H V2 DDR4 GIGABYTE
+S24R35xFZ Samsung
+2460 AOC
+ASUS VT229
+Sceptre F27
+Standard PC (Q35 + ICH9, 2009) QEMU
+H510M-ITX/ac
+NBLL-WXX9 Huawei
+HVM domU Xen
+VA2446 Series ViewSonic
+Mac15,12
