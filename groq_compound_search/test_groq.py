@@ -56,7 +56,7 @@ def sanitize_filename(name: str) -> str:
     return safe_name[:100] 
 
 def query_with_compound(query: str, model: str, instructions: str, output_path: str) -> str:
-    """Runs one LLM query and writes the result to output_path."""
+    """Runs one LLM query, extracts JSON part, and writes it to output_path (.json)."""
     if not check_and_update_usage():
         print("Aborting query due to daily limit reached.")
         return ""
@@ -73,7 +73,7 @@ def query_with_compound(query: str, model: str, instructions: str, output_path: 
         model=model,
         messages=messages,
         temperature=0.7,
-        max_completion_tokens=1024,
+        max_completion_tokens=2048,
         top_p=1,
         stream=True,
     )
@@ -87,11 +87,38 @@ def query_with_compound(query: str, model: str, instructions: str, output_path: 
 
     print(f"\nTook {time.time() - start_time:.2f} seconds")
 
-    with open(output_path, "w", encoding="utf-8") as f:
-        f.write(content.strip() + "\n")
+    # Extract JSON block from the response using regex
+    json_match = re.search(r"```json\s*(\{.*?\})\s*```", content, re.DOTALL)
+    if json_match:
+        json_str = json_match.group(1).strip()
+    else:
+        # Fallback: try to find any JSON-looking structure
+        json_match = re.search(r"(\{[\s\S]*\})", content)
+        json_str = json_match.group(1).strip() if json_match else ""
 
-    print(f"Saved to: {output_path}\n")
-    return content.strip()
+    if not json_str:
+        print("⚠️ No JSON found in response.")
+        return content.strip()
+
+    # Parse JSON to ensure it's valid
+    try:
+        parsed_json = json.loads(json_str)
+    except json.JSONDecodeError:
+        print("⚠️ JSON format error, saving raw text instead.")
+        parsed_json = None
+
+    # Build JSON file path
+    json_output_path = os.path.splitext(output_path)[0] + ".json"
+
+    with open(json_output_path, "w", encoding="utf-8") as f:
+        if parsed_json:
+            json.dump(parsed_json, f, indent=4, ensure_ascii=False)
+        else:
+            f.write(json_str)
+
+    print(f"✅ JSON saved to: {json_output_path}\n")
+    return json_str
+
 
 def process_queries_file(filename="queries.txt", output_dir="results", skip_existing=True):
     """
@@ -187,10 +214,16 @@ if __name__ == "__main__":
 
         instructions = (
             f"Search for {q}\n"
-            "Provide the specifications\n"
+            "Provide the Product ID\n"
+            "Provide the Brand Product which is description\n"
+            "Provide the Product SKU\n"
+            "Provide the Brand Name\n"
+            "Provide the Specifications\n"
             "Provide the References (URLs) used for search\n"
-            "Give the response in structured format\n"
+            "Give the response in structured json format\n"
+            "Make the Specifications in a nested format\n"
         )
+
         content = query_with_compound(q, "groq/compound", instructions, target_path)
         if args.to_stdout and content:
             print("\n----- Response (stdout) -----\n")
