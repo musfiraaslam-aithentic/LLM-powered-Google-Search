@@ -1,0 +1,61 @@
+{
+    "Product ID": "H610M H V2 DDR4",
+    "Brand Product": "Motherboard GIGABYTE H610M H V2 DDR4 1.0 LGA 1700 mATX",
+    "Product SKU": "H610M-H-V2-DDR4",
+    "Brand Name": "GIGABYTE",
+    "Specifications": {
+        "CPU": {
+            "Socket": "LGA1700",
+            "Supported CPU Generations": [
+                "14th Gen Intel Core",
+                "13th Gen Intel Core",
+                "12th Gen Intel Core",
+                "Pentium Gold",
+                "Celeron"
+            ]
+        },
+        "Chipset": "Intel H610 Express Chipset",
+        "Memory": {
+            "Memory Type": "DDR4",
+            "Memory Speed (MT/s)": [
+                "3200",
+                "3000",
+                "2933",
+                "2666",
+                "2400",
+                "2133"
+            ],
+            "Memory Slots": 2,
+            "Max Memory Capacity": "64 GB"
+        },
+        "Graphics": "Intel HD Graphics (D‑Sub, HDMI support)",
+        "Expansion Slots": {
+            "PCIe x16 (CPU)": "1 (PCIe 4.0)",
+            "PCIe x1 (Chipset)": "1 (PCIe 3.0)"
+        },
+        "Storage": {
+            "M.2 (Socket 3, PCIe 3.0 x4/x2)": 1,
+            "SATA 6 Gb/s": 4
+        },
+        "USB Ports": {
+            "USB 3.2 Gen 1": 4,
+            "USB 2.0/1.1": 8
+        },
+        "LAN": "Realtek GbE LAN chip (1 Gbps/100 Mbps)",
+        "Audio": "Realtek Audio CODEC, High‑Definition, 2/4/5.1/7.1‑channel"
+    },
+    "References": [
+        {
+            "URL": "https://www.compumarts.com/products/motherboard-gigabyte-h610m-h-v2-ddr4-1-0-lga-1700-matx?srsltid=AfmBOoocBUco0kpxI3IKMtzo60sNqToMKPOkve3TRHW4rbOCd5RW14Yd",
+            "Content": "Product details and feature list from a retailer"
+        },
+        {
+            "URL": "https://www.gigabyte.com/Motherboard/H610M-H-V2-DDR4-rev-10",
+            "Content": "Official Gigabyte product page – key features and specs"
+        },
+        {
+            "URL": "https://pcx.com.ph/products/gigabyte-h610m-h-v2-ddr4-motherboard?srsltid=AfmBOop-jm0hHiuFdHAtknq94YMlrdCfSXWfirGuk3u1QhXZ34IiJvxW",
+            "Content": "Detailed specification sheet from a local retailer"
+        }
+    ]
+}

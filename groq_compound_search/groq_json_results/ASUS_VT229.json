@@ -1,0 +1,58 @@
+{
+    "Product ID": "VT229H",
+    "Brand Product Description": "ASUS VT229H Touch Monitor – 22‑inch (21.5‑inch viewable) Full‑HD (1920 × 1080) IPS panel, 10‑point multi‑touch, 7H hardness, frameless, Flicker‑free, Low Blue Light, HDMI & VGA inputs",
+    "Product SKU": "VT229H",
+    "Brand Name": "ASUS",
+    "Specifications": {
+        "Display": {
+            "Size": "21.5 inches (22‑inch diagonal overall)",
+            "Resolution": "1920 × 1080 (Full HD)",
+            "Panel Type": "IPS",
+            "Aspect Ratio": "16:9",
+            "Viewing Angle": "178° (horizontal & vertical)",
+            "Brightness": "250 cd/m²",
+            "Static Contrast Ratio": "1000:1",
+            "Response Time": "5 ms (GTG)",
+            "Refresh Rate": "60 Hz"
+        },
+        "Touch": {
+            "Capability": "10‑point capacitive multi‑touch",
+            "Screen Hardness": "7H"
+        },
+        "Connectivity": [
+            "HDMI (1×)",
+            "VGA (1×)",
+            "USB hub (for touch signal) – implied by typical ASUS touch monitors"
+        ],
+        "Ergonomics & Mounting": {
+            "Stand": "Tilt‑adjustable circular base",
+            "VESA Mount Compatibility": "Yes (standard 100 mm × 100 mm)",
+            "Frameless Design": true
+        },
+        "Eye‑Care Technologies": [
+            "Flicker‑Free (TÜV Rheinland certified)",
+            "Low Blue Light (TÜV Rheinland certified)",
+            "ASUS Eye Care"
+        ],
+        "Power & Compliance": {
+            "Power Consumption (typical)": "≈30 W",
+            "Energy Star": true,
+            "RoHS compliant": true
+        },
+        "Warranty": "3‑year limited warranty (as per ASUS US policy)"
+    },
+    "References": [
+        {
+            "URL": "https://www.asus.com/us/displays-desktops/monitors/touch/vt229h/",
+            "Description": "Official ASUS product page – primary source for model name, description, and full tech specs."
+        },
+        {
+            "URL": "https://www.newegg.com/21-5-asus-vt229h-capacitive-10-point-multi-touch/p/N82E16824236962",
+            "Description": "Retail listing confirming size, resolution, and touch capability."
+        },
+        {
+            "URL": "https://www.displayspecifications.com/en/model/274316b2",
+            "Description": "Third‑party specs site used to cross‑verify brightness, contrast and panel details."
+        }
+    ]
+}

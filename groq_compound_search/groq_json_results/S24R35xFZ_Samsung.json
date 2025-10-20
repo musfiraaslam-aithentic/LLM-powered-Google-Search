@@ -1,0 +1,49 @@
+{
+    "Product ID": "S24R350FZ",
+    "Brand Product": "SAMSUNG 24\" 75 Hz IPS FHD Monitor with Bezel-less Design",
+    "Product SKU": "LS24R350FZNXZA",
+    "Brand Name": "Samsung",
+    "Specifications": {
+        "Screen Size": "24 inch",
+        "Resolution": "1920 x 1080 pixels",
+        "Display Technology": "IPS",
+        "Screen Surface": "Matte",
+        "Refresh Rate": "75 Hz",
+        "Response Time": "5 ms",
+        "Viewing Angle": "178°",
+        "Brightness": "250 cd/m2",
+        "Contrast Ratio": "1000:1",
+        "Connectivity": [
+            "HDMI",
+            "VGA"
+        ],
+        "Device Dimensions": {
+            "Width": "21.26 inch",
+            "Height": "16.75 inch",
+            "Depth": "9.31 inch"
+        },
+        "Weight": "7.5 pounds (3 kg)",
+        "Features": [
+            "Freesync",
+            "Vesa Mountable"
+        ]
+    },
+    "References": [
+        {
+            "URL": "https://www.newegg.com/p/N82E16824022921R?item=N82E16824022921R&srsltid=AfmBOoo-moj-D6NPG5q5zSjQmyE54NBWztkrG6GGUG39Gs0W55CkducG",
+            "Content": "Product details from Newegg (SKU, series, basic specs)."
+        },
+        {
+            "URL": "https://www.shi.ca/product/42194384/Samsung-S24R350FZN-SR35-Series",
+            "Content": "Product description from SHI Canada (screen size, resolution, refresh rate, etc.)."
+        },
+        {
+            "URL": "https://www.productchart.com/monitors/38384",
+            "Content": "Full specification table (brightness, contrast, connectivity, dimensions, weight, features)."
+        },
+        {
+            "URL": "https://www.displayspecifications.com/en/model/7caf1b56",
+            "Content": "Technical spec sheet (voltage, frequency range, power consumption, detailed dimensions)."
+        }
+    ]
+}

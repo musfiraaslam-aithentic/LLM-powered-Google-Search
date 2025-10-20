@@ -1,0 +1,58 @@
+{
+    "Product ID": "MNPH196V4LSB2/73",
+    "Brand Product Description": "Philips 196V4LSB2/73 LED 18.5\" Wide Monitor",
+    "Product SKU": "MNPH196V4LSB2/73",
+    "Brand Name": "Philips",
+    "Specifications": {
+        "Display": {
+            "LCD Panel Type": "TFT‑LCD",
+            "Backlight Type": "W‑LED system",
+            "Panel Size": "18.5 inch / 47 cm",
+            "Effective Viewing Area": "409.8 (H) x 230.4 (V) mm",
+            "Aspect Ratio": "16:9",
+            "Optimum Resolution": "1366 x 768 @ 60 Hz",
+            "Response Time": "5 ms",
+            "Brightness": "200 cd/m²",
+            "SmartContrast": "10,000,000:1",
+            "Contrast Ratio": "600:1",
+            "Pixel Pitch": "0.30 × 0.30 mm",
+            "Viewing Angle": "90° (H) / 65° (V) @ C/R > 10",
+            "Display Colors": "16.7 M"
+        },
+        "Stand": {
+            "Tilt": "-5° / +20°"
+        },
+        "Dimensions": {
+            "Product with Stand": "443 × 349 × 201 mm",
+            "Product without Stand": "443 × 279 × 48 mm",
+            "Packaging": "490 × 351 × 124 mm"
+        },
+        "Weight": {
+            "Product with Stand": "2.98 kg",
+            "Product without Stand": "2.66 kg",
+            "Product with Packaging": "3.95 kg"
+        },
+        "Power": {
+            "Power Supply": "Built‑in, 100‑240 VAC, 50‑60 Hz",
+            "Operating Conditions": {
+                "Temperature Range (Operation)": "0 °C to 40 °C",
+                "Temperature Range (Storage)": "-20 °C to 60 °C",
+                "Relative Humidity": "20 %‑80 %"
+            }
+        }
+    },
+    "References": [
+        {
+            "URL": "https://www.comx.co.za/MNPH196V4LSB2-73-specifications-108367.htm",
+            "Content": "Detailed specifications of Philips 196V4LSB2/73 monitor"
+        },
+        {
+            "URL": "https://docs.rs-online.com/ba14/0900766b81170049.pdf",
+            "Content": "PDF document with specifications of Philips 196V4LAB2/00 monitor"
+        },
+        {
+            "URL": "https://www.philips.com.my/c-p/196V4LSB2_69/lcd-monitor-with-led-backlight",
+            "Content": "Official Philips page with technical specifications"
+        }
+    ]
+}

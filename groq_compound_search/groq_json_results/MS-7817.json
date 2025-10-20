@@ -1,0 +1,34 @@
+{
+    "Product ID": "MS-7817",
+    "Brand Product": "MSI MS-7817 Motherboard",
+    "Product SKU": "MS-7817",
+    "Brand Name": "MSI",
+    "Specifications": {
+        "CPU Socket Type": "LGA 1150",
+        "Supported CPUs": [
+            "Intel Celeron",
+            "Intel Core i3",
+            "Intel Core i5",
+            "Intel Core i7",
+            "Intel Pentium"
+        ],
+        "Chipset": "Intel B85",
+        "Number of Memory Slots": 2,
+        "Number of Memory Channels": 2,
+        "Memory Type": "DDR3 SDRAM"
+    },
+    "References": [
+        {
+            "URL": "https://www.memory4less.com/msi-computer-system-board-ms-7817",
+            "Description": "Product details and specifications for MS-7817 motherboard"
+        },
+        {
+            "URL": "https://www.ebay.com/itm/144806521008",
+            "Description": "MSI MS-7817 MicroATX motherboard with LGA 1150 socket, 2 memory slots, and DDR3 SDRAM"
+        },
+        {
+            "URL": "https://www.scribd.com/document/653016402/MSI-H81M-E33-MS-7817-REV-1-0",
+            "Description": "Technical document containing block diagram and specifications for MS-7817 motherboard"
+        }
+    ]
+}

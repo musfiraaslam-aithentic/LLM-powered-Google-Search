@@ -1,0 +1,47 @@
+{
+    "Product ID": "Xen HVM domU",
+    "Brand Product": "Xen Project Hypervisor",
+    "Product SKU": "Not Available",
+    "Brand Name": "Xen Project",
+    "Specifications": {
+        "Virtualization Type": "Hardware Virtualized (HVM)",
+        "Emulation": [
+            "ATA",
+            "Ethernet",
+            "Other standard devices via QEMU"
+        ],
+        "Performance": "Good performance when PV drivers are installed inside the HVM guest",
+        "Configuration File": "xl.cfg (see xl.cfg(5) man page)",
+        "Key Configuration Parameters": {
+            "builder": "hvm",
+            "memory": "e.g., 512‑4096 MiB",
+            "vcpus": "1‑N",
+            "disk": [
+                "file:/path/to/ISO,sdb,r",
+                "phy:/dev/mapper/vg0-windows,sda1,w"
+            ],
+            "vif": [
+                "mac=00:16:3e:xx:xx:xx,bridge=xenbr0"
+            ]
+        },
+        "Components": "QEMU provides device emulation; xl (or xm) is the command‑line tool to manage domU lifecycles",
+        "BIOS Requirements": {
+            "CPU Virtualization Extensions": "Enabled (VT‑x/AMD‑V)",
+            "Hardware Emulation": "Enabled in BIOS/UEFI"
+        }
+    },
+    "References": [
+        {
+            "URL": "https://wiki.archlinux.org/title/Xen",
+            "Description": "ArchWiki page describing PV and HVM domU support and sample configuration."
+        },
+        {
+            "URL": "https://wiki.xenproject.org/wiki/Xen_Project_Beginners_Guide",
+            "Description": "Official Xen Project guide for creating and configuring HVM domU guests."
+        },
+        {
+            "URL": "https://vidigest.com/2020/01/14/creating-hvm-domu-virtual-machines-in-xen-project-hypervisor/",
+            "Description": "Step‑by‑step tutorial showing a concrete HVM domU configuration and BIOS requirements."
+        }
+    ]
+}
