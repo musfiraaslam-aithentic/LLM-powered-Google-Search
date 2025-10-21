@@ -1,0 +1,33 @@
+[
+    {
+      "manufacturer": "Dell",
+      "model": "Inspiron 7472",
+      "serial_number": "3CYDCQ2",
+      "type": "laptop"
+    },
+    {
+      "manufacturer": "Acer",
+      "model": "Acer One 14 Z8-415-A",
+      "serial_number": "UN599SI018335325AE0700",
+      "type": "laptop"
+    },
+    {
+      "manufacturer": "Amazon",
+      "model": "t3a.medium",
+      "serial_number": "ec20185b-a10d-8ab4-4df1-a1b8fa106eda",
+      "type": "cloud instance"
+    },
+    {
+      "manufacturer": "AOC",
+      "model": "2460",
+      "serial_number": "C54E6BA000461",
+      "type": "display"
+    },
+    {
+      "manufacturer": "Philips",
+      "model": "196V4",
+      "serial_number": "unknown",
+      "type": "display"
+    }
+  ]
+  

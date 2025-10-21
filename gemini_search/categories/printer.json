@@ -1,0 +1,22 @@
+{
+    "Category": "Printer",
+    "Identification": {
+      "Manufacturer": "",
+      "Model": "",
+      "SerialNumber": "",
+      "Type": "",
+      "SKU": ""
+    },
+    "Printing": {
+      "PrintTechnology": "",
+      "Color": "",
+      "MaxResolutionDPI": "",
+      "SpeedPPM": ""
+    },
+    "Warranty": {
+      "Status": "",
+      "ExpiryDate": "",
+      "LookupURL": ""
+    }
+  }
+  

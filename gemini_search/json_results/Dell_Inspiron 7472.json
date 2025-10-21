@@ -1,0 +1,43 @@
+{
+  "Category": "Laptop",
+  "Identification": {
+    "Manufacturer": "Dell",
+    "Model": "Inspiron 7472",
+    "SerialNumber": "3CYDCQ2",
+    "ProductID": "Not found",
+    "SKU": "Not found"
+  },
+  "Processor": {
+    "CPUName": "Intel Core i7-8550U",
+    "Generation": "8th Generation",
+    "BaseSpeedGHz": "2.4",
+    "MaxSpeedGHz": "4.0"
+  },
+  "Memory": {
+    "TotalRAMGB": "Not found",
+    "Type": "DDR4"
+  },
+  "Storage": {
+    "Type": "Hybrid (HDD + SSD)",
+    "CapacityGB": "Not found"
+  },
+  "Display": {
+    "SizeInch": "14.0",
+    "Resolution": "1920 x 1080 (FHD)",
+    "PanelType": "IPS Truelife LED-Backlit Display"
+  },
+  "Graphics": {
+    "GPUName": "NVIDIA GeForce MX150",
+    "VRAM_MB": "2048"
+  },
+  "Power": {
+    "BatteryCapacity_mAh": "42WHr (3-Cell)",
+    "AdapterWattage_W": "65"
+  },
+  "Warranty": {
+    "Status": "Unknown",
+    "StartDate": "Unknown",
+    "ExpiryDate": "Unknown",
+    "LookupURL": "Dell's official support website (requires manual input of serial number or service tag)"
+  }
+}

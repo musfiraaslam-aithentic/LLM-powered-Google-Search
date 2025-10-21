@@ -1,0 +1,44 @@
+{
+    "Category": "Laptop",
+    "Identification": {
+      "Manufacturer": "",
+      "Model": "",
+      "SerialNumber": "",
+      "ProductID": "",
+      "SKU": ""
+    },
+    "Processor": {
+      "CPUName": "",
+      "Generation": "",
+      "BaseSpeedGHz": "",
+      "MaxSpeedGHz": ""
+    },
+    "Memory": {
+      "TotalRAMGB": "",
+      "Type": ""
+    },
+    "Storage": {
+      "Type": "",
+      "CapacityGB": ""
+    },
+    "Display": {
+      "SizeInch": "",
+      "Resolution": "",
+      "PanelType": ""
+    },
+    "Graphics": {
+      "GPUName": "",
+      "VRAM_MB": ""
+    },
+    "Power": {
+      "BatteryCapacity_mAh": "",
+      "AdapterWattage_W": ""
+    },
+    "Warranty": {
+      "Status": "",
+      "StartDate": "",
+      "ExpiryDate": "",
+      "LookupURL": ""
+    }
+  }
+  

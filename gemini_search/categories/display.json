@@ -1,0 +1,27 @@
+{
+    "Category": "Display",
+    "Identification": {
+      "Manufacturer": "",
+      "Model": "",
+      "SerialNumber": "",
+      "ProductID": ""
+    },
+    "Display": {
+      "PanelSizeInch": "",
+      "Resolution": "",
+      "PanelType": "",
+      "Brightness_cd_m2": "",
+      "ContrastRatio": "",
+      "RefreshRateHz": ""
+    },
+    "Power": {
+      "Consumption_W": "",
+      "Standby_W": ""
+    },
+    "Warranty": {
+      "Status": "",
+      "ExpiryDate": "",
+      "LookupURL": ""
+    }
+  }
+  

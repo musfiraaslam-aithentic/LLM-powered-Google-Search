@@ -1,0 +1,22 @@
+{
+    "Category": "IoT Device",
+    "Identification": {
+      "Manufacturer": "",
+      "Model": "",
+      "SerialNumber": "",
+      "DeviceType": ""
+    },
+    "Processor": {
+      "CPUType": "",
+      "ClockSpeedGHz": ""
+    },
+    "Memory": {
+      "RAM_MB": ""
+    },
+    "Warranty": {
+      "Status": "",
+      "ExpiryDate": "",
+      "LookupURL": ""
+    }
+  }
+  

@@ -1,0 +1,26 @@
+{
+  "Category": "Display",
+  "Identification": {
+    "Manufacturer": "Philips",
+    "Model": "196V4",
+    "SerialNumber": "Not found",
+    "ProductID": "Not found (specific sub-models like 196V4LSB2/10 have product IDs)"
+  },
+  "Display": {
+    "PanelSizeInch": "18.5 (47 cm)",
+    "Resolution": "1366 x 768",
+    "PanelType": "TFT LCD with LED backlight",
+    "Brightness_cd_m2": "200",
+    "ContrastRatio": "600:1 (typical), 10,000,000:1 (SmartContrast)",
+    "RefreshRateHz": "60"
+  },
+  "Power": {
+    "Consumption_W": "14.13 (normal), 16.46 (typical)",
+    "Standby_W": "0.5"
+  },
+  "Warranty": {
+    "Status": "Unknown",
+    "ExpiryDate": "Unknown",
+    "LookupURL": "Not found"
+  }
+}

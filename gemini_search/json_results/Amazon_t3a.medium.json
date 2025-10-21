@@ -1,0 +1,21 @@
+{
+  "Category": "Cloud Instance",
+  "Identification": {
+    "Manufacturer": "Amazon Web Services",
+    "Model": "EC2",
+    "InstanceType": "t3a.medium",
+    "SerialNumber": "Not found"
+  },
+  "Specifications": {
+    "vCPU": "2",
+    "MemoryGB": "4",
+    "Storage": "EBS only",
+    "NetworkPerformance": "Up to 5 Gigabit",
+    "BurstablePerformance": "Yes (managed by CPU Credits, with Unlimited mode available)",
+    "Architecture": "64-bit (AMD EPYC 7000 series processors)"
+  },
+  "ProviderDetails": {
+    "Service": "Amazon EC2",
+    "PublicDocsURL": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html"
+  }
+}

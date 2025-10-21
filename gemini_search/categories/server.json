@@ -1,0 +1,28 @@
+{
+    "Category": "Server",
+    "Identification": {
+      "Manufacturer": "",
+      "Model": "",
+      "SerialNumber": "",
+      "FormFactor": ""
+    },
+    "Processor": {
+      "CPUModel": "",
+      "Cores": "",
+      "Threads": ""
+    },
+    "Memory": {
+      "TotalRAMGB": "",
+      "Type": ""
+    },
+    "Storage": {
+      "Type": "",
+      "CapacityGB": ""
+    },
+    "Warranty": {
+      "Status": "",
+      "CoverageEndDate": "",
+      "LookupURL": ""
+    }
+  }
+  

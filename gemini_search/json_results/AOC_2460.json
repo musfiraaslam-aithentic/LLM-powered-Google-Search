@@ -1,0 +1,26 @@
+{
+  "Category": "Display",
+  "Identification": {
+    "Manufacturer": "AOC",
+    "Model": "2460",
+    "SerialNumber": "C54E6BA000461",
+    "ProductID": "Unknown"
+  },
+  "Display": {
+    "PanelSizeInch": "24",
+    "Resolution": "1920x1080",
+    "PanelType": "TN",
+    "Brightness_cd_m2": "350",
+    "ContrastRatio": "1000:1 (Static)",
+    "RefreshRateHz": "144"
+  },
+  "Power": {
+    "Consumption_W": "Unknown",
+    "Standby_W": "Unknown"
+  },
+  "Warranty": {
+    "Status": "Unknown",
+    "ExpiryDate": "Unknown",
+    "LookupURL": "https://tpvusa.s2.renewityrma.com/"
+  }
+}

@@ -1,0 +1,22 @@
+{
+    "Category": "Cloud Instance",
+    "Identification": {
+      "Manufacturer": "",
+      "Model": "",
+      "InstanceType": "",
+      "SerialNumber": ""
+    },
+    "Specifications": {
+      "vCPU": "",
+      "MemoryGB": "",
+      "Storage": "",
+      "NetworkPerformance": "",
+      "BurstablePerformance": "",
+      "Architecture": ""
+    },
+    "ProviderDetails": {
+      "Service": "",
+      "PublicDocsURL": ""    
+    }
+  }
+  

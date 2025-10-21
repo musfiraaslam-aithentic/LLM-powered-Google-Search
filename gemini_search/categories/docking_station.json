@@ -1,0 +1,21 @@
+{
+    "Category": "Docking Station",
+    "Identification": {
+      "Manufacturer": "",
+      "Model": "",
+      "SerialNumber": ""
+    },
+    "Connectivity": {
+      "USBPorts": "",
+      "HDMIPorts": "",
+      "DisplayPort": "",
+      "Ethernet": "",
+      "PowerDeliveryW": ""
+    },
+    "Warranty": {
+      "Status": "",
+      "ExpiryDate": "",
+      "LookupURL": ""
+    }
+  }
+  

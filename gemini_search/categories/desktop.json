@@ -1,0 +1,34 @@
+{
+    "Category": "Desktop",
+    "Identification": {
+      "Manufacturer": "",
+      "Model": "",
+      "SerialNumber": "",
+      "ProductID": "",
+      "SKU": ""
+    },
+    "Processor": {
+      "CPUName": "",
+      "BaseSpeedGHz": "",
+      "Cores": "",
+      "Threads": ""
+    },
+    "Memory": {
+      "TotalRAMGB": "",
+      "Type": ""
+    },
+    "Storage": {
+      "Type": "",
+      "CapacityGB": ""
+    },
+    "Graphics": {
+      "GPUName": "",
+      "VRAM_MB": ""
+    },
+    "Warranty": {
+      "Status": "",
+      "ExpiryDate": "",
+      "LookupURL": ""
+    }
+  }
+  

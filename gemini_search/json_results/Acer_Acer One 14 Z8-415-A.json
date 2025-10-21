@@ -1,0 +1,43 @@
+{
+  "Category": "Laptop",
+  "Identification": {
+    "Manufacturer": "Acer",
+    "Model": "Acer One 14 Z8-415",
+    "SerialNumber": "UN599SI018335325AE0700",
+    "ProductID": "Not found",
+    "SKU": "Not found"
+  },
+  "Processor": {
+    "CPUName": "Intel Core i3-1115G4",
+    "Generation": "11th Gen",
+    "BaseSpeedGHz": "3.0",
+    "MaxSpeedGHz": "4.1"
+  },
+  "Memory": {
+    "TotalRAMGB": "8",
+    "Type": "DDR4"
+  },
+  "Storage": {
+    "Type": "SSD",
+    "CapacityGB": "512"
+  },
+  "Display": {
+    "SizeInch": "14",
+    "Resolution": "1920 x 1080",
+    "PanelType": "IPS"
+  },
+  "Graphics": {
+    "GPUName": "Intel Iris Xe Graphics",
+    "VRAM_MB": "Shared (System Memory)"
+  },
+  "Power": {
+    "BatteryCapacity_mAh": "45.5 Wh",
+    "AdapterWattage_W": "Unknown"
+  },
+  "Warranty": {
+    "Status": "Not found",
+    "StartDate": "Not found",
+    "ExpiryDate": "Not found",
+    "LookupURL": "https://www.acer.com/us-en/support/warranty-information/warranty-inquiry"
+  }
+}
