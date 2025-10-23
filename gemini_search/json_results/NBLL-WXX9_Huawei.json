@@ -1,0 +1,36 @@
+{
+  "Category": "Laptop",
+  "Identification": {
+    "Manufacturer": "Huawei",
+    "Model": "MateBook D 14",
+    "ProductID": "NBLL-WXX9",
+    "SKU": "Not found"
+  },
+  "Processor": {
+    "CPUName": "AMD Ryzen 7 4700U",
+    "Generation": "4000 Series (Zen 2)",
+    "BaseSpeedGHz": "2.00",
+    "MaxSpeedGHz": "Not found"
+  },
+  "Memory": {
+    "TotalRAMGB": "8",
+    "Type": "Not found"
+  },
+  "Storage": {
+    "Type": "SSD",
+    "CapacityGB": "512"
+  },
+  "Display": {
+    "SizeInch": "14",
+    "Resolution": "1920x1080",
+    "PanelType": "IPS"
+  },
+  "Graphics": {
+    "GPUName": "AMD Radeon Graphics",
+    "VRAM_MB": "Unknown"
+  },
+  "Power": {
+    "BatteryCapacity_mAh": "Not found",
+    "AdapterWattage_W": "Not found"
+  }
+}
