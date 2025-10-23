@@ -28,6 +28,12 @@
       "model": "196V4",
       "serial_number": "unknown",
       "type": "display"
+    },
+    {
+      "manufacturer": "Xen",
+      "model": "HVM domU",
+      "serial_number": "unknown",
+      "type": "server"
     }
   ]
   
