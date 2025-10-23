@@ -33,11 +33,5 @@
   "Power": {
     "BatteryCapacity_mAh": "45.5 Wh",
     "AdapterWattage_W": "Unknown"
-  },
-  "Warranty": {
-    "Status": "Not found",
-    "StartDate": "Not found",
-    "ExpiryDate": "Not found",
-    "LookupURL": "https://www.acer.com/us-en/support/warranty-information/warranty-inquiry"
   }
 }
