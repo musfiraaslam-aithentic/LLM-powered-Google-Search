@@ -3,7 +3,6 @@
   "Identification": {
     "Manufacturer": "Philips",
     "Model": "196V4",
-    "SerialNumber": "Not found",
     "ProductID": "Not found (specific sub-models like 196V4LSB2/10 have product IDs)"
   },
   "Display": {
@@ -17,10 +16,5 @@
   "Power": {
     "Consumption_W": "14.13 (normal), 16.46 (typical)",
     "Standby_W": "0.5"
-  },
-  "Warranty": {
-    "Status": "Unknown",
-    "ExpiryDate": "Unknown",
-    "LookupURL": "Not found"
   }
 }
