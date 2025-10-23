@@ -3,8 +3,7 @@
   "Identification": {
     "Manufacturer": "Amazon Web Services",
     "Model": "EC2",
-    "InstanceType": "t3a.medium",
-    "SerialNumber": "Not found"
+    "InstanceType": "t3a.medium"
   },
   "Specifications": {
     "vCPU": "2",
