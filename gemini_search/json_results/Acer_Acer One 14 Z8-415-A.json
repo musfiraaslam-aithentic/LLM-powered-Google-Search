@@ -2,12 +2,12 @@
   "Category": "Laptop",
   "Identification": {
     "Manufacturer": "Acer",
-    "Model": "Acer One 14 Z8-415",
-    "ProductID": "Not found",
+    "Model": "One 14 Z8-415",
+    "ProductID": "UN.599SI.011 / UN.599SI.016",
     "SKU": "Not found"
   },
   "Processor": {
-    "CPUName": "Intel Core i3-1115G4",
+    "CPUName": "Intel Core i3 1115G4",
     "Generation": "11th Gen",
     "BaseSpeedGHz": "3.0",
     "MaxSpeedGHz": "4.1"
@@ -22,15 +22,15 @@
   },
   "Display": {
     "SizeInch": "14",
-    "Resolution": "1920 x 1080",
+    "Resolution": "1920 x 1080 (Full HD)",
     "PanelType": "IPS"
   },
   "Graphics": {
     "GPUName": "Intel Iris Xe Graphics",
-    "VRAM_MB": "Shared (System Memory)"
+    "VRAM_MB": "Shared (Integrated)"
   },
   "Power": {
-    "BatteryCapacity_mAh": "45.5 Wh",
-    "AdapterWattage_W": "Unknown"
+    "BatteryCapacity_mAh": "45.5 Wh (mAh not found)",
+    "AdapterWattage_W": "Not found"
   }
 }
