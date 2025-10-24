@@ -1,0 +1,20 @@
+{
+  "Category": "Display",
+  "Identification": {
+    "Manufacturer": "ViewSonic",
+    "Model": "VA2446m-LED",
+    "ProductID": "VA2446m-LED"
+  },
+  "Display": {
+    "PanelSizeInch": "23.6",
+    "Resolution": "1920x1080",
+    "PanelType": "TN",
+    "Brightness_cd_m2": "300",
+    "ContrastRatio": "1000:1 (static)",
+    "RefreshRateHz": "60"
+  },
+  "Power": {
+    "Consumption_W": "18",
+    "Standby_W": "0.3"
+  }
+}
