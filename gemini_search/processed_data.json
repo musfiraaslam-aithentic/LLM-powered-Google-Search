@@ -1,0 +1,327 @@
+[
+    {
+        "cpu": [],
+        "videos": ["Intel(R) UHD Graphics 620"]
+    },
+    {
+        "client_id": 124,
+        "hardware_id": 1929229130757997963,
+        "manufacturer": "Microsoft",
+        "serial_number": "013623694053",
+        "product_features": {
+            "os": "Windows 11 Home",
+            "Ram": "0 GB"
+        },
+        "product_description": "Microsoft Corporation - Surface Pro 7"
+    },
+    {
+        "cpu": ["Intel(R) Core(TM) i3-4130 CPU @ 3.40GHz"],
+        "ram": "8 GB RAM",
+        "model": "MS-7817",
+        "videos": ["Intel Corporation 4th Generation Core Processor Family Integrated Graphics Controller "],
+        "storage": ["1 TB disk"],
+        "manufacturer": "MSI",
+        "serial_number": "To be filled by O.E.M."
+    },
+    {
+        "model": "HP 24yh",
+        "client_id": null,
+        "hardware_id": 112,
+        "manufacturer": "Manufacturer",
+        "serial_number": "1CR91510JT"
+    },
+    {
+        "model": "Philips 196V4",
+        "client_id": null,
+        "hardware_id": 4,
+        "manufacturer": "Philips",
+        "serial_number": "UK51235033896"
+    },
+    {
+        "model": "Acer One 14 Z8-415-A",
+        "manufacturer": "Acer",
+        "serial_number": "UN599SI018335325AE0700"
+    },
+    {
+        "cpu": ["AMD EPYC 7571"],
+        "ram": "4 GB RAM",
+        "model": "t3a.medium",
+        "videos": ["Microsoft Basic Display Adapter"],
+        "storage": ["256 GB NVMe"],
+        "manufacturer": "Amazon",
+        "serial_number": "ec20185b-a10d-8ab4-4df1-a1b8fa106eda"
+    },
+    {
+        "cpu": ["12th Gen Intel(R) Core(TM) i5-12400"],
+        "ram": "16 GB RAM",
+        "model": "H610M H V2 DDR4",
+        "videos": ["Intel Corporation Device 4692 "],
+        "storage": ["500 GB disk"],
+        "manufacturer": "GIGABYTE",
+        "serial_number": "Default string"
+    },
+    {
+        "model": "",
+        "client_id": 23,
+        "hardware_id": 99,
+        "manufacturer": "ASUS",
+        "serial_number": ""
+    },
+    {
+        "model": "S24R35xFZ",
+        "client_id": 23,
+        "hardware_id": 1306,
+        "manufacturer": "Samsung",
+        "serial_number": "H4CW501012L"
+    },
+    {
+        "model": "2460",
+        "client_id": 28,
+        "hardware_id": 1104,
+        "manufacturer": "AOC",
+        "serial_number": "C54E6BA000461"
+    },
+    {
+        "model": "ASUS VT229",
+        "client_id": 28,
+        "hardware_id": 2018,
+        "manufacturer": "Unknown manufacturer code AUS",
+        "serial_number": "RBLMTF016978"
+    },
+    {
+        "model": "Sceptre F27",
+        "client_id": 28,
+        "hardware_id": 2442,
+        "manufacturer": "Sceptre",
+        "serial_number": "0000000000001"
+    },
+    {
+        "client_id": 114,
+        "device_id": "980192044",
+        "host_name": "dcg-sql-01.sric.local",
+        "ipaddress": "10.101.240.135",
+        "TechTypeId": [1, 5],
+        "subnetmask": "255.255.255.0",
+        "client_name": "qacompany18531008",
+        "hardware_id": "980192044",
+        "mac_address": "bc:24:11:00:aa:b4",
+        "manufacturer": "QEMU",
+        "serial_number": null,
+        "product_features": {
+            "Ram": "8 GB",
+            "Harddrive": "100 GB",
+            "Processor": "qemu virtual cpu version 2.5+"
+        },
+        "product_description": "Standard PC (Q35 + ICH9, 2009)"
+    },
+    {
+        "client_id": 114,
+        "device_id": "980195811",
+        "host_name": "kpdb-main-01",
+        "ipaddress": "10.209.7.184",
+        "TechTypeId": [1, 5],
+        "subnetmask": "255.255.255.0",
+        "client_name": "qacompany18531008",
+        "hardware_id": "980195811",
+        "mac_address": "a8:a1:59:da:f8:8d",
+        "manufacturer": "To-Increase",
+        "serial_number": "To Be Filled By O.E.M.",
+        "product_features": {
+            "Ram": "7.62 GB",
+            "Harddrive": "232.88 GB",
+            "Processor": "intel(r) celeron(r) g5905 cpu @ 3.50ghz"
+        },
+        "product_description": "H510M-ITX/ac"
+    },
+    {
+        "client_id": 114,
+        "device_id": "980195783",
+        "host_name": "sckp-ps-01",
+        "ipaddress": "10.209.5.11",
+        "TechTypeId": [1, 5],
+        "subnetmask": "255.255.255.0",
+        "client_name": "qacompany18531008",
+        "hardware_id": "980195783",
+        "mac_address": "00:50:56:a6:ca:d1",
+        "manufacturer": "VMware",
+        "serial_number": "VMware-42 26 69 fe 3d 9a 6b 42-a6 a4 78 f8 c7 4b 29 d0",
+        "product_features": {
+            "Ram": "8 GB",
+            "Harddrive": "60 GB",
+            "Processor": "[\"intel(r) xeon(r) cpu e5-2660 v3 @ 2.60ghz\", \"intel(r) xeon(r) cpu e5-2660 v3 @ 2.60ghz\"]"
+        },
+        "product_description": "VMware Virtual Platform"
+    },
+    {
+        "client_id": 114,
+        "device_id": "980191807",
+        "host_name": "kpdb-dtp-08.sric.local",
+        "ipaddress": "10.209.7.193",
+        "TechTypeId": [1, 5],
+        "subnetmask": "255.255.255.0",
+        "client_name": "qacompany18531008",
+        "hardware_id": "980191807",
+        "mac_address": "b8:ae:ed:78:95:0b",
+        "manufacturer": "",
+        "serial_number": "",
+        "product_features": {
+            "Ram": "7.89 GB",
+            "Harddrive": "232.88 GB",
+            "Processor": "intel(r) core(tm) i5-5250u cpu @ 1.60ghz"
+        },
+        "product_description": ""
+    },
+    {
+        "client_id": 114,
+        "device_id": "980191882",
+        "host_name": "mel-dtp-03.sric.local",
+        "ipaddress": "10.100.129.242",
+        "TechTypeId": [1, 5],
+        "subnetmask": "255.255.255.0",
+        "client_name": "qacompany18531008",
+        "hardware_id": "980191882",
+        "mac_address": "84:a9:3e:73:20:41",
+        "manufacturer": "HP",
+        "product_code": "6YQ59AA",
+        "serial_number": "2MO9354Y0V",
+        "product_features": {
+            "Ram": "9.91 GB",
+            "Harddrive": "238.47 GB",
+            "Processor": "amd ryzen 5 3400g with radeon vega graphics"
+        },
+        "product_description": "HP Desktop M01-F0xxx"
+    },
+    {
+        "client_id": 114,
+        "device_id": "980191883",
+        "host_name": "mel-dtp-04.sric.local",
+        "ipaddress": "10.100.129.243",
+        "TechTypeId": [1, 5],
+        "subnetmask": "255.255.255.0",
+        "client_name": "qacompany18531008",
+        "hardware_id": "980191883",
+        "mac_address": "84:a9:3e:73:20:41",
+        "manufacturer": "HP",
+        "serial_number": "2MO9354Y0V",
+        "product_features": {
+            "Ram": "7.89 GB",
+            "Harddrive": "238.47 GB",
+            "Processor": "intel(r) core(tm) i5-8500 cpu @ 3.00ghz"
+        },
+        "product_description": "HP Desktop M01-F0xxx"
+    },
+    {
+        "client_id": 114,
+        "device_id": "980191884",
+        "host_name": "mel-dtp-05.sric.local",
+        "ipaddress": "10.100.129.244",
+        "TechTypeId": [1, 5],
+        "subnetmask": "255.255.255.0",
+        "client_name": "qacompany18531008",
+        "hardware_id": "980191884",
+        "mac_address": "84:a9:3e:73:20:41",
+        "manufacturer": "HP",
+        "serial_number": "2MO9354Y0V",
+        "product_features": {
+            "Ram": "7.89 GB",
+            "Harddrive": "238.47 GB",
+            "Processor": "intel(r) core(tm) i5-8500 cpu @ 3.00ghz"
+        },
+        "product_description": "HP Desktop M01-F0xxx"
+    },
+    {
+        "client_id": 114,
+        "device_id": "980191885",
+        "host_name": "mel-dtp-06.sric.local",
+        "ipaddress": "10.100.129.245",
+        "TechTypeId": [1, 5],
+        "subnetmask": "255.255.255.0",
+        "client_name": "qacompany18531008",
+        "hardware_id": "980191885",
+        "mac_address": "84:a9:3e:73:20:41",
+        "manufacturer": "HP",
+        "serial_number": "2MO9354Y0V",
+        "product_features": {
+            "Ram": "7.89 GB",
+            "Harddrive": "238.47 GB",
+            "Processor": "intel(r) core(tm) i5-8500 cpu @ 3.00ghz"
+        },
+        "product_description": "HP Desktop M01-F0xxx"
+    },
+    {
+        "client_id": 114,
+        "device_id": "980191886",
+        "host_name": "mel-dtp-07.sric.local",
+        "ipaddress": "10.100.129.246",
+        "TechTypeId": [1, 5],
+        "subnetmask": "255.255.255.0",
+        "client_name": "qacompany18531008",
+        "hardware_id": "980191886",
+        "mac_address": "84:a9:3e:73:20:41",
+        "manufacturer": "HP",
+        "serial_number": "2MO9354Y0V",
+        "product_features": {
+            "Ram": "7.89 GB",
+            "Harddrive": "238.47 GB",
+            "Processor": "intel(r) core(tm) i5-8500 cpu @ 3.00ghz"
+        },
+        "product_description": "HP Desktop M01-F0xxx"
+    },
+    {
+        "client_id": 114,
+        "device_id": "980191887",
+        "host_name": "mel-dtp-08.sric.local",
+        "ipaddress": "10.100.129.247",
+        "TechTypeId": [1, 5],
+        "subnetmask": "255.255.255.0",
+        "client_name": "qacompany18531008",
+        "hardware_id": "980191887",
+        "mac_address": "84:a9:3e:73:20:41",
+        "manufacturer": "HP",
+        "serial_number": "2MO9354Y0V",
+        "product_features": {
+            "Ram": "7.89 GB",
+            "Harddrive": "238.47 GB",
+            "Processor": "intel(r) core(tm) i5-8500 cpu @ 3.00ghz"
+        },
+        "product_description": "HP Desktop M01-F0xxx"
+    },
+    {
+        "client_id": 114,
+        "device_id": "980191888",
+        "host_name": "mel-dtp-09.sric.local",
+        "ipaddress": "10.100.129.248",
+        "TechTypeId": [1, 5],
+        "subnetmask": "255.255.255.0",
+        "client_name": "qacompany18531008",
+        "hardware_id": "980191888",
+        "mac_address": "84:a9:3e:73:20:41",
+        "manufacturer": "HP",
+        "serial_number": "2MO9354Y0V",
+        "product_features": {
+            "Ram": "7.89 GB",
+            "Harddrive": "238.47 GB",
+            "Processor": "intel(r) core(tm) i5-8500 cpu @ 3.00ghz"
+        },
+        "product_description": "HP Desktop M01-F0xxx"
+    },
+    {
+        "client_id": 114,
+        "device_id": "980191889",
+        "host_name": "mel-dtp-10.sric.local",
+        "ipaddress": "10.100.129.249",
+        "TechTypeId": [1, 5],
+        "subnetmask": "255.255.255.0",
+        "client_name": "qacompany18531008",
+        "hardware_id": "980191889",
+        "mac_address": "84:a9:3e:73:20:41",
+        "manufacturer": "HP",
+        "serial_number": "2MO9354Y0V",
+        "product_features": {
+            "Ram": "7.89 GB",
+            "Harddrive": "238.47 GB",
+            "Processor": "intel(r) core(tm) i5-8500 cpu @ 3.00ghz"
+        },
+        "product_description": "HP Desktop M01-F0xxx"
+    }
+]

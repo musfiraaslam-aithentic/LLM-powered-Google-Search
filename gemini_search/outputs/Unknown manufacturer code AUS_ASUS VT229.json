@@ -1,0 +1,20 @@
+{
+  "ProductDescription": "ASUS VT229 Touchscreen Monitor",
+  "Brand": {
+    "name": "ASUS",
+    "address": "No. 15, Li-Te Rd., Beitou, Taipei 112, Taiwan R.O.C.",
+    "website": "www.asus.com"
+  },
+  "ProductFeatures": {
+    "display": "21.5-inch Full HD (1920x1080)",
+    "panel_type": "IPS, 10-point multi-touch",
+    "refresh_rate": "75 Hz",
+    "response_time": "5ms (GTG)",
+    "brightness": "250 cd/m²",
+    "ports": "1x HDMI, 1x D-Sub (VGA), 1x USB 2.0 (for touch), Audio In, Headphone Out",
+    "model_number": "ASUS VT229",
+    "serial_number": "RBLMTF016978"
+  },
+  "TechGroup": "Touchscreen Monitors",
+  "TechType": "Hardware"
+}

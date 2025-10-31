@@ -1,0 +1,25 @@
+{
+  "ProductDescription": "ASRock H510M-ITX/ac Motherboard",
+  "Brand": {
+    "name": "ASRock",
+    "address": "2F., No.37, Ln. 818, Sec. 1, Neihu Rd., Neihu Dist., Taipei City 114, Taiwan (R.O.C.)",
+    "website": "https://www.asrock.com"
+  },
+  "ProductFeatures": {
+    "cpu_socket": "LGA1200",
+    "supported_cpu_generations": "Intel 10th and 11th Gen Core Processors",
+    "chipset": "Intel H510",
+    "ram_type": "DDR4",
+    "max_ram_capacity": "64 GB",
+    "ram_slots": "2 x DIMM",
+    "storage_interfaces": "4 x SATA3 6Gb/s, 1 x Hyper M.2 (PCIe Gen3 x4)",
+    "integrated_graphics_output": "1 x HDMI 2.0, 1 x DisplayPort 1.4",
+    "network_ethernet": "Intel I219V Gigabit LAN",
+    "network_wireless": "Intel Wi-Fi 802.11ac, Bluetooth 4.2",
+    "form_factor": "Mini-ITX",
+    "model_number": "H510M-ITX/ac",
+    "serial_number": "To Be Filled By O.E.M."
+  },
+  "TechGroup": "Motherboards (for Intel Processors)",
+  "TechType": "Hardware"
+}

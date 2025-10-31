@@ -1,0 +1,20 @@
+{
+  "ProductDescription": "HP Desktop M01-F0xxx",
+  "Brand": {
+    "name": "HP Inc.",
+    "address": "1501 Page Mill Road, Palo Alto, CA 94304, USA",
+    "website": "www.hp.com"
+  },
+  "ProductFeatures": {
+    "category": "Desktop / Mini PC",
+    "cpu": "Intel Core i5-8500 CPU @ 3.00GHz",
+    "ram": "8 GB DDR4",
+    "storage": "256 GB SSD",
+    "gpu": "Intel UHD Graphics 630 (Integrated)",
+    "network": "Gigabit Ethernet (10/100/1000 Mbps), Optional Wi-Fi 5 (802.11ac) / Wi-Fi 6 (802.11ax) and Bluetooth",
+    "model_number": "HP M01-F0xxx Series",
+    "serial_number": "2MO9354Y0V"
+  },
+  "TechGroup": "Intel Desktops",
+  "TechType": "Hardware"
+}

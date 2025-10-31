@@ -1,0 +1,21 @@
+{
+  "ProductDescription": "Dell Inspiron 7472",
+  "Brand": {
+    "name": "Dell Inc.",
+    "address": "One Dell Way, Round Rock, Texas 78682, USA",
+    "website": "www.dell.com"
+  },
+  "ProductFeatures": {
+    "category": "Notebook / Laptop",
+    "cpu": "Intel Core i7-8550U",
+    "ram": "8GB DDR4 2400MHz",
+    "storage": "256GB PCIe NVMe SSD",
+    "display": "14.0-inch FHD (1920 x 1080) Anti-glare LED-backlit IPS",
+    "gpu": "Intel UHD Graphics 620",
+    "network": "802.11ac Wi-Fi, Bluetooth 4.2",
+    "model_number": "Inspiron 7472",
+    "serial_number": "3CYDCQ2"
+  },
+  "TechGroup": "Intel Notebooks",
+  "TechType": "Hardware"
+}

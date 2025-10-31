@@ -1,0 +1,44 @@
+{
+  "ProductDescription": "GIGABYTE H610M H V2 DDR4 Desktop Motherboard",
+  "Brand": {
+    "name": "GIGABYTE Technology Co., Ltd.",
+    "address": "No.6, Baoqiang Rd., Xindian Dist., New Taipei City 231, Taiwan",
+    "website": "https://www.gigabyte.com/"
+  },
+  "ProductFeatures": {
+    "cpu": {
+      "name": "Intel Core i5-12400",
+      "cores": 6,
+      "threads": 12,
+      "base_speed_ghz": 2.5,
+      "boost_speed_ghz": 4.4,
+      "cache_mb": 18
+    },
+    "ram": {
+      "capacity_gb": 16,
+      "type": "DDR4",
+      "speed_mhz": "Up to 3200 (effective speed determined by CPU and modules)"
+    },
+    "storage": {
+      "capacity_gb": 500,
+      "type": "NVMe SSD",
+      "interface": "PCIe Gen3 x4",
+      "model": "Not Specified",
+      "manufacturer": "Not Specified"
+    },
+    "gpu": {
+      "name": "Intel UHD Graphics 730",
+      "type": "Integrated",
+      "memory_mb": "System Shared (up to 256MB reported by system, dynamically allocated)"
+    },
+    "network": {
+      "type": "Ethernet",
+      "controller": "Realtek GbE LAN chip",
+      "speed": "1 Gbit/100 Mbit"
+    },
+    "model_number": "H610M H V2 DDR4",
+    "serial_number": "Default string"
+  },
+  "TechGroup": "Motherboards (for Intel Processors)",
+  "TechType": "Hardware"
+}

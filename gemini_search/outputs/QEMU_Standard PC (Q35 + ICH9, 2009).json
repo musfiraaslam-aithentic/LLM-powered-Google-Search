@@ -1,0 +1,22 @@
+{
+  "ProductDescription": "QEMU Standard PC (Q35 + ICH9, 2009)",
+  "Brand": {
+    "name": "QEMU",
+    "address": "N/A (Open Source Project)",
+    "website": "https://www.qemu.org/"
+  },
+  "ProductFeatures": {
+    "cpu": "qemu virtual cpu version 2.5+",
+    "ram": "8 GB",
+    "storage": "100 GB",
+    "gpu": "N/A (Virtual)",
+    "network": "Intel(R) PRO/1000 MT Network Connection (Virtual)",
+    "model_number": "Standard PC (Q35 + ICH9, 2009)",
+    "serial_number": "N/A"
+  },
+  "TechGroup": "Intel Desktops",
+  "TechType": [
+    "Hardware",
+    "Virtual Machines"
+  ]
+}

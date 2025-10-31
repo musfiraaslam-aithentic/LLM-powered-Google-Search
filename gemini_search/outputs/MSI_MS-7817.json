@@ -1,0 +1,41 @@
+{
+  "ProductDescription": "MSI MS-7817 Desktop",
+  "Brand": {
+    "name": "MSI",
+    "address": "No. 69, Lide St., Zhonghe Dist., New Taipei City 235, Taiwan",
+    "website": "https://www.msi.com"
+  },
+  "ProductFeatures": {
+    "cpu": {
+      "name": "Intel Core i3-4130",
+      "cores": "2 Cores / 4 Threads",
+      "speed": "3.40 GHz",
+      "cache": "3MB SmartCache",
+      "architecture": "x86_64"
+    },
+    "ram": {
+      "capacity": "8 GB",
+      "type": "DDR3",
+      "speed": "1600 MHz"
+    },
+    "storage": {
+      "type": "HDD",
+      "model": "WDC WD10EZEX-60WN4A0",
+      "capacity": "1 TB",
+      "interface": "SATA 6Gb/s"
+    },
+    "gpu": {
+      "name": "Intel HD Graphics 4400",
+      "type": "Integrated",
+      "memory": "Shared System Memory"
+    },
+    "network": {
+      "type": "Gigabit Ethernet",
+      "controller": "Realtek RTL8111G"
+    },
+    "model_number": "MS-7817",
+    "serial_number": "To be filled by O.E.M."
+  },
+  "TechGroup": "Intel Desktops",
+  "TechType": "Hardware"
+}

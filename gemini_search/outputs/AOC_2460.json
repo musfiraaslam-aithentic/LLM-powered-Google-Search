@@ -1,0 +1,20 @@
+{
+  "ProductDescription": "AOC 2460 Monitor",
+  "Brand": {
+    "name": "AOC",
+    "address": "20/F, Yue Xiu Building, 160-167 Lockhart Road, Wanchai, Hong Kong",
+    "website": "https://www.aoc.com/global/"
+  },
+  "ProductFeatures": {
+    "display": "23.6 inches (Full HD 1920x1080)",
+    "panel_type": "TN (Twisted Nematic)",
+    "refresh_rate": "60 Hz",
+    "response_time": "5 ms",
+    "brightness": "250 cd/m²",
+    "ports": "1x D-Sub (VGA), 1x DVI, 1x HDMI",
+    "model_number": "2460",
+    "serial_number": "C54E6BA000461"
+  },
+  "TechGroup": "LED Monitors",
+  "TechType": "Hardware"
+}

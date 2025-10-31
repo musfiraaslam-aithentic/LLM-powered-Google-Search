@@ -1,0 +1,21 @@
+{
+  "ProductDescription": "Acer One 14 Z8-415-A Notebook",
+  "Brand": {
+    "name": "Acer",
+    "address": "8F, 88, Section 1, Xintai 5th Rd, Xizhi District, New Taipei City, 221, Taiwan",
+    "website": "https://www.acer.com"
+  },
+  "ProductFeatures": {
+    "category": "Notebook / Laptop",
+    "cpu": "Intel Celeron N4020 (Dual-Core, up to 2.8 GHz)",
+    "ram": "4GB DDR4 RAM",
+    "storage": "256GB PCIe NVMe SSD",
+    "display": "14.0-inch HD (1366 x 768) LED-backlit",
+    "gpu": "Integrated Intel UHD Graphics 600",
+    "network": "Wi-Fi 802.11ac, Bluetooth 4.2",
+    "model_number": "Z8-415-A",
+    "serial_number": "UN599SI018335325AE0700"
+  },
+  "TechGroup": "Notebooks",
+  "TechType": "Hardware"
+}

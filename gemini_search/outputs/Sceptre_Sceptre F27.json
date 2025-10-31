@@ -1,0 +1,20 @@
+{
+  "ProductDescription": "Sceptre F27 Monitor",
+  "Brand": {
+    "name": "Sceptre",
+    "address": "17700 Castleton St, City of Industry, CA 91748, USA",
+    "website": "www.sceptre.com"
+  },
+  "ProductFeatures": {
+    "display": "27-inch Full HD (1920x1080)",
+    "panel_type": "IPS",
+    "refresh_rate": "75Hz",
+    "response_time": "5ms GtG",
+    "brightness": "250 cd/m²",
+    "ports": "1x HDMI, 1x VGA",
+    "model_number": "F27",
+    "serial_number": "0000000000001"
+  },
+  "TechGroup": "LED Monitors",
+  "TechType": "Hardware"
+}

@@ -1,0 +1,26 @@
+{
+  "ProductDescription": "Amazon t3a.medium EC2 Virtual Machine Instance",
+  "Brand": {
+    "name": "Amazon Web Services (AWS)",
+    "address": "410 Terry Ave N, Seattle, WA 98109, USA",
+    "website": "https://aws.amazon.com/"
+  },
+  "ProductFeatures": {
+    "category": "Other",
+    "instance_type": "t3a.medium",
+    "vcpus": 2,
+    "cpu_model": "AMD EPYC 7571",
+    "cpu_speed_mhz": 2200,
+    "cpu_cache_mb": 16,
+    "architecture": "x86_64",
+    "ram": "4 GB DDR4",
+    "storage": "256 GB NVMe (EBS-backed)",
+    "network_bandwidth": "Up to 5 Gigabit",
+    "virtualization_platform": "AWS EC2",
+    "baseline_cpu_performance": "20% for 2 vCPUs",
+    "model_number": "t3a.medium",
+    "serial_number": "ec20185b-a10d-8ab4-4df1-a1b8fa106eda"
+  },
+  "TechGroup": "Amazon Elastic Compute Cloud - Compute",
+  "TechType": "Virtual Machines"
+}

@@ -1,0 +1,20 @@
+{
+  "ProductDescription": "Samsung S24R350FZN 24-inch Full HD LED Monitor",
+  "Brand": {
+    "name": "Samsung",
+    "address": "129, Samsung-ro, Yeongtong-gu, Suwon-si, Gyeonggi-do, South Korea",
+    "website": "https://www.samsung.com"
+  },
+  "ProductFeatures": {
+    "display": "24-inch Full HD (1920x1080)",
+    "panel_type": "IPS (PLS)",
+    "refresh_rate": "75Hz",
+    "response_time": "5ms GTG",
+    "brightness": "250 cd/m²",
+    "ports": "1x HDMI, 1x D-Sub (VGA)",
+    "model_number": "S24R350FZN",
+    "serial_number": "H4CW501012L"
+  },
+  "TechGroup": "LED Monitors",
+  "TechType": "Hardware"
+}

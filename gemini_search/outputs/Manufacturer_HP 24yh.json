@@ -1,0 +1,20 @@
+{
+  "ProductDescription": "HP 24yh Monitor",
+  "Brand": {
+    "name": "HP",
+    "address": "Palo Alto, California, USA",
+    "website": "https://www.hp.com"
+  },
+  "ProductFeatures": {
+    "display": "23.8-inch Full HD (1920 x 1080)",
+    "panel_type": "IPS",
+    "refresh_rate": "60 Hz",
+    "response_time": "5 ms GtG (with overdrive)",
+    "brightness": "250 nits",
+    "ports": "1x HDMI 1.4, 1x VGA",
+    "model_number": "HP 24yh",
+    "serial_number": "1CR91510JT"
+  },
+  "TechGroup": "LED Monitors",
+  "TechType": "Hardware"
+}

@@ -1,0 +1,24 @@
+{
+  "ProductDescription": "VMware Virtual Platform by VMware",
+  "Brand": {
+    "name": "VMware, Inc.",
+    "address": "3401 Hillview Ave, Palo Alto, CA 94304, USA",
+    "website": "https://www.vmware.com/"
+  },
+  "ProductFeatures": {
+    "category": "Virtual Machines",
+    "processors": [
+      "intel(r) xeon(r) cpu e5-2660 v3 @ 2.60ghz",
+      "intel(r) xeon(r) cpu e5-2660 v3 @ 2.60ghz"
+    ],
+    "logical_processors": 2,
+    "ram": "8 GB",
+    "storage": "60 GB",
+    "network_adapter": "intel(r) 82574l gigabit network connection",
+    "model_name": "VMware Virtual Platform",
+    "serial_number": "VMware-42 26 69 fe 3d 9a 6b 42-a6 a4 78 f8 c7 4b 29 d0",
+    "uuid": "fe692642-9a3d-426b-a6a4-78f8c74b29d0"
+  },
+  "TechGroup": "Other",
+  "TechType": "Virtual Machines"
+}

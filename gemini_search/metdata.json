@@ -1,0 +1,1285 @@
+[
+    {
+        "scraping": false,
+        "hardware_data": {
+            "type": "docking station",
+            "model": "Inspiron 7472",
+            "specs": {
+                "cpus": null,
+                "uuid": "4C4C4544-0043-5910-8044-B3C04F435132",
+                "sounds": [
+                    {
+                        "name": "Intel(R) Display Audio",
+                        "description": "Intel(R) Display Audio",
+                        "manufacturer": "Intel(R) Corporation"
+                    },
+                    {
+                        "name": "Realtek Audio",
+                        "description": "Realtek Audio",
+                        "manufacturer": "Realtek"
+                    }
+                ],
+                "videos": [
+                    {
+                        "name": "Intel(R) UHD Graphics 620",
+                        "memory": "1024",
+                        "chipset": "Intel(R) UHD Graphics Family",
+                        "resolution": "1920 x 1080"
+                    }
+                ],
+                "hostname": "FLAG-LPT-06",
+                "memories": null,
+                "storages": null,
+                "mac_address": "90:32:4B:4E:04:81"
+            },
+            "hardware_id": 534,
+            "manufacturer": "Dell",
+            "serial_number": "3CYDCQ2"
+        },
+        "processed_hardware_data": {
+            "cpu": [],
+            "videos": ["Intel(R) UHD Graphics 620"]
+        }
+    },
+    {
+        "scraping": false,
+        "hardware_data": {
+            "os": "Windows 11 Home",
+            "cpu": "Intel(R) Core(TM) i5-1035G4 CPU @ 1.10GHz",
+            "ram": 7778,
+            "specs": {
+                "uuid": null,
+                "hostname": "P53D8QM-Andy",
+                "mac_address": null,
+                "serial_number": "013623694053"
+            },
+            "client_id": 124,
+            "host_name": "P53D8QM-Andy",
+            "data_source": 7,
+            "hardware_id": 1929229130757997963,
+            "manufacturer": "Microsoft",
+            "serial_number": "013623694053",
+            "brand_product_id": 5093386
+        },
+        "processed_hardware_data": {
+            "client_id": 124,
+            "hardware_id": 1929229130757997963,
+            "manufacturer": "Microsoft",
+            "serial_number": "013623694053",
+            "product_features": {
+                "os": "Windows 11 Home",
+                "Ram": "0 GB"
+            },
+            "product_description": "Microsoft Corporation - Surface Pro 7"
+        }
+    },
+    {
+        "scraping": false,
+        "client_id": 0,
+        "worker_id": null,
+        "data_source": 1,
+        "hardware_id": "59",
+        "hardware_data": {
+            "type": "desktop",
+            "model": "MS-7817",
+            "specs": {
+                "cpus": [
+                    {
+                        "name": "Intel(R) Core(TM) i3-4130 CPU @ 3.40GHz",
+                        "cores": 2,
+                        "speed": "3400",
+                        "cache_size": "512 KiB (2 instances)",
+                        "data_width": 64,
+                        "architecture": "x86_64",
+                        "logical_cpus": 4
+                    }
+                ],
+                "uuid": "00000000-0000-0000-0000-309c234068b2",
+                "sounds": [
+                    {
+                        "name": "Audio device",
+                        "description": "rev 06",
+                        "manufacturer": "Intel Corporation Xeon E3-1200 v3/4th Gen Core Processor HD Audio Controller "
+                    },
+                    {
+                        "name": "Audio device",
+                        "description": "rev 05",
+                        "manufacturer": "Intel Corporation 8 Series/C220 Series Chipset High Definition Audio Controller "
+                    }
+                ],
+                "videos": [
+                    {
+                        "name": "Intel Corporation 4th Generation Core Processor Family Integrated Graphics Controller ",
+                        "memory": "256",
+                        "chipset": "VGA compatible controller",
+                        "resolution": ""
+                    }
+                ],
+                "hostname": "vishwajeet",
+                "memories": [
+                    {
+                        "type": "DDR3",
+                        "purpose": "",
+                        "capacity": 4096,
+                        "description": "Synchronous",
+                        "serial_number": "E03D2015"
+                    },
+                    {
+                        "type": "Unknown",
+                        "purpose": "",
+                        "capacity": 0,
+                        "description": "None",
+                        "serial_number": ""
+                    },
+                    {
+                        "type": "DDR3",
+                        "purpose": "",
+                        "capacity": 4096,
+                        "description": "Synchronous",
+                        "serial_number": "00000000"
+                    },
+                    {
+                        "type": "Unknown",
+                        "purpose": "",
+                        "capacity": 0,
+                        "description": "None",
+                        "serial_number": ""
+                    }
+                ],
+                "storages": [
+                    {
+                        "name": "loop0",
+                        "type": "loop",
+                        "model": "",
+                        "firmware": "",
+                        "disk_size": 0,
+                        "manufacturer": "",
+                        "serial_number": ""
+                    },
+                    {
+                        "name": "sda",
+                        "type": "disk",
+                        "model": "WDC WD10EZEX-60WN4A0",
+                        "firmware": "01.01A01",
+                        "disk_size": 1000205,
+                        "manufacturer": "Western Digital",
+                        "serial_number": "WD-WCC6Y3DLYRXH"
+                    }
+                ],
+                "mac_address": "30:9c:23:40:68:b2"
+            },
+            "data_source": 1,
+            "hardware_id": "59",
+            "manufacturer": "MSI",
+            "serial_number": "To be filled by O.E.M."
+        },
+        "matched_asset_exist": false,
+        "processed_hardware_data": {
+            "cpu": ["Intel(R) Core(TM) i3-4130 CPU @ 3.40GHz"],
+            "ram": "8 GB RAM",
+            "model": "MS-7817",
+            "videos": ["Intel Corporation 4th Generation Core Processor Family Integrated Graphics Controller "],
+            "storage": ["1 TB disk"],
+            "manufacturer": "MSI",
+            "serial_number": "To be filled by O.E.M."
+        }
+    },
+    {
+        "success": false,
+        "scraping": false,
+        "client_id": 0,
+        "worker_id": null,
+        "data_source": 9,
+        "hardware_id": 112,
+        "hardware_data": {
+            "model": "HP 24yh",
+            "specs": {
+                "uuid": null,
+                "hostname": null,
+                "mac_address": null
+            },
+            "client_id": null,
+            "data_source": 9,
+            "hardware_id": 112,
+            "manufacturer": "Manufacturer",
+            "serial_number": "1CR91510JT",
+            "parent_hardware_id": 118
+        },
+        "matched_asset_exist": false,
+        "processed_hardware_data": {
+            "model": "HP 24yh",
+            "client_id": null,
+            "hardware_id": 112,
+            "manufacturer": "Manufacturer",
+            "serial_number": "1CR91510JT"
+        }
+    },
+    {
+        "scraping": false,
+        "client_id": 0,
+        "worker_id": null,
+        "data_source": 9,
+        "hardware_id": 4,
+        "hardware_data": {
+            "model": "Philips 196V4",
+            "specs": {
+                "uuid": null,
+                "hostname": null,
+                "mac_address": null
+            },
+            "client_id": null,
+            "data_source": 9,
+            "hardware_id": 4,
+            "manufacturer": "Philips",
+            "serial_number": "UK51235033896",
+            "parent_hardware_id": 62
+        },
+        "matched_asset_exist": false,
+        "processed_hardware_data": {
+            "model": "Philips 196V4",
+            "client_id": null,
+            "hardware_id": 4,
+            "manufacturer": "Philips",
+            "serial_number": "UK51235033896"
+        }
+    },
+    {
+        "scraping": false,
+        "client_id": 0,
+        "worker_id": null,
+        "data_source": 1,
+        "hardware_id": "98",
+        "hardware_data": {
+            "type": "notebook",
+            "model": "Acer One 14 Z8-415-A",
+            "specs": {
+                "cpus": null,
+                "uuid": "76936580-4832-11EE-BD0C-E493ED89F501",
+                "sounds": null,
+                "videos": null,
+                "hostname": "Tanisha",
+                "memories": null,
+                "storages": null,
+                "mac_address": "84:47:09:1E:30:1E"
+            },
+            "data_source": 1,
+            "hardware_id": "98",
+            "manufacturer": "Acer",
+            "serial_number": "UN599SI018335325AE0700"
+        },
+        "matched_asset_exist": false,
+        "processed_hardware_data": {
+            "model": "Acer One 14 Z8-415-A",
+            "manufacturer": "Acer",
+            "serial_number": "UN599SI018335325AE0700"
+        }
+    },
+    {
+        "scraping": false,
+        "hardware_data": {
+            "type": "other",
+            "model": "t3a.medium",
+            "specs": {
+                "cpus": [
+                    {
+                        "name": "AMD EPYC 7571",
+                        "cores": 1,
+                        "speed": "2200",
+                        "cache_size": "16384",
+                        "data_width": 64,
+                        "architecture": "x86_64",
+                        "logical_cpus": 2
+                    }
+                ],
+                "uuid": "EC20185B-A10D-8AB4-4DF1-A1B8FA106EDA",
+                "sounds": null,
+                "videos": [
+                    {
+                        "name": "Microsoft Basic Display Adapter",
+                        "memory": "0",
+                        "chipset": "SeaBIOS VBE(C) 2011",
+                        "resolution": "1024 x 768"
+                    }
+                ],
+                "hostname": "EC2AMAZ-0SCNAGV",
+                "memories": [
+                    {
+                        "type": "Unknown",
+                        "purpose": "System Memory",
+                        "capacity": 4096,
+                        "description": "Physical Memory Array (Unknown ECC)",
+                        "serial_number": ""
+                    }
+                ],
+                "storages": [
+                    {
+                        "name": "NVMe Amazon Elastic B SCSI Disk Device",
+                        "type": "Fixed hard disk media",
+                        "model": "//./PHYSICALDRIVE0",
+                        "firmware": "1.0",
+                        "disk_size": 262138,
+                        "manufacturer": "(Standard disk drives)",
+                        "serial_number": "vol0c0eb448d44bf91e9_00000001."
+                    }
+                ],
+                "mac_address": "02:48:4A:97:EF:3B"
+            },
+            "data_source": 1,
+            "hardware_id": 294,
+            "manufacturer": "Amazon",
+            "serial_number": "ec20185b-a10d-8ab4-4df1-a1b8fa106eda"
+        },
+        "processed_hardware_data": {
+            "cpu": ["AMD EPYC 7571"],
+            "ram": "4 GB RAM",
+            "model": "t3a.medium",
+            "videos": ["Microsoft Basic Display Adapter"],
+            "storage": ["256 GB NVMe"],
+            "manufacturer": "Amazon",
+            "serial_number": "ec20185b-a10d-8ab4-4df1-a1b8fa106eda"
+        }
+    },
+    {
+        "scraping": false,
+        "hardware_data": {
+            "type": "desktop",
+            "model": "H610M H V2 DDR4",
+            "specs": {
+                "cpus": [
+                    {
+                        "name": "12th Gen Intel(R) Core(TM) i5-12400",
+                        "cores": 6,
+                        "speed": "",
+                        "cache_size": "7.5 MiB",
+                        "data_width": 64,
+                        "architecture": "x86_64",
+                        "logical_cpus": 12
+                    }
+                ],
+                "uuid": "03560274-043c-057a-7d06-5d0700080009",
+                "sounds": [
+                    {
+                        "name": "Audio device",
+                        "description": "rev 11",
+                        "manufacturer": "Intel Corporation Device 7ad0 "
+                    }
+                ],
+                "videos": [
+                    {
+                        "name": "Intel Corporation Device 4692 ",
+                        "memory": "256",
+                        "chipset": "VGA compatible controller",
+                        "resolution": ""
+                    }
+                ],
+                "hostname": "Bhavneet",
+                "memories": [
+                    {
+                        "type": "DDR4",
+                        "purpose": "",
+                        "capacity": 16384,
+                        "description": "Synchronous",
+                        "serial_number": "E7758723"
+                    },
+                    {
+                        "type": "Unknown",
+                        "purpose": "",
+                        "capacity": 0,
+                        "description": "None",
+                        "serial_number": "Not Specified"
+                    }
+                ],
+                "storages": [
+                    {
+                        "name": "nvme0n1",
+                        "type": "disk",
+                        "model": "",
+                        "firmware": "",
+                        "disk_size": 500108,
+                        "manufacturer": "",
+                        "serial_number": ""
+                    }
+                ],
+                "mac_address": "74:56:3c:7a:7d:5d"
+            },
+            "data_source": 1,
+            "hardware_id": 306,
+            "manufacturer": "GIGABYTE",
+            "serial_number": "Default string"
+        },
+        "processed_hardware_data": {
+            "cpu": ["12th Gen Intel(R) Core(TM) i5-12400"],
+            "ram": "16 GB RAM",
+            "model": "H610M H V2 DDR4",
+            "videos": ["Intel Corporation Device 4692 "],
+            "storage": ["500 GB disk"],
+            "manufacturer": "GIGABYTE",
+            "serial_number": "Default string"
+        }
+    },
+    {
+        "scraping": false,
+        "client_id": 23,
+        "worker_id": null,
+        "data_source": 9,
+        "hardware_id": 99,
+        "switch_mode": false,
+        "hardware_data": {
+            "model": "",
+            "specs": {
+                "uuid": null,
+                "hostname": null,
+                "mac_address": null
+            },
+            "client_id": 23,
+            "data_source": 9,
+            "hardware_id": 99,
+            "manufacturer": "ASUS",
+            "serial_number": "",
+            "parent_hardware_id": 93
+        },
+        "matched_asset_exist": false,
+        "processed_hardware_data": {
+            "model": "",
+            "client_id": 23,
+            "hardware_id": 99,
+            "manufacturer": "ASUS",
+            "serial_number": ""
+        }
+    },
+    {
+        "scraping": false,
+        "client_id": 23,
+        "worker_id": null,
+        "data_source": 9,
+        "hardware_id": 1306,
+        "switch_mode": true,
+        "hardware_data": {
+            "model": "S24R35xFZ",
+            "specs": {
+                "uuid": null,
+                "hostname": null,
+                "mac_address": null
+            },
+            "client_id": 23,
+            "data_source": 9,
+            "hardware_id": 1306,
+            "manufacturer": "Samsung",
+            "serial_number": "H4CW501012L",
+            "parent_hardware_id": 227
+        },
+        "matched_asset_exist": false,
+        "processed_hardware_data": {
+            "model": "S24R35xFZ",
+            "client_id": 23,
+            "hardware_id": 1306,
+            "manufacturer": "Samsung",
+            "serial_number": "H4CW501012L"
+        }
+    },
+    {
+        "success": false,
+        "scraping": false,
+        "client_id": 28,
+        "worker_id": null,
+        "data_source": 9,
+        "hardware_id": 1104,
+        "hardware_data": {
+            "model": "2460",
+            "specs": {
+                "uuid": null,
+                "hostname": null,
+                "mac_address": null
+            },
+            "client_id": 28,
+            "data_source": 9,
+            "hardware_id": 1104,
+            "manufacturer": "AOC",
+            "serial_number": "C54E6BA000461",
+            "parent_hardware_id": 534
+        },
+        "matched_asset_exist": false,
+        "processed_hardware_data": {
+            "model": "2460",
+            "client_id": 28,
+            "hardware_id": 1104,
+            "manufacturer": "AOC",
+            "serial_number": "C54E6BA000461"
+        }
+    },
+    {
+        "success": false,
+        "scraping": false,
+        "client_id": 28,
+        "worker_id": null,
+        "data_source": 9,
+        "hardware_id": 2018,
+        "switch_mode": true,
+        "hardware_data": {
+            "model": "ASUS VT229",
+            "specs": {
+                "uuid": null,
+                "hostname": null,
+                "mac_address": null
+            },
+            "client_id": 28,
+            "data_source": 9,
+            "hardware_id": 2018,
+            "manufacturer": "Unknown manufacturer code AUS",
+            "serial_number": "RBLMTF016978",
+            "parent_hardware_id": 417
+        },
+        "matched_asset_exist": false,
+        "processed_hardware_data": {
+            "model": "ASUS VT229",
+            "client_id": 28,
+            "hardware_id": 2018,
+            "manufacturer": "Unknown manufacturer code AUS",
+            "serial_number": "RBLMTF016978"
+        }
+    },
+    {
+        "scraping": false,
+        "client_id": 28,
+        "worker_id": null,
+        "data_source": 9,
+        "hardware_id": 2442,
+        "switch_mode": true,
+        "hardware_data": {
+            "model": "Sceptre F27",
+            "specs": {
+                "uuid": null,
+                "hostname": null,
+                "mac_address": null
+            },
+            "client_id": 28,
+            "data_source": 9,
+            "hardware_id": 2442,
+            "manufacturer": "Sceptre",
+            "serial_number": "0000000000001",
+            "parent_hardware_id": 658
+        },
+        "matched_asset_exist": false,
+        "processed_hardware_data": {
+            "model": "Sceptre F27",
+            "client_id": 28,
+            "hardware_id": 2442,
+            "manufacturer": "Sceptre",
+            "serial_number": "0000000000001"
+        }
+    },
+    {
+        "scraping": false,
+        "client_id": 114,
+        "worker_id": 1915,
+        "data_source": 17,
+        "hardware_id": "980192044",
+        "switch_mode": false,
+        "hardware_data": {
+            "cpu": "qemu virtual cpu version 2.5+",
+            "ram": "8",
+            "tag": "qacompany52920804-114-467",
+            "uuid": "806f969d-23fc-45e9-aedc-cbf656fb2b98",
+            "cores": "4",
+            "model": "Standard PC (Q35 + ICH9, 2009)",
+            "specs": {
+                "uuid": "806f969d-23fc-45e9-aedc-cbf656fb2b98",
+                "hostname": "dcg-sql-01.sric.local",
+                "mac_address": "bc:24:11:00:aa:b4",
+                "serial_number": null
+            },
+            "client_id": 114,
+            "host_name": "dcg-sql-01.sric.local",
+            "ipaddress": "10.101.240.135",
+            "worker_id": 1915,
+            "subnetmask": "255.255.255.0",
+            "adaptername": "intel(r) pro/1000 mt network connection",
+            "client_name": "qacompany18531008",
+            "data_source": 17,
+            "hardware_id": "980192044",
+            "mac_address": "bc:24:11:00:aa:b4",
+            "item_tech_id": 50511,
+            "manufacturer": "QEMU",
+            "serial_number": null,
+            "smbiosversion": "rel-1.16.2-0-gea1b7a073390-prebuilt.qemu.org",
+            "physical_memory": "100",
+            "logicalprocessors": "4"
+        },
+        "matched_asset_exist": false,
+        "processed_hardware_data": {
+            "client_id": 114,
+            "device_id": "980192044",
+            "host_name": "dcg-sql-01.sric.local",
+            "ipaddress": "10.101.240.135",
+            "TechTypeId": [1, 5],
+            "subnetmask": "255.255.255.0",
+            "client_name": "qacompany18531008",
+            "hardware_id": "980192044",
+            "mac_address": "bc:24:11:00:aa:b4",
+            "manufacturer": "QEMU",
+            "serial_number": null,
+            "product_features": {
+                "Ram": "8 GB",
+                "Harddrive": "100 GB",
+                "Processor": "qemu virtual cpu version 2.5+"
+            },
+            "product_description": "Standard PC (Q35 + ICH9, 2009)"
+        }
+    },
+    {
+        "scraping": false,
+        "client_id": 114,
+        "worker_id": 1915,
+        "data_source": 17,
+        "hardware_id": "980195811",
+        "switch_mode": false,
+        "hardware_data": {
+            "cpu": "intel(r) celeron(r) g5905 cpu @ 3.50ghz",
+            "ram": "7.62",
+            "tag": "qacompany52920804-114-518",
+            "uuid": "da59a1a8-8df8-0000-0000-000000000000",
+            "cores": "2",
+            "model": "H510M-ITX/ac",
+            "specs": {
+                "uuid": "da59a1a8-8df8-0000-0000-000000000000",
+                "hostname": "kpdb-main-01",
+                "mac_address": "a8:a1:59:da:f8:8d",
+                "serial_number": "To Be Filled By O.E.M."
+            },
+            "client_id": 114,
+            "host_name": "kpdb-main-01",
+            "ipaddress": "10.209.7.184",
+            "worker_id": 1915,
+            "subnetmask": "255.255.255.0",
+            "adaptername": "intel(r) ethernet connection (14) i219-v",
+            "client_name": "qacompany18531008",
+            "data_source": 17,
+            "hardware_id": "980195811",
+            "mac_address": "a8:a1:59:da:f8:8d",
+            "item_tech_id": 50511,
+            "manufacturer": "To-Increase",
+            "serial_number": "To Be Filled By O.E.M.",
+            "smbiosversion": "p2.00",
+            "physical_memory": "232.88",
+            "logicalprocessors": "2"
+        },
+        "matched_asset_exist": false,
+        "processed_hardware_data": {
+            "client_id": 114,
+            "device_id": "980195811",
+            "host_name": "kpdb-main-01",
+            "ipaddress": "10.209.7.184",
+            "TechTypeId": [1, 5],
+            "subnetmask": "255.255.255.0",
+            "client_name": "qacompany18531008",
+            "hardware_id": "980195811",
+            "mac_address": "a8:a1:59:da:f8:8d",
+            "manufacturer": "To-Increase",
+            "serial_number": "To Be Filled By O.E.M.",
+            "product_features": {
+                "Ram": "7.62 GB",
+                "Harddrive": "232.88 GB",
+                "Processor": "intel(r) celeron(r) g5905 cpu @ 3.50ghz"
+            },
+            "product_description": "H510M-ITX/ac"
+        }
+    },
+    {
+        "scraping": false,
+        "client_id": 114,
+        "worker_id": 1915,
+        "data_source": 17,
+        "hardware_id": "980195783",
+        "switch_mode": false,
+        "hardware_data": {
+            "cpu": "[\"intel(r) xeon(r) cpu e5-2660 v3 @ 2.60ghz\", \"intel(r) xeon(r) cpu e5-2660 v3 @ 2.60ghz\"]",
+            "ram": "8",
+            "tag": "qacompany52920804-114-442",
+            "uuid": "fe692642-9a3d-426b-a6a4-78f8c74b29d0",
+            "cores": "[1, 1]",
+            "model": "VMware Virtual Platform",
+            "specs": {
+                "uuid": "fe692642-9a3d-426b-a6a4-78f8c74b29d0",
+                "hostname": "sckp-ps-01",
+                "mac_address": "00:50:56:a6:ca:d1",
+                "serial_number": "VMware-42 26 69 fe 3d 9a 6b 42-a6 a4 78 f8 c7 4b 29 d0"
+            },
+            "client_id": 114,
+            "host_name": "sckp-ps-01",
+            "ipaddress": "10.209.5.11",
+            "worker_id": 1915,
+            "subnetmask": "255.255.255.0",
+            "adaptername": "intel(r) 82574l gigabit network connection",
+            "client_name": "qacompany18531008",
+            "data_source": 17,
+            "hardware_id": "980195783",
+            "mac_address": "00:50:56:a6:ca:d1",
+            "item_tech_id": 50511,
+            "manufacturer": "VMware",
+            "serial_number": "VMware-42 26 69 fe 3d 9a 6b 42-a6 a4 78 f8 c7 4b 29 d0",
+            "smbiosversion": "6.00",
+            "physical_memory": "60",
+            "logicalprocessors": "[1, 1]"
+        },
+        "matched_asset_exist": false,
+        "processed_hardware_data": {
+            "client_id": 114,
+            "device_id": "980195783",
+            "host_name": "sckp-ps-01",
+            "ipaddress": "10.209.5.11",
+            "TechTypeId": [1, 5],
+            "subnetmask": "255.255.255.0",
+            "client_name": "qacompany18531008",
+            "hardware_id": "980195783",
+            "mac_address": "00:50:56:a6:ca:d1",
+            "manufacturer": "VMware",
+            "serial_number": "VMware-42 26 69 fe 3d 9a 6b 42-a6 a4 78 f8 c7 4b 29 d0",
+            "product_features": {
+                "Ram": "8 GB",
+                "Harddrive": "60 GB",
+                "Processor": "[\"intel(r) xeon(r) cpu e5-2660 v3 @ 2.60ghz\", \"intel(r) xeon(r) cpu e5-2660 v3 @ 2.60ghz\"]"
+            },
+            "product_description": "VMware Virtual Platform"
+        }
+    },
+    {
+        "scraping": false,
+        "client_id": 114,
+        "worker_id": 1915,
+        "data_source": 17,
+        "hardware_id": "980191807",
+        "switch_mode": false,
+        "hardware_data": {
+            "cpu": "intel(r) core(tm) i5-5250u cpu @ 1.60ghz",
+            "ram": "7.89",
+            "tag": "unknowntag",
+            "uuid": "c4d1b800-7277-11e3-8b2f-b8aeed78950b",
+            "cores": "2",
+            "model": "",
+            "specs": {
+                "uuid": "c4d1b800-7277-11e3-8b2f-b8aeed78950b",
+                "hostname": "kpdb-dtp-08.sric.local",
+                "mac_address": "b8:ae:ed:78:95:0b",
+                "serial_number": ""
+            },
+            "client_id": 114,
+            "host_name": "kpdb-dtp-08.sric.local",
+            "ipaddress": "10.209.7.193",
+            "worker_id": 1915,
+            "subnetmask": "255.255.255.0",
+            "adaptername": "intel(r) ethernet connection (3) i218-v",
+            "client_name": "qacompany18531008",
+            "data_source": 17,
+            "hardware_id": "980191807",
+            "mac_address": "b8:ae:ed:78:95:0b",
+            "item_tech_id": 50511,
+            "manufacturer": "",
+            "serial_number": "",
+            "smbiosversion": "rybdwi35.86a.0377.2018.1226.1750",
+            "physical_memory": "232.88",
+            "logicalprocessors": "4"
+        },
+        "matched_asset_exist": false,
+        "processed_hardware_data": {
+            "client_id": 114,
+            "device_id": "980191807",
+            "host_name": "kpdb-dtp-08.sric.local",
+            "ipaddress": "10.209.7.193",
+            "TechTypeId": [1, 5],
+            "subnetmask": "255.255.255.0",
+            "client_name": "qacompany18531008",
+            "hardware_id": "980191807",
+            "mac_address": "b8:ae:ed:78:95:0b",
+            "manufacturer": "",
+            "serial_number": "",
+            "product_features": {
+                "Ram": "7.89 GB",
+                "Harddrive": "232.88 GB",
+                "Processor": "intel(r) core(tm) i5-5250u cpu @ 1.60ghz"
+            },
+            "product_description": ""
+        }
+    },
+    {
+        "success": false,
+        "scraping": false,
+        "client_id": 114,
+        "worker_id": 1915,
+        "data_source": 17,
+        "hardware_id": "980191882",
+        "switch_mode": false,
+        "scraped_data": {
+            "product": {
+                "GPU": "Radeon Vega GFX",
+                "RAM": "12GB",
+                "Wifi": "AC 1x1",
+                "Storage": "256GB M.2 2280 BG3 PCIe Gen3x2 value",
+                "Bluetooth": "BT 4.2",
+                "Interface": "Interface Board",
+                "Processor": "Ryzen 5 3400G",
+                "serial_no": "2MO9354Y0V",
+                "Description": "HP Desktop",
+                "Product Code": "6YQ59AA",
+                "Operating System": "Windows 10 Home",
+                "Resolution Supported": null
+            }
+        },
+        "hardware_data": {
+            "cpu": "amd ryzen 5 3400g with radeon vega graphics",
+            "ram": "9.91",
+            "tag": "unknowntag",
+            "uuid": "1e909d96-0dab-9056-9f9b-9f5d1d03bd3d",
+            "cores": "4",
+            "model": "HP Desktop M01-F0xxx",
+            "specs": {
+                "uuid": "1e909d96-0dab-9056-9f9b-9f5d1d03bd3d",
+                "hostname": "mel-dtp-03.sric.local",
+                "mac_address": "84:a9:3e:73:20:41",
+                "serial_number": "2MO9354Y0V"
+            },
+            "client_id": 114,
+            "host_name": "mel-dtp-03.sric.local",
+            "ipaddress": "10.100.129.242",
+            "worker_id": 1915,
+            "subnetmask": "255.255.255.0",
+            "adaptername": "realtek pcie gbe family controller",
+            "client_name": "qacompany18531008",
+            "data_source": 17,
+            "hardware_id": "980191882",
+            "mac_address": "84:a9:3e:73:20:41",
+            "item_tech_id": 50511,
+            "manufacturer": "HP",
+            "serial_number": "2MO9354Y0V",
+            "smbiosversion": "f.22",
+            "physical_memory": "238.47",
+            "logicalprocessors": "8"
+        },
+        "matched_asset_exist": false,
+        "processed_hardware_data": {
+            "client_id": 114,
+            "device_id": "980191882",
+            "host_name": "mel-dtp-03.sric.local",
+            "ipaddress": "10.100.129.242",
+            "TechTypeId": [1, 5],
+            "subnetmask": "255.255.255.0",
+            "client_name": "qacompany18531008",
+            "hardware_id": "980191882",
+            "mac_address": "84:a9:3e:73:20:41",
+            "manufacturer": "HP",
+            "product_code": "6YQ59AA",
+            "serial_number": "2MO9354Y0V",
+            "product_features": {
+                "Ram": "9.91 GB",
+                "Harddrive": "238.47 GB",
+                "Processor": "amd ryzen 5 3400g with radeon vega graphics"
+            },
+            "product_description": "HP Desktop M01-F0xxx"
+        }
+    },
+    {
+        "scraping": false,
+        "client_id": 114,
+        "worker_id": 1915,
+        "data_source": 17,
+        "hardware_id": "980191883",
+        "switch_mode": false,
+        "hardware_data": {
+            "cpu": "intel(r) core(tm) i5-8500 cpu @ 3.00ghz",
+            "ram": "7.89",
+            "tag": "unknowntag",
+            "uuid": "1e909d96-0dab-9056-9f9b-9f5d1d03bd3d",
+            "cores": "6",
+            "model": "HP Desktop M01-F0xxx",
+            "specs": {
+                "uuid": "1e909d96-0dab-9056-9f9b-9f5d1d03bd3d",
+                "hostname": "mel-dtp-04.sric.local",
+                "mac_address": "84:a9:3e:73:20:41",
+                "serial_number": "2MO9354Y0V"
+            },
+            "client_id": 114,
+            "host_name": "mel-dtp-04.sric.local",
+            "ipaddress": "10.100.129.243",
+            "worker_id": 1915,
+            "subnetmask": "255.255.255.0",
+            "adaptername": "realtek pcie gbe family controller",
+            "client_name": "qacompany18531008",
+            "data_source": 17,
+            "hardware_id": "980191883",
+            "mac_address": "84:a9:3e:73:20:41",
+            "item_tech_id": 50511,
+            "manufacturer": "HP",
+            "serial_number": "2MO9354Y0V",
+            "smbiosversion": "f.22",
+            "physical_memory": "238.47",
+            "logicalprocessors": "6"
+        },
+        "matched_asset_exist": false,
+        "processed_hardware_data": {
+            "client_id": 114,
+            "device_id": "980191883",
+            "host_name": "mel-dtp-04.sric.local",
+            "ipaddress": "10.100.129.243",
+            "TechTypeId": [1, 5],
+            "subnetmask": "255.255.255.0",
+            "client_name": "qacompany18531008",
+            "hardware_id": "980191883",
+            "mac_address": "84:a9:3e:73:20:41",
+            "manufacturer": "HP",
+            "serial_number": "2MO9354Y0V",
+            "product_features": {
+                "Ram": "7.89 GB",
+                "Harddrive": "238.47 GB",
+                "Processor": "intel(r) core(tm) i5-8500 cpu @ 3.00ghz"
+            },
+            "product_description": "HP Desktop M01-F0xxx"
+        }
+    },
+    {
+        "scraping": false,
+        "client_id": 114,
+        "worker_id": 1915,
+        "data_source": 17,
+        "hardware_id": "980191884",
+        "switch_mode": false,
+        "hardware_data": {
+            "cpu": "intel(r) core(tm) i5-8500 cpu @ 3.00ghz",
+            "ram": "7.89",
+            "tag": "unknowntag",
+            "uuid": "1e909d96-0dab-9056-9f9b-9f5d1d03bd3d",
+            "cores": "6",
+            "model": "HP Desktop M01-F0xxx",
+            "specs": {
+                "uuid": "1e909d96-0dab-9056-9f9b-9f5d1d03bd3d",
+                "hostname": "mel-dtp-05.sric.local",
+                "mac_address": "84:a9:3e:73:20:41",
+                "serial_number": "2MO9354Y0V"
+            },
+            "client_id": 114,
+            "host_name": "mel-dtp-05.sric.local",
+            "ipaddress": "10.100.129.244",
+            "worker_id": 1915,
+            "subnetmask": "255.255.255.0",
+            "adaptername": "realtek pcie gbe family controller",
+            "client_name": "qacompany18531008",
+            "data_source": 17,
+            "hardware_id": "980191884",
+            "mac_address": "84:a9:3e:73:20:41",
+            "item_tech_id": 50511,
+            "manufacturer": "HP",
+            "serial_number": "2MO9354Y0V",
+            "smbiosversion": "f.22",
+            "physical_memory": "238.47",
+            "logicalprocessors": "6"
+        },
+        "matched_asset_exist": false,
+        "processed_hardware_data": {
+            "client_id": 114,
+            "device_id": "980191884",
+            "host_name": "mel-dtp-05.sric.local",
+            "ipaddress": "10.100.129.244",
+            "TechTypeId": [1, 5],
+            "subnetmask": "255.255.255.0",
+            "client_name": "qacompany18531008",
+            "hardware_id": "980191884",
+            "mac_address": "84:a9:3e:73:20:41",
+            "manufacturer": "HP",
+            "serial_number": "2MO9354Y0V",
+            "product_features": {
+                "Ram": "7.89 GB",
+                "Harddrive": "238.47 GB",
+                "Processor": "intel(r) core(tm) i5-8500 cpu @ 3.00ghz"
+            },
+            "product_description": "HP Desktop M01-F0xxx"
+        }
+    },
+    {
+        "scraping": false,
+        "client_id": 114,
+        "worker_id": 1915,
+        "data_source": 17,
+        "hardware_id": "980191885",
+        "switch_mode": false,
+        "hardware_data": {
+            "cpu": "intel(r) core(tm) i5-8500 cpu @ 3.00ghz",
+            "ram": "7.89",
+            "tag": "unknowntag",
+            "uuid": "1e909d96-0dab-9056-9f9b-9f5d1d03bd3d",
+            "cores": "6",
+            "model": "HP Desktop M01-F0xxx",
+            "specs": {
+                "uuid": "1e909d96-0dab-9056-9f9b-9f5d1d03bd3d",
+                "hostname": "mel-dtp-06.sric.local",
+                "mac_address": "84:a9:3e:73:20:41",
+                "serial_number": "2MO9354Y0V"
+            },
+            "client_id": 114,
+            "host_name": "mel-dtp-06.sric.local",
+            "ipaddress": "10.100.129.245",
+            "worker_id": 1915,
+            "subnetmask": "255.255.255.0",
+            "adaptername": "realtek pcie gbe family controller",
+            "client_name": "qacompany18531008",
+            "data_source": 17,
+            "hardware_id": "980191885",
+            "mac_address": "84:a9:3e:73:20:41",
+            "item_tech_id": 50511,
+            "manufacturer": "HP",
+            "serial_number": "2MO9354Y0V",
+            "smbiosversion": "f.22",
+            "physical_memory": "238.47",
+            "logicalprocessors": "6"
+        },
+        "matched_asset_exist": false,
+        "processed_hardware_data": {
+            "client_id": 114,
+            "device_id": "980191885",
+            "host_name": "mel-dtp-06.sric.local",
+            "ipaddress": "10.100.129.245",
+            "TechTypeId": [1, 5],
+            "subnetmask": "255.255.255.0",
+            "client_name": "qacompany18531008",
+            "hardware_id": "980191885",
+            "mac_address": "84:a9:3e:73:20:41",
+            "manufacturer": "HP",
+            "serial_number": "2MO9354Y0V",
+            "product_features": {
+                "Ram": "7.89 GB",
+                "Harddrive": "238.47 GB",
+                "Processor": "intel(r) core(tm) i5-8500 cpu @ 3.00ghz"
+            },
+            "product_description": "HP Desktop M01-F0xxx"
+        }
+    },
+    {
+        "scraping": false,
+        "client_id": 114,
+        "worker_id": 1915,
+        "data_source": 17,
+        "hardware_id": "980191886",
+        "switch_mode": false,
+        "hardware_data": {
+            "cpu": "intel(r) core(tm) i5-8500 cpu @ 3.00ghz",
+            "ram": "7.89",
+            "tag": "unknowntag",
+            "uuid": "1e909d96-0dab-9056-9f9b-9f5d1d03bd3d",
+            "cores": "6",
+            "model": "HP Desktop M01-F0xxx",
+            "specs": {
+                "uuid": "1e909d96-0dab-9056-9f9b-9f5d1d03bd3d",
+                "hostname": "mel-dtp-07.sric.local",
+                "mac_address": "84:a9:3e:73:20:41",
+                "serial_number": "2MO9354Y0V"
+            },
+            "client_id": 114,
+            "host_name": "mel-dtp-07.sric.local",
+            "ipaddress": "10.100.129.246",
+            "worker_id": 1915,
+            "subnetmask": "255.255.255.0",
+            "adaptername": "realtek pcie gbe family controller",
+            "client_name": "qacompany18531008",
+            "data_source": 17,
+            "hardware_id": "980191886",
+            "mac_address": "84:a9:3e:73:20:41",
+            "item_tech_id": 50511,
+            "manufacturer": "HP",
+            "serial_number": "2MO9354Y0V",
+            "smbiosversion": "f.22",
+            "physical_memory": "238.47",
+            "logicalprocessors": "6"
+        },
+        "matched_asset_exist": false,
+        "processed_hardware_data": {
+            "client_id": 114,
+            "device_id": "980191886",
+            "host_name": "mel-dtp-07.sric.local",
+            "ipaddress": "10.100.129.246",
+            "TechTypeId": [1, 5],
+            "subnetmask": "255.255.255.0",
+            "client_name": "qacompany18531008",
+            "hardware_id": "980191886",
+            "mac_address": "84:a9:3e:73:20:41",
+            "manufacturer": "HP",
+            "serial_number": "2MO9354Y0V",
+            "product_features": {
+                "Ram": "7.89 GB",
+                "Harddrive": "238.47 GB",
+                "Processor": "intel(r) core(tm) i5-8500 cpu @ 3.00ghz"
+            },
+            "product_description": "HP Desktop M01-F0xxx"
+        }
+    },
+    {
+        "scraping": false,
+        "client_id": 114,
+        "worker_id": 1915,
+        "data_source": 17,
+        "hardware_id": "980191887",
+        "switch_mode": false,
+        "hardware_data": {
+            "cpu": "intel(r) core(tm) i5-8500 cpu @ 3.00ghz",
+            "ram": "7.89",
+            "tag": "unknowntag",
+            "uuid": "1e909d96-0dab-9056-9f9b-9f5d1d03bd3d",
+            "cores": "6",
+            "model": "HP Desktop M01-F0xxx",
+            "specs": {
+                "uuid": "1e909d96-0dab-9056-9f9b-9f5d1d03bd3d",
+                "hostname": "mel-dtp-08.sric.local",
+                "mac_address": "84:a9:3e:73:20:41",
+                "serial_number": "2MO9354Y0V"
+            },
+            "client_id": 114,
+            "host_name": "mel-dtp-08.sric.local",
+            "ipaddress": "10.100.129.247",
+            "worker_id": 1915,
+            "subnetmask": "255.255.255.0",
+            "adaptername": "realtek pcie gbe family controller",
+            "client_name": "qacompany18531008",
+            "data_source": 17,
+            "hardware_id": "980191887",
+            "mac_address": "84:a9:3e:73:20:41",
+            "item_tech_id": 50511,
+            "manufacturer": "HP",
+            "serial_number": "2MO9354Y0V",
+            "smbiosversion": "f.22",
+            "physical_memory": "238.47",
+            "logicalprocessors": "6"
+        },
+        "matched_asset_exist": false,
+        "processed_hardware_data": {
+            "client_id": 114,
+            "device_id": "980191887",
+            "host_name": "mel-dtp-08.sric.local",
+            "ipaddress": "10.100.129.247",
+            "TechTypeId": [1, 5],
+            "subnetmask": "255.255.255.0",
+            "client_name": "qacompany18531008",
+            "hardware_id": "980191887",
+            "mac_address": "84:a9:3e:73:20:41",
+            "manufacturer": "HP",
+            "serial_number": "2MO9354Y0V",
+            "product_features": {
+                "Ram": "7.89 GB",
+                "Harddrive": "238.47 GB",
+                "Processor": "intel(r) core(tm) i5-8500 cpu @ 3.00ghz"
+            },
+            "product_description": "HP Desktop M01-F0xxx"
+        }
+    },
+    {
+        "scraping": false,
+        "client_id": 114,
+        "worker_id": 1915,
+        "data_source": 17,
+        "hardware_id": "980191888",
+        "switch_mode": false,
+        "hardware_data": {
+            "cpu": "intel(r) core(tm) i5-8500 cpu @ 3.00ghz",
+            "ram": "7.89",
+            "tag": "unknowntag",
+            "uuid": "1e909d96-0dab-9056-9f9b-9f5d1d03bd3d",
+            "cores": "6",
+            "model": "HP Desktop M01-F0xxx",
+            "specs": {
+                "uuid": "1e909d96-0dab-9056-9f9b-9f5d1d03bd3d",
+                "hostname": "mel-dtp-09.sric.local",
+                "mac_address": "84:a9:3e:73:20:41",
+                "serial_number": "2MO9354Y0V"
+            },
+            "client_id": 114,
+            "host_name": "mel-dtp-09.sric.local",
+            "ipaddress": "10.100.129.248",
+            "worker_id": 1915,
+            "subnetmask": "255.255.255.0",
+            "adaptername": "realtek pcie gbe family controller",
+            "client_name": "qacompany18531008",
+            "data_source": 17,
+            "hardware_id": "980191888",
+            "mac_address": "84:a9:3e:73:20:41",
+            "item_tech_id": 50511,
+            "manufacturer": "HP",
+            "serial_number": "2MO9354Y0V",
+            "smbiosversion": "f.22",
+            "physical_memory": "238.47",
+            "logicalprocessors": "6"
+        },
+        "matched_asset_exist": false,
+        "processed_hardware_data": {
+            "client_id": 114,
+            "device_id": "980191888",
+            "host_name": "mel-dtp-09.sric.local",
+            "ipaddress": "10.100.129.248",
+            "TechTypeId": [1, 5],
+            "subnetmask": "255.255.255.0",
+            "client_name": "qacompany18531008",
+            "hardware_id": "980191888",
+            "mac_address": "84:a9:3e:73:20:41",
+            "manufacturer": "HP",
+            "serial_number": "2MO9354Y0V",
+            "product_features": {
+                "Ram": "7.89 GB",
+                "Harddrive": "238.47 GB",
+                "Processor": "intel(r) core(tm) i5-8500 cpu @ 3.00ghz"
+            },
+            "product_description": "HP Desktop M01-F0xxx"
+        }
+    },
+    {
+        "scraping": false,
+        "client_id": 114,
+        "worker_id": 1915,
+        "data_source": 17,
+        "hardware_id": "980191889",
+        "switch_mode": false,
+        "hardware_data": {
+            "cpu": "intel(r) core(tm) i5-8500 cpu @ 3.00ghz",
+            "ram": "7.89",
+            "tag": "unknowntag",
+            "uuid": "1e909d96-0dab-9056-9f9b-9f5d1d03bd3d",
+            "cores": "6",
+            "model": "HP Desktop M01-F0xxx",
+            "specs": {
+                "uuid": "1e909d96-0dab-9056-9f9b-9f5d1d03bd3d",
+                "hostname": "mel-dtp-10.sric.local",
+                "mac_address": "84:a9:3e:73:20:41",
+                "serial_number": "2MO9354Y0V"
+            },
+            "client_id": 114,
+            "host_name": "mel-dtp-10.sric.local",
+            "ipaddress": "10.100.129.249",
+            "worker_id": 1915,
+            "subnetmask": "255.255.255.0",
+            "adaptername": "realtek pcie gbe family controller",
+            "client_name": "qacompany18531008",
+            "data_source": 17,
+            "hardware_id": "980191889",
+            "mac_address": "84:a9:3e:73:20:41",
+            "item_tech_id": 50511,
+            "manufacturer": "HP",
+            "serial_number": "2MO9354Y0V",
+            "smbiosversion": "f.22",
+            "physical_memory": "238.47",
+            "logicalprocessors": "6"
+        },
+        "matched_asset_exist": false,
+        "processed_hardware_data": {
+            "client_id": 114,
+            "device_id": "980191889",
+            "host_name": "mel-dtp-10.sric.local",
+            "ipaddress": "10.100.129.249",
+            "TechTypeId": [1, 5],
+            "subnetmask": "255.255.255.0",
+            "client_name": "qacompany18531008",
+            "hardware_id": "980191889",
+            "mac_address": "84:a9:3e:73:20:41",
+            "manufacturer": "HP",
+            "serial_number": "2MO9354Y0V",
+            "product_features": {
+                "Ram": "7.89 GB",
+                "Harddrive": "238.47 GB",
+                "Processor": "intel(r) core(tm) i5-8500 cpu @ 3.00ghz"
+            },
+            "product_description": "HP Desktop M01-F0xxx"
+        }
+    }
+]

@@ -1,0 +1,20 @@
+{
+  "ProductDescription": "Philips 196V4 Monitor",
+  "Brand": {
+    "name": "Philips",
+    "address": "High Tech Campus 5, 5656 AE Eindhoven, Netherlands",
+    "website": "www.philips.com"
+  },
+  "ProductFeatures": {
+    "display": "19.5-inch (1600x900)",
+    "panel_type": "TN",
+    "refresh_rate": "60 Hz",
+    "response_time": "5 ms",
+    "brightness": "200 cd/m²",
+    "ports": "1x VGA (D-Sub)",
+    "model_number": "196V4",
+    "serial_number": "UK51235033896"
+  },
+  "TechGroup": "LED Monitors",
+  "TechType": "Hardware"
+}

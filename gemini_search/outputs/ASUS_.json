@@ -1,0 +1,20 @@
+{
+  "ProductDescription": "ASUS VivoBook 15 F512JA Laptop",
+  "Brand": {
+    "name": "ASUS",
+    "address": "No. 15, Li-Te Rd., Beitou, Taipei 112, Taiwan R.O.C.",
+    "website": "www.asus.com"
+  },
+  "ProductFeatures": {
+    "cpu": "Intel Core i5-1035G1",
+    "ram": "8GB DDR4",
+    "storage": "256GB NVMe SSD",
+    "display": "15.6-inch, Full HD (1920 x 1080), 60Hz",
+    "gpu": "Intel UHD Graphics",
+    "network": "Wi-Fi 5 (802.11ac), Bluetooth 4.1",
+    "model_number": "F512JA",
+    "serial_number": ""
+  },
+  "TechGroup": "Intel Notebooks",
+  "TechType": "Hardware"
+}
