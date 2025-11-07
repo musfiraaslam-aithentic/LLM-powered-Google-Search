@@ -1012,7 +1012,7 @@ for i, asset in enumerate(data, start=1):
     
     Product SKU/ID: 
     Product Description: 
-    Product Features (e.g., RAM, CPU, Display, Refresh Rate, etc.)
+    Product Features: Only list 5 features (e.g., RAM, CPU, Display, Refresh Rate, etc.)
 
     """
 
