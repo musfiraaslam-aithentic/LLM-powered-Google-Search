@@ -30,6 +30,14 @@ grounding_tool = types.Tool(
     google_search=types.GoogleSearch()
 )
 
+class ProductFeature(BaseModel):
+    PanelSizeInch: str
+    Resolution: str 
+    PanelType: str 
+    Brightness_cd_m2: str 
+    ContrastRatio: str 
+    RefreshRateHz: str 
+
 class AssetInfo(BaseModel):
     brand: str
     brand_country: str
@@ -37,7 +45,7 @@ class AssetInfo(BaseModel):
     tech_type: str
     product_id: str
     product_desc: str
-    product_features: List[str]
+    product_features: List[ProductFeature]
 
 # Configure generation with the grounding tool
 config = types.GenerateContentConfig(
