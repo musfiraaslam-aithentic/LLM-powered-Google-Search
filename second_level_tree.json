@@ -1,0 +1,926 @@
+{
+  "Antivirus": [],
+  "3D Design": [],
+  "Accounting": [],
+  "Animation": [],
+  "Arts & Culture": [],
+  "Browsers": [],
+  "Business / Economics / Legal": [],
+  "Business & Productivity Software": [],
+  "CAD/CAM Software": [],
+  "CD/DVD Authoring": [],
+  "Computer / Math / Logic": [],
+  "Computer Based Training": [],
+  "Converters": [],
+  "CRM Software": [],
+  "Data Analysis & Content Management": [],
+  "Databases & Tools": [],
+  "Desktop Publishing": [],
+  "Developer Tools": [],
+  "Document Management Software": [],
+  "E-commerce Software": [],
+  "Early Learning": [],
+  "eCommerce Solutions": [],
+  "Email Software": [],
+  "Encyclopedia": [],
+  "Fax Software": [],
+  "File Managers": [],
+  "File Transfer": [],
+  "Finance / Tax Preparation": [],
+  "Fonts & Font Tools": [],
+  "Foreign Languages & Translation": [],
+  "Game Utilities": [],
+  "GIS & Map Creation Software": [],
+  "GPS Software": [],
+  "Graphics & Photo Editing": [],
+  "Graphics & Publishing Software": [],
+  "Groupware": [],
+  "HelpDesk & Inventory Systems": [],
+  "HSE management": [],
+  "Human Resources": [],
+  "Instant Communication Software": [],
+  "Internet Utilities": [],
+  "IP Telephony": [],
+  "IP TV": [],
+  "Labeling / Barcode Software": [],
+  "Learning Management": [],
+  "Mac Software": {
+    "Audio & Video": [],
+    "Development Tools": [],
+    "Education & Reference": [],
+    "Home & Hobbies": []
+  },
+  "Map/Atlas/Travel": [],
+  "Mobile Device Management": [],
+  "Mobile Device Synchronization": [],
+  "Multimedia Players": [],
+  "Natural Sciences": [],
+  "Network & Enterprise Management": [],
+  "Network Appliance Software": [],
+  "Network Software": [],
+  "Network Utilities": [],
+  "OCR Software": [],
+  "Office Application Suites": [],
+  "Office Software": [],
+  "OS Suites": [],
+  "PC Maintenance": [],
+  "Photo / Video / Sound Libraries": [],
+  "Policy Management": [],
+  "Presentation": [],
+  "Print Management": [],
+  "Programming Languages": [],
+  "Project Management": [],
+  "Recovery / Backup Software": [],
+  "Religion": [],
+  "Remote Access Software": [],
+  "Scan Management": [],
+  "Schedule & Contact Management": [],
+  "Software Suites": [],
+  "Sound Editing & Recording": [],
+  "Spreadsheets": [],
+  "System Deployment & Migration Software": [],
+  "Unix / Linux Software": {
+    "Linux Software": [],
+    "Unix Software": []
+  },
+  "Utilities": [],
+  "Utilities Suites": [],
+  "Video Editing": [],
+  "Virtualization Software": [],
+  "Voice Recognition / Text-to-Speech": [],
+  "Web Conferencing Software": [],
+  "Web Design / Publishing": [],
+  "Web Development": [],
+  "Word Processing": [],
+  "Anti-Spam": [],
+  "Anti-Spyware": [],
+  "Antivirus & Security Software": [],
+  "Authentication Software": [],
+  "Encryption Software": [],
+  "Firewalls": [],
+  "Internet Filtering Software": [],
+  "Intrusion Detection/Prevention": [],
+  "Quad Processors & Video Multiplexers": [],
+  "Security Cameras": [],
+  "Security DVRs": [],
+  "Time Lapse VCR": [],
+  "Video Servers": [],
+  "Video Surveillance Accessories": [],
+  "Video Surveillance Solutions": [],
+  "Audio & Video Equipment Mounts": [],
+  "Audio & Video Switches": [],
+  "AV Blank Media": [],
+  "CD/DVD Wallets": [],
+  "Digital Signage Players": [],
+  "Headphones": {
+    "Earbud & In-Ear Headphones": [],
+    "Over-Ear & On-Ear Headphones": [],
+    "True Wireless Earbuds": [],
+    "Wired Headphones": [],
+    "Wireless Headphones": []
+  },
+  "Headphones Accessories": [],
+  "Headphones Cables": [],
+  "Headphones Carrying Cases": [],
+  "Home Audio Accessories": [],
+  "iPod Accessories": [],
+  "Microphones": {
+    "Conference Microphones": []
+  },
+  "Multi-Purpose Bags": [],
+  "Portable Player Accessories": [],
+  "Portable Player Cables": [],
+  "Portable Player Carrying Cases": [],
+  "Portable Player Power": [],
+  "Remote Controls": [],
+  "Signal Extenders": [],
+  "Telephone Accessories": [],
+  "Turntable Accessories": [],
+  "TV & Monitor Mounts": {
+    "Carts": [],
+    "Mounts": [],
+    "Stands": []
+  },
+  "TV & Radio Antennas": [],
+  "TV accessories": [],
+  "Video Converters": [],
+  "Video Editing Controllers, Mixers & Titlers": [],
+  "Wireless Audio & Video Sharing": [],
+  "Camcorder Accessories": {
+    "Camcorder Accessories & Accessory Kits": [],
+    "Camcorder Batteries": [],
+    "Camcorder Cases": [],
+    "Camcorder Cleaning": [],
+    "Camcorder Lenses": [],
+    "Camcorder Media": [],
+    "Camcorder Tripods": [],
+    "Camcorders Lens Filters": [],
+    "Camera Drones Accessories": [],
+    "Cleaning Media": []
+  },
+  "Camcorders": {
+    "Action Cameras": [],
+    "Analog Camcorders": [],
+    "Camera Drones": [],
+    "DVD Camcorders": [],
+    "HDD Camcorders": [],
+    "HDV Camcorders": [],
+    "High Definition Camcorders": [],
+    "Mini-DV Camcorders": [],
+    "Professional Camcorders": [],
+    "Virtual Reality Cameras": [],
+    "Flash Memory Camcorders": []
+  },
+  "Camera Accessories": {
+    "Camera Accessories & Accessory Kits": [],
+    "Camera Batteries": [],
+    "Camera Cases": [],
+    "Camera Cleaning": [],
+    "Camera Lens Filters": [],
+    "Camera Tripods": [],
+    "Flashes": []
+  },
+  "Camera Lenses": {
+    "35mm Camera Lenses": [],
+    "Digital Camera Lenses": [],
+    "Large Format Camera Lenses": [],
+    "Lens Converters & Adapters": [],
+    "Medium Camera Lenses": []
+  },
+  "Digital Cameras": {
+    "Compact Digital Cameras": {
+      "Long-Zoom Compact Cameras": []
+    },
+    "Digital Cameras For Kids": [],
+    "Mirrorless System Digital Cameras": [],
+    "SLR Digital Cameras": [],
+    "Underwater Digital Cameras": []
+  },
+  "Film Cameras": {
+    "APS Cameras": [],
+    "Compact Film Cameras": [],
+    "Rangefinder Film Cameras": [],
+    "SLR Film Cameras": [],
+    "Specialty Film Cameras": [],
+    "Underwater Film Cameras": []
+  },
+  "Car Accessories": [],
+  "Car Amplifiers & Equalizers": [],
+  "Car Audio": {
+    "Car Audio Amplifiers": [],
+    "Car Audio Crossovers": [],
+    "Car Cassette Player": [],
+    "Car CD Changers": [],
+    "Car CD Player": [],
+    "FM Transceivers": [],
+    "Satellite Car Radio": []
+  },
+  "Car Audio & Video Cables": [],
+  "Car Video": {
+    "Car DVD Changers": [],
+    "Car DVD Players": [],
+    "Car Monitors": []
+  },
+  "Telephones": {
+    "Answering Machines": [],
+    "Caller ID": [],
+    "Conference Phones": [],
+    "PBX Phones & Systems": [],
+    "Phone Accessories": [],
+    "Video & Audio Conferencing": [],
+    "Wired Telephones": [],
+    "Wireless Telephones": []
+  },
+  "Cellular Phones": {
+    "3G Phones": [],
+    "4G Phones": [],
+    "5G Phones": [],
+    "CDMA Phones": [],
+    "Cellular Phone Accessories": [],
+    "Cellular Phone Batteries & Power Adapters": [],
+    "Cellular Phone Cables": [],
+    "Cellular Phone Cases & Holsters": [],
+    "Cellular Phone Prepaid Cards": [],
+    "Cellular Phone Screen Protectors": [],
+    "D-AMPS & Analog Cellular Phones": [],
+    "Fixed Cellular Phones": [],
+    "GSM Phones": [],
+    "iDEN Phones": [],
+    "iPhone": [],
+    "VR Headsets for Smartphones": [],
+    "Watch Phones": []
+  },
+  "Two-Way Radios": {
+    "Long Range Two-Way Radios": [],
+    "Radio Scanners": [],
+    "Short Range Two-Way Radios": []
+  },
+  "Motherboards": {
+    "Motherboards (for AMD Processors)": [],
+    "Motherboards (for Intel Processors)": [],
+    "Server/Workstation Motherboards": []
+  },
+  "Storage Accessories": [],
+  "Assorted Accessories": [],
+  "Batteries": [],
+  "Books, Manuals & Periodicals": {
+    "Apple / Mac Books & Manuals": {
+      "Mac Hardware Books & Manuals": [],
+      "Mac Software Books & Manuals": []
+    },
+    "Hardware Books & Manuals": {
+      "Communication Equipment Books & Manuals": [],
+      "Computer Hardware Books & Manuals": [],
+      "Networking Hardware Books & Manuals": []
+    },
+    "Other Books & Manuals": {
+      "Management Books": [],
+      "Photo / Video Books & Manuals": [],
+      "Photo Art Books & Manuals": [],
+      "Picture Books": []
+    },
+    "Software Books & Manuals": {
+      "Creativity Software Books & Manuals": [],
+      "Education Software Books & Manuals": [],
+      "Entertainment Software Books & Manuals": [],
+      "Home / Lifestyle Software Books & Manuals": [],
+      "Internet - E-Commerce Books & Manuals": [],
+      "Internet - Web Design / Publishing Books & Manuals": [],
+      "Internet / Communication Software Books & Manuals": [],
+      "Network Security Books & Manuals": [],
+      "Networking Software Books & Manuals": [],
+      "Operating System Books & Manuals": [],
+      "Productivity Software Books & Manuals": [],
+      "Programming Tools Books & Manuals": [],
+      "Utilities Software Books & Manuals": []
+    }
+  },
+  "Cables": {
+    "Audio Cables": [],
+    "Cabling Accessories": [],
+    "FireWire Cables": [],
+    "HDMI Cables": [],
+    "Lightning Cables": [],
+    "Parallel Cables": [],
+    "Peripheral Cables": {
+      "Monitor Cables": [],
+      "Printer Cables": []
+    },
+    "Phone/Modem Cables": [],
+    "Power Cables": [],
+    "SCSI / IDE / Floppy Cables": [],
+    "Serial ATA Cables": [],
+    "Serial Cables": [],
+    "Specific Cables": [],
+    "USB Cables": [],
+    "USB Hubs": [],
+    "Video Cables": []
+  },
+  "Cleaning Accessories": [],
+  "Desktop Accessories": [],
+  "Docking Cradles": [],
+  "Game Controllers": {
+    "Gamepads": [],
+    "Joysticks": [],
+    "Motion Sensors": [],
+    "Wheels & Pedals": []
+  },
+  "Gamer Clothing": [],
+  "Handheld Accessories": [],
+  "KVM": {
+    "KVM Accessories": [],
+    "KVM Cables": [],
+    "KVM Console": [],
+    "KVM Over IP": [],
+    "KVM Switches": []
+  },
+  "Output Accessories": [],
+  "Power Protection Devices": {
+    "Power Enclosures": [],
+    "Rack-Mountable UPS": [],
+    "Stand-Alone UPS": [],
+    "Surge Suppressors & PDUs": [],
+    "UPS Batteries": []
+  },
+  "Security & Privacy Filters": [],
+  "Security Cables & Locks": [],
+  "Security Chips, Tokens & Smart Cards": [],
+  "Server Accessories": [],
+  "Spare Parts": [],
+  "System Cases": {
+    "ATX Cases": [],
+    "Extended ATX Cases": [],
+    "Micro ATX Cases": [],
+    "Mini ITX Cases": [],
+    "Specific Cases": []
+  },
+  "Cash Drawers": [],
+  "Controller Cards": {
+    "Storage Adapters": [],
+    "FireWire Adapters": [],
+    "Legacy Controller Cards": [],
+    "SmartCard Readers": [],
+    "USB Controllers": []
+  },
+  "Fans & Cooling Systems": {
+    "Computer Coolers": [],
+    "Computer Fans": [],
+    "Fanless Coolers & Heatsinks": [],
+    "Liquid Cooling Systems": []
+  },
+  "Keyboards & Mice": {
+    "Keyboards": {
+      "Bluetooth Keyboards": [],
+      "Corded Keyboards": [],
+      "Ergonomic Keyboards": [],
+      "Gaming Keyboards": [],
+      "Numeric Keypads": [],
+      "Wireless Keyboards": []
+    },
+    "Pointing Devices": [],
+    "Graphic Tablet & Whiteboard Accessories": [],
+    "Graphic Tablets & Whiteboards": [],
+    "Keyboard & Mouse Accessories": [],
+    "Keyboard & Mouse Bundles": [],
+    "Keyboard & Mouse Cables": [],
+    "Keyboard Accessories": [],
+    "Medical Keyboards & Mice": [],
+    "Mouse Accessories": [],
+    "Mice": {
+      "Bluetooth Mice": [],
+      "Corded Mice": [],
+      "Gaming Mice": [],
+      "Notebook Mice": []
+    }
+  },
+  "Projectors": {
+    "DLP Projectors": [],
+    "Laser Projectors": [],
+    "LCD Projectors": [],
+    "LCOS Projectors": [],
+    "Mountable Projectors": [],
+    "Projector Accessories": [],
+    "Projector Mounts": [],
+    "Short-Throw Projectors": [],
+    "Pocket Projectors": []
+  },
+  "Monitors": {
+    "Computer Monitors": {
+      "CRT Monitors": [],
+      "LCD Monitors": [],
+      "LED Monitors": []
+    },
+    "Digital Signage Displays": [],
+    "Medical Displays": [],
+    "Monitor Accessories": {
+      "Monitor Stands & Mounts": []
+    },
+    "Touchscreen Monitors": []
+  },
+  "Large Format Displays": {
+    "Large Format Display Accessories": [],
+    "LCD/LED Large Format Displays": [],
+    "Plasma Panels": []
+  },
+  "Amplifiers": [],
+  "AV Receivers": [],
+  "Blu-ray Players": [],
+  "CD Decks": [],
+  "Compact AV Systems": [],
+  "DVD / HDD Combos": [],
+  "DVD Players": {
+    "DVD Changers": [],
+    "DVD Decks": [],
+    "Portable DVD Players": [],
+    "Stationary DVD Players": [],
+    "Upscaling DVD Players": []
+  },
+  "DVD Recorders": [],
+  "DVD/VCR Combos": [],
+  "DVRs": [],
+  "Equalizers": [],
+  "HD DVD Players": [],
+  "Home Media Players": [],
+  "Network Audio Components": [],
+  "Radio Tuners": [],
+  "Satellite Radio": [],
+  "Tape Decks": [],
+  "Turntables": [],
+  "Upconverting DVD Players": [],
+  "Interactive Whiteboards": [],
+  "Projectors & Accessories": {
+    "Digital Projectors": [],
+    "Overhead Projector Supplies": [],
+    "Overhead Projectors": [],
+    "Projection Screens": [],
+    "Projector Trolleys & Stands": []
+  },
+  "Movies & TV Shows": [],
+  "Music": [],
+  "GPS": {
+    "Built-in Car Navigation": [],
+    "GPS Accessories": [],
+    "GPS Antennas": [],
+    "GPS Cables": [],
+    "GPS Modules": [],
+    "GPS Power Adapters & Batteries": [],
+    "GPS Watches": [],
+    "Portable GPS Receivers": {
+      "Car GPS": [],
+      "GPS For Aviation": [],
+      "GPS For Cycling": [],
+      "GPS For Hiking": [],
+      "GPS For Running": [],
+      "Marine GPS": [],
+      "Motorcycle GPS": []
+    }
+  },
+  "Marine Electronics": {
+    "Chartplotters": [],
+    "Fishfinders": [],
+    "Marine Accessories": [],
+    "Marine Cables": []
+  },
+  "Wearable Electronics": {
+    "Smart Glasses": [],
+    "Smart Tracking": [],
+    "Smart Watch Accessories": [],
+    "Smart Watches": []
+  },
+  "Network Adapters": {
+    "ATM Cards": [],
+    "Fiber Network Adapters": [],
+    "Gigabit Network Adapters": [],
+    "PC Card Network Adapters": [],
+    "PCI Network Adapters": [],
+    "PCI-E Network Adapters": [],
+    "PCI-X Network Adapters": [],
+    "USB Network Adapters": [],
+    "Voice / Data Modules": [],
+    "Wired Network Adapters": [],
+    "Wireless Network Adapters": [],
+    "10/100 Network Adapters": []
+  },
+  "Modems": {
+    "Cable Modems": [],
+    "Dial-Up Modems": [],
+    "DSL Modems": [],
+    "Modem Accessories": [],
+    "Modem Cables": [],
+    "Cellular Modems": [],
+    "ISDN Modems": [],
+    "Modem / NIC Combos": []
+  },
+  "Hubs & Switches": {
+    "10/100 Hubs & Switches": [],
+    "10/25/40/50/100 Gigabit Switches": [],
+    "Gigabit Hubs & Switches": [],
+    "InfiniBand Switches": [],
+    "Managed Switches": [],
+    "Network Hubs": [],
+    "Rack-Mountable Hubs & Switches": [],
+    "SOHO Hubs & Switches": [],
+    "Switch Expansion Modules": [],
+    "Unmanaged Switches": []
+  },
+  "Bridges & Routers": {
+    "Enterprise Bridges & Routers": [],
+    "SOHO Bridges & Routers": []
+  },
+  "Network Cabling": {
+    "Bulk Network Cables": [],
+    "Coaxial Cables": [],
+    "Crossover Cables": [],
+    "Fiber Cables": {
+      "Multimode Fiber Cables": [],
+      "Singlemode Fiber Cables": []
+    },
+    "Network Cabling Accessories": [],
+    "Patch Cables": [],
+    "Patch Panels": [],
+    "Special Network Cables": [],
+    "Tools & Tool Kits": [],
+    "Twisted Pair Cables": {
+      "Cat 5 Cables": [],
+      "Cat 5e Cables": [],
+      "Cat 6 Cables": [],
+      "Cat 6a Cables": [],
+      "Cat 7 Cables": [],
+      "Cat 8 Cables": []
+    }
+  },
+  "Network Security": {
+    "Firewall / VPN Appliances": [],
+    "Intrusion Detection / Prevention": [],
+    "IP Cameras": [],
+    "Network Security Appliances": [],
+    "Network Security Software": [],
+    "Specialized Network Devices": []
+  },
+  "Transceivers & Multiplexers": {
+    "Copper Transceivers": [],
+    "GBIC Transceivers": [],
+    "Multiplexers": [],
+    "Optical Transceivers": [],
+    "SFP Transceivers": []
+  },
+  "VoIP": {
+    "VoIP Gateways": [],
+    "VoIP Modules": [],
+    "VoIP Phones": [],
+    "VoIP Routers": [],
+    "VoIP Software": []
+  },
+  "Wireless": {
+    "Bluetooth Adapters": [],
+    "Network Antennas & Accessories": [],
+    "Power Over Ethernet Wireless": [],
+    "Wireless Access Points": [],
+    "Wireless Bridges": [],
+    "Wireless Controllers": [],
+    "Wireless IP Cameras": [],
+    "Wireless NICs": [],
+    "Wireless Routers": []
+  },
+  "Linux / Unix": {
+    "Linux": [],
+    "Unix": []
+  },
+  "MacOS": {
+    "MacOS Licenses & Media": [],
+    "Retail MacOS": []
+  },
+  "Microsoft Windows": {
+    "DOS": [],
+    "Retail Windows": [],
+    "Windows Licenses & Media": []
+  },
+  "Albums, Frames & Presentation": {
+    "Cutters & Trimmers": [],
+    "Laminators": [],
+    "Photo Albums": [],
+    "Photo Frames": [],
+    "Photo Storage": []
+  },
+  "Darkroom": {
+    "Darkroom Accessories": [],
+    "Developing & Processing Equipment": [],
+    "Enlargers & Components": [],
+    "Films": [],
+    "Photo Enlarging Paper": [],
+    "Photographic Chemistry": []
+  },
+  "Lighting & Studio": {
+    "Backgrounds": [],
+    "Light Control": [],
+    "Light Meters": [],
+    "Lighting Filters": [],
+    "Studio Light": [],
+    "Studio Mounting": []
+  },
+  "Boomboxes": [],
+  "Digital Voice Recorders": [],
+  "iPods": [],
+  "Microcassette Recorders": [],
+  "MP3 Players": [],
+  "Portable Cassette Players & Recorders": [],
+  "Portable CD Players": [],
+  "Portable DVD & Blu-ray Players": [],
+  "Portable MD Players": [],
+  "Portable Media Players": [],
+  "Portable Radios": [],
+  "Printers": {
+    "3D Printers": [],
+    "CD/DVD Printers": [],
+    "Color Laser Printers": [],
+    "Dot-Matrix Printers": [],
+    "ID Card Printers": [],
+    "Ink-Jet Printers": [],
+    "Label Printers": [],
+    "Large-Format Printers": [],
+    "Monochrome Laser Printers": [],
+    "Multifunction Printers": {
+      "B&W Multifunction Laser Printers": [],
+      "Color Multifunction Laser Printers": [],
+      "Multifunction Ink-Jet Printers": [],
+      "Multifunction Page Wide Array Printers": [],
+      "Multifunction Supertank Printers": []
+    },
+    "Page Wide Array Printers": [],
+    "Photo Printers": [],
+    "Supertank Printers": [],
+    "Thermal Printers": []
+  },
+  "Scanners": {
+    "3D Scanners": [],
+    "Barcode Scanners": [],
+    "Document Scanners": [],
+    "Flatbed Scanners": [],
+    "Scanner Accessories": [],
+    "Scanner Power": [],
+    "Sheetfed Scanners": [],
+    "Slide / Film Scanners": [],
+    "Special Scanners": []
+  },
+  "Office Products": {
+    "Copiers": [],
+    "Fax Machines": [],
+    "Shredders": []
+  },
+  "Print Servers": {
+    "Bluetooth Print Servers": [],
+    "Ethernet Print Servers": [],
+    "Wireless Print Servers": []
+  },
+  "LNB": [],
+  "Satellite & Cable TV Accessories": [],
+  "Satellite Dishes": [],
+  "Satellite Receivers": [],
+  "Satellite Receivers With HDD": [],
+  "Satellite TV Systems": [],
+  "Car Speakers": [],
+  "Computer Speakers": [],
+  "Home Speakers": {
+    "Central Speakers": [],
+    "Right / Left Channel Speakers": [],
+    "Subwoofers": [],
+    "Surround Speakers": []
+  },
+  "iPod Speakers": [],
+  "Outdoor Speakers": [],
+  "Portable Speakers": [],
+  "Public Address Speakers": [],
+  "Sound Bars": [],
+  "Speaker Accessories": [],
+  "Speaker Cables": [],
+  "Speaker Support Hardware": [],
+  "Speakerphones": [],
+  "Hard Drives": {
+    "External Hard Drives": [],
+    "Internal Hard Drives": [],
+    "Notebook Hard Drives": [],
+    "Server Hard Drives": [],
+    "Solid State Drives": {
+      "External Solid State Drives": [],
+      "Internal Solid State Drives": [],
+      "MLC Solid State Drives": [],
+      "SLC Solid State Drives": []
+    },
+    "Hard Drive Mounting": []
+  },
+  "Flash Memory": {
+    "Read-Only Memory": [],
+    "Card Readers": [],
+    "Flash Cards": {
+      "CF Cards": [],
+      "Micro-SD Cards": [],
+      "SD Cards": [],
+      "XD Cards": []
+    },
+    "Flash Drives": {
+      "Windows To Go drives": []
+    }
+  },
+  "Network Storage": {
+    "NAS": [],
+    "SAN": []
+  },
+  "Storage Cables": {
+    "IDE Cables": [],
+    "Legacy Cables": [],
+    "Optical Cables": [],
+    "SAS Cables": [],
+    "SATA Cables": [],
+    "SCSI Cables": []
+  },
+  "Disc Duplicators": {
+    "CD / DVD / Blu-ray Duplicators": [],
+    "Flash Duplicators": [],
+    "HDD Duplicators": []
+  },
+  "Disk Arrays": {
+    "Ethernet Disk Arrays": [],
+    "Fibre Channel Disk Arrays": [],
+    "FireWire Disk Arrays": [],
+    "iSCSI Disk Arrays": [],
+    "SATA Disk Arrays": [],
+    "SCSI Disk Arrays": [],
+    "Thunderbolt Disk Arrays": [],
+    "USB Disk Arrays": []
+  },
+  "External Storage Enclosures": {
+    "Hard Drive Enclosures": []
+  },
+  "Legacy Drives": {
+    "Floppy Drives": [],
+    "Magneto-Optical Drives": []
+  },
+  "Memory Upgrades / RAM": {
+    "DDR": {
+      "DDR DIMM": [],
+      "DDR SO-DIMM": []
+    },
+    "DDR2": {
+      "DDR2 DIMM": [],
+      "DDR2 SO-DIMM": []
+    },
+    "DDR3": {
+      "DDR3 DIMM": [],
+      "DDR3 SO-DIMM": []
+    },
+    "DDR4": {
+      "DDR4 DIMM": [],
+      "DDR4 SO-DIMM": []
+    },
+    "DDR5": {
+      "DDR5 DIMM": [],
+      "DDR5 SO-DIMM": []
+    },
+    "DRAM": [],
+    "Memory Upgrades": {
+      "Desktop Memory": [],
+      "Networking Memory": [],
+      "Printer Memory": [],
+      "Server Memory": []
+    },
+    "RDRAM": [],
+    "SDRAM": [],
+    "Video Controller Memory Upgrades": []
+  },
+  "Miscellaneous Drives": {
+    "Data Cartridge Drives": []
+  },
+  "Optical Drives": {
+    "CD Drives": [],
+    "DVD Drives": [],
+    "Blu-ray Drives": []
+  },
+  "Storage Media": {
+    "Blu-ray Media": [],
+    "CD Media": [],
+    "DVD Media": [],
+    "Legacy Recording Media": [],
+    "RDX Media": []
+  },
+  "Tape Backup": {
+    "External Tape Drives": [],
+    "Internal Tape Drives": [],
+    "Tape Automation": []
+  },
+  "Desktops & Workstations": {
+    "Desktops": {
+      "All-In-One Desktops": [],
+      "AMD Desktops": [],
+      "Apple Desktops": [],
+      "Gaming Desktops": [],
+      "Intel Desktops": [],
+      "PC Media Centers": []
+    },
+    "Barebone Systems": [],
+    "Kiosks": [],
+    "Thin Clients": [],
+    "Workstations": {
+      "Workstation Blade": []
+    }
+  },
+  "Notebooks & Accessories": {
+    "Notebooks": {
+      "AMD Notebooks": [],
+      "Apple Notebooks": [],
+      "Business Notebooks": [],
+      "Desktop Replacement Notebooks": [],
+      "Gaming Notebooks": [],
+      "Intel Notebooks": [],
+      "Rugged Notebooks": [],
+      "Ultra Thin Notebooks": []
+    },
+    "Chromebooks": [],
+    "Convertible Notebooks": [],
+    "Mobile Workstations": [],
+    "Netbooks": [],
+    "Notebook & Tablet Accessories": {
+      "Privacy Filters": [],
+      "Screen Protectors": [],
+      "Stands for Notebooks & Tablets": [],
+      "Tablet Carrying Cases": []
+    },
+    "Notebook Batteries": [],
+    "Notebook Docking Stations": [],
+    "Notebook Power Adapters/Chargers": [],
+    "Tablet PCs": [],
+    "Thin Client Notebooks": [],
+    "Ultra-Light Notebooks": [],
+    "Ultra-Mobile PCs": [],
+    "Ultrabooks": [],
+    "Notebook Carrying Cases": {
+      "Backpacks": [],
+      "Briefcases": [],
+      "Leather Carrying Cases": [],
+      "Messenger Bags": [],
+      "Notebook Sleeves": []
+    },
+    "Notebook Memory": []
+  },
+  "Point Of Sale Equipment": {
+    "Point Of Sale Computers": [],
+    "POS Monitors": [],
+    "POS Receipt Printers": []
+  },
+  "Servers": {
+    "Apple Servers": [],
+    "Blade Servers": [],
+    "Clusters": [],
+    "Rack Servers": [],
+    "RISC Servers": [],
+    "Tower Servers": [],
+    "Traffic Balancers & Optimizers": [],
+    "x86 Servers": {
+      "x86 Blade Servers": [],
+      "x86 Rack Servers": [],
+      "x86 Tower Servers": []
+    }
+  },
+  "Single-board Computers & Accessories": {
+    "Single-board Computers": []
+  },
+  "Tablets & eBook readers": {
+    "Blackberry": [],
+    "eBook Readers": [],
+    "Tablets & Handhelds": {
+      "CE Tablets": [],
+      "Data Collection Terminals": [],
+      "Handheld Computers": [],
+      "Personal Messengers": [],
+      "Tablet Computers": []
+    }
+  },
+  "Ink Cartridges": {
+    "Brother Ink Cartridges": [],
+    "Canon Ink Cartridges": [],
+    "Dell Ink Cartridges": [],
+    "Epson Ink Cartridges": [],
+    "HP Ink Cartridges": [],
+    "Kodak Ink Cartridges": [],
+    "Lexmark Ink Cartridges": [],
+    "Other Ink Cartridges": []
+  },
+  "POS Machines": {
+    "Banknote Counters": [],
+    "Banknotes/Coins Wrappers": [],
+    "Cash Registers": [],
+    "Coin Counters": [],
+    "Counterfeit Detectors": [],
+    "POS Machine Accessories": []
+  },
+  "Calculators & Typewriters": {
+    "Calculator Accessories": [],
+    "Calculators": {
+      "Desktop Calculators": [],
+      "Financial Calculators": [],
+      "Graphing Calculators": [],
+      "Pocket Calculators": []
+    },
+    "Electronic Dictionaries": [],
+    "Electronic Organizers": []
+  }
+}
