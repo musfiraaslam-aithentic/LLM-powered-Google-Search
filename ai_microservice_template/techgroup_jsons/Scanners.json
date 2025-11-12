@@ -1,0 +1,32 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Scanners",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Scanner Type": "",
+    "Optical Resolution": "",
+    "Interpolated Resolution": "",
+    "Scan Speed": "",
+    "ADF Capacity": "",
+    "Duplex Scanning": "",
+    "Maximum Scan Size": "",
+    "Supported Media Types": "",
+    "Color Depth": "",
+    "Connectivity Options": "",
+    "Included Software": "",
+    "OCR Support": "",
+    "File Formats": "",
+    "Operating Systems Supported": "",
+    "Power Consumption": "",
+    "Dimensions": "",
+    "Weight": "",
+    "Noise Level": "",
+    "Daily Duty Cycle": "",
+    "Special Features": ""
+  }
+}
+

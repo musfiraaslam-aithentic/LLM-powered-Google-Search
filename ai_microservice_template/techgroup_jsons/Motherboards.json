@@ -1,0 +1,32 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Motherboards",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Form Factor": "",
+    "Chipset": "",
+    "Socket Type": "",
+    "Supported Processors": "",
+    "Memory Type": "",
+    "Max Memory Capacity": "",
+    "Memory Slots": "",
+    "PCIe Slots": "",
+    "Storage Interfaces": "",
+    "M.2 Slots": "",
+    "SATA Ports": "",
+    "USB Ports": "",
+    "Networking": "",
+    "Audio Codec": "",
+    "Power Phases": "",
+    "Cooling Features": "",
+    "BIOS Features": "",
+    "Lighting Features": "",
+    "Expansion Headers": "",
+    "Warranty": ""
+  }
+}
+

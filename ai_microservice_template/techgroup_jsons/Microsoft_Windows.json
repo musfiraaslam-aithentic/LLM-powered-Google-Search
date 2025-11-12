@@ -1,0 +1,32 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Microsoft Windows",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Edition": "",
+    "Version": "",
+    "Release Date": "",
+    "License Type": "",
+    "Supported Architectures": "",
+    "System Requirements": "",
+    "Security Features": "",
+    "Update Channel": "",
+    "Virtualization Rights": "",
+    "Cloud Integration": "",
+    "Management Tools": "",
+    "Included Applications": "",
+    "App Compatibility": "",
+    "Deployment Methods": "",
+    "Support Lifecycle": "",
+    "Localization Options": "",
+    "Accessibility Features": "",
+    "Bundled Services": "",
+    "Activation Method": "",
+    "Special Features": ""
+  }
+}
+

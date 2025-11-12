@@ -1,0 +1,21 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Developer Tools",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "IDE Integration": "",
+    "Debugging Tools": "",
+    "Code Editor Features": "",
+    "Version Control Integration": "",
+    "Performance Profiling": "",
+    "Testing Framework Support": "",
+    "CI/CD Pipeline Integration": "",
+    "API Development Tools": "",
+    "Code Analysis": "",
+    "Deployment Tools": ""
+  }
+}

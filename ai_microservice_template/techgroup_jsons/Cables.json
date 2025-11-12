@@ -1,0 +1,32 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Cables",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Cable Type": "",
+    "Connector A": "",
+    "Connector B": "",
+    "Cable Length": "",
+    "Bandwidth Rating": "",
+    "Shielding Type": "",
+    "Gauge": "",
+    "Jacket Material": "",
+    "Color": "",
+    "Compliance Standards": "",
+    "Maximum Resolution": "",
+    "Power Support": "",
+    "Flexibility": "",
+    "Durability Rating": "",
+    "Temperature Range": "",
+    "Water Resistance": "",
+    "Fire Rating": "",
+    "Warranty": "",
+    "Packaging": "",
+    "Use Cases": ""
+  }
+}
+

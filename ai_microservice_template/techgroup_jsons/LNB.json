@@ -1,0 +1,32 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "LNB",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "LNB Type": "",
+    "Number of Outputs": "",
+    "Noise Figure": "",
+    "Input Frequency Range": "",
+    "Output Frequency Range": "",
+    "LO Frequency": "",
+    "Polarization Support": "",
+    "Gain": "",
+    "Feedhorn Size": "",
+    "Connector Type": "",
+    "Weatherproof Rating": "",
+    "Operating Temperature": "",
+    "Power Requirements": "",
+    "Satellite Compatibility": "",
+    "Mounting Options": "",
+    "Dimensions": "",
+    "Weight": "",
+    "Accessories Included": "",
+    "Compliance Standards": "",
+    "Warranty": ""
+  }
+}
+

@@ -1,0 +1,32 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "System Cases",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Case Type": "",
+    "Form Factor Support": "",
+    "Material": "",
+    "Dimensions": "",
+    "Weight": "",
+    "Drive Bays": "",
+    "Expansion Slots": "",
+    "Cooling Support": "",
+    "Fan Mounts": "",
+    "Radiator Support": "",
+    "Front I/O Ports": "",
+    "Cable Management": "",
+    "Power Supply Support": "",
+    "GPU Clearance": "",
+    "CPU Cooler Clearance": "",
+    "Dust Filters": "",
+    "Tempered Glass": "",
+    "RGB Lighting": "",
+    "Noise Dampening": "",
+    "Warranty": ""
+  }
+}
+

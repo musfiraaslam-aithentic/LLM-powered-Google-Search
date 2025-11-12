@@ -1,0 +1,26 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Internet Utilities",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "VPN": "",
+    "Firewall": "",
+    "Ad Blocking": "",
+    "Parental Controls": "",
+    "Network Monitoring": "",
+    "Bandwidth Management": "",
+    "Wi-Fi Optimization": "",
+    "DNS Security": "",
+    "Data Usage Tracking": "",
+    "Speed Test Functionality": "",
+    "Router Configuration Interface": "",
+    "IP Address Management": "",
+    "Protocol Support (e.g., IPv6)": "",
+    "Malware Protection": "",
+    "Content Filtering": ""
+  }
+}

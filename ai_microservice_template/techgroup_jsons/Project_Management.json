@@ -1,0 +1,27 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Project Management",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Task Management": "",
+    "Workflow Automation": "",
+    "Reporting and Analytics": "",
+    "Collaboration Tools": "",
+    "Resource Management": "",
+    "Time Tracking": "",
+    "Risk Management": "",
+    "Budgeting": "",
+    "Gantt Charts": "",
+    "Kanban Boards": "",
+    "Stakeholder Management": "",
+    "Document Management": "",
+    "Integrations": "",
+    "Customization": "",
+    "Mobile Access": "",
+    "Portfolio Management": ""
+  }
+}

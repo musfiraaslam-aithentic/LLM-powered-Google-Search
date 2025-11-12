@@ -1,0 +1,31 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "GPS Software",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Navigation Modes": "",
+    "Map Updates": "",
+    "Offline Maps": "",
+    "Real-time Traffic": "",
+    "Point of Interest (POI) Search": "",
+    "Voice Guidance": "",
+    "Route Planning": "",
+    "Geocaching Support": "",
+    "Custom Waypoints": "",
+    "Integration with Third-Party Apps": "",
+    "User Interface Customization": "",
+    "OS Compatibility": "",
+    "Data Privacy Features": "",
+    "Battery Optimization": "",
+    "Satellite Systems Supported": "",
+    "Search Functionality": "",
+    "Location Sharing": "",
+    "Emergency Services Integration": "",
+    "Safety Features": "",
+    "Augmented Reality Navigation": ""
+  }
+}

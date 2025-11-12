@@ -1,0 +1,29 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Video Surveillance Solutions",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Resolution": "",
+    "Field of View": "",
+    "Night Vision Range": "",
+    "Weather Resistance Rating": "",
+    "Storage Options": "",
+    "Connectivity Type": "",
+    "Video Compression": "",
+    "Motion Detection": "",
+    "Audio Features": "",
+    "Power Over Ethernet (PoE)": "",
+    "Pan-Tilt-Zoom (PTZ)": "",
+    "Remote Access": "",
+    "Two-Way Audio": "",
+    "Integration Capabilities": "",
+    "Recording Modes": "",
+    "Camera Type": "",
+    "Vandal Resistance": "",
+    "Analytics Features": ""
+  }
+}

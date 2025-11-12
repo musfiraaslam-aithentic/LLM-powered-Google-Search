@@ -1,0 +1,26 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Utilities",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Energy Consumption Monitoring": "",
+    "Water Usage Tracking": "",
+    "Gas Leak Detection": "",
+    "Power Outage Alerts": "",
+    "Smart Grid Integration": "",
+    "Automated Meter Reading (AMR)": "",
+    "Remote Control": "",
+    "Scheduling": "",
+    "Anomaly Detection": "",
+    "Historical Data Reporting": "",
+    "Billing Integration": "",
+    "Renewable Energy Integration": "",
+    "Real-time Data Access": "",
+    "Predictive Maintenance Alerts": "",
+    "Geospatial Mapping": ""
+  }
+}

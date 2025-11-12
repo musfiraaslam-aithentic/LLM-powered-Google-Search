@@ -1,0 +1,32 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Fans & Cooling Systems",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Cooling Type": "",
+    "Supported Components": "",
+    "Fan Size": "",
+    "Airflow": "",
+    "Static Pressure": "",
+    "Noise Level": "",
+    "Speed Control": "",
+    "Bearing Type": "",
+    "PWM Support": "",
+    "RGB Lighting": "",
+    "Radiator Size": "",
+    "Pump Speed": "",
+    "Thermal Design Power": "",
+    "Mounting Compatibility": "",
+    "Tubing Material": "",
+    "Coolant Type": "",
+    "Warranty": "",
+    "Accessories Included": "",
+    "Software Control": "",
+    "Special Features": ""
+  }
+}
+

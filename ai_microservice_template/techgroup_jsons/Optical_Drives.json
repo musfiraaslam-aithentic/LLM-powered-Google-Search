@@ -1,0 +1,32 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Optical Drives",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Drive Type": "",
+    "Supported Disc Formats": "",
+    "Interface": "",
+    "Read Speed": "",
+    "Write Speed": "",
+    "Buffer Memory": "",
+    "Form Factor": "",
+    "Tray or Slot Loading": "",
+    "Mounting Options": "",
+    "Power Requirements": "",
+    "Compatibility": "",
+    "Firmware Features": "",
+    "Dimensions": "",
+    "Weight": "",
+    "Included Software": "",
+    "Bundled Media": "",
+    "Noise Level": "",
+    "Warranty": "",
+    "Operating Temperature": "",
+    "Special Features": ""
+  }
+}
+

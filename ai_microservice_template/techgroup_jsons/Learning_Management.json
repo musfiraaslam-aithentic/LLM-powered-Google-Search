@@ -1,0 +1,26 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Learning Management",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Course Creation and Management": "",
+    "User Management (Learners, Instructors, Admins)": "",
+    "Content Management and Delivery": "",
+    "Assessment and Quizzing Tools": "",
+    "Gradebook and Grading Features": "",
+    "Reporting and Analytics": "",
+    "Communication and Collaboration Tools": "",
+    "SCORM and LTI Compliance": "",
+    "Mobile Learning Support": "",
+    "Gamification Elements": "",
+    "Certification Management": "",
+    "Personalization and Adaptive Learning Paths": "",
+    "Integration with Third-Party Systems": "",
+    "E-commerce and Monetization Options": "",
+    "Security and Data Privacy": ""
+  }
+}

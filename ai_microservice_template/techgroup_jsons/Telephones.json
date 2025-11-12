@@ -1,0 +1,32 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Telephones",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Phone Type": "",
+    "Line Support": "",
+    "Display Type": "",
+    "Handset Range": "",
+    "Speakerphone": "",
+    "Voicemail Support": "",
+    "Call Blocking": "",
+    "Caller ID": "",
+    "Expandable Handsets": "",
+    "Connectivity Options": "",
+    "Headset Support": "",
+    "Power Source": "",
+    "Battery Backup": "",
+    "Mounting Options": "",
+    "Audio Quality": "",
+    "Security Features": "",
+    "Directory Capacity": "",
+    "Ringtones": "",
+    "Conference Calling": "",
+    "Warranty": ""
+  }
+}
+

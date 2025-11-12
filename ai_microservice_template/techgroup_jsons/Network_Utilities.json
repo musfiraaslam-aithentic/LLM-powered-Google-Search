@@ -1,0 +1,31 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Network Utilities",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Network Monitoring": "",
+    "IP Address Management (IPAM)": "",
+    "DNS Management": "",
+    "DHCP Management": "",
+    "Firewall Management": "",
+    "VPN Management": "",
+    "Bandwidth Monitoring": "",
+    "Network Topology Mapping": "",
+    "Packet Analysis": "",
+    "Port Scanning": "",
+    "Network Troubleshooting Tools": "",
+    "Configuration Management": "",
+    "Security Auditing": "",
+    "Performance Monitoring": "",
+    "Remote Access Capabilities": "",
+    "QoS Management": "",
+    "Log Management": "",
+    "Traffic Shaping": "",
+    "VLAN Management": "",
+    "Reporting and Analytics": ""
+  }
+}

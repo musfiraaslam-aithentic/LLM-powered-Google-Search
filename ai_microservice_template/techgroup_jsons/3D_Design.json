@@ -1,0 +1,21 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "3D Design",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Graphics Card (GPU)": "",
+    "Processor (CPU)": "",
+    "RAM": "",
+    "Storage Type": "",
+    "Display Resolution": "",
+    "Color Accuracy": "",
+    "VRAM": "",
+    "Cooling System": "",
+    "Software Compatibility": "",
+    "Input Device Support": ""
+  }
+}

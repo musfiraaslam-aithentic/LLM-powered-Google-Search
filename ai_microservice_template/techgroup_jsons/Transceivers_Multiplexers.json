@@ -1,0 +1,32 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Transceivers & Multiplexers",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Device Type": "",
+    "Supported Protocols": "",
+    "Data Rate": "",
+    "Transmission Distance": "",
+    "Wavelength": "",
+    "Connector Type": "",
+    "Fiber Type Support": "",
+    "Channel Capacity": "",
+    "Operating Temperature": "",
+    "Power Consumption": "",
+    "Hot-swappable": "",
+    "Diagnostics Support": "",
+    "Compliance Standards": "",
+    "Management Interface": "",
+    "Redundancy Features": "",
+    "MTBF": "",
+    "Form Factor": "",
+    "Dimensions": "",
+    "Weight": "",
+    "Warranty": ""
+  }
+}
+

@@ -1,0 +1,25 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "File Transfer",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Transfer Protocol": "",
+    "Data Encryption": "",
+    "Authentication Methods": "",
+    "Large File Support": "",
+    "Transfer Resumption": "",
+    "Bandwidth Management": "",
+    "Cross-Platform Compatibility": "",
+    "Automation Capabilities": "",
+    "Audit Logging": "",
+    "User Management": "",
+    "File Synchronization": "",
+    "Web Interface": "",
+    "API Integration": "",
+    "Storage Integration": ""
+  }
+}

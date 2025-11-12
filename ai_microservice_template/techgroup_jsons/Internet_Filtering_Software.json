@@ -1,0 +1,30 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Internet Filtering Software",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Content Filtering Categories": "",
+    "URL Blocking": "",
+    "Keyword Filtering": "",
+    "Website Whitelisting/Blacklisting": "",
+    "Time-based Access Controls": "",
+    "Application Blocking": "",
+    "Social Media Monitoring/Blocking": "",
+    "Safe Search Enforcement": "",
+    "Reporting and Analytics": "",
+    "User/Group Based Policies": "",
+    "Remote Management": "",
+    "HTTPS Inspection": "",
+    "Malicious Site Blocking": "",
+    "VPN/Proxy Detection and Blocking": "",
+    "Custom Filter Lists": "",
+    "Alerting Mechanisms": "",
+    "Integration with Directory Services": "",
+    "Parental Control Features": "",
+    "Real-time Threat Intelligence": ""
+  }
+}

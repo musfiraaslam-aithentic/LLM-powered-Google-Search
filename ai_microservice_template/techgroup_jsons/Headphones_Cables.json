@@ -1,0 +1,27 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Headphones Cables",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Cable Length": "",
+    "Connector Type (Source)": "",
+    "Connector Type (Headphone)": "",
+    "Cable Material": "",
+    "Jacket Material": "",
+    "Cable Type": "",
+    "Compatibility": "",
+    "Durability": "",
+    "Strain Relief": "",
+    "Microphone": "",
+    "In-line Remote": "",
+    "Color": "",
+    "Weight": "",
+    "Impedance": "",
+    "Capacitance": "",
+    "Shielding": ""
+  }
+}

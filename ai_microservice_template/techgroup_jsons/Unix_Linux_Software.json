@@ -1,0 +1,31 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Unix / Linux Software",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Operating System Compatibility": "",
+    "Kernel Version Support": "",
+    "Command-line Interface (CLI) Tools": "",
+    "Graphical User Interface (GUI) Support": "",
+    "Scripting Language Support": "",
+    "File System Support": "",
+    "Package Management": "",
+    "Security Features": "",
+    "Virtualization Support": "",
+    "Containerization Support": "",
+    "Networking Protocols": "",
+    "System Calls Integration": "",
+    "Resource Management": "",
+    "Performance Optimization": "",
+    "Scalability": "",
+    "Inter-process Communication (IPC)": "",
+    "Multi-user Support": "",
+    "Open Source Licensing": "",
+    "API Integration": "",
+    "Monitoring and Logging": ""
+  }
+}

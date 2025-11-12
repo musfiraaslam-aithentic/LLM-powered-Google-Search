@@ -1,0 +1,29 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Web Design / Publishing",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "CMS Integration": "",
+    "Responsive Design Tools": "",
+    "SEO Tools": "",
+    "Analytics Integration": "",
+    "Collaboration Features": "",
+    "Version Control": "",
+    "Code Editor Integration": "",
+    "Deployment Options": "",
+    "Template Library": "",
+    "Asset Management": "",
+    "Performance Optimization Tools": "",
+    "Security Features": "",
+    "E-commerce Integration": "",
+    "Accessibility Features": "",
+    "Cross-browser Compatibility Testing": "",
+    "Framework Support": "",
+    "Custom Domain Support": "",
+    "API Access": ""
+  }
+}

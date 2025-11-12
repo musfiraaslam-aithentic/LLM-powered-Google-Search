@@ -1,0 +1,32 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "VoIP",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Service Type": "",
+    "Supported Protocols": "",
+    "Codec Support": "",
+    "Concurrent Calls": "",
+    "Call Routing Features": "",
+    "Call Recording": "",
+    "IVR Support": "",
+    "Integration Options": "",
+    "Security Features": "",
+    "Device Compatibility": "",
+    "Mobile App Support": "",
+    "HD Voice": "",
+    "Conference Calling": "",
+    "Voicemail Features": "",
+    "Analytics and Reporting": "",
+    "Emergency Services Support": "",
+    "Billing Model": "",
+    "Failover Options": "",
+    "Setup Complexity": "",
+    "Support Services": ""
+  }
+}
+

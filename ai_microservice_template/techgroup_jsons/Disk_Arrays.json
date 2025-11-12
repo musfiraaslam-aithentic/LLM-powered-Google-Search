@@ -1,0 +1,32 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Disk Arrays",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Form Factor": "",
+    "Drive Bays": "",
+    "Supported Drive Types": "",
+    "Maximum Capacity": "",
+    "RAID Levels": "",
+    "Controller Type": "",
+    "Cache Memory": "",
+    "Host Interfaces": "",
+    "Expansion Options": "",
+    "Redundancy Features": "",
+    "High Availability": "",
+    "Performance Metrics": "",
+    "Management Software": "",
+    "Security Features": "",
+    "Power Supplies": "",
+    "Cooling System": "",
+    "Dimensions": "",
+    "Weight": "",
+    "Power Consumption": "",
+    "Warranty": ""
+  }
+}
+

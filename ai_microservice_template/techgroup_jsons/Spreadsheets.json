@@ -1,0 +1,25 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Spreadsheets",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Formulas and Functions": "",
+    "Data Analysis Tools": "",
+    "Charting and Graphing": "",
+    "Conditional Formatting": "",
+    "Data Validation": "",
+    "Collaboration Features": "",
+    "Macro and Scripting Support": "",
+    "Data Import and Export": "",
+    "Sorting and Filtering": "",
+    "Pivot Tables": "",
+    "What-If Analysis": "",
+    "Version History": "",
+    "Add-ins and Extensions": "",
+    "Cloud Integration": ""
+  }
+}

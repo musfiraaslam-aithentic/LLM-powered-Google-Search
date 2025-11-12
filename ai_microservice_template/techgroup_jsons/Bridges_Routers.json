@@ -1,0 +1,32 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Bridges & Routers",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Device Type": "",
+    "Wireless Standards": "",
+    "Wi-Fi Bands": "",
+    "Maximum Throughput": "",
+    "Ethernet Ports": "",
+    "WAN Interfaces": "",
+    "USB Ports": "",
+    "Mesh Support": "",
+    "Antenna Configuration": "",
+    "Security Protocols": "",
+    "VPN Support": "",
+    "Quality of Service": "",
+    "Parental Controls": "",
+    "Guest Network": "",
+    "Management Interface": "",
+    "Firmware Updates": "",
+    "Dimensions": "",
+    "Weight": "",
+    "Power Consumption": "",
+    "Special Features": ""
+  }
+}
+

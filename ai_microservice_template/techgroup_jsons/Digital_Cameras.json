@@ -1,0 +1,32 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Digital Cameras",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Camera Type": "",
+    "Sensor Type": "",
+    "Sensor Size": "",
+    "Resolution": "",
+    "ISO Range": "",
+    "Autofocus System": "",
+    "Image Processor": "",
+    "Lens Mount": "",
+    "Video Resolution": "",
+    "Frame Rate": "",
+    "Stabilization": "",
+    "Viewfinder Type": "",
+    "Screen Type": "",
+    "Connectivity Options": "",
+    "Storage Media": "",
+    "Battery Life": "",
+    "Weather Sealing": "",
+    "Burst Shooting": "",
+    "Weight": "",
+    "Special Features": ""
+  }
+}
+

@@ -1,0 +1,32 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Batteries",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Battery Type": "",
+    "Chemistry": "",
+    "Capacity": "",
+    "Voltage": "",
+    "Form Factor": "",
+    "Rechargeable": "",
+    "Cycle Life": "",
+    "Operating Temperature Range": "",
+    "Storage Temperature Range": "",
+    "Charging Time": "",
+    "Discharge Rate": "",
+    "Safety Features": "",
+    "Certifications": "",
+    "Weight": "",
+    "Dimensions": "",
+    "Connector Type": "",
+    "Compatibility": "",
+    "Warranty": "",
+    "Shelf Life": "",
+    "Special Features": ""
+  }
+}
+

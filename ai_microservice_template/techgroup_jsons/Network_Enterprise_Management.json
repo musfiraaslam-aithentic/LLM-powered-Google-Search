@@ -1,0 +1,25 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Network & Enterprise Management",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Network Monitoring": "",
+    "Performance Management": "",
+    "Configuration Management": "",
+    "Security Management": "",
+    "Incident Management": "",
+    "Asset Management": "",
+    "Cloud Management": "",
+    "Virtualization Management": "",
+    "SD-WAN Capabilities": "",
+    "Automation & Orchestration": "",
+    "Reporting & Analytics": "",
+    "User Access Control": "",
+    "Scalability": "",
+    "Integration Capabilities": ""
+  }
+}

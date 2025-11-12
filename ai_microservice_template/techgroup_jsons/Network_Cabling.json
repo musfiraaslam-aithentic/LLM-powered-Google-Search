@@ -1,0 +1,32 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Network Cabling",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Cable Category": "",
+    "Cable Type": "",
+    "Connector Type": "",
+    "Cable Length": "",
+    "Bandwidth Rating": "",
+    "Shielding": "",
+    "Jacket Material": "",
+    "Fire Rating": "",
+    "PoE Support": "",
+    "Operating Temperature": "",
+    "Flexibility": "",
+    "Color": "",
+    "Packaging": "",
+    "Compliance Standards": "",
+    "UV Resistance": "",
+    "Water Resistance": "",
+    "Certification": "",
+    "Warranty": "",
+    "Intended Use": "",
+    "Accessories Included": ""
+  }
+}
+

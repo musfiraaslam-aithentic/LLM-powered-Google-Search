@@ -1,0 +1,32 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Security Chips, Tokens & Smart Cards",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Device Type": "",
+    "Authentication Method": "",
+    "Cryptographic Standards": "",
+    "Form Factor": "",
+    "Interface": "",
+    "Supported Protocols": "",
+    "Storage Capacity": "",
+    "Tamper Resistance": "",
+    "Key Management": "",
+    "Multi-factor Support": "",
+    "Compliance Certifications": "",
+    "Operating Temperature": "",
+    "Durability Rating": "",
+    "Power Requirements": "",
+    "Lifecycle Management": "",
+    "Integration Platforms": "",
+    "Firmware Update Mechanism": "",
+    "User Provisioning": "",
+    "Warranty": "",
+    "Special Features": ""
+  }
+}
+

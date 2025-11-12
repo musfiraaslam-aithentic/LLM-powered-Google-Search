@@ -1,0 +1,26 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Accounting",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "General Ledger": "",
+    "Accounts Receivable": "",
+    "Accounts Payable": "",
+    "Bank Reconciliation": "",
+    "Financial Reporting": "",
+    "Invoicing": "",
+    "Expense Tracking": "",
+    "Payroll Integration": "",
+    "Tax Management": "",
+    "Budgeting and Forecasting": "",
+    "Audit Trails": "",
+    "Multi-currency Support": "",
+    "User Permissions and Access Control": "",
+    "Cloud Accessibility": "",
+    "Integration with other systems (CRM, ERP)": ""
+  }
+}

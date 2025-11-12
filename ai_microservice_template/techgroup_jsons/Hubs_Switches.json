@@ -1,0 +1,32 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Hubs & Switches",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Device Type": "",
+    "Port Count": "",
+    "Port Speed": "",
+    "PoE Support": "",
+    "Switching Capacity": "",
+    "Forwarding Rate": "",
+    "VLAN Support": "",
+    "QoS Features": "",
+    "Layer Support": "",
+    "Management Interface": "",
+    "Stacking Capability": "",
+    "Redundancy Features": "",
+    "Power Consumption": "",
+    "Dimensions": "",
+    "Weight": "",
+    "Mounting Options": "",
+    "Cooling": "",
+    "Security Features": "",
+    "Compliance Certifications": "",
+    "Warranty": ""
+  }
+}
+

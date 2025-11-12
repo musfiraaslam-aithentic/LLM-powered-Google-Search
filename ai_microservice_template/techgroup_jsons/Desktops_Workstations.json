@@ -1,0 +1,32 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Desktops & Workstations",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Form Factor": "",
+    "Processor": "",
+    "Processor Cores": "",
+    "Memory Capacity": "",
+    "Memory Type": "",
+    "Storage Configuration": "",
+    "Graphics": "",
+    "Expansion Slots": "",
+    "Ports": "",
+    "Networking": "",
+    "Operating System": "",
+    "Power Supply": "",
+    "Cooling": "",
+    "Dimensions": "",
+    "Weight": "",
+    "Security Features": "",
+    "Manageability": "",
+    "Warranty": "",
+    "Energy Efficiency": "",
+    "Special Features": ""
+  }
+}
+

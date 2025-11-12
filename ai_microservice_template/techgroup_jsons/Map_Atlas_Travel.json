@@ -1,0 +1,31 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Map/Atlas/Travel",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Offline Maps": "",
+    "Turn-by-Turn Navigation": "",
+    "Real-time Traffic Updates": "",
+    "Point of Interest (POI) Search": "",
+    "Route Planning Options": "",
+    "Voice Guidance": "",
+    "Public Transport Information": "",
+    "Cycling Routes": "",
+    "Walking Routes": "",
+    "GPS Accuracy": "",
+    "Custom Map Layers": "",
+    "Trip Planning": "",
+    "Location Sharing": "",
+    "Altitude/Elevation Data": "",
+    "Speed Limit Display": "",
+    "Lane Guidance": "",
+    "Augmented Reality Navigation": "",
+    "Map Types (e.g., Satellite, Street, Topographic)": "",
+    "Multi-stop Routing": "",
+    "Geocoding Capability": ""
+  }
+}

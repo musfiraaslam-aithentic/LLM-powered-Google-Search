@@ -1,0 +1,28 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Video Servers",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Storage Capacity": "",
+    "Supported Video Codecs": "",
+    "Number of Concurrent Streams": "",
+    "Input/Output Ports": "",
+    "Redundancy/RAID Support": "",
+    "Processing Power (CPU/RAM)": "",
+    "Network Interface": "",
+    "Scalability": "",
+    "Management Interface": "",
+    "Supported Resolutions": "",
+    "Bitrate Support": "",
+    "Latency": "",
+    "Power Consumption": "",
+    "Operating System": "",
+    "API/SDK Support": "",
+    "Recording Capabilities": "",
+    "Playback Features": ""
+  }
+}

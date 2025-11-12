@@ -1,0 +1,32 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Hard Drives",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Drive Type": "",
+    "Form Factor": "",
+    "Capacity": "",
+    "Interface": "",
+    "Transfer Rate": "",
+    "Cache Size": "",
+    "Spindle Speed": "",
+    "Shock Resistance": "",
+    "Operating Temperature": "",
+    "Power Consumption": "",
+    "MTBF": "",
+    "Workload Rate": "",
+    "Encryption": "",
+    "Firmware Features": "",
+    "Dimensions": "",
+    "Weight": "",
+    "Noise Level": "",
+    "Compatibility": "",
+    "Included Accessories": "",
+    "Warranty": ""
+  }
+}
+

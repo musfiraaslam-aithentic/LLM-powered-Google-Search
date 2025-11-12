@@ -1,0 +1,32 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Linux / Unix",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Distribution": "",
+    "Kernel Version": "",
+    "Supported Architectures": "",
+    "Desktop Environment": "",
+    "Package Management": "",
+    "Long-term Support": "",
+    "Pre-installed Software": "",
+    "Security Features": "",
+    "Virtualization Support": "",
+    "Container Support": "",
+    "Filesystem Support": "",
+    "Networking Features": "",
+    "Cloud Integration": "",
+    "Hardware Certification": "",
+    "System Requirements": "",
+    "Localization Support": "",
+    "Accessibility Features": "",
+    "Release Cadence": "",
+    "Support Services": "",
+    "Licensing": ""
+  }
+}
+

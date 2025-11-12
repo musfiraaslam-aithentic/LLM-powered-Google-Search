@@ -1,0 +1,23 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Network Software",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Scalability": "",
+    "Reliability": "",
+    "Security": "",
+    "Performance": "",
+    "Interoperability": "",
+    "Configuration Management": "",
+    "Monitoring and Analytics": "",
+    "Automation": "",
+    "API Integration": "",
+    "Protocol Support": "",
+    "Virtualization Support": "",
+    "Cloud-Native Capabilities": ""
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "HSE management",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Incident Management": "",
+    "Hazard Identification": "",
+    "Risk Assessment": "",
+    "Compliance Management": "",
+    "Audit Management": "",
+    "Training Management": "",
+    "Permit-to-Work Systems": "",
+    "Emergency Preparedness": "",
+    "Environmental Management": "",
+    "Health Surveillance": "",
+    "Contractor Management": "",
+    "Document Control": "",
+    "Reporting and Analytics": "",
+    "Corrective and Preventive Actions (CAPA)": ""
+  }
+}

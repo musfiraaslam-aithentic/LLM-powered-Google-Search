@@ -1,0 +1,32 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "Controller Cards",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Controller Type": "",
+    "Interface Type": "",
+    "Supported Protocols": "",
+    "Port Count": "",
+    "Data Transfer Rate": "",
+    "RAID Support": "",
+    "Compatible Devices": "",
+    "Cache Memory": "",
+    "Supported Operating Systems": "",
+    "Expansion Slot Type": "",
+    "Power Requirements": "",
+    "Cooling Features": "",
+    "Drivers and Software": "",
+    "Management Tools": "",
+    "Dimensions": "",
+    "Warranty": "",
+    "Compliance Certifications": "",
+    "Backup Battery Support": "",
+    "Failover Capabilities": "",
+    "Special Features": ""
+  }
+}
+

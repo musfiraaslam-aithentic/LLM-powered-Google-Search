@@ -1,0 +1,28 @@
+{
+  "brand": "",
+  "brand_country": "",
+  "brand_domain": "",
+  "tech_type": "",
+  "tech_group": "eCommerce Solutions",
+  "product_id": "",
+  "product_desc": "",
+  "product_features": {
+    "Payment Gateway Integration": "",
+    "Inventory Management": "",
+    "Order Management System": "",
+    "Shipping & Fulfillment Integrations": "",
+    "Customer Relationship Management (CRM)": "",
+    "Product Catalog Management": "",
+    "Shopping Cart Functionality": "",
+    "Security Features (SSL, PCI Compliance)": "",
+    "Analytics & Reporting": "",
+    "Marketing & SEO Tools": "",
+    "Mobile Responsiveness": "",
+    "Scalability": "",
+    "API Integrations": "",
+    "Multi-currency Support": "",
+    "Multi-language Support": "",
+    "Customization Options": "",
+    "User Management & Roles": ""
+  }
+}
