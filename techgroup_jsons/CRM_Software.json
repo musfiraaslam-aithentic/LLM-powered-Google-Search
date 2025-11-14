@@ -1,0 +1,26 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Contact Management": "",
+        "Lead Management": "",
+        "Sales Forecasting": "",
+        "Reporting & Analytics": "",
+        "Marketing Automation": "",
+        "Customer Service & Support": "",
+        "Task & Activity Management": "",
+        "Pipeline Management": "",
+        "Workflow Automation": "",
+        "Integration Capabilities": "",
+        "Mobile Access": "",
+        "Customization Options": "",
+        "Security Features": "",
+        "Quote & Proposal Management": "",
+        "Email Integration": ""
+    }
+}

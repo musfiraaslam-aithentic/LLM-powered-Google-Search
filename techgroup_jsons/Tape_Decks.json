@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Deck Configuration": "",
+        "Tape Type Support": "",
+        "Playback Speeds": "",
+        "Heads": "",
+        "Noise Reduction": "",
+        "Frequency Response": "",
+        "Signal-to-Noise Ratio": "",
+        "Wow and Flutter": "",
+        "Inputs": "",
+        "Outputs": "",
+        "Bias Adjustment": "",
+        "Counter Type": "",
+        "Dolby Support": "",
+        "Recording Level Control": "",
+        "Meter Type": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Power Requirements": "",
+        "Accessories Included": "",
+        "Warranty": ""
+    }
+}

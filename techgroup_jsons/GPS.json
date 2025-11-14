@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Device Type": "",
+        "Screen Size": "",
+        "Display Resolution": "",
+        "Map Coverage": "",
+        "Update Frequency": "",
+        "Traffic Updates": "",
+        "Routing Features": "",
+        "Voice Guidance": "",
+        "POI Database": "",
+        "Connectivity": "",
+        "Battery Life": "",
+        "Waterproof Rating": "",
+        "Memory": "",
+        "Expandable Storage": "",
+        "Sensor Support": "",
+        "Mounting Options": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Accessories Included": "",
+        "Special Features": ""
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Accessory Category": "",
+        "Primary Function": "",
+        "Device Compatibility": "",
+        "Material": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Power Requirements": "",
+        "Installation Method": "",
+        "Included Components": "",
+        "Color Options": "",
+        "Durability Rating": "",
+        "Weather Resistance": "",
+        "Portability": "",
+        "Warranty": "",
+        "Safety Certifications": "",
+        "Maintenance Needs": "",
+        "Additional Features": "",
+        "Packaging": "",
+        "User Instructions": "",
+        "Target Audience": ""
+    }
+}

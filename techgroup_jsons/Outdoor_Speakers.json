@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Speaker Type": "",
+        "Power Handling": "",
+        "Frequency Response": "",
+        "Sensitivity": "",
+        "Impedance": "",
+        "Weatherproof Rating": "",
+        "Enclosure Material": "",
+        "Mounting Options": "",
+        "Connectivity": "",
+        "Wireless Support": "",
+        "Amplifier Compatibility": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Color Options": "",
+        "Coverage Area": "",
+        "Accessories Included": "",
+        "Installation Requirements": "",
+        "Warranty": "",
+        "UV Resistance": "",
+        "Special Features": ""
+    }
+}

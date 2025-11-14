@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Real-time Messaging": "",
+        "Voice Calls": "",
+        "Video Calls": "",
+        "Group Chat": "",
+        "File Sharing": "",
+        "Screen Sharing": "",
+        "Emoji and Sticker Support": "",
+        "End-to-End Encryption": "",
+        "Presence Indicators": "",
+        "Message History": "",
+        "Push Notifications": "",
+        "Cross-platform Compatibility": "",
+        "Integrations": "",
+        "Customization Options": "",
+        "API Access": "",
+        "Bots and Automation": "",
+        "Moderation Tools": "",
+        "Read Receipts": "",
+        "Typing Indicators": "",
+        "Threaded Conversations": ""
+    }
+}

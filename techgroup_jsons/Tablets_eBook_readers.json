@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Device Type": "",
+        "Display Size": "",
+        "Display Resolution": "",
+        "Display Technology": "",
+        "Processor": "",
+        "Memory": "",
+        "Storage Capacity": "",
+        "Expandable Storage": "",
+        "Battery Life": "",
+        "Charging Interface": "",
+        "Connectivity": "",
+        "Wireless Standards": "",
+        "Camera Specifications": "",
+        "Operating System": "",
+        "Supported Formats": "",
+        "Stylus Support": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Accessories Included": "",
+        "Special Features": ""
+    }
+}

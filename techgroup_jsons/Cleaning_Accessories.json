@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Accessory Type": "",
+        "Surface Compatibility": "",
+        "Cleaning Agents": "",
+        "Disinfection Capability": "",
+        "Usage Instructions": "",
+        "Reusable or Disposable": "",
+        "Material": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Storage Recommendations": "",
+        "Safety Guidelines": "",
+        "Environmental Certifications": "",
+        "Packaging": "",
+        "Included Components": "",
+        "Warranty": "",
+        "Special Features": "",
+        "Scent": "",
+        "Anti-static Properties": "",
+        "Drying Time": "",
+        "Compliance Standards": ""
+    }
+}

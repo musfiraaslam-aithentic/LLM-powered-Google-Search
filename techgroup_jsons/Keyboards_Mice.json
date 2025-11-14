@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Product Type": "",
+        "Connection Type": "",
+        "Switch Type": "",
+        "Key Rollover": "",
+        "Mouse Sensor": "",
+        "DPI Range": "",
+        "Programmable Buttons": "",
+        "Battery Type": "",
+        "Battery Life": "",
+        "Backlighting": "",
+        "Ergonomic Design": "",
+        "Adjustable Weight": "",
+        "Included Accessories": "",
+        "Software Support": "",
+        "Compatibility": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Material": "",
+        "Warranty": "",
+        "Special Features": ""
+    }
+}

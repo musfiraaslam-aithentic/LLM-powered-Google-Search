@@ -1,0 +1,29 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Hypervisor Type": "",
+        "Supported Guest OS": "",
+        "Supported Host OS": "",
+        "Virtual Machine Management": "",
+        "Networking Features": "",
+        "Storage Management": "",
+        "Resource Allocation (CPU/RAM/Storage)": "",
+        "Live Migration": "",
+        "High Availability": "",
+        "Disaster Recovery": "",
+        "Snapshots and Cloning": "",
+        "Security Features": "",
+        "Scalability": "",
+        "Management Interface (GUI/CLI/API)": "",
+        "Integration with Cloud Platforms": "",
+        "Performance Monitoring": "",
+        "Containerization Support": "",
+        "Licensing Model": ""
+    }
+}

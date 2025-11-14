@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Content Type": "",
+        "Genre": "",
+        "Format": "",
+        "Resolution": "",
+        "Audio Format": "",
+        "Season/Episode Count": "",
+        "Runtime": "",
+        "Language Options": "",
+        "Subtitle Options": "",
+        "Region Code": "",
+        "Release Date": "",
+        "Bonus Content": "",
+        "Digital Copy Included": "",
+        "Streaming Availability": "",
+        "Parental Rating": "",
+        "Special Edition Details": "",
+        "Packaging": "",
+        "Franchise": "",
+        "Director/Producer": "",
+        "Award Recognition": ""
+    }
+}

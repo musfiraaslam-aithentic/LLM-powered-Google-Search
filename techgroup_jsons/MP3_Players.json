@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Storage Capacity": "",
+        "Expandable Memory": "",
+        "Supported Audio Formats": "",
+        "Display Type": "",
+        "Battery Life": "",
+        "Charging Interface": "",
+        "Bluetooth Support": "",
+        "Wi-Fi Support": "",
+        "Audio Outputs": "",
+        "DAC Quality": "",
+        "Equalizer": "",
+        "Voice Recording": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Durability": "",
+        "Water Resistance": "",
+        "Controls": "",
+        "Accessories Included": "",
+        "Software Compatibility": "",
+        "Special Features": ""
+    }
+}

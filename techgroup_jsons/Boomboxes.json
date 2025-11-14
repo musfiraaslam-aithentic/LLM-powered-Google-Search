@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Audio Output Power": "",
+        "Speaker Configuration": "",
+        "Supported Media": "",
+        "Bluetooth Connectivity": "",
+        "Aux Inputs": "",
+        "USB Playback": "",
+        "CD Support": "",
+        "Radio Bands": "",
+        "Recording Capability": "",
+        "Battery Type": "",
+        "Battery Life": "",
+        "Power Adapter Included": "",
+        "Portability Features": "",
+        "Water Resistance": "",
+        "Display Type": "",
+        "Controls": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Accessories Included": "",
+        "Special Features": ""
+    }
+}

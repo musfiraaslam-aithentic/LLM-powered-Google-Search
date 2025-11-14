@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Version": "",
+        "Release Date": "",
+        "Supported Devices": "",
+        "Supported Chipsets": "",
+        "Security Features": "",
+        "Built-in Applications": "",
+        "iCloud Integration": "",
+        "Continuity Features": "",
+        "Virtualization Support": "",
+        "Developer Tools": "",
+        "Accessibility Features": "",
+        "System Requirements": "",
+        "Management Tools": "",
+        "Enterprise Integration": "",
+        "App Store Availability": "",
+        "Update Policy": "",
+        "Localization": "",
+        "Support Lifecycle": "",
+        "Licensing": "",
+        "Special Features": ""
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Security Solution Type": "",
+        "Deployment Model": "",
+        "Threat Detection Methods": "",
+        "Firewall Capabilities": "",
+        "VPN Support": "",
+        "Content Filtering": "",
+        "Application Control": "",
+        "Intrusion Prevention": "",
+        "Endpoint Integration": "",
+        "Centralized Management": "",
+        "Reporting and Analytics": "",
+        "Compliance Support": "",
+        "High Availability": "",
+        "Scalability": "",
+        "Encryption Standards": "",
+        "Authentication Methods": "",
+        "Update Frequency": "",
+        "API Integration": "",
+        "User Management": "",
+        "Support Services": ""
+    }
+}

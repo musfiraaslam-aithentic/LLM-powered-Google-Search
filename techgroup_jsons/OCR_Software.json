@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Text Recognition Accuracy": "",
+        "Supported Languages": "",
+        "Output Formats": "",
+        "Input Image Formats": "",
+        "Handwriting Recognition": "",
+        "Table Recognition": "",
+        "Zonal OCR": "",
+        "Batch Processing": "",
+        "API Integration": "",
+        "Deployment Model (Cloud/On-premise)": "",
+        "Document Pre-processing Tools": "",
+        "Barcode Recognition": "",
+        "Data Extraction Capabilities": "",
+        "User Interface": "",
+        "Security Features": "",
+        "Scalability": "",
+        "Integration with Document Management Systems": "",
+        "Template Creation": "",
+        "Character Confidence Scores": "",
+        "Reporting and Analytics": ""
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Amplifier Class": "",
+        "Power Output": "",
+        "Channels": "",
+        "Input Options": "",
+        "Output Options": "",
+        "Total Harmonic Distortion": "",
+        "Signal-to-Noise Ratio": "",
+        "Frequency Response": "",
+        "Impedance Support": "",
+        "Gain Control": "",
+        "Cooling Method": "",
+        "Protection Features": "",
+        "Connectivity": "",
+        "DSP Features": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Power Consumption": "",
+        "Remote Control": "",
+        "Build Material": "",
+        "Warranty": ""
+    }
+}

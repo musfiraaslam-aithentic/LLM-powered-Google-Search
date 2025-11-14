@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Ticket Management": "",
+        "Incident Management": "",
+        "Problem Management": "",
+        "Change Management": "",
+        "Service Request Management": "",
+        "Knowledge Base": "",
+        "Asset Tracking": "",
+        "Inventory Management": "",
+        "CMDB": "",
+        "SLA Management": "",
+        "Reporting and Analytics": "",
+        "Multi-channel Support": "",
+        "Automation": "",
+        "Integrations": "",
+        "User Portal": "",
+        "Agent Interface": "",
+        "Customization": "",
+        "Security Features": "",
+        "Mobile Access": "",
+        "License Management": ""
+    }
+}

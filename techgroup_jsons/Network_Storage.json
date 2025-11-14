@@ -1,0 +1,30 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Storage Type": "",
+        "Drive Bays": "",
+        "Supported Drive Types": "",
+        "Max Capacity": "",
+        "Processor": "",
+        "Memory": "",
+        "RAID Levels": "",
+        "Network Interfaces": "",
+        "Link Aggregation": "",
+        "USB Ports": "",
+        "Expansion Options": "",
+        "File Protocols": "",
+        "Backup Features": "",
+        "Cloud Integration": "",
+        "Security Features": "",
+        "Virtualization Support": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Power Consumption": ""
+    }
+}

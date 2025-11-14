@@ -1,0 +1,25 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Range": "",
+        "Frequency Band": "",
+        "Wireless Standard": "",
+        "Data Transfer Rate": "",
+        "Ports": "",
+        "Security Protocols": "",
+        "Setup Method": "",
+        "Compatibility": "",
+        "Antenna Type": "",
+        "Power Source": "",
+        "Coverage Area": "",
+        "Mesh Capability": "",
+        "Indicators": "",
+        "Dimensions": ""
+    }
+}

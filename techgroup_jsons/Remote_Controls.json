@@ -1,0 +1,22 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Connectivity": "",
+        "Compatibility": "",
+        "Power Source": "",
+        "Backlighting": "",
+        "Voice Control": "",
+        "Ergonomics": "",
+        "Number of Buttons": "",
+        "Programmable Buttons": "",
+        "Touchpad/Scroll Wheel": "",
+        "Range": "",
+        "Material": ""
+    }
+}

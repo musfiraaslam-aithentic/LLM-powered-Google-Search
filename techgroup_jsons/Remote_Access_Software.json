@@ -1,0 +1,25 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Remote Desktop Control": "",
+        "File Transfer": "",
+        "Chat Functionality": "",
+        "Unattended Access": "",
+        "Multi-Monitor Support": "",
+        "Cross-Platform Compatibility": "",
+        "Encryption Standards": "",
+        "User Management": "",
+        "Session Recording": "",
+        "Remote Printing": "",
+        "Wake-on-LAN": "",
+        "Performance Optimization": "",
+        "Security Features": "",
+        "Mobile Device Support": ""
+    }
+}

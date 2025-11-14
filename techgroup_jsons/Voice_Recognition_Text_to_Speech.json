@@ -1,0 +1,21 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Recognition Accuracy": "",
+        "Supported Languages": "",
+        "Voice Options": "",
+        "Real-time Processing": "",
+        "Noise Reduction": "",
+        "Custom Vocabulary": "",
+        "Speech Synthesis Markup Language (SSML) Support": "",
+        "Speaker Diarization": "",
+        "Voice Customization": "",
+        "Audio Output Format": ""
+    }
+}

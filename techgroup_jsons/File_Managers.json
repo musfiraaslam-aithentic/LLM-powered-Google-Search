@@ -1,0 +1,26 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "File Browsing": "",
+        "File Searching": "",
+        "Copy/Paste/Move Operations": "",
+        "Delete/Rename Files": "",
+        "Create New Folders/Files": "",
+        "Compression/Decompression": "",
+        "Cloud Integration": "",
+        "Network Share Access": "",
+        "Dual-Pane Interface": "",
+        "Tabbed Interface": "",
+        "File Preview": "",
+        "Permissions Management": "",
+        "Disk Usage Analysis": "",
+        "FTP/SFTP Client": "",
+        "File Synchronization": ""
+    }
+}

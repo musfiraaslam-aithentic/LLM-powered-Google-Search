@@ -1,0 +1,26 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Recording Modes": "",
+        "Time-Lapse Intervals": "",
+        "Maximum Recording Duration": "",
+        "Playback Speeds": "",
+        "Cassette Type Compatibility": "",
+        "Number of Heads": "",
+        "Audio Channels": "",
+        "Input/Output Connectors": "",
+        "Timer Functions": "",
+        "Loop Recording": "",
+        "Event Triggering": "",
+        "Power Source": "",
+        "Remote Control": "",
+        "Display Type": "",
+        "Jog/Shuttle Functionality": ""
+    }
+}

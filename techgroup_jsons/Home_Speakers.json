@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Speaker Type": "",
+        "Configuration": "",
+        "Driver Composition": "",
+        "Power Handling": "",
+        "Frequency Response": "",
+        "Sensitivity": "",
+        "Impedance": "",
+        "Enclosure Type": "",
+        "Connectivity Options": "",
+        "Wireless Support": "",
+        "Voice Assistant Integration": "",
+        "Multi-room Audio": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Finish Options": "",
+        "Mounting Options": "",
+        "Accessories Included": "",
+        "Warranty": "",
+        "Room Size Recommendation": "",
+        "Special Features": ""
+    }
+}

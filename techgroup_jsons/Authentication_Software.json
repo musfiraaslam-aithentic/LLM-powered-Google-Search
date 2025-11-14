@@ -1,0 +1,30 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Multi-factor Authentication (MFA)": "",
+        "Single Sign-On (SSO)": "",
+        "Passwordless Authentication": "",
+        "Biometric Authentication": "",
+        "Adaptive Authentication": "",
+        "Risk-based Authentication": "",
+        "Directory Integration": "",
+        "API Integration": "",
+        "Compliance Reporting": "",
+        "User Provisioning": "",
+        "Session Management": "",
+        "OAuth/OpenID Connect Support": "",
+        "SAML Support": "",
+        "FIDO Support": "",
+        "User Self-Service": "",
+        "Audit Trails and Logging": "",
+        "Cloud Deployment": "",
+        "On-Premise Deployment": "",
+        "Authentication Protocols": ""
+    }
+}

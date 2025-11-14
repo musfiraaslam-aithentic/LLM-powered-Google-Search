@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Supported Devices": "",
+        "Connector Type": "",
+        "Charging Capability": "",
+        "Data Transfer Speed": "",
+        "Number of Ports": "",
+        "Video Output Options": "",
+        "Audio Output Options": "",
+        "Power Delivery": "",
+        "Security Lock Support": "",
+        "Mounting Options": "",
+        "Cable Management": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Material": "",
+        "Cooling Features": "",
+        "Compatibility Certification": "",
+        "Included Accessories": "",
+        "Firmware Updates": "",
+        "Warranty": "",
+        "Special Features": ""
+    }
+}

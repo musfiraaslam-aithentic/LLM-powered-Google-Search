@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Supported Media Formats": "",
+        "Video Resolution Support": "",
+        "Audio Format Support": "",
+        "Internal Storage": "",
+        "Streaming Services": "",
+        "Operating System": "",
+        "App Ecosystem": "",
+        "Input Ports": "",
+        "Output Ports": "",
+        "Wireless Connectivity": "",
+        "Wired Connectivity": "",
+        "Voice Control": "",
+        "Remote Control": "",
+        "Mobile App": "",
+        "HDR Support": "",
+        "Dolby Vision/Atmos Support": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Power Consumption": "",
+        "Warranty": ""
+    }
+}

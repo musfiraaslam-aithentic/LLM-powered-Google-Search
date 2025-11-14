@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Accessory Type": "",
+        "Compatibility": "",
+        "Material": "",
+        "Weight Capacity": "",
+        "Adjustability": "",
+        "Mounting Options": "",
+        "Cable Management": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Weather Resistance": "",
+        "Color Options": "",
+        "Included Hardware": "",
+        "Installation Complexity": "",
+        "Durability Rating": "",
+        "Warranty": "",
+        "Safety Features": "",
+        "Mobility Features": "",
+        "Acoustic Enhancements": "",
+        "Special Features": "",
+        "Compliance Certifications": ""
+    }
+}

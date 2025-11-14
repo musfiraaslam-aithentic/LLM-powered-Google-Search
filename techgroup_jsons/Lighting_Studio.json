@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Lighting Type": "",
+        "Color Temperature Range": "",
+        "CRI Rating": "",
+        "Brightness Output": "",
+        "Power Options": "",
+        "Dimming Control": "",
+        "Mounting Options": "",
+        "Modifiers Compatibility": "",
+        "Wireless Control": "",
+        "Cooling System": "",
+        "Weight": "",
+        "Dimensions": "",
+        "Portability": "",
+        "Accessories Included": "",
+        "Build Material": "",
+        "Control Interface": "",
+        "Battery Compatibility": "",
+        "Special Effects": "",
+        "Weather Resistance": "",
+        "Warranty": ""
+    }
+}

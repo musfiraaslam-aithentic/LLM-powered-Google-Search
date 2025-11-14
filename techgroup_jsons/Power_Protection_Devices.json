@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Device Type": "",
+        "Power Capacity": "",
+        "Input Voltage Range": "",
+        "Output Voltage Regulation": "",
+        "Surge Protection Rating": "",
+        "Battery Backup": "",
+        "Runtime at Full Load": "",
+        "Number of Outlets": "",
+        "Form Factor": "",
+        "Transfer Time": "",
+        "Communication Ports": "",
+        "Management Software": "",
+        "Certifications": "",
+        "Audible Alarms": "",
+        "LCD Indicators": "",
+        "Replaceable Batteries": "",
+        "Mounting Options": "",
+        "Operating Temperature Range": "",
+        "Warranty": "",
+        "Special Features": ""
+    }
+}

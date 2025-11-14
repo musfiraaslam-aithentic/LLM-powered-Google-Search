@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Memory Type": "",
+        "Module Capacity": "",
+        "Number of Modules": "",
+        "Speed": "",
+        "CAS Latency": "",
+        "Voltage": "",
+        "ECC Support": "",
+        "Registered or Unbuffered": "",
+        "Heat Spreader": "",
+        "Compatibility": "",
+        "XMP Profiles": "",
+        "Operating Temperature": "",
+        "Lifetime Endurance": "",
+        "Warranty": "",
+        "RGB Lighting": "",
+        "Form Factor": "",
+        "Error Checking": "",
+        "Packaging": "",
+        "Certification": "",
+        "Special Features": ""
+    }
+}

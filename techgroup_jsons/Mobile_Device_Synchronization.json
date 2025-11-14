@@ -1,0 +1,26 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Data Types Supported": "",
+        "Synchronization Protocol": "",
+        "Real-time Synchronization": "",
+        "Two-way Synchronization": "",
+        "Conflict Resolution": "",
+        "Cloud Sync": "",
+        "Local Sync (e.g., Wi-Fi, USB)": "",
+        "Encryption and Security": "",
+        "Selective Synchronization": "",
+        "Cross-platform Compatibility": "",
+        "Backup and Restore": "",
+        "Bandwidth Optimization": "",
+        "Battery Impact": "",
+        "Error Reporting": "",
+        "User Interface and Setup": ""
+    }
+}

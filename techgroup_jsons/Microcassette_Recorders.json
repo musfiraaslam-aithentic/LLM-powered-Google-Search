@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Recording Modes": "",
+        "Microphone Type": "",
+        "Microphone Inputs": "",
+        "Speaker Output": "",
+        "Tape Speed": "",
+        "Auto Reverse": "",
+        "Voice Activation": "",
+        "Power Source": "",
+        "Battery Life": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Accessories Included": "",
+        "Noise Reduction": "",
+        "Cue and Review": "",
+        "Tape Counter": "",
+        "Durability": "",
+        "Carrying Options": "",
+        "Warranty": "",
+        "Usage Scenarios": "",
+        "Special Features": ""
+    }
+}

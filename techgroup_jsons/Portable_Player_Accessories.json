@@ -1,0 +1,21 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Compatibility": "",
+        "Material": "",
+        "Connectivity Type": "",
+        "Cable Length": "",
+        "Battery Capacity": "",
+        "Charging Ports": "",
+        "Wireless Standard": "",
+        "Water Resistance": "",
+        "Color": "",
+        "Form Factor": ""
+    }
+}

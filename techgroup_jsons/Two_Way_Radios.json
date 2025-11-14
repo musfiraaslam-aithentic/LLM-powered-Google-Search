@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Radio Type": "",
+        "Frequency Band": "",
+        "Channel Capacity": "",
+        "Power Output": "",
+        "Range": "",
+        "Modulation": "",
+        "Encryption": "",
+        "Display": "",
+        "Battery Type": "",
+        "Battery Life": "",
+        "Weather Resistance": "",
+        "Emergency Features": "",
+        "Programming Options": "",
+        "Accessory Support": "",
+        "Audio Quality": "",
+        "VOX Support": "",
+        "GPS Capability": "",
+        "Weight": "",
+        "Dimensions": "",
+        "Warranty": ""
+    }
+}

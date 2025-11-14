@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Cable Type": "",
+        "Connector Types": "",
+        "Cable Length": "",
+        "Gauge": "",
+        "Shielding": "",
+        "Bandwidth Support": "",
+        "Signal Type": "",
+        "Power Handling": "",
+        "Flexibility Rating": "",
+        "Temperature Resistance": "",
+        "UV Resistance": "",
+        "Water Resistance": "",
+        "Installation Accessories": "",
+        "Color Coding": "",
+        "Compliance Standards": "",
+        "Warranty": "",
+        "Pack Size": "",
+        "Use Cases": "",
+        "Certification": "",
+        "Compatibility": ""
+    }
+}

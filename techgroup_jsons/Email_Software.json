@@ -1,0 +1,26 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Email Sending and Receiving": "",
+        "Contact Management": "",
+        "Spam Filtering": "",
+        "Email Templates": "",
+        "Calendar Integration": "",
+        "Automation Rules": "",
+        "Analytics and Reporting": "",
+        "Third-Party Integrations": "",
+        "Mobile Access": "",
+        "Security Features": "",
+        "Storage Capacity": "",
+        "Custom Domain Support": "",
+        "Search Functionality": "",
+        "Attachment Management": "",
+        "Email Scheduling": ""
+    }
+}

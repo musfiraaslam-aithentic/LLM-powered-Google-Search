@@ -1,0 +1,27 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Kernel Architecture": "",
+        "User Interface Type": "",
+        "File System Support": "",
+        "Process Management Capabilities": "",
+        "Memory Management Features": "",
+        "Networking Protocols Supported": "",
+        "Security Features": "",
+        "Application Compatibility": "",
+        "Development Environment Tools": "",
+        "Virtualization Support": "",
+        "Multi-user Capabilities": "",
+        "Accessibility Features": "",
+        "Package Management System": "",
+        "Update Mechanism": "",
+        "Device Driver Support": "",
+        "Command Line Interface": ""
+    }
+}

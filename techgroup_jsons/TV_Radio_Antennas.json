@@ -1,0 +1,24 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Antenna Type": "",
+        "Frequency Range": "",
+        "Gain": "",
+        "Range": "",
+        "Weather Resistance": "",
+        "Installation Type": "",
+        "Connection Type": "",
+        "Impedance": "",
+        "Amplified": "",
+        "Reception Pattern": "",
+        "Channels Supported": "",
+        "Dimensions": "",
+        "Material": ""
+    }
+}

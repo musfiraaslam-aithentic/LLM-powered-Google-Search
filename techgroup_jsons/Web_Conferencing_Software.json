@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Maximum Participants": "",
+        "Video Quality": "",
+        "Audio Quality": "",
+        "Screen Sharing": "",
+        "Recording Capabilities": "",
+        "Virtual Backgrounds": "",
+        "Breakout Rooms": "",
+        "Webinar Support": "",
+        "Live Chat": "",
+        "Polling and Q&A": "",
+        "Whiteboard Tools": "",
+        "File Sharing": "",
+        "Mobile App Support": "",
+        "Browser Compatibility": "",
+        "Security and Encryption": "",
+        "Integration Options": "",
+        "Bandwidth Requirements": "",
+        "Scheduling and Calendar Integration": "",
+        "User Management": "",
+        "Analytics and Reporting": ""
+    }
+}

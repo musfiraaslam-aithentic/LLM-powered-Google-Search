@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Supported Media Formats": "",
+        "Display Size": "",
+        "Display Resolution": "",
+        "Storage Capacity": "",
+        "Expandable Storage": "",
+        "Battery Life": "",
+        "Charging Interface": "",
+        "Wireless Connectivity": "",
+        "Wired Connectivity": "",
+        "Audio Outputs": "",
+        "Video Output": "",
+        "Operating System": "",
+        "App Support": "",
+        "Controls": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Durability": "",
+        "Accessories Included": "",
+        "Special Features": "",
+        "Warranty": ""
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Supported Disc Types": "",
+        "Number of Drives": "",
+        "Copy Speed": "",
+        "Duplication Modes": "",
+        "Verification Options": "",
+        "Buffer Memory": "",
+        "Display Interface": "",
+        "Input Interfaces": "",
+        "Output Interfaces": "",
+        "Standalone Operation": "",
+        "Hard Drive Capacity": "",
+        "Error Management": "",
+        "Cooling System": "",
+        "Power Requirements": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Accessories Included": "",
+        "Operating Temperature": "",
+        "Warranty": "",
+        "Special Features": ""
+    }
+}

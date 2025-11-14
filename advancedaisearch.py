@@ -1,14 +1,25 @@
 import json
+from pathlib import Path
 from google import genai
 from google.genai import types
 import os
 from dotenv import load_dotenv 
 import time
 import re
+from difflib import get_close_matches
 
 # Load environment variables
 load_dotenv()
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+
+BASE_DIR = Path(__file__).resolve().parent
+TECH_GROUPS_FILE = BASE_DIR / "tech_groups.txt"
+TECH_TYPES_FILE = BASE_DIR / "tech_types.txt"
+SECOND_LEVEL_TREE_FILE = BASE_DIR / "second_level_tree.json"
+TECHGROUP_JSON_DIR = BASE_DIR / "techgroup_jsons"
+METDATA_FILE = BASE_DIR / "metadata.json"
+OUTPUT_DIR = BASE_DIR / "outputs"
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 if not GOOGLE_API_KEY:
     raise SystemExit("GOOGLE_API_KEY not set in environment!")
@@ -55,13 +66,16 @@ def model_call_with_retry(prompt, max_retries=5, base_delay=2.0, max_delay=30.0)
                 contents=prompt,
                 config=config,
             )
-            return response
         except Exception as e:
             if attempt == max_retries:
                 raise  # all retries failed
             delay = min(base_delay * (2 ** attempt), max_delay)
-            print(f"Attempt {attempt + 1} failed: {e}. Retrying in {delay:.1f} seconds...")
-            time.sleep(delay)
+            wait_time = max(10.0, delay)
+            print(f"Attempt {attempt + 1} failed: {e}. Retrying in {wait_time:.1f} seconds...")
+            time.sleep(wait_time)
+        else:
+            time.sleep(10)
+            return response
 
 def get_children_for_group(json_file, group_name):
     """
@@ -75,7 +89,7 @@ def get_children_for_group(json_file, group_name):
 
     if group_name not in data:
         available = ', '.join(data.keys())
-        return f"❌ Group '{group_name}' not found in {json_file}\nAvailable groups: {available}"
+        return f"Group '{group_name}' not found in {json_file}\nAvailable groups: {available}"
 
     tree = data[group_name]
 
@@ -97,7 +111,7 @@ def get_children_for_group(json_file, group_name):
                     result += f"{indent}- {item}\n"
         return result
 
-    children_str = f"\n📂 Children of '{group_name}':\n"
+    children_str = f"\nChildren of '{group_name}':\n"
     children_str += build_children_string(tree)
     return children_str
 
@@ -124,310 +138,118 @@ def add_citations_at_end(response):
 
 
 
-TECH_TYPES = [ "Hardware", "License", "Subscription", "Maintenance", "Virtual Machines", "Freeware", "Certificate" ]
-TECH_GROUPS = [
-  "3D Design",
-  "AV Blank Media",
-  "AV Receivers",
-  "Accounting",
-  "Albums, Frames & Presentation",
-  "Amplifiers",
-  "Animation",
-  "Anti-Spam",
-  "Anti-Spyware",
-  "Antivirus",
-  "Antivirus & Security Software",
-  "Arts & Culture",
-  "Assorted Accessories",
-  "Audio & Video Equipment Mounts",
-  "Audio & Video Switches",
-  "Authentication Software",
-  "Batteries",
-  "Blu-ray Players",
-  "Books, Manuals & Periodicals",
-  "Boomboxes",
-  "Bridges & Routers",
-  "Browsers",
-  "Business & Productivity Software",
-  "Business / Economics / Legal",
-  "CAD/CAM Software",
-  "CD Decks",
-  "CD/DVD Authoring",
-  "CD/DVD Wallets",
-  "CRM Software",
-  "Cables",
-  "Calculators & Typewriters",
-  "Camcorder Accessories",
-  "Camcorders",
-  "Camera Accessories",
-  "Camera Lenses",
-  "Car Accessories",
-  "Car Amplifiers & Equalizers",
-  "Car Audio",
-  "Car Audio & Video Cables",
-  "Car Speakers",
-  "Car Video",
-  "Cash Drawers",
-  "Cellular Phones",
-  "Cleaning Accessories",
-  "Compact AV Systems",
-  "Computer / Math / Logic",
-  "Computer Based Training",
-  "Computer Speakers",
-  "Controller Cards",
-  "Converters",
-  "DVD / HDD Combos",
-  "DVD Players",
-  "DVD Recorders",
-  "DVD/VCR Combos",
-  "DVRs",
-  "Darkroom",
-  "Data Analysis & Content Management",
-  "Databases & Tools",
-  "Desktop Accessories",
-  "Desktop Publishing",
-  "Desktops & Workstations",
-  "Developer Tools",
-  "Digital Cameras",
-  "Digital Signage Players",
-  "Digital Voice Recorders",
-  "Disc Duplicators",
-  "Disk Arrays",
-  "Docking Cradles",
-  "Document Management Software",
-  "E-commerce Software",
-  "Early Learning",
-  "Email Software",
-  "Encryption Software",
-  "Encyclopedia",
-  "Equalizers",
-  "External Storage Enclosures",
-  "Fans & Cooling Systems",
-  "Fax Software",
-  "File Managers",
-  "File Transfer",
-  "Film Cameras",
-  "Finance / Tax Preparation",
-  "Firewalls",
-  "Flash Memory",
-  "Fonts & Font Tools",
-  "Foreign Languages & Translation",
-  "GIS & Map Creation Software",
-  "GPS",
-  "GPS Software",
-  "Game Controllers",
-  "Game Utilities",
-  "Gamer Clothing",
-  "Graphics & Photo Editing",
-  "Graphics & Publishing Software",
-  "Groupware",
-  "HD DVD Players",
-  "HSE management",
-  "Handheld Accessories",
-  "Hard Drives",
-  "Headphones",
-  "Headphones Accessories",
-  "Headphones Cables",
-  "Headphones Carrying Cases",
-  "HelpDesk & Inventory Systems",
-  "Home Audio Accessories",
-  "Home Media Players",
-  "Home Speakers",
-  "Hubs & Switches",
-  "Human Resources",
-  "IP TV",
-  "IP Telephony",
-  "Ink Cartridges",
-  "Instant Communication Software",
-  "Interactive Whiteboards",
-  "Internet Filtering Software",
-  "Internet Utilities",
-  "Intrusion Detection/Prevention",
-  "KVM",
-  "Keyboards & Mice",
-  "LNB",
-  "Labeling / Barcode Software",
-  "Large Format Displays",
-  "Learning Management",
-  "Legacy Drives",
-  "Lighting & Studio",
-  "Linux / Unix",
-  "MP3 Players",
-  "Mac Software",
-  "MacOS",
-  "Map/Atlas/Travel",
-  "Marine Electronics",
-  "Memory Upgrades / RAM",
-  "Microcassette Recorders",
-  "Microphones",
-  "Microsoft Windows",
-  "Miscellaneous Drives",
-  "Mobile Device Management",
-  "Mobile Device Synchronization",
-  "Modems",
-  "Monitors",
-  "Motherboards",
-  "Movies & TV Shows",
-  "Multi-Purpose Bags",
-  "Multimedia Players",
-  "Music",
-  "Natural Sciences",
-  "Network & Enterprise Management",
-  "Network Adapters",
-  "Network Appliance Software",
-  "Network Audio Components",
-  "Network Cabling",
-  "Network Security",
-  "Network Software",
-  "Network Storage",
-  "Network Utilities",
-  "Notebooks & Accessories",
-  "OCR Software",
-  "OS Suites",
-  "Office Application Suites",
-  "Office Products",
-  "Office Software",
-  "Optical Drives",
-  "Outdoor Speakers",
-  "Output Accessories",
-  "PC Maintenance",
-  "POS Machines",
-  "Photo / Video / Sound Libraries",
-  "Point Of Sale Equipment",
-  "Policy Management",
-  "Portable CD Players",
-  "Portable Cassette Players & Recorders",
-  "Portable DVD & Blu-ray Players",
-  "Portable MD Players",
-  "Portable Media Players",
-  "Portable Player Accessories",
-  "Portable Player Cables",
-  "Portable Player Carrying Cases",
-  "Portable Player Power",
-  "Portable Radios",
-  "Portable Speakers",
-  "Power Protection Devices",
-  "Presentation",
-  "Print Management",
-  "Print Servers",
-  "Printers",
-  "Programming Languages",
-  "Project Management",
-  "Projectors",
-  "Projectors & Accessories",
-  "Public Address Speakers",
-  "Quad Processors & Video Multiplexers",
-  "Radio Tuners",
-  "Recovery / Backup Software",
-  "Religion",
-  "Remote Access Software",
-  "Remote Controls",
-  "Satellite & Cable TV Accessories",
-  "Satellite Dishes",
-  "Satellite Radio",
-  "Satellite Receivers",
-  "Satellite Receivers With HDD",
-  "Satellite TV Systems",
-  "Scan Management",
-  "Scanners",
-  "Schedule & Contact Management",
-  "Security & Privacy Filters",
-  "Security Cables & Locks",
-  "Security Cameras",
-  "Security Chips, Tokens & Smart Cards",
-  "Security DVRs",
-  "Server Accessories",
-  "Servers",
-  "Signal Extenders",
-  "Single-board Computers & Accessories",
-  "Software Suites",
-  "Sound Bars",
-  "Sound Editing & Recording",
-  "Spare Parts",
-  "Speaker Accessories",
-  "Speaker Cables",
-  "Speaker Support Hardware",
-  "Speakerphones",
-  "Spreadsheets",
-  "Storage Accessories",
-  "Storage Cables",
-  "Storage Media",
-  "System Cases",
-  "System Deployment & Migration Software",
-  "TV & Monitor Mounts",
-  "TV & Radio Antennas",
-  "TV accessories",
-  "Tablets & eBook readers",
-  "Tape Backup",
-  "Tape Decks",
-  "Telephone Accessories",
-  "Telephones",
-  "Time Lapse VCR",
-  "Transceivers & Multiplexers",
-  "Turntable Accessories",
-  "Turntables",
-  "Two-Way Radios",
-  "Unix / Linux Software",
-  "Upconverting DVD Players",
-  "Utilities",
-  "Utilities Suites",
-  "Video Converters",
-  "Video Editing",
-  "Video Editing Controllers, Mixers & Titlers",
-  "Video Servers",
-  "Video Surveillance Accessories",
-  "Video Surveillance Solutions",
-  "Virtualization Software",
-  "VoIP",
-  "Voice Recognition / Text-to-Speech",
-  "Wearable Electronics",
-  "Web Conferencing Software",
-  "Web Design / Publishing",
-  "Web Development",
-  "Wireless",
-  "Wireless Audio & Video Sharing",
-  "Word Processing",
-  "eCommerce Solutions",
-  "iPod Accessories",
-  "iPod Speakers",
-  "iPods"
-]
+def load_list_from_file(path: Path) -> list[str]:
+    if not path.exists():
+        raise SystemExit(f"Required file not found: {path}")
+    with path.open("r", encoding="utf-8") as f:
+        return [line.strip() for line in f if line.strip()]
+
+
+def load_metadata_assets(path: Path) -> list[dict]:
+    if not path.exists():
+        raise SystemExit(f"Metadata file not found: {path}")
+
+    with path.open("r", encoding="utf-8") as f:
+        assets = json.load(f)
+
+    if not isinstance(assets, list):
+        raise SystemExit("Expected metadata file to contain a list of assets' data.")
+
+    return assets
+
+
+def extract_json_payload(text: str) -> str | None:
+    if not text:
+        return None
+    code_block_pattern = re.compile(r"```(?:json)?\s*(.*?)```", re.DOTALL | re.IGNORECASE)
+    match = code_block_pattern.search(text)
+    if match:
+        return match.group(1).strip()
+    return None
+
+
+def build_output_filename(index: int, metadata: dict, tech_group: str) -> str:
+    model = ""
+    manufacturer = ""
+
+    if isinstance(metadata, dict):
+        hardware = metadata.get("hardware_data") if isinstance(metadata.get("hardware_data"), dict) else {}
+        model = hardware.get("model") 
+        manufacturer = hardware.get("manufacturer") 
+
+    parts = [f"asset_{index:04d}"]
+    if manufacturer:
+        parts.append(manufacturer)
+    if model:
+        parts.append(model)
+    if tech_group:
+        parts.append(tech_group)
+
+    raw_name = "_".join(parts)
+    safe_name = re.sub(r"[^A-Za-z0-9_.-]", "_", raw_name)
+    return f"{safe_name}.json"
+
+
+def normalize_tech_group_choice(raw_choice: str) -> str:
+    if raw_choice is None:
+        return ""
+
+    choice = raw_choice.strip().strip('"').strip()
+    if not choice:
+        return ""
+
+    first_line = choice.splitlines()[0].strip()
+    if ":" in first_line:
+        first_line = first_line.split(":", 1)[-1].strip()
+
+    if first_line.lower() in {"none", "null"}:
+        return ""
+
+    return first_line
+
+
+def find_closest_tech_group(choice: str, groups: list[str], cutoff: float = 0.7) -> str:
+    """
+    Return the closest matching tech group using fuzzy matching if an exact match does not exist.
+    """
+    if not choice:
+        return ""
+    matches = get_close_matches(choice, groups, n=1, cutoff=cutoff)
+    return matches[0] if matches else ""
+
+
+TECH_TYPES = load_list_from_file(TECH_TYPES_FILE)
+TECH_GROUPS = load_list_from_file(TECH_GROUPS_FILE)
 
 # Load failed asset data
-with open("failed_assets_fixed.json", "r") as f:
-    data = json.load(f)
+data = load_metadata_assets(METDATA_FILE)
 
 
-for i, asset in enumerate(data, start=1):
-
-    model = asset.get("MODEL", "")
-    manufacturer = asset.get("MANUFACTURER", "")
-    metadata_dict = asset.get("metadata", {})
+for i, metadata in enumerate(data, start=1):
 
     try:
-        metadata = json.dumps(metadata_dict, indent=4)
+        metadata = json.dumps(metadata, indent=2, ensure_ascii=False)
     except (TypeError, ValueError):
-        metadata = str(metadata_dict) 
+        metadata = str(metadata)
 
     TECH_GROUPS_JSON = json.dumps(TECH_GROUPS, indent=2)
     TECH_TYPES_JSON = json.dumps(TECH_TYPES, indent=2)
 
     prompt = f"""
 
-    The data provided is of an asset which we were unable to match or identify.
+        The following data describes an asset which could not be matched or identified:
+        {metadata}
+        Task:
+        1. Perform a web search to find accurate and reliable information about this asset.
+        2. Using the information from your search, select the **single best** tech group from the list below that fits this asset.
+        3. If you are unable to find the exact tech group, select the closest match.
 
-    This is the data we received:
-        Model: {model}
-        Manufacturer: {manufacturer}
-        Metadata: {metadata}
-
-    From the following list of tech groups, choose the **one group** that best represents the asset.
-    - Return **exactly one value** from the list.
-    - If there is not enough information, return **null**.
-    - Return **only the chosen value**, no explanations or extra text.
-
+        Rules:
+        - Do NOT choose based only on the provided JSON; base your selection on verified external information.
+        - Return only the chosen value exactly as it is in the list, no explanations or extra text.
+        
+        Available tech groups:
     {TECH_GROUPS_JSON}
-
     """
 
     #print("This is the prompt\n", prompt)
@@ -437,17 +259,38 @@ for i, asset in enumerate(data, start=1):
     # The maximum quota for the CountTokens API is 3000 requests per minute.
     # https://docs.cloud.google.com/vertex-ai/generative-ai/docs/multimodal/get-token-count
     
-    token_info = client.models.count_tokens(
-        model="gemini-2.5-flash",  
-        contents=prompt
-    )
+    try:
+        token_info = client.models.count_tokens(
+            model="gemini-2.5-flash",  
+            contents=prompt
+        )
+    finally:
+        time.sleep(10)
     
     total_tokens = token_info.total_tokens  
 
     if total_tokens < ideal_tokens_per_request:
         response = model_call_with_retry(prompt)
         
-        tech_group_result = response.text
+        tech_group_raw = getattr(response, "text", "")
+        tech_group_result = normalize_tech_group_choice(tech_group_raw)
+
+        if not tech_group_result:
+            print("No tech group returned for this asset; skipping.")
+            continue
+
+        if tech_group_result not in TECH_GROUPS:
+            matches = [group for group in TECH_GROUPS if group.lower() == tech_group_result.lower()]
+            if matches:
+                tech_group_result = matches[0]
+            else:
+                closest_match = find_closest_tech_group(tech_group_result, TECH_GROUPS)
+                if closest_match:
+                    print(f"Tech group '{tech_group_result}' not found. Using closest match '{closest_match}'.")
+                    tech_group_result = closest_match
+                else:
+                    print(f"Model returned an unknown tech group '{tech_group_result}'. Skipping asset.")
+                    continue
 
         print("Gemini chose this as the tech group: ", tech_group_result)
         print()
@@ -456,56 +299,54 @@ for i, asset in enumerate(data, start=1):
         print("Corresponding JSON file: ", tech_group_json)
         print()
 
-        children_output = get_children_for_group("second_level_tree.json", tech_group_result)
+        children_output = get_children_for_group(SECOND_LEVEL_TREE_FILE, tech_group_result)
         print(children_output)
 
-        json_folder = "techgroup_jsons"
-        json_file_path = os.path.join(json_folder, tech_group_json)
+        json_file_path = TECHGROUP_JSON_DIR / tech_group_json
 
-        with open(json_file_path, "r", encoding="utf-8") as f:
+        with json_file_path.open("r", encoding="utf-8") as f:
             schema_data = json.load(f)
 
         cleaned_schema = json.dumps(schema_data, indent=2)
 
         promptTwo = f"""
     
-            The data provided is of an asset which we were unable to match or identify.
-            
-            This is the data we received:
-                Model: {model}
-                Manufacturer: {manufacturer}
-                Metadata: {metadata}
-
-            Using this data help to find the exact model. 
-            
-            If you are unable to find the exact model find the closest results.
-
-            Return these pieces of data
-
-            Brand/Manufacturer/Vendor: (e.g. Apple or ASUS)
-            Brand Country: 
-            Brand Domain: (e.g. https://www.asus.com/ or https://www.apple.com/)
-            Tech Type: Fill this field using this list: {TECH_TYPES_JSON}
-            
-            Product SKU/ID: 
-            Product Description: 
-            Product Features: Only list 5 features (e.g., RAM, CPU, Display, Refresh Rate, etc.)
-
-            Make sure to fill this json file and enrich the data
-
+            The data provided is of an asset which we were unable to match or identify: {metadata}
+                        
+            Your task:
+            1. Perform a search to identify accurate information about this asset.
+            2. Use the results to fill out the following JSON structure:
             {cleaned_schema}
+
+            Instructions:
+            - Ensure all data is accurate and from reliable sources
+            - If specific data cannot be found, write "Not found".
+            - For "tech_type", select a value from:
+            {TECH_TYPES_JSON}
+            - For "tech_group", select a most accurate value from:
+            {children_output}
+            - Return only the completed JSON object with no additional explanations or text.
+
         """
 
         response = model_call_with_retry(promptTwo)
         final_result = add_citations_at_end(response)
 
         # Debugging print statements
-        print(f"\n--- Result for Asset #{i} ---\n{final_result}\n")
+        print(f"\n--- Result for Asset #{i} ---\n{response}\n")
         print(f"Total Tokens in Prompt: {total_tokens}/{ideal_tokens_per_request}")
         print("=" * 100)
 
-   
-        time.sleep(10) 
+        json_payload = extract_json_payload(response.text)
+        output_text = json_payload if json_payload else response.text
+        output_filename = build_output_filename(i, metadata, tech_group_result)
+        output_path = OUTPUT_DIR / output_filename
+        with output_path.open("w", encoding="utf-8") as f:
+            f.write(output_text)
+            if not output_text.endswith("\n"):
+                f.write("\n")
+
+        print(f"Saved enriched asset to {output_path}")
 
     else:
         print("Prompt is too large skipping asset.")

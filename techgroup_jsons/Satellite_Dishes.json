@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Dish Type": "",
+        "Dish Size": "",
+        "Material": "",
+        "Reflector Gain": "",
+        "Frequency Bands": "",
+        "Feed Support": "",
+        "Polarization": "",
+        "Mount Type": "",
+        "Elevation Range": "",
+        "Azimuth Range": "",
+        "Wind Load Rating": "",
+        "Weather Resistance": "",
+        "Grounding Requirements": "",
+        "Compatibility": "",
+        "Weight": "",
+        "Dimensions": "",
+        "Accessories Included": "",
+        "Installation Complexity": "",
+        "Color": "",
+        "Warranty": ""
+    }
+}

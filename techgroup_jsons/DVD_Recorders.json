@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Disc Types Supported": "",
+        "Recording Modes": "",
+        "Max Recording Quality": "",
+        "Internal Storage": "",
+        "Input Interfaces": "",
+        "Output Interfaces": "",
+        "Tuner Support": "",
+        "Scheduling Options": "",
+        "Copy Protection Handling": "",
+        "Editing Features": "",
+        "Time Shift Capability": "",
+        "Remote Control Options": "",
+        "Display Type": "",
+        "Firmware Updates": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Power Consumption": "",
+        "Accessories Included": "",
+        "Warranty": "",
+        "Special Features": ""
+    }
+}

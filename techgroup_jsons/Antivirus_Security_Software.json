@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Real-time Protection": "",
+        "Malware Detection": "",
+        "Virus Protection": "",
+        "Ransomware Protection": "",
+        "Firewall": "",
+        "VPN": "",
+        "Password Manager": "",
+        "Parental Controls": "",
+        "Phishing Protection": "",
+        "Web Protection": "",
+        "Email Protection": "",
+        "Secure Browser": "",
+        "Device Optimization": "",
+        "Identity Theft Protection": "",
+        "File Shredder": "",
+        "Cloud Backup": "",
+        "Vulnerability Scanner": "",
+        "Privacy Tools": "",
+        "Dark Web Monitoring": "",
+        "Cross-device Compatibility": ""
+    }
+}

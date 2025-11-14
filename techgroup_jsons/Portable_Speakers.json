@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Speaker Type": "",
+        "Total Output Power": "",
+        "Driver Configuration": "",
+        "Frequency Response": "",
+        "Wireless Connectivity": "",
+        "Bluetooth Version": "",
+        "Supported Codecs": "",
+        "Battery Life": "",
+        "Charging Interface": "",
+        "Water Resistance": "",
+        "Dust Resistance": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Voice Assistant Integration": "",
+        "Multi-speaker Pairing": "",
+        "Audio Inputs": "",
+        "Control Interface": "",
+        "Lighting Effects": "",
+        "Accessories Included": "",
+        "Special Features": ""
+    }
+}

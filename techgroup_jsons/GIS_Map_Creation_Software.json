@@ -1,0 +1,26 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Spatial Analysis Tools": "",
+        "Map Projection Support": "",
+        "Data Visualization & Cartography": "",
+        "Geocoding & Reverse Geocoding": "",
+        "Raster & Vector Editing": "",
+        "Database Connectivity": "",
+        "Scripting & Automation": "",
+        "Web Mapping Integration": "",
+        "3D Data Visualization": "",
+        "LiDAR Data Processing": "",
+        "GPS Integration": "",
+        "Topology & Network Analysis": "",
+        "Data Import/Export Formats": "",
+        "Reporting & Publishing Tools": "",
+        "Customization & Extensibility": ""
+    }
+}

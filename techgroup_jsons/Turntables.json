@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Drive Type": "",
+        "Platter Material": "",
+        "Tonearm Type": "",
+        "Cartridge Type": "",
+        "Stylus Included": "",
+        "Speed Options": "",
+        "Pitch Control": "",
+        "Wow and Flutter": "",
+        "Signal-to-Noise Ratio": "",
+        "Built-in Preamp": "",
+        "USB Output": "",
+        "Phono Output": "",
+        "Anti-skate Adjustment": "",
+        "Cueing Mechanism": "",
+        "Isolation Feet": "",
+        "Dust Cover": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Power Requirements": "",
+        "Warranty": ""
+    }
+}

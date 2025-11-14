@@ -1,0 +1,26 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Connectivity": "",
+        "Polar Pattern": "",
+        "Frequency Response": "",
+        "Type": "",
+        "Impedance": "",
+        "Sensitivity": "",
+        "Max SPL": "",
+        "Phantom Power Requirement": "",
+        "Gain Control": "",
+        "Headphone Output": "",
+        "Mounting Type": "",
+        "Sample Rate": "",
+        "Bit Depth": "",
+        "Mute Button": "",
+        "Built-in Pop Filter": ""
+    }
+}

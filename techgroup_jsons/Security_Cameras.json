@@ -1,0 +1,25 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Resolution": "",
+        "Field of View (FoV)": "",
+        "Night Vision": "",
+        "Weather Resistance (IP Rating)": "",
+        "Storage Options": "",
+        "Connectivity": "",
+        "Motion Detection": "",
+        "Audio (Two-way)": "",
+        "Power Source": "",
+        "Pan/Tilt/Zoom (PTZ)": "",
+        "Smart Home Integration": "",
+        "Siren/Alarm": "",
+        "Person Detection": "",
+        "Privacy Zones": ""
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Recording Formats": "",
+        "Microphone Configuration": "",
+        "Storage Capacity": "",
+        "Expandable Storage": "",
+        "Battery Type": "",
+        "Battery Life": "",
+        "Charging Method": "",
+        "Voice Activation": "",
+        "Noise Reduction": "",
+        "Playback Features": "",
+        "Display Type": "",
+        "Interface Ports": "",
+        "File Management": "",
+        "Transcription Support": "",
+        "Security Features": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Accessories Included": "",
+        "Operating Temperature": "",
+        "Special Features": ""
+    }
+}

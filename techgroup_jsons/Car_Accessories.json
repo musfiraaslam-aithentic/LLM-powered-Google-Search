@@ -1,0 +1,30 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Accessory Type": "",
+        "Vehicle Compatibility": "",
+        "Installation Method": "",
+        "Power Requirements": "",
+        "Material": "",
+        "Weather Resistance": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Safety Certifications": "",
+        "Warranty": "",
+        "Smart Features": "",
+        "Connectivity Options": "",
+        "Adjustability": "",
+        "Storage Options": "",
+        "Included Hardware": "",
+        "Maintenance Requirements": "",
+        "Color Options": "",
+        "Durability": "",
+        "Special Features": ""
+    }
+}

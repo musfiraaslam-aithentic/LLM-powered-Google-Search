@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Radio Bands": "",
+        "Tuning Method": "",
+        "Display Type": "",
+        "Audio Output Power": "",
+        "Speaker Configuration": "",
+        "Headphone Jack": "",
+        "Bluetooth Connectivity": "",
+        "Aux Input": "",
+        "Battery Type": "",
+        "Battery Life": "",
+        "Charging Options": "",
+        "Weather Alerts": "",
+        "Durability": "",
+        "Water Resistance": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Accessories Included": "",
+        "Antenna Type": "",
+        "Alarm Functions": "",
+        "Special Features": ""
+    }
+}

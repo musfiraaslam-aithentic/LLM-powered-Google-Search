@@ -1,0 +1,25 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Compatibility": "",
+        "Connectivity Type": "",
+        "Power Input": "",
+        "Material": "",
+        "Mounting Type": "",
+        "Cable Length": "",
+        "Connector Type": "",
+        "Transmission Range": "",
+        "Storage Support": "",
+        "Number of Channels": "",
+        "Voltage": "",
+        "Weather Resistance": "",
+        "Function": "",
+        "Dimensions": ""
+    }
+}

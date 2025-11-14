@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Product Type": "",
+        "Compatible Film Formats": "",
+        "Chemical Requirements": "",
+        "Processing Capacity": "",
+        "Temperature Control": "",
+        "Lightproof Rating": "",
+        "Power Requirements": "",
+        "Material": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Accessories Included": "",
+        "Safety Features": "",
+        "Automation Features": "",
+        "Cleaning Instructions": "",
+        "Storage Requirements": "",
+        "Durability": "",
+        "Warranty": "",
+        "Compliance Standards": "",
+        "Special Features": "",
+        "Usage Level": ""
+    }
+}

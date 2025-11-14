@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Device Type": "",
+        "Control Interface": "",
+        "Supported Software": "",
+        "Number of Channels": "",
+        "Assignable Controls": "",
+        "Keyframe Controls": "",
+        "Transport Controls": "",
+        "Macro Programming": "",
+        "Audio Mixing Capabilities": "",
+        "Video Effects Control": "",
+        "Live Switching Support": "",
+        "Multicam Editing": "",
+        "Preview Monitoring": "",
+        "Built-in Titling Tools": "",
+        "Resolution Support": "",
+        "Connectivity Options": "",
+        "Power Options": "",
+        "Portability": "",
+        "Firmware Updates": "",
+        "Accessories Included": ""
+    }
+}

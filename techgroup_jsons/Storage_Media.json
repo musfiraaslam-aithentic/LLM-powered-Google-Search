@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Media Type": "",
+        "Capacity": "",
+        "Form Factor": "",
+        "Write Speed": "",
+        "Read Speed": "",
+        "Durability Rating": "",
+        "Archival Life": "",
+        "Operating Temperature": "",
+        "Storage Temperature": "",
+        "Compatibility": "",
+        "Packaging": "",
+        "Rewrite Cycles": "",
+        "Encryption Support": "",
+        "Water Resistance": "",
+        "Shock Resistance": "",
+        "Compliance Standards": "",
+        "Warranty": "",
+        "Labeling Options": "",
+        "Special Features": "",
+        "Included Accessories": ""
+    }
+}

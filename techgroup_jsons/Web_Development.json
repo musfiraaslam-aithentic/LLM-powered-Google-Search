@@ -1,0 +1,26 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Frontend Frameworks": "",
+        "Backend Languages": "",
+        "Database Support": "",
+        "API Integration": "",
+        "Version Control Integration": "",
+        "Deployment Options": "",
+        "CI/CD Pipelines": "",
+        "Hosting Environment": "",
+        "Scalability Features": "",
+        "Security Features": "",
+        "Real-time Communication Support": "",
+        "User Authentication Methods": "",
+        "Performance Monitoring Tools": "",
+        "Responsive Design Capabilities": "",
+        "SEO Optimization Tools": ""
+    }
+}

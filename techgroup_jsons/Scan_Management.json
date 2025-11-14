@@ -1,0 +1,28 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Scan Scheduling": "",
+        "Vulnerability Detection": "",
+        "Compliance Scanning": "",
+        "Reporting and Analytics": "",
+        "Remediation Tracking": "",
+        "Asset Discovery": "",
+        "Scan Profiles": "",
+        "Integration Capabilities": "",
+        "False Positive Management": "",
+        "Prioritization": "",
+        "Credential Management": "",
+        "Distributed Scanning": "",
+        "API Scanning": "",
+        "Web Application Scanning": "",
+        "Container Scanning": "",
+        "Cloud Environment Scanning": "",
+        "User Roles and Permissions": ""
+    }
+}

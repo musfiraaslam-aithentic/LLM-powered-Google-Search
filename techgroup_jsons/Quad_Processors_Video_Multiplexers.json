@@ -1,0 +1,27 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Number of Inputs": "",
+        "Number of Outputs": "",
+        "Input Signal Type": "",
+        "Output Signal Type": "",
+        "Supported Input Resolution": "",
+        "Supported Output Resolution": "",
+        "Display Modes": "",
+        "Frame Rate": "",
+        "Control Interface": "",
+        "Compression Support": "",
+        "Recording Capability": "",
+        "Storage Options": "",
+        "Network Connectivity": "",
+        "Audio Support": "",
+        "Cascade Functionality": "",
+        "Switching Speed": ""
+    }
+}

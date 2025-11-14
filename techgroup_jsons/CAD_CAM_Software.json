@@ -1,0 +1,26 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "3D Modeling Capabilities": "",
+        "2D Drafting Capabilities": "",
+        "CAM Programming Modules": "",
+        "Simulation & Analysis Tools": "",
+        "File Format Compatibility": "",
+        "Parametric Design": "",
+        "Direct Modeling": "",
+        "Surface Modeling": "",
+        "Assembly Design": "",
+        "Sheet Metal Design": "",
+        "Mold Design": "",
+        "Reverse Engineering Tools": "",
+        "Data Management & PDM Integration": "",
+        "Customization & API": "",
+        "Cloud Collaboration": ""
+    }
+}

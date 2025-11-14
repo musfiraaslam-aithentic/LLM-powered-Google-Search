@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Device Type": "",
+        "Supported Platforms": "",
+        "Display Type": "",
+        "Sensors": "",
+        "Health Tracking Features": "",
+        "Connectivity": "",
+        "Battery Life": "",
+        "Charging Method": "",
+        "Water Resistance": "",
+        "Durability Rating": "",
+        "Storage Capacity": "",
+        "Audio Features": "",
+        "Control Interface": "",
+        "Companion App": "",
+        "Voice Assistant Integration": "",
+        "Smart Notifications": "",
+        "Band Material": "",
+        "Weight": "",
+        "Dimensions": "",
+        "Special Features": ""
+    }
+}

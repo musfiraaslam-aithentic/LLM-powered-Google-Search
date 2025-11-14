@@ -1,0 +1,26 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Page Layout Tools": "",
+        "Typography Controls": "",
+        "Image and Graphics Handling": "",
+        "PDF Export and Import": "",
+        "Pre-press Capabilities": "",
+        "Template Management": "",
+        "Style Sheets and Paragraph Styles": "",
+        "Master Pages": "",
+        "Text Wrapping": "",
+        "Color Management": "",
+        "Vector Graphics Support": "",
+        "Multi-page Documents": "",
+        "Table of Contents Generation": "",
+        "Index Generation": "",
+        "Collaboration Features": ""
+    }
+}

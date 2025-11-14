@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Format": "",
+        "Genre": "",
+        "Artist": "",
+        "Release Date": "",
+        "Number of Tracks": "",
+        "Runtime": "",
+        "Label": "",
+        "Audio Quality": "",
+        "Bonus Content": "",
+        "Standard Edition": "",
+        "Deluxe Edition Features": "",
+        "Packaging": "",
+        "Digital Download Included": "",
+        "Autographed": "",
+        "Limited Edition": "",
+        "Collaborations": "",
+        "Language": "",
+        "Parental Advisory": "",
+        "Chart Performance": "",
+        "Awards": ""
+    }
+}

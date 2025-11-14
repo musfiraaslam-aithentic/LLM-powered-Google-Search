@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Accessory Type": "",
+        "Server Compatibility": "",
+        "Mounting Options": "",
+        "Power Requirements": "",
+        "Cooling Features": "",
+        "Cable Management": "",
+        "Redundancy Support": "",
+        "Expansion Capacity": "",
+        "Monitoring Features": "",
+        "Security Features": "",
+        "Material": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Included Components": "",
+        "Warranty": "",
+        "Compliance Certifications": "",
+        "Deployment Environment": "",
+        "Management Software Integration": "",
+        "Installation Complexity": "",
+        "Special Features": ""
+    }
+}

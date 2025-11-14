@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Accessory Type": "",
+        "Compatibility": "",
+        "Signal Range": "",
+        "Frequency Support": "",
+        "Connector Type": "",
+        "Power Requirements": "",
+        "Weather Resistance": "",
+        "Mounting Options": "",
+        "Amplification": "",
+        "Splitter Support": "",
+        "Cable Length": "",
+        "Included Components": "",
+        "Durability Rating": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Color": "",
+        "Warranty": "",
+        "Compliance Certifications": "",
+        "Installation Complexity": "",
+        "Special Features": ""
+    }
+}

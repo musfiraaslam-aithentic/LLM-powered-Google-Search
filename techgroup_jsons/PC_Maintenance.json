@@ -1,0 +1,24 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Diagnostic Tools": "",
+        "Performance Optimization": "",
+        "Disk Cleanup": "",
+        "Registry Cleaner": "",
+        "Driver Management": "",
+        "Malware Scan": "",
+        "Backup & Restore": "",
+        "System Monitoring": "",
+        "Defragmentation": "",
+        "Software Uninstaller": "",
+        "Startup Manager": "",
+        "File Shredder": "",
+        "Network Tools": ""
+    }
+}

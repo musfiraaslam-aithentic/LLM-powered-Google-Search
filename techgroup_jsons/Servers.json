@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Form Factor": "",
+        "Processor": "",
+        "Processor Count": "",
+        "Memory Capacity": "",
+        "Memory Type": "",
+        "Drive Bays": "",
+        "Storage Controller": "",
+        "RAID Support": "",
+        "Network Interfaces": "",
+        "Expansion Slots": "",
+        "Power Supplies": "",
+        "Remote Management": "",
+        "Security Features": "",
+        "Operating Temperature": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Energy Efficiency": "",
+        "Warranty": "",
+        "Management Software": "",
+        "Special Features": ""
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Disc Formats Supported": "",
+        "VCR Tape Format": "",
+        "Recording Capability": "",
+        "Playback Quality": "",
+        "Conversion Features": "",
+        "Input Ports": "",
+        "Output Ports": "",
+        "Tuner Support": "",
+        "Copy Protection Handling": "",
+        "Remote Control Features": "",
+        "On-screen Display": "",
+        "Timer Recording": "",
+        "Firmware Updates": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Power Consumption": "",
+        "Accessories Included": "",
+        "Region Code": "",
+        "Warranty": "",
+        "Special Features": ""
+    }
+}

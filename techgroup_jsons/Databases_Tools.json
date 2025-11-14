@@ -1,0 +1,26 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Scalability": "",
+        "Performance": "",
+        "Data Security": "",
+        "Backup & Recovery": "",
+        "Query Language Support": "",
+        "Data Modeling": "",
+        "Concurrency Control": "",
+        "Replication": "",
+        "High Availability": "",
+        "Integration Capabilities": "",
+        "Monitoring & Analytics": "",
+        "Admin Tooling": "",
+        "Transaction Management": "",
+        "Indexing Options": "",
+        "Storage Engine": ""
+    }
+}

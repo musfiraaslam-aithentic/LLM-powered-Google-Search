@@ -1,0 +1,24 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Compatibility": "",
+        "Connectivity Technology": "",
+        "Connector Type": "",
+        "Cable Length": "",
+        "Material": "",
+        "Color": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Power Source": "",
+        "Mounting Type": "",
+        "Impedance": "",
+        "Audio Format Support": "",
+        "Durability": ""
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Mount Type": "",
+        "Compatibility": "",
+        "Screen Size Range": "",
+        "Max Weight Capacity": "",
+        "VESA Compliance": "",
+        "Adjustability": "",
+        "Tilt Range": "",
+        "Swivel Range": "",
+        "Rotation": "",
+        "Height Adjustment": "",
+        "Material": "",
+        "Color": "",
+        "Cable Management": "",
+        "Installation Type": "",
+        "Number of Displays Supported": "",
+        "Articulation": "",
+        "Security Features": ""
+    }
+}

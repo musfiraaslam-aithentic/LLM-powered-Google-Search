@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Printer Type": "",
+        "Print Technology": "",
+        "Maximum Resolution": "",
+        "Print Speed": "",
+        "Duplex Printing": "",
+        "Paper Handling": "",
+        "Paper Capacity": "",
+        "Supported Media Types": "",
+        "Connectivity Options": "",
+        "Mobile Printing": "",
+        "Cloud Printing": "",
+        "Control Panel": "",
+        "Display Type": "",
+        "Operating Systems Supported": "",
+        "Monthly Duty Cycle": "",
+        "Consumable Type": "",
+        "Security Features": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Power Consumption": ""
+    }
+}

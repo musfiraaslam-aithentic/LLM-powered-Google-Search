@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Modem Type": "",
+        "Supported Standards": "",
+        "Download Speeds": "",
+        "Upload Speeds": "",
+        "Channel Bonding": "",
+        "Phone Line Support": "",
+        "Ethernet Ports": "",
+        "USB Ports": "",
+        "Bridge Mode": "",
+        "Firewall Features": "",
+        "IPv6 Support": "",
+        "Management Interface": "",
+        "ISP Compatibility": "",
+        "Power Consumption": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Mounting Options": "",
+        "Accessories Included": "",
+        "Firmware Updates": "",
+        "Warranty": ""
+    }
+}

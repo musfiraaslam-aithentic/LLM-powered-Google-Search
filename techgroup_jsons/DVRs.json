@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Recorder Type": "",
+        "Channel Capacity": "",
+        "Max Resolution": "",
+        "Frame Rate": "",
+        "Compression Format": "",
+        "Storage Capacity": "",
+        "Drive Bays": "",
+        "RAID Support": "",
+        "Video Inputs": "",
+        "Audio Inputs": "",
+        "Video Outputs": "",
+        "Network Connectivity": "",
+        "Remote Access": "",
+        "Alarm Integration": "",
+        "Analytics Features": "",
+        "Backup Options": "",
+        "Operating Temperature": "",
+        "Power Consumption": "",
+        "Dimensions": "",
+        "Warranty": ""
+    }
+}

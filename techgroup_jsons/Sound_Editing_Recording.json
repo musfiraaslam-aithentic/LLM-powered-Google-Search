@@ -1,0 +1,30 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Number of Inputs": "",
+        "Number of Outputs": "",
+        "Audio Interface Type": "",
+        "Preamps": "",
+        "Phantom Power": "",
+        "Bit Depth": "",
+        "Sample Rate": "",
+        "Connectivity": "",
+        "MIDI I/O": "",
+        "DSP Effects": "",
+        "Bundled Software": "",
+        "Headphone Outputs": "",
+        "Latency": "",
+        "Compatibility (OS)": "",
+        "Form Factor": "",
+        "Direct Monitoring": "",
+        "Gain Range": "",
+        "Dynamic Range": "",
+        "Signal-to-Noise Ratio (SNR)": ""
+    }
+}

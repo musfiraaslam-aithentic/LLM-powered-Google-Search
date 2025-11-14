@@ -1,0 +1,25 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Print Job Tracking": "",
+        "Secure Print Release": "",
+        "User Authentication": "",
+        "Print Quotas and Budgeting": "",
+        "Cost Allocation and Reporting": "",
+        "Mobile Printing Support": "",
+        "Cloud Print Integration": "",
+        "Driver Management": "",
+        "Printer Fleet Monitoring": "",
+        "Rules-Based Printing": "",
+        "Scan Management": "",
+        "High Availability and Failover": "",
+        "Reporting and Analytics": "",
+        "Policy Enforcement": ""
+    }
+}

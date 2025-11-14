@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Accessory Type": "",
+        "Material": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Color Options": "",
+        "Functional Features": "",
+        "Ergonomic Features": "",
+        "Cable Management": "",
+        "Power Requirements": "",
+        "Connectivity": "",
+        "Device Compatibility": "",
+        "Storage Capacity": "",
+        "Adjustability": "",
+        "Installation Method": "",
+        "Included Components": "",
+        "Durability Rating": "",
+        "Warranty": "",
+        "Sustainability": "",
+        "Cleaning Instructions": "",
+        "Special Features": ""
+    }
+}

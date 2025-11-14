@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Tape Format": "",
+        "Native Capacity": "",
+        "Compressed Capacity": "",
+        "Native Transfer Rate": "",
+        "Compressed Transfer Rate": "",
+        "Interface": "",
+        "Encryption Support": "",
+        "Compression": "",
+        "Autoloading": "",
+        "Media Compatibility": "",
+        "WORM Support": "",
+        "Library Integration": "",
+        "Management Software": "",
+        "Operating Temperature": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Power Consumption": "",
+        "Maintenance Kit": "",
+        "Warranty": "",
+        "Special Features": ""
+    }
+}

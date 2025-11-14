@@ -1,0 +1,24 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Syntax": "",
+        "Type System": "",
+        "Memory Management": "",
+        "Concurrency Model": "",
+        "Programming Paradigms": "",
+        "Standard Library": "",
+        "Tooling & Ecosystem": "",
+        "Performance Characteristics": "",
+        "Portability": "",
+        "Error Handling": "",
+        "Metaprogramming Capabilities": "",
+        "Interoperability": "",
+        "Learning Curve": ""
+    }
+}

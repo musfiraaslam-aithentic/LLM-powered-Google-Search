@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "SIP Protocol Support": "",
+        "Voice Codecs (e.g., G.711, G.729, Opus)": "",
+        "Call Features (Hold, Transfer, Conference)": "",
+        "Quality of Service (QoS)": "",
+        "Power over Ethernet (PoE)": "",
+        "Security Features (SRTP, TLS)": "",
+        "Directory Integration (LDAP, XML)": "",
+        "Scalability": "",
+        "Interoperability with PBX/UC Systems": "",
+        "Provisioning and Management": "",
+        "VLAN Tagging": "",
+        "Echo Cancellation": "",
+        "Hands-free Speakerphone": "",
+        "Headset Support": "",
+        "Display Type and Size": "",
+        "Number of SIP Accounts": "",
+        "Call Recording Capability": "",
+        "Voicemail Integration": "",
+        "Unified Communications (UC) Features": "",
+        "VPN Support": ""
+    }
+}

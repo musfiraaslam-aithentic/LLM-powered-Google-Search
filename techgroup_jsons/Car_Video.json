@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Display Type": "",
+        "Screen Size": "",
+        "Resolution": "",
+        "Brightness": "",
+        "Mounting Location": "",
+        "Input Sources": "",
+        "Video Format Support": "",
+        "Audio Output Options": "",
+        "Wireless Streaming": "",
+        "Touchscreen Capability": "",
+        "Playback Controls": "",
+        "Power Requirements": "",
+        "Additional Screens": "",
+        "Remote Control": "",
+        "Smart Features": "",
+        "Headphone Support": "",
+        "Installation Requirements": "",
+        "Durability": "",
+        "Operating Temperature Range": "",
+        "Warranty": ""
+    }
+}

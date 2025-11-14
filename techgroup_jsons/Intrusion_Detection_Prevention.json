@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Detection Methodology": "",
+        "Supported Network Types": "",
+        "Signature Database Updates": "",
+        "Anomaly Detection": "",
+        "Behavioral Analysis": "",
+        "Threat Intelligence Integration": "",
+        "Response Automation": "",
+        "Packet Inspection Depth": "",
+        "Encrypted Traffic Analysis": "",
+        "False Positive Management": "",
+        "Scalability": "",
+        "Deployment Model": "",
+        "Integration with SIEM": "",
+        "Policy Management": "",
+        "Compliance Reporting": "",
+        "Incident Response Workflow": "",
+        "User Interface": "",
+        "Logging and Audit Trails": "",
+        "High Availability": "",
+        "Performance Impact": ""
+    }
+}

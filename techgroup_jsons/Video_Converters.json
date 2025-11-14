@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Supported Input Formats": "",
+        "Supported Output Formats": "",
+        "Max Resolution Support": "",
+        "Frame Rate Conversion": "",
+        "Audio Format Support": "",
+        "Real-time Conversion": "",
+        "Hardware Acceleration": "",
+        "Batch Processing": "",
+        "Preset Profiles": "",
+        "Custom Encoding Settings": "",
+        "Subtitle Handling": "",
+        "Watermarking Options": "",
+        "Editing Tools": "",
+        "DVD/Blu-ray Conversion": "",
+        "Device Optimization": "",
+        "User Interface": "",
+        "Operating System Compatibility": "",
+        "Cloud Integration": "",
+        "Output Quality Controls": "",
+        "Metadata Preservation": ""
+    }
+}

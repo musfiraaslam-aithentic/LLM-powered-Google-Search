@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Camera Format": "",
+        "Lens Mount": "",
+        "Shutter Type": "",
+        "Shutter Speed Range": "",
+        "Viewfinder Type": "",
+        "Metering Modes": "",
+        "Exposure Modes": "",
+        "Film Advance Mechanism": "",
+        "Flash Compatibility": "",
+        "Focus System": "",
+        "Build Material": "",
+        "Weight": "",
+        "Dimensions": "",
+        "Tripod Mount": "",
+        "Battery Requirements": "",
+        "Included Accessories": "",
+        "Weather Sealing": "",
+        "Special Features": "",
+        "Warranty": "",
+        "Country of Manufacture": ""
+    }
+}

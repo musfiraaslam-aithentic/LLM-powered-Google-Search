@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Speaker Type": "",
+        "Power Handling": "",
+        "Sensitivity": "",
+        "Frequency Response": "",
+        "Coverage Pattern": "",
+        "Impedance": "",
+        "Weather Resistance": "",
+        "Mounting Options": "",
+        "Input Connections": "",
+        "Integrated Amplifier": "",
+        "Array Compatibility": "",
+        "Weight": "",
+        "Dimensions": "",
+        "Housing Material": "",
+        "Transport Features": "",
+        "Accessories Included": "",
+        "Rigging Hardware": "",
+        "Voice Intelligibility": "",
+        "Warranty": "",
+        "Special Features": ""
+    }
+}

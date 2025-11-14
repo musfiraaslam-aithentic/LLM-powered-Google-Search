@@ -1,0 +1,22 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Cable Length": "",
+        "Connector Type (Input)": "",
+        "Connector Type (Output)": "",
+        "Material (Jacket)": "",
+        "Shielding": "",
+        "Compatibility": "",
+        "Conductor Material": "",
+        "Gauge (AWG)": "",
+        "Gold-plated Connectors": "",
+        "Cable Shape": "",
+        "Color": ""
+    }
+}

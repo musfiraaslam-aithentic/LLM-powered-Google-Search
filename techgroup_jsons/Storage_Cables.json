@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Cable Type": "",
+        "Connector A": "",
+        "Connector B": "",
+        "Cable Length": "",
+        "Data Transfer Rate": "",
+        "Power Delivery": "",
+        "Shielding": "",
+        "Wire Gauge": "",
+        "Jacket Material": "",
+        "Flexibility Rating": "",
+        "Locking Mechanism": "",
+        "Temperature Rating": "",
+        "Compliance Standards": "",
+        "Color": "",
+        "Warranty": "",
+        "Included Accessories": "",
+        "Compatibility": "",
+        "Usage Environment": "",
+        "Special Features": "",
+        "Certifications": ""
+    }
+}

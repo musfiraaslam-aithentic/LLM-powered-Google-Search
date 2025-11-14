@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Screen Size": "",
+        "Display Technology": "",
+        "Resolution": "",
+        "Brightness": "",
+        "Contrast Ratio": "",
+        "Viewing Angle": "",
+        "Refresh Rate": "",
+        "Touch Capability": "",
+        "Protective Glass": "",
+        "Interactive Features": "",
+        "Input Ports": "",
+        "OPS Slot": "",
+        "Built-in Media Player": "",
+        "Operating Hours": "",
+        "Mounting Options": "",
+        "Network Connectivity": "",
+        "Power Consumption": "",
+        "Weight": "",
+        "Dimensions": "",
+        "Special Features": ""
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Processor Type": "",
+        "RAM Capacity": "",
+        "Storage Type": "",
+        "Operating System": "",
+        "Graphics Processing Unit (GPU)": "",
+        "Connectivity Options": "",
+        "Display Technology": "",
+        "Computational Power": "",
+        "Logic Gate Design": "",
+        "Algorithm Efficiency": ""
+    }
+}

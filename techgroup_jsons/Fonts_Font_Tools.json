@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Font Management": "",
+        "Font Identification": "",
+        "Font Creation/Editing": "",
+        "Web Font Support": "",
+        "Variable Fonts": "",
+        "Kerning/Ligature Control": "",
+        "Glyph Editor": "",
+        "Typeface Families": "",
+        "Font Licensing Management": "",
+        "Font Format Support": "",
+        "Font Embedding": "",
+        "Font Preview/Comparison": "",
+        "OpenType Features": "",
+        "Hinting": "",
+        "Metrics Editing": "",
+        "Integration with Design Software": "",
+        "OS Compatibility": "",
+        "Language Support": "",
+        "Character Sets": "",
+        "Cloud Sync": ""
+    }
+}

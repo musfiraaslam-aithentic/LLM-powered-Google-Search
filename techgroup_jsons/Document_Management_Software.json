@@ -1,0 +1,29 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Document Storage": "",
+        "Document Indexing": "",
+        "Search Capabilities": "",
+        "Version Control": "",
+        "Access Control": "",
+        "Workflow Automation": "",
+        "Collaboration Tools": "",
+        "Audit Trails": "",
+        "Integration Capabilities": "",
+        "Security Features": "",
+        "Mobile Access": "",
+        "OCR (Optical Character Recognition)": "",
+        "E-signature Integration": "",
+        "Compliance Management": "",
+        "Reporting and Analytics": "",
+        "Document Capture": "",
+        "Document Archiving": "",
+        "Retention Policies": ""
+    }
+}

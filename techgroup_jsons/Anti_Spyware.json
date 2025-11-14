@@ -1,0 +1,26 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Real-time Protection": "",
+        "Spyware Detection": "",
+        "Malware Removal": "",
+        "Browser Protection": "",
+        "Anti-Phishing": "",
+        "Data Privacy Features": "",
+        "Heuristic Analysis": "",
+        "Scheduled Scans": "",
+        "Automatic Updates": "",
+        "Performance Impact": "",
+        "User Interface": "",
+        "Customization Options": "",
+        "Ransomware Protection": "",
+        "Rootkit Detection": "",
+        "Identity Theft Protection": ""
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Encryption Algorithm": "",
+        "Key Length Support": "",
+        "Data at Rest Encryption": "",
+        "Data in Transit Encryption": "",
+        "File and Folder Encryption": "",
+        "Full Disk Encryption": "",
+        "Volume Encryption": "",
+        "Cloud Storage Encryption": "",
+        "Key Management System": "",
+        "Integration with OS": "",
+        "Performance Impact": "",
+        "Multi-factor Authentication": "",
+        "Compliance Standards Support": "",
+        "User Interface": "",
+        "Cross-Platform Compatibility": "",
+        "Remote Wipe Capability": "",
+        "Audit Trails and Logging": "",
+        "Digital Signatures": "",
+        "Secure Erase": "",
+        "Policy Management": ""
+    }
+}

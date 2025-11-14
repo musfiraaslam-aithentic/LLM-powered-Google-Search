@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Tuner Type": "",
+        "Supported Bands": "",
+        "Number of Presets": "",
+        "Display Type": "",
+        "Signal-to-Noise Ratio": "",
+        "Frequency Response": "",
+        "RDS Support": "",
+        "Antenna Connections": "",
+        "Audio Outputs": "",
+        "Digital Outputs": "",
+        "Control Interfaces": "",
+        "Remote Control": "",
+        "Multi-room Integration": "",
+        "Streaming Support": "",
+        "Firmware Updates": "",
+        "Power Consumption": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Included Accessories": "",
+        "Warranty": ""
+    }
+}

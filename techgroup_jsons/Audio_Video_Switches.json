@@ -1,0 +1,26 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Number of Inputs": "",
+        "Number of Outputs": "",
+        "Input Connectors": "",
+        "Output Connectors": "",
+        "Supported Resolutions": "",
+        "Supported Audio Formats": "",
+        "Switching Method": "",
+        "Bandwidth": "",
+        "HDCP Support": "",
+        "EDID Management": "",
+        "Control Options": "",
+        "Power Supply": "",
+        "Mounting Options": "",
+        "Signal Type": "",
+        "Compliance Standards": ""
+    }
+}

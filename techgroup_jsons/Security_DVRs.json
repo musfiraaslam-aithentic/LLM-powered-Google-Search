@@ -1,0 +1,25 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Number of Channels": "",
+        "Recording Resolution": "",
+        "Storage Capacity": "",
+        "Video Compression": "",
+        "Remote Access Capabilities": "",
+        "Motion Detection": "",
+        "Audio Inputs/Outputs": "",
+        "Video Outputs": "",
+        "Network Interface": "",
+        "Playback Modes": "",
+        "Backup Options": "",
+        "Mobile App Compatibility": "",
+        "Operating Temperature": "",
+        "Power Supply": ""
+    }
+}

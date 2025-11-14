@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Resolution": "",
+        "Brightness": "",
+        "Contrast Ratio": "",
+        "Aspect Ratio": "",
+        "Display Technology": "",
+        "Connectivity Options": "",
+        "Keystone Correction": "",
+        "Zoom Ratio": "",
+        "Lamp Life": "",
+        "Speaker Output": "",
+        "Portability": "",
+        "Wireless Connectivity": "",
+        "Screen Size Support": "",
+        "Input Lag": "",
+        "Refresh Rate": "",
+        "Interactive Features": "",
+        "Operating System": "",
+        "Noise Level": "",
+        "Remote Control Features": "",
+        "Compatibility": ""
+    }
+}

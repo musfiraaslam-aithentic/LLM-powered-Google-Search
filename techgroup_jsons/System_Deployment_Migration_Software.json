@@ -1,0 +1,30 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Supported Operating Systems": "",
+        "Imaging and Cloning": "",
+        "Automated Deployment": "",
+        "Hardware Compatibility": "",
+        "Network Deployment Options": "",
+        "Migration Planning Tools": "",
+        "Application Packaging": "",
+        "Driver Management": "",
+        "User Profile Migration": "",
+        "Rollback and Recovery": "",
+        "Scheduling and Automation": "",
+        "Remote Management": "",
+        "Integration with Directory Services": "",
+        "Compliance and Audit Logging": "",
+        "Scripting Support": "",
+        "Bandwidth Optimization": "",
+        "Security and Encryption": "",
+        "Reporting and Analytics": "",
+        "Scalability": ""
+    }
+}

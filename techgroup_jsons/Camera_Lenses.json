@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Mount Type": "",
+        "Focal Length": "",
+        "Zoom Type": "",
+        "Maximum Aperture": "",
+        "Minimum Aperture": "",
+        "Lens Construction": "",
+        "Image Stabilization": "",
+        "Autofocus Motor": "",
+        "Minimum Focus Distance": "",
+        "Filter Size": "",
+        "Diaphragm Blades": "",
+        "Weather Sealing": "",
+        "Coating Technology": "",
+        "Weight": "",
+        "Dimensions": "",
+        "Included Accessories": "",
+        "Compatible Sensor Formats": "",
+        "Special Elements": "",
+        "Use Cases": "",
+        "Warranty": ""
+    }
+}

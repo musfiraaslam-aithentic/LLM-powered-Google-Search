@@ -1,0 +1,22 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Accessory Type": "",
+        "Compatibility": "",
+        "Material": "",
+        "Color/Finish": "",
+        "Weight": "",
+        "Dimensions": "",
+        "Stylus Shape": "",
+        "Tracking Force Range": "",
+        "Output Voltage": "",
+        "Anti-static Properties": "",
+        "Damping Properties": ""
+    }
+}

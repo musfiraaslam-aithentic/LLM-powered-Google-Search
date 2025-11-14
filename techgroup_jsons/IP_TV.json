@@ -1,0 +1,26 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Streaming Quality": "",
+        "Channel Packages": "",
+        "Video On Demand (VOD)": "",
+        "Time-Shift TV": "",
+        "Catch-Up TV": "",
+        "Cloud DVR Storage": "",
+        "Multi-Device Support": "",
+        "Electronic Program Guide (EPG)": "",
+        "Parental Controls": "",
+        "Internet Speed Requirement": "",
+        "Supported Devices": "",
+        "Content Security (DRM)": "",
+        "User Interface Customization": "",
+        "Personalized Recommendations": "",
+        "Interactive Features": ""
+    }
+}

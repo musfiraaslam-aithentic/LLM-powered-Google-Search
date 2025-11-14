@@ -1,0 +1,26 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Policy Creation": "",
+        "Policy Templates": "",
+        "Policy Versioning": "",
+        "Policy Approval Workflow": "",
+        "Policy Deployment": "",
+        "Policy Enforcement": "",
+        "Policy Review Cycles": "",
+        "Compliance Reporting": "",
+        "Audit Trails": "",
+        "Exception Management": "",
+        "Role-Based Access Control (RBAC)": "",
+        "Integration Capabilities": "",
+        "Automated Policy Checks": "",
+        "Reporting and Analytics": "",
+        "Scalability": ""
+    }
+}

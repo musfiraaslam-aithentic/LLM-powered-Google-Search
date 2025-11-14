@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Spam Detection Accuracy": "",
+        "False Positive Rate": "",
+        "Whitelisting and Blacklisting": "",
+        "Email Filtering Capabilities": "",
+        "Attachment Scanning": "",
+        "Link Scanning and URL Rewriting": "",
+        "Sender Authentication (SPF/DKIM/DMARC)": "",
+        "Real-time Threat Intelligence": "",
+        "Quarantine Management": "",
+        "Reporting and Analytics": "",
+        "User Interface and Management": "",
+        "Integration with Existing Systems": "",
+        "Phishing Protection": "",
+        "Malware Protection": "",
+        "Zero-day Exploit Protection": "",
+        "AI and Machine Learning": "",
+        "Behavioral Analysis": "",
+        "Multi-Layer Protection": "",
+        "Content Filtering": "",
+        "DDoS Protection": ""
+    }
+}

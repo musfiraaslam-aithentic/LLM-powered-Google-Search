@@ -1,0 +1,22 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Performance": "",
+        "Security & Privacy": "",
+        "User Interface Customization": "",
+        "Extension Support": "",
+        "Cross-Device Sync": "",
+        "Developer Tools": "",
+        "Ad Blocking": "",
+        "Tab Management": "",
+        "Password Management": "",
+        "Reader Mode": "",
+        "Web Standards Compliance": ""
+    }
+}

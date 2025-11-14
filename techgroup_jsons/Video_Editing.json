@@ -1,0 +1,26 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Resolution Support": "",
+        "Frame Rate Support": "",
+        "Codec Compatibility": "",
+        "Multi-track Editing": "",
+        "GPU Acceleration": "",
+        "Special Effects & Transitions": "",
+        "Color Grading Tools": "",
+        "Audio Editing Tools": "",
+        "Export Formats": "",
+        "Real-time Playback": "",
+        "System Requirements (CPU/RAM)": "",
+        "Plugin Support": "",
+        "Chroma Keying": "",
+        "Motion Tracking": "",
+        "Stabilization": ""
+    }
+}

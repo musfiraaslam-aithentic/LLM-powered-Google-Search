@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "Lock Type": "",
+        "Cable Length": "",
+        "Cable Material": "",
+        "Security Rating": "",
+        "Key or Combination": "",
+        "Number of Keys": "",
+        "Compatibility": "",
+        "Tamper Evident Features": "",
+        "Anchor Type": "",
+        "Installation Method": "",
+        "Weight": "",
+        "Weather Resistance": "",
+        "Corrosion Resistance": "",
+        "Warranty": "",
+        "Accessories Included": "",
+        "Certification": "",
+        "Color": "",
+        "Use Cases": "",
+        "Special Features": "",
+        "Packaging": ""
+    }
+}

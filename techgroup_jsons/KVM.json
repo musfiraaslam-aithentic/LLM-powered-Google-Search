@@ -1,0 +1,31 @@
+{
+    "brand": "",
+    "brand_country": "",
+    "brand_domain": "",
+    "tech_group": "",
+    "tech_type": "",
+    "product_id": "",
+    "product_desc": "",
+    "product_features": {
+        "KVM Type": "",
+        "Number of Ports": "",
+        "Supported Interfaces": "",
+        "Video Resolution Support": "",
+        "Audio Support": "",
+        "USB Hub Integration": "",
+        "Switching Method": "",
+        "Cascade Support": "",
+        "Hotkey Customization": "",
+        "OS Compatibility": "",
+        "Power Requirements": "",
+        "Rack Mountable": "",
+        "Cable Type Included": "",
+        "Security Features": "",
+        "Latency Performance": "",
+        "Remote Management": "",
+        "Display Emulation": "",
+        "Dimensions": "",
+        "Weight": "",
+        "Warranty": ""
+    }
+}
