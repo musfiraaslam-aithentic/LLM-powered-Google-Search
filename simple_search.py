@@ -46,14 +46,18 @@ def model_call_with_retry(prompt, response_mime_type=None, max_retries=5, base_d
     """
     for attempt in range(max_retries + 1):
         try:
+            config = {
+                "tools": [{"google_search": {}}],
+            }
+
+            # if response_mime_type and response_mime_type != "application/json":
+            #     config["response_mime_type"] = response_mime_type
+            
             request_kwargs = {
                 "model": MODEL_NAME,
                 "contents": prompt,
+                "config": config,
             }
-            if response_mime_type:
-                request_kwargs["config"] = {
-                    "response_mime_type": response_mime_type,
-                }
             response = client.models.generate_content(**request_kwargs)
             time.sleep(10)
             return response.text
@@ -215,7 +219,7 @@ for i, metadata in enumerate(data, start=1):
         1. Perform a web search to identify what this asset is.
         2. Select the SINGLE MOST ACCURATE tech group from the list below (information provided in this json could be wrong).
         3. You MUST respond with ONLY the name of a tech group from the list. 
-        4. DO NOT add explanations, reasoning, extra words, sentences, markdown, quotes, or commentary.
+        4. DO NOT add explanations, reasoning, extra words, sentences, markdown, quotes, or commentary, just return the name of selected tech group
         5. If unsure, pick the closest match from the list.
 
         VALID TECH GROUPS:
