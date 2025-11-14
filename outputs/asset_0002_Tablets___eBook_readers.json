@@ -1,0 +1,31 @@
+{
+  "brand": "Microsoft",
+  "brand_country": "United States",
+  "brand_domain": "microsoft.com",
+  "tech_group": "Tablet Computers",
+  "tech_type": "Hardware",
+  "product_id": "Surface Pro 7",
+  "product_desc": "Microsoft Corporation - Surface Pro 7",
+  "product_features": {
+    "Device Type": "2-in-1 Tablet",
+    "Display Size": "12.3 inches",
+    "Display Resolution": "2736 x 1824",
+    "Display Technology": "PixelSense Display",
+    "Processor": "Intel Core i5-1035G4",
+    "Memory": "8GB RAM",
+    "Storage Capacity": "Not found",
+    "Expandable Storage": "microSDXC card reader",
+    "Battery Life": "Up to 10.5 hours",
+    "Charging Interface": "Surface Connect, USB-C",
+    "Connectivity": "Wi-Fi 6 (802.11ax), Bluetooth 5.0",
+    "Wireless Standards": "802.11ax, Bluetooth 5.0",
+    "Camera Specifications": "Front: 5.0MP, Rear: 8.0MP",
+    "Operating System": "Windows 11 Home",
+    "Supported Formats": "Not found",
+    "Stylus Support": "Yes (Surface Pen compatible)",
+    "Dimensions": "11.5” x 7.9” x 0.33” (292 x 201 x 8.5 mm)",
+    "Weight": "1.70 lbs (775 g)",
+    "Accessories Included": "Not found",
+    "Special Features": "Windows Hello face authentication, Dual far-field Studio Mics, Dolby Audio Premium"
+  }
+}

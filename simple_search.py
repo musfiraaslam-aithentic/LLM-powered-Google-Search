@@ -1,7 +1,6 @@
 import json
 from pathlib import Path
 from google import genai
-from google.genai import types
 import os
 from dotenv import load_dotenv 
 import time
@@ -27,23 +26,9 @@ if not GOOGLE_API_KEY:
 # Initialize client
 client = genai.Client()
 
-# Rate limits
-requests_per_minute = 10
-tokens_per_minute = 250000
-requests_per_day = 250
-ideal_tokens_per_request = tokens_per_minute / requests_per_minute
+MODEL_NAME = "gemini-2.5-flash"
 
-# Enable Google Search tool
-grounding_tool = types.Tool(
-    google_search=types.GoogleSearch()
-)
-
-# Configure generation with the grounding tool
-config = types.GenerateContentConfig(
-    tools=[grounding_tool]
-)
-
-def model_call_with_retry(prompt, max_retries=5, base_delay=6.0, max_delay=30.0):
+def model_call_with_retry(prompt, response_mime_type=None, max_retries=5, base_delay=6.0, max_delay=30.0):
     """
     Calls the model with retries using exponential backoff.
     
@@ -61,11 +46,17 @@ def model_call_with_retry(prompt, max_retries=5, base_delay=6.0, max_delay=30.0)
     """
     for attempt in range(max_retries + 1):
         try:
-            response = client.models.generate_content(
-                model="gemini-2.5-flash",
-                contents=prompt,
-                config=config,
-            )
+            request_kwargs = {
+                "model": MODEL_NAME,
+                "contents": prompt,
+            }
+            if response_mime_type:
+                request_kwargs["config"] = {
+                    "response_mime_type": response_mime_type,
+                }
+            response = client.models.generate_content(**request_kwargs)
+            time.sleep(10)
+            return response.text
         except Exception as e:
             if attempt == max_retries:
                 raise  # all retries failed
@@ -73,9 +64,6 @@ def model_call_with_retry(prompt, max_retries=5, base_delay=6.0, max_delay=30.0)
             wait_time = max(10.0, delay)
             print(f"Attempt {attempt + 1} failed: {e}. Retrying in {wait_time:.1f} seconds...")
             time.sleep(wait_time)
-        else:
-            time.sleep(10)
-            return response
 
 def get_children_for_group(json_file, group_name):
     """
@@ -114,27 +102,6 @@ def get_children_for_group(json_file, group_name):
     children_str = f"\nChildren of '{group_name}':\n"
     children_str += build_children_string(tree)
     return children_str
-
-def add_citations_at_end(response):
-    text = response.text
-    supports = response.candidates[0].grounding_metadata.grounding_supports
-    chunks = response.candidates[0].grounding_metadata.grounding_chunks
-    
-    citation_dict = {}
-    for support in supports:
-        for i in support.grounding_chunk_indices:
-            if i < len(chunks):
-                uri = chunks[i].web.uri
-                title = getattr(chunks[i].web, 'title', uri)
-                citation_dict[i] = (uri, title)
-    
-    if citation_dict:
-        citations_text = "\n\nReference Urls:\n"
-        for idx, (uri, title) in enumerate(citation_dict.values(), start=1):
-            citations_text += f"[{idx}] {title} - {uri}\n"
-        text += citations_text
-    
-    return text
 
 
 
@@ -235,14 +202,14 @@ for i, metadata in enumerate(data, start=1):
     TECH_GROUPS_JSON = json.dumps(TECH_GROUPS, indent=2)
     TECH_TYPES_JSON = json.dumps(TECH_TYPES, indent=2)
 
-    prompt = f"""
+    prompt_one = f"""
 
         You are classifying a hardware asset into exactly ONE tech group.
 
         ASSET DATA:
         {metadata}
         NOTE:
-        Information inside this JSON may be incomplete, inaccurate, or wrong. 
+        Information inside this JSON may be incomplete, inaccurate, or wrong (provided type/manufacturer/model or other information could be wrong/invalid) 
 
         INSTRUCTIONS:
         1. Perform a web search to identify what this asset is.
@@ -259,109 +226,84 @@ for i, metadata in enumerate(data, start=1):
 
     """
 
-    #print("This is the prompt\n", prompt)
-    #print()
 
-    # There is no charge or quota restriction for using the CountTokens API. 
-    # The maximum quota for the CountTokens API is 3000 requests per minute.
-    # https://docs.cloud.google.com/vertex-ai/generative-ai/docs/multimodal/get-token-count
-    
-    try:
-        token_info = client.models.count_tokens(
-            model="gemini-2.5-flash",  
-            contents=prompt
-        )
-    finally:
-        time.sleep(10)
-    
-    total_tokens = token_info.total_tokens  
+    tech_group_raw = model_call_with_retry(prompt_one, response_mime_type="text/plain")
+    tech_group_result = normalize_tech_group_choice(tech_group_raw)
 
-    if total_tokens < ideal_tokens_per_request:
-        response = model_call_with_retry(prompt)
-        
-        tech_group_raw = getattr(response, "text", "")
-        tech_group_result = normalize_tech_group_choice(tech_group_raw)
-
-        if not tech_group_result:
-            print("No tech group returned for this asset; skipping.")
-            continue
-
-        if tech_group_result not in TECH_GROUPS:
-            matches = [group for group in TECH_GROUPS if group.lower() == tech_group_result.lower()]
-            if matches:
-                tech_group_result = matches[0]
-            else:
-                closest_match = find_closest_tech_group(tech_group_result, TECH_GROUPS)
-                if closest_match:
-                    print(f"Tech group '{tech_group_result}' not found. Using closest match '{closest_match}'.")
-                    tech_group_result = closest_match
-                else:
-                    print(f"Model returned an unknown tech group '{tech_group_result}'. Skipping asset.")
-                    continue
-
-        print("Gemini chose this as the tech group: ", tech_group_result)
-        print()
-        tech_group_json = re.sub(r'\W+', '_', tech_group_result) + ".json"
-
-        print("Corresponding JSON file: ", tech_group_json)
-        print()
-
-        children_output = get_children_for_group(SECOND_LEVEL_TREE_FILE, tech_group_result)
-        print(children_output)
-
-        json_file_path = TECHGROUP_JSON_DIR / tech_group_json
-
-        with json_file_path.open("r", encoding="utf-8") as f:
-            schema_data = json.load(f)
-
-        cleaned_schema = json.dumps(schema_data, indent=2)
-
-        promptTwo = f"""
-                
-            You are completing a JSON structure for this hardware asset:
-
-            ASSET DATA:
-            {metadata}
-
-            JSON SCHEMA TO FILL:
-            {cleaned_schema}
-
-            TECH TYPE OPTIONS (choose exactly one):
-            {TECH_TYPES_JSON}
-
-            VALID TECH GROUP OPTIONS (choose exactly one):
-            {children_output}
-
-            INSTRUCTIONS:
-            1. Perform a web search to identify accurate information about this asset.
-            2. Fill ALL fields in concisely the JSON schema.
-            3. If a field cannot be determined, write "Not found".
-            4. For "tech_type", select ONLY from the provided list.
-            5. For "tech_group", select ONLY from the provided second-level list.
-            6. Return ONLY a valid JSON object.
-            7. DO NOT write any sentences, explanations, descriptions, markdown, or text outside the JSON.
-
-        """
-
-        response = model_call_with_retry(promptTwo)
-        #final_result = add_citations_at_end(response)
-
-        # Debugging print statements
-        print(f"\n--- Result for Asset #{i} ---\n{response}\n")
-        print(f"Total Tokens in Prompt: {total_tokens}/{ideal_tokens_per_request}")
-        print("=" * 100)
-
-        json_payload = extract_json_payload(response.text)
-        output_text = json_payload if json_payload else response.text
-        output_filename = build_output_filename(i, metadata, tech_group_result)
-        output_path = OUTPUT_DIR / output_filename
-        with output_path.open("w", encoding="utf-8") as f:
-            f.write(output_text)
-            if not output_text.endswith("\n"):
-                f.write("\n")
-
-        print(f"Saved enriched asset to {output_path}")
-
-    else:
-        print("Prompt is too large skipping asset.")
+    if not tech_group_result:
+        print("No tech group returned for this asset; skipping.")
         continue
+
+    if tech_group_result not in TECH_GROUPS:
+        matches = [group for group in TECH_GROUPS if group.lower() == tech_group_result.lower()]
+        if matches:
+            tech_group_result = matches[0]
+        else:
+            closest_match = find_closest_tech_group(tech_group_result, TECH_GROUPS)
+            if closest_match:
+                print(f"Tech group '{tech_group_result}' not found. Using closest match '{closest_match}'.")
+                tech_group_result = closest_match
+            else:
+                print(f"Model returned an unknown tech group '{tech_group_result}'. Skipping asset.")
+                continue
+
+    print("Gemini chose this as the tech group: ", tech_group_result)
+    print()
+    tech_group_json = re.sub(r'\W+', '_', tech_group_result) + ".json"
+
+    print("Corresponding JSON file: ", tech_group_json)
+    print()
+
+    children_output = get_children_for_group(SECOND_LEVEL_TREE_FILE, tech_group_result)
+    print(children_output)
+
+    json_file_path = TECHGROUP_JSON_DIR / tech_group_json
+
+    with json_file_path.open("r", encoding="utf-8") as f:
+        schema_data = json.load(f)
+
+    cleaned_schema = json.dumps(schema_data, indent=2)
+
+    prompt_two = f"""
+            
+        You are completing a JSON structure for this hardware asset:
+
+        ASSET DATA:
+        {metadata}
+
+        JSON SCHEMA TO FILL:
+        {cleaned_schema}
+
+        TECH TYPE OPTIONS (choose exactly one):
+        {TECH_TYPES_JSON}
+
+        VALID TECH GROUP OPTIONS (choose exactly one):
+        {children_output}
+
+        INSTRUCTIONS:
+        1. Perform a web search to identify accurate information about this asset.
+        2. Fill ALL fields in concisely the JSON schema.
+        3. If a field cannot be determined, write "Not found".
+        4. For "tech_type", select ONLY from the provided list.
+        5. For "tech_group", select ONLY from the provided list, pick the one that most specifically describes the asset.
+        6. Return ONLY a valid JSON object.
+        7. DO NOT write any sentences, explanations, descriptions, markdown, or text outside the JSON.
+
+    """
+
+    json_response_text = model_call_with_retry(prompt_two, response_mime_type="application/json")
+
+    # Debugging print statements
+    print(f"\n--- Result for Asset #{i} ---\n{json_response_text}\n")
+    print("=" * 100)
+
+    json_payload = extract_json_payload(json_response_text)
+    output_text = json_payload if json_payload else json_response_text
+    output_filename = build_output_filename(i, metadata, tech_group_result)
+    output_path = OUTPUT_DIR / output_filename
+    with output_path.open("w", encoding="utf-8") as f:
+        f.write(output_text)
+        if not output_text.endswith("\n"):
+            f.write("\n")
+
+    print(f"Saved enriched asset to {output_path}")
