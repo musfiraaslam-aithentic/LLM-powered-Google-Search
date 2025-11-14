@@ -62,7 +62,7 @@ def model_call_with_retry(prompt, max_retries=5, base_delay=6.0, max_delay=30.0)
     for attempt in range(max_retries + 1):
         try:
             response = client.models.generate_content(
-                model="gemini-2.5-flash",
+                model="gemini-2.5-pro",
                 contents=prompt,
                 config=config,
             )
@@ -74,7 +74,7 @@ def model_call_with_retry(prompt, max_retries=5, base_delay=6.0, max_delay=30.0)
             print(f"Attempt {attempt + 1} failed: {e}. Retrying in {wait_time:.1f} seconds...")
             time.sleep(wait_time)
         else:
-            time.sleep(10)
+            time.sleep(15)
             return response
 
 def get_children_for_group(json_file, group_name):
@@ -272,7 +272,7 @@ for i, metadata in enumerate(data, start=1):
             contents=prompt
         )
     finally:
-        time.sleep(10)
+        time.sleep(15)
     
     total_tokens = token_info.total_tokens  
 

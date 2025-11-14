@@ -1,0 +1,31 @@
+{
+  "brand": "Philips",
+  "brand_country": "Netherlands",
+  "brand_domain": "philips.com",
+  "tech_group": "LED Monitors",
+  "tech_type": "Hardware",
+  "product_id": "196V4",
+  "product_desc": "18.5-inch LCD monitor with LED backlight, featuring SmartControl Lite for easy tuning and SmartContrast for rich black details.",
+  "product_features": {
+    "Panel Type": "Active matrix - TFT LCD, W-LED Backlit LCD",
+    "Screen Size": "18.5 inch / 47 cm",
+    "Aspect Ratio": "16:9",
+    "Resolution": "1366 x 768 @ 60 Hz",
+    "Refresh Rate": "60 Hz",
+    "Response Time": "5 ms (typical)",
+    "Color Gamut Coverage": "Not found",
+    "Brightness": "200 cd/m²",
+    "Contrast Ratio": "SmartContrast: 10,000,000:1 (dynamic); 600:1 (typical)",
+    "HDR Support": "Not found",
+    "Connectivity": "VGA (Analog), DVI-D (digital, HDCP)",
+    "USB Hub": "Not found",
+    "Ergonomic Adjustments": "Tilt (-5/20 degree)",
+    "VESA Mounting": "Yes",
+    "Built-in Speakers": "Not found",
+    "Adaptive Sync": "Not found",
+    "Blue Light Filter": "Not found",
+    "Power Consumption": "16.46W (typical), 19.23W (maximum); <0.5W (sleep mode)",
+    "Dimensions": "443 x 349 x 201 mm (with stand)",
+    "Weight": "3.95 kg (with stand)"
+  }
+}

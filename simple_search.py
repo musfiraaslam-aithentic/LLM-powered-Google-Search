@@ -60,7 +60,10 @@ def model_call_with_retry(prompt, response_mime_type=None, max_retries=5, base_d
             }
             response = client.models.generate_content(**request_kwargs)
             time.sleep(10)
-            return response.text
+            result = response.text if hasattr(response, 'text') and response.text else ""
+            if not result:
+                raise ValueError("Model returned empty response")
+            return result
         except Exception as e:
             if attempt == max_retries:
                 raise  # all retries failed
@@ -68,6 +71,71 @@ def model_call_with_retry(prompt, response_mime_type=None, max_retries=5, base_d
             wait_time = max(10.0, delay)
             print(f"Attempt {attempt + 1} failed: {e}. Retrying in {wait_time:.1f} seconds...")
             time.sleep(wait_time)
+
+def extract_json_string(text: str) -> str:
+    """Extract a JSON string from LLM text which may include markdown fences."""
+    if not text:
+        return "{}"
+    
+    text = text.strip()
+    
+    # 1) Try fenced code block with json
+    fenced = re.findall(r"```json\s*([\s\S]*?)\s*```", text, flags=re.IGNORECASE)
+    if fenced:
+        candidate = fenced[0].strip()
+        # Validate it's actually JSON
+        try:
+            json.loads(candidate)
+            return candidate
+        except (json.JSONDecodeError, ValueError):
+            pass
+
+    # 2) Try any fenced block without language
+    fenced_any = re.findall(r"```\s*([\s\S]*?)\s*```", text)
+    for block in fenced_any:
+        block_stripped = block.strip()
+        if block_stripped.startswith("{") or block_stripped.startswith("["):
+            try:
+                json.loads(block_stripped)
+                return block_stripped
+            except (json.JSONDecodeError, ValueError):
+                continue
+
+    # 3) Heuristic: try parsing from each '{' or '['
+    for start_char in ["{", "["]:
+        brace_indices = [m.start() for m in re.finditer(re.escape(start_char), text)]
+        for start in brace_indices:
+            snippet = text[start:]
+            # Find matching closing brace/bracket
+            depth = 0
+            end = -1
+            for i, char in enumerate(snippet):
+                if char in ["{", "["]:
+                    depth += 1
+                elif char in ["}", "]"]:
+                    depth -= 1
+                    if depth == 0:
+                        end = i + 1
+                        break
+            
+            if end > 0:
+                candidate = snippet[:end].strip()
+                if candidate:
+                    try:
+                        json.loads(candidate)
+                        return candidate
+                    except (json.JSONDecodeError, ValueError):
+                        continue
+
+    # 4) Try parsing the whole text as JSON
+    try:
+        json.loads(text)
+        return text
+    except (json.JSONDecodeError, ValueError):
+        pass
+
+    # Fallback: return empty JSON object
+    return "{}"
 
 def get_children_for_group(json_file, group_name):
     """
@@ -127,16 +195,6 @@ def load_metadata_assets(path: Path) -> list[dict]:
         raise SystemExit("Expected metadata file to contain a list of assets' data.")
 
     return assets
-
-
-def extract_json_payload(text: str) -> str | None:
-    if not text:
-        return None
-    code_block_pattern = re.compile(r"```(?:json)?\s*(.*?)```", re.DOTALL | re.IGNORECASE)
-    match = code_block_pattern.search(text)
-    if match:
-        return match.group(1).strip()
-    return None
 
 
 def build_output_filename(index: int, metadata: dict, tech_group: str) -> str:
@@ -296,13 +354,25 @@ for i, metadata in enumerate(data, start=1):
     """
 
     json_response_text = model_call_with_retry(prompt_two, response_mime_type="application/json")
-
+    print(json_response_text)
     # Debugging print statements
     print(f"\n--- Result for Asset #{i} ---\n{json_response_text}\n")
     print("=" * 100)
 
-    json_payload = extract_json_payload(json_response_text)
-    output_text = json_payload if json_payload else json_response_text
+    # Extract and validate JSON
+    if json_response_text:
+        extracted_json = extract_json_string(json_response_text)
+        # Validate JSON is parseable
+        try:
+            json.loads(extracted_json)
+            output_text = extracted_json
+        except (json.JSONDecodeError, ValueError) as e:
+            print(f"Warning: Extracted JSON is invalid: {e}")
+            print(f"Falling back to raw response")
+            output_text = json_response_text.strip() if json_response_text.strip() else "{}"
+    else:
+        output_text = "{}"
+    
     output_filename = build_output_filename(i, metadata, tech_group_result)
     output_path = OUTPUT_DIR / output_filename
     with output_path.open("w", encoding="utf-8") as f:
@@ -311,3 +381,6 @@ for i, metadata in enumerate(data, start=1):
             f.write("\n")
 
     print(f"Saved enriched asset to {output_path}")
+
+
+    
