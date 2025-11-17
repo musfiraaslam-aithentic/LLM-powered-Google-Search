@@ -5,6 +5,7 @@ import os
 from dotenv import load_dotenv 
 import time
 import re
+from datetime import datetime, timedelta, timezone
 
 # Load environment variables
 load_dotenv()
@@ -15,6 +16,13 @@ if not GOOGLE_API_KEY:
 
 # Initialize client
 client = genai.Client()
+
+# https://ai.google.dev/gemini-api/docs/models
+models = ["gemini-2.5-flash", "gemini-2.5-pro", "gemini-2.5-flash-lite"]
+
+# Keep track of each request made and make sure it remains under 250
+total_requests_tracked = 0
+REQUEST_TRACKING_FILE = "requests.json"
 
 # Rate limits
 requests_per_minute = 10
@@ -31,6 +39,66 @@ grounding_tool = types.Tool(
 config = types.GenerateContentConfig(
     tools=[grounding_tool]
 )
+
+
+def countdown(minutes):
+    total_seconds = minutes * 60
+    while total_seconds:
+        mins, secs = divmod(total_seconds, 60)
+        timer = f"Cooldown Period {mins:02d}:{secs:02d}"
+        print(timer, end='\r')  
+        time.sleep(1)
+        total_seconds -= 1
+    print()  
+
+def load_request_tracking():
+    """Load or initialize request tracking JSON."""
+    if not os.path.exists(REQUEST_TRACKING_FILE):
+        data = {
+            "total_requests_tracked": 0,
+            "last_reset_date": datetime.now(timezone.utc).isoformat()
+        }
+        save_request_tracking(data)
+        return data
+
+    with open(REQUEST_TRACKING_FILE, "r") as f:
+        return json.load(f)
+
+
+def save_request_tracking(data):
+    """Save request tracking JSON."""
+    with open(REQUEST_TRACKING_FILE, "w") as f:
+        json.dump(data, f, indent=4)
+
+
+def reset_daily_if_needed():
+    """Resets request count if 24+ hours have passed."""
+    data = load_request_tracking()
+
+    last_reset = datetime.fromisoformat(data["last_reset_date"])
+    now = datetime.now(timezone.utc)
+
+    if now - last_reset >= timedelta(hours=24):
+        data["total_requests_tracked"] = 0
+        data["last_reset_date"] = now.isoformat()
+        save_request_tracking(data)
+
+    return data
+
+
+def increment_request_count():
+    """Increments count, saves file, and prints the total."""
+    data = reset_daily_if_needed()
+    data["total_requests_tracked"] += 1
+    save_request_tracking(data)
+
+    # Print the total every time a request is made
+    print(f"Total API Requests Today: {data['total_requests_tracked']}/{requests_per_day}")
+
+    return data["total_requests_tracked"]
+
+
+
 
 def model_call_with_retry(prompt, max_retries=5, base_delay=2.0, max_delay=30.0):
     """
@@ -55,6 +123,8 @@ def model_call_with_retry(prompt, max_retries=5, base_delay=2.0, max_delay=30.0)
                 contents=prompt,
                 config=config,
             )
+            increment_request_count()
+            time.sleep(20)
             return response
         except Exception as e:
             if attempt == max_retries:
@@ -102,26 +172,30 @@ def get_children_for_group(json_file, group_name):
     return children_str
 
 def add_citations_at_end(response):
-    text = response.text
-    supports = response.candidates[0].grounding_metadata.grounding_supports
-    chunks = response.candidates[0].grounding_metadata.grounding_chunks
-    
+    text = getattr(response, "text", "") or ""
+    grounding_metadata = getattr(response.candidates[0], "grounding_metadata", None)
+
+    if grounding_metadata is None:
+        return text  # no grounding metadata available
+
+    supports = getattr(grounding_metadata, "grounding_supports", []) or []
+    chunks = getattr(grounding_metadata, "grounding_chunks", []) or []
+
     citation_dict = {}
     for support in supports:
-        for i in support.grounding_chunk_indices:
+        for i in getattr(support, "grounding_chunk_indices", []):
             if i < len(chunks):
-                uri = chunks[i].web.uri
-                title = getattr(chunks[i].web, 'title', uri)
+                uri = getattr(chunks[i].web, "uri", "")
+                title = getattr(chunks[i].web, "title", uri)
                 citation_dict[i] = (uri, title)
-    
+
     if citation_dict:
         citations_text = "\n\nReference Urls:\n"
         for idx, (uri, title) in enumerate(citation_dict.values(), start=1):
             citations_text += f"[{idx}] {title} - {uri}\n"
         text += citations_text
-    
-    return text
 
+    return text
 
 
 TECH_TYPES = [ "Hardware", "License", "Subscription", "Maintenance", "Virtual Machines", "Freeware", "Certificate" ]
@@ -397,8 +471,17 @@ TECH_GROUPS = [
 with open("failed_assets_fixed.json", "r") as f:
     data = json.load(f)
 
+output_folder = "output"
+os.makedirs(output_folder, exist_ok=True)
 
 for i, asset in enumerate(data, start=1):
+
+    output_path = os.path.join(output_folder, f"asset_{i}.json")
+
+    # This code skips the asset if it already exists as a json to prevent overloading the model.
+    if os.path.exists(output_path):
+        print(f"Skipping Asset #{i} — {output_path} already exists.")
+        continue
 
     model = asset.get("MODEL", "")
     manufacturer = asset.get("MANUFACTURER", "")
@@ -436,19 +519,36 @@ for i, asset in enumerate(data, start=1):
     # There is no charge or quota restriction for using the CountTokens API. 
     # The maximum quota for the CountTokens API is 3000 requests per minute.
     # https://docs.cloud.google.com/vertex-ai/generative-ai/docs/multimodal/get-token-count
-    
+    """
     token_info = client.models.count_tokens(
         model="gemini-2.5-flash",  
         contents=prompt
     )
-    
-    total_tokens = token_info.total_tokens  
+    """
+    #total_tokens = token_info.total_tokens  
+    total_tokens = 0 # This bypasses token info
+    time.sleep(10)
 
     if total_tokens < ideal_tokens_per_request:
         response = model_call_with_retry(prompt)
-        
+        time.sleep(20)
         tech_group_result = response.text
+        
+        if tech_group_result is None or tech_group_result not in TECH_GROUPS:
+            print(f"❌ Invalid tech group returned: '{tech_group_result}'. Retrying once...")
 
+            # Retry model call
+            retry_response = model_call_with_retry(prompt)
+            tech_group_result = retry_response.text
+
+            print(f"🔁 Second attempt returned: '{tech_group_result}'")
+
+            # If still not valid → skip asset
+            if tech_group_result not in TECH_GROUPS:
+                print(f"❌ Still invalid after retry: '{tech_group_result}'. Skipping this asset.\n")
+                continue 
+
+            
         print("Gemini chose this as the tech group: ", tech_group_result)
         print()
         tech_group_json = re.sub(r'\W+', '_', tech_group_result) + ".json"
@@ -495,7 +595,7 @@ for i, asset in enumerate(data, start=1):
 
             {cleaned_schema}
         """
-
+        time.sleep(20)
         response = model_call_with_retry(promptTwo)
         final_result = add_citations_at_end(response)
 
@@ -504,9 +604,22 @@ for i, asset in enumerate(data, start=1):
         print(f"Total Tokens in Prompt: {total_tokens}/{ideal_tokens_per_request}")
         print("=" * 100)
 
+
+        # Save final_result to output/asset_X.json
+       
+        output_path = os.path.join(output_folder, f"asset_{i}.json")
+        save_content = {"result": final_result}
+
+        with open(output_path, "w", encoding="utf-8") as outfile:
+            json.dump(save_content, outfile, indent=4, ensure_ascii=False)
+
+        print(f"Saved result to {output_path}")
+
    
-        time.sleep(10) 
+        countdown(5)
 
     else:
         print("Prompt is too large skipping asset.")
         continue
+
+print("All Assets have been processed and saved")
