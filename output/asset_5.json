@@ -1,0 +1,36 @@
+{
+  "brand": "Philips",
+  "brand_country": "Netherlands",
+  "brand_domain": "philips.com",
+  "tech_group": "LED Monitors",
+  "tech_type": "Hardware",
+  "product_id": "196V4LSB2/69",
+  "product_desc": "18.5-inch LCD monitor with LED backlight, featuring SmartContrast for rich black details and SmartControl Lite for easy display performance tuning.",
+  "product_features": {
+    "Panel Type": "TFT-LCD with W-LED system",
+    "Screen Size": "18.5 inch / 47 cm",
+    "Aspect Ratio": "16:9",
+    "Resolution": "1366 x 768 @ 60 Hz (Optimum)",
+    "Refresh Rate": "56-75 Hz (Vertical)",
+    "Response Time": "5 ms (typical)",
+    "Color Gamut Coverage": "16.7 M colors",
+    "Brightness": "200 cd/m²",
+    "Contrast Ratio": "600:1 (typical), 10,000,000:1 (SmartContrast)",
+    "HDR Support": "Not found",
+    "Connectivity": "VGA (Analog), DVI-D (digital, HDCP)",
+    "USB Hub": "Not found",
+    "Ergonomic Adjustments": "Tilt: -5/20 degree",
+    "VESA Mounting": "100x100mm",
+    "Built-in Speakers": "Not found",
+    "Adaptive Sync": "Not found",
+    "Blue Light Filter": "Not found",
+    "Power Consumption": "On mode: 14.13 W (EnergyStar 5.0), Standby mode: 0.5 W, Off mode: 0.5 W",
+    "Dimensions": "443 x 349 x 201 mm (with stand)",
+    "Weight": "2.98 kg (with stand)"
+  },
+  "reference_urls": [
+    "https://www.philips.com.sg/c-p/196V4LSB2_69/lcd-monitor-with-led-backlight",
+    "https://www.philips.com/c-p/196V4LSB2_57/lcd-monitor-with-led-backlight/specifications",
+    "https://www.manualslib.com/manual/102046/Philips-196V4l.html?page=17#manual"
+  ]
+}

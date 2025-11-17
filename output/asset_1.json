@@ -1,0 +1,38 @@
+{
+  "brand": "Dell",
+  "brand_country": "United States",
+  "brand_domain": "dell.com",
+  "tech_group": "Intel Notebooks",
+  "tech_type": "Hardware",
+  "product_id": "Inspiron 7472",
+  "product_desc": "A 14-inch Dell Inspiron 7000 series laptop, featuring an InfinityEdge display and diamond-cut edges, powered by 8th Generation Intel Core processors for versatile performance.",
+  "product_features": {
+    "Product Type": "Laptop",
+    "Primary Compatibility": "Not found",
+    "Processor": "Intel Core i5-8250U or Intel Core i7-8550U (8th Generation)",
+    "Memory": "Up to 16GB DDR4, 2400MHz (typically 4GB or 8GB DDR4)",
+    "Storage": "Hybrid configurations including up to 512GB SSD and/or up to 1TB HDD",
+    "Display Size": "14.0 inches",
+    "Display Resolution": "1920 x 1080 (Full HD, IPS)",
+    "Graphics": "Intel UHD Graphics 620 (Integrated) with optional NVIDIA GeForce MX150 2GB GDDR5 (Discrete)",
+    "Battery Life": "Not found",
+    "Connectivity": "802.11ac Wi-Fi, Bluetooth 4.0/4.1, Gigabit Ethernet (10/100/1000)",
+    "Ports": "2x USB 3.0, 1x USB 2.0, 1x HDMI, 1x Headphone output, 1x Ethernet (RJ-45), SD card reader",
+    "Keyboard Features": "Backlit Standard Keyboard",
+    "Security Features": "Not found",
+    "Operating System": "Windows 10 Home/Professional (upgradeable to Windows 11)",
+    "Dimensions": "0.75\" x 12.7\" x 8.9\" (H x W x D) or 18.95 x 323 x 227 mm",
+    "Weight": "3.5 lbs (1.6 kg)",
+    "Accessories Included": "Power Supply",
+    "Durability": "Not found",
+    "Warranty": "Not found",
+    "Special Features": "InfinityEdge display, diamond-cut edges, integrated HD 720P webcam with dual digital microphone array, built-in speakers"
+  },
+  "reference_urls": [
+    "https://www.backmarket.com/en-us/p/dell-inspiron-7472-14-inch-2017-core-i7-8550u-8-gb-ssd-128-gb/5e7305d2-f472-466d-88b1-12ec91079d35",
+    "https://www.laptopmedia.com/laptop-specs/dell-inspiron-14-7472-9/",
+    "https://www.dell.com/support/manuals/en-us/inspiron-14-7472-laptop/inspiron14-7472_setup_specs/display?guid=guid-d1f5ecf0-6a75-43ea-9642-1678822003c2&lang=en-us",
+    "https://laptopspec.net/2022/dell-inspiron-14-7472-specs-and-review-14-inch-core-i5i7/",
+    "https://www.pc-liquidations.com/p/dell-inspiron-7472-14-laptop-i7-8550u-windows-11-c-20592"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "brand": "Samsung",
+  "brand_country": "South Korea",
+  "brand_domain": "samsung.com",
+  "tech_group": "LED Monitors",
+  "tech_type": "Hardware",
+  "product_id": "S24R35xFZ",
+  "product_desc": "24-inch Full HD IPS LED Monitor from the SR35 Series with a bezel-less design and a 75Hz refresh rate, featuring Eye Saver Mode and Flicker Free technology for comfortable viewing.",
+  "product_features": {
+    "Panel Type": "IPS",
+    "Screen Size": "23.8 inches",
+    "Aspect Ratio": "16:9",
+    "Resolution": "1920 x 1080 (Full HD)",
+    "Refresh Rate": "75Hz",
+    "Response Time": "5 ms (GTG)",
+    "Color Gamut Coverage": "72% NTSC",
+    "Brightness": "250 cd/m²",
+    "Contrast Ratio": "1000:1 (Static)",
+    "HDR Support": "Not found",
+    "Connectivity": "1 x HDMI, 1 x VGA",
+    "USB Hub": "Not found",
+    "Ergonomic Adjustments": "Tilt: -2°(+/-2°) ~ 22° (+/-2°)",
+    "VESA Mounting": "Not found",
+    "Built-in Speakers": "No",
+    "Adaptive Sync": "AMD FreeSync",
+    "Blue Light Filter": "Yes (Eye Saver Mode)",
+    "Power Consumption": "25W (Max)",
+    "Dimensions": "With stand: 539.7 x 425.4 x 236.4 mm; Without stand: 539.7 x 321.3 x 49.9 mm",
+    "Weight": "With stand: 3.4 kg; Without stand: 2.8 kg"
+  },
+  "reference_urls": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEfkwcAfpADk7tDmzVNUgiadcWFLFxiF86HE4Fi0MXRMzQDD-woDNBEldqUsDa2h0IBSXxRx1e0lA_Ka04dZzSh5n2qtvze7A6usLtj0mqR8CQSaGAHwRd2Gh6lWfEbaIzona_AkyTqKDOPAdX_XV9k--eB9AM=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHTfpC7E7j_g6Ghqu1R87mII8ST0m5Jwsem5XBO8J0PgWPczt4jBBmok3ZYBspOlGImL4CnbhZjVVic7BzqgLR4cSHcSyiVG0z_LhfpCOIGxvWuwe-y7hZrb8ZA79RQLL_hYsMlmZTmKzsDLdL_KuWmyxou52h_n3ce72ZKfnIrqoIDSeEjDY3IEnYIjTvNKP5q1yh8epp8TMLU87IiOnNVnzRH7HnUPY5ys-LM38iejTPYtj52pK4dE00-J9V7Z4TPAEV6iTF2zEUGBHM8ZvFZ-HTsCQLSO2MI7kH9s5QLLAJ59u3-ld30MR3jdqDQqQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFunt_pUI5lDOPrElqslJMN-9VsZK7vtjDE-5Os2iP3FUfj3n9VsMoEOWtFaxXBeJt7ly3Zytut6tTbgWoGGkdZqR2JKnFW2O0LNeAE4OExtZbaD0e4WAZKt5lxMu2VZt0Kf1nIqvg=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWNejWpVOPfVOZwb1I4G1_rxmYIEPtbJqrAa3z_wQSBf0_sqAAUjMQZJF6RUz_LPVZqavByOkB2VRaViYTJmOVVLDabDvtniGXXf4JZZotF6XkUllsuNMnKlutu-J15OpXp0XBD-eQWz1Eog0pWiow40lPeEJJZLYzgrRKjSyMdZk="
+  ]
+}

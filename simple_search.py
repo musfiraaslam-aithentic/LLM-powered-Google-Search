@@ -6,10 +6,29 @@ from dotenv import load_dotenv
 import time
 import re
 from difflib import get_close_matches
+from datetime import datetime, timedelta, timezone
+from urllib.parse import urlparse
+import requests
 
 # Load environment variables
 load_dotenv()
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+API_KEY_ENV_VARS = ["GOOGLE_API_KEY_1", "GOOGLE_API_KEY_2"]
+AVAILABLE_API_KEYS: list[str] = []
+for var in API_KEY_ENV_VARS:
+    value = os.getenv(var)
+    if value and value not in AVAILABLE_API_KEYS:
+        AVAILABLE_API_KEYS.append(value)
+
+if not AVAILABLE_API_KEYS:
+    raise SystemExit("No Google API keys set in environment!")
+
+
+def build_client(api_key: str) -> genai.Client:
+    return genai.Client(api_key=api_key)
+
+
+CURRENT_API_KEY_INDEX = 0
+client = build_client(AVAILABLE_API_KEYS[CURRENT_API_KEY_INDEX])
 
 BASE_DIR = Path(__file__).resolve().parent
 TECH_GROUPS_FILE = BASE_DIR / "tech_groups.txt"
@@ -17,16 +36,113 @@ TECH_TYPES_FILE = BASE_DIR / "tech_types.txt"
 SECOND_LEVEL_TREE_FILE = BASE_DIR / "second_level_tree.json"
 TECHGROUP_JSON_DIR = BASE_DIR / "techgroup_jsons"
 METDATA_FILE = BASE_DIR / "metadata.json"
-OUTPUT_DIR = BASE_DIR / "outputs"
+OUTPUT_DIR = BASE_DIR / "output"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-if not GOOGLE_API_KEY:
-    raise SystemExit("GOOGLE_API_KEY not set in environment!")
+REQUEST_TRACKING_FILE = BASE_DIR / "requests.json"
+REQUESTS_PER_DAY = 250
 
-# Initialize client
-client = genai.Client()
+FLASH_MODEL = "gemini-2.5-flash"
+PRO_MODEL = "gemini-2.5-pro"
+MODEL_LIMITS = {
+    FLASH_MODEL: 250,
+    PRO_MODEL: 200,
+}
+CURRENT_MODEL = FLASH_MODEL
+FAIL_THRESHOLD = 3
+FAILURE_COUNTS = {
+    FLASH_MODEL: 0,
+    PRO_MODEL: 0,
+}
+DEFAULT_DELAY_AFTER_REQUEST = 30.0
+API_KEY_FAIL_THRESHOLD = 5
+API_KEY_FAILURE_COUNTS = [0] * len(AVAILABLE_API_KEYS)
 
-MODEL_NAME = "gemini-2.5-flash"
+
+def load_request_tracking() -> dict:
+    """Load or initialize request tracking JSON."""
+    if not REQUEST_TRACKING_FILE.exists():
+        data = {
+            "model_counts": {model: 0 for model in MODEL_LIMITS},
+            "last_reset_date": datetime.now(timezone.utc).isoformat(),
+        }
+        save_request_tracking(data)
+        return data
+    with REQUEST_TRACKING_FILE.open("r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    # Backward compatibility for older format
+    if "model_counts" not in data:
+        total = data.get("total_requests_tracked", 0)
+        data["model_counts"] = {model: 0 for model in MODEL_LIMITS}
+        data["model_counts"][FLASH_MODEL] = total
+        data.pop("total_requests_tracked", None)
+        save_request_tracking(data)
+
+    for model in MODEL_LIMITS:
+        data["model_counts"].setdefault(model, 0)
+
+    return data
+
+
+def save_request_tracking(data: dict) -> None:
+    with REQUEST_TRACKING_FILE.open("w", encoding="utf-8") as f:
+        json.dump(data, f, indent=4)
+
+
+def reset_daily_if_needed() -> dict:
+    """Reset request count if 24+ hours have passed."""
+    data = load_request_tracking()
+    last_reset = datetime.fromisoformat(data["last_reset_date"])
+    now = datetime.now(timezone.utc)
+    if now - last_reset >= timedelta(hours=24):
+        data["model_counts"] = {model: 0 for model in MODEL_LIMITS}
+        data["last_reset_date"] = now.isoformat()
+        save_request_tracking(data)
+    return data
+
+
+def record_request(model_name: str) -> None:
+    """Persist a successful request count for the given model."""
+    data = reset_daily_if_needed()
+    data["model_counts"][model_name] = data["model_counts"].get(model_name, 0) + 1
+    save_request_tracking(data)
+    limit = MODEL_LIMITS.get(model_name, MODEL_LIMITS[FLASH_MODEL])
+    print(f"Total API Requests Today for {model_name}: {data['model_counts'][model_name]}/{limit}")
+
+
+def choose_model(preferred_model: str) -> str:
+    """Return the best model to use based on daily limits, preferring the requested one."""
+    if preferred_model not in MODEL_LIMITS:
+        preferred_model = FLASH_MODEL
+
+    data = reset_daily_if_needed()
+    if preferred_model == PRO_MODEL:
+        candidate_order = [PRO_MODEL, FLASH_MODEL]
+    else:
+        candidate_order = [FLASH_MODEL, PRO_MODEL]
+
+    for model_name in candidate_order:
+        count = data["model_counts"].get(model_name, 0)
+        limit = MODEL_LIMITS.get(model_name, MODEL_LIMITS[FLASH_MODEL])
+        if count < limit:
+            if model_name != preferred_model:
+                print(f"{preferred_model} quota reached. Switching to {model_name}.")
+            return model_name
+
+    raise RuntimeError("Daily request limit exceeded for all available models.")
+
+
+def switch_api_key() -> None:
+    """Rotate to the next available API key."""
+    global CURRENT_API_KEY_INDEX, client
+    if len(AVAILABLE_API_KEYS) <= 1:
+        print("Only one API key configured; cannot switch API keys.")
+        return
+
+    CURRENT_API_KEY_INDEX = (CURRENT_API_KEY_INDEX + 1) % len(AVAILABLE_API_KEYS)
+    client = build_client(AVAILABLE_API_KEYS[CURRENT_API_KEY_INDEX])
+    print(f"Switched to API key #{CURRENT_API_KEY_INDEX + 1}")
 
 def model_call_with_retry(prompt, response_mime_type=None, max_retries=5, base_delay=6.0, max_delay=30.0):
     """
@@ -44,8 +160,12 @@ def model_call_with_retry(prompt, response_mime_type=None, max_retries=5, base_d
     Raises:
         Exception: If all retries fail.
     """
+    global CURRENT_MODEL, client, CURRENT_API_KEY_INDEX
     for attempt in range(max_retries + 1):
         try:
+            model_name = choose_model(CURRENT_MODEL)
+            print(f"Using API key #{CURRENT_API_KEY_INDEX + 1}")
+            print(f"Using model: {model_name}")
             config = {
                 "tools": [{"google_search": {}}],
             }
@@ -54,21 +174,48 @@ def model_call_with_retry(prompt, response_mime_type=None, max_retries=5, base_d
             #     config["response_mime_type"] = response_mime_type
             
             request_kwargs = {
-                "model": MODEL_NAME,
+                "model": model_name,
                 "contents": prompt,
                 "config": config,
             }
             response = client.models.generate_content(**request_kwargs)
-            time.sleep(10)
+            record_request(model_name)
+            CURRENT_MODEL = model_name
+            FAILURE_COUNTS[model_name] = 0
+            API_KEY_FAILURE_COUNTS[CURRENT_API_KEY_INDEX] = 0
+            time.sleep(DEFAULT_DELAY_AFTER_REQUEST)
             result = response.text if hasattr(response, 'text') and response.text else ""
             if not result:
                 raise ValueError("Model returned empty response")
             return result
         except Exception as e:
+            FAILURE_COUNTS[model_name] = FAILURE_COUNTS.get(model_name, 0) + 1
+            API_KEY_FAILURE_COUNTS[CURRENT_API_KEY_INDEX] = (
+                API_KEY_FAILURE_COUNTS[CURRENT_API_KEY_INDEX] + 1
+            )
+            if FAILURE_COUNTS[model_name] > FAIL_THRESHOLD:
+                other_model = PRO_MODEL if model_name == FLASH_MODEL else FLASH_MODEL
+                print(f"Encountered {FAILURE_COUNTS[model_name]} consecutive failures on {model_name}. Switching preference to {other_model}.")
+                CURRENT_MODEL = other_model
+                FAILURE_COUNTS[model_name] = 0
+                FAILURE_COUNTS[other_model] = 0
+
+            if API_KEY_FAILURE_COUNTS[CURRENT_API_KEY_INDEX] > API_KEY_FAIL_THRESHOLD:
+                if len(AVAILABLE_API_KEYS) > 1:
+                    print(
+                        f"Encountered {API_KEY_FAILURE_COUNTS[CURRENT_API_KEY_INDEX]} consecutive failures on API key #{CURRENT_API_KEY_INDEX + 1}. "
+                        "Switching to the next API key."
+                    )
+                    API_KEY_FAILURE_COUNTS[CURRENT_API_KEY_INDEX] = 0
+                    switch_api_key()
+                    continue
+                else:
+                    print("Only one API key configured; cannot rotate keys despite failures.")
+
             if attempt == max_retries:
                 raise  # all retries failed
             delay = min(base_delay * (2 ** attempt), max_delay)
-            wait_time = max(10.0, delay)
+            wait_time = max(20.0, delay)
             print(f"Attempt {attempt + 1} failed: {e}. Retrying in {wait_time:.1f} seconds...")
             time.sleep(wait_time)
 
@@ -137,6 +284,45 @@ def extract_json_string(text: str) -> str:
     # Fallback: return empty JSON object
     return "{}"
 
+
+def _url_is_reachable(url: str, session: requests.Session, timeout: float = 5.0) -> bool:
+    """Return True only if the URL responds with a successful status."""
+    parsed = urlparse(url)
+    if parsed.scheme not in {"http", "https"} or not parsed.netloc:
+        return False
+    try:
+        response = session.head(url, allow_redirects=True, timeout=timeout)
+        if response.status_code >= 400:
+            response = session.get(url, allow_redirects=True, timeout=timeout)
+        return response.status_code < 400
+    except requests.RequestException:
+        return False
+
+
+def validate_reference_urls(ref_urls: list) -> list[str]:
+    """
+    Validate reference URLs by checking they are reachable.
+    Returns only the URLs that pass validation.
+    """
+    if not isinstance(ref_urls, list) or not ref_urls:
+        return []
+
+    session = requests.Session()
+    validated: list[str] = []
+
+    for entry in ref_urls:
+        if isinstance(entry, str):
+            candidate = entry.strip()
+        elif isinstance(entry, dict):
+            candidate = str(entry.get("url", "")).strip()
+        else:
+            continue
+
+        if candidate and _url_is_reachable(candidate, session):
+            validated.append(candidate)
+
+    return validated
+
 def get_children_for_group(json_file, group_name):
     """
     Given a second_level_tree.json and a group name,
@@ -197,26 +383,19 @@ def load_metadata_assets(path: Path) -> list[dict]:
     return assets
 
 
-def build_output_filename(index: int, metadata: dict, tech_group: str) -> str:
-    model = ""
-    manufacturer = ""
+def build_output_filename(index: int) -> str:
+    """Use the legacy asset naming convention."""
+    return f"asset_{index}.json"
 
-    if isinstance(metadata, dict):
-        hardware = metadata.get("hardware_data") if isinstance(metadata.get("hardware_data"), dict) else {}
-        model = hardware.get("model") 
-        manufacturer = hardware.get("manufacturer") 
 
-    parts = [f"asset_{index:04d}"]
-    if manufacturer:
-        parts.append(manufacturer)
-    if model:
-        parts.append(model)
-    if tech_group:
-        parts.append(tech_group)
-
-    raw_name = "_".join(parts)
-    safe_name = re.sub(r"[^A-Za-z0-9_.-]", "_", raw_name)
-    return f"{safe_name}.json"
+def estimate_tokens(text: str) -> int:
+    """
+    Rough token estimate without external API calls.
+    Approximation: 1 token ≈ 4 characters.
+    """
+    if not text:
+        return 0
+    return max(1, len(text) // 4)
 
 
 def normalize_tech_group_choice(raw_choice: str) -> str:
@@ -256,6 +435,13 @@ data = load_metadata_assets(METDATA_FILE)
 
 for i, metadata in enumerate(data, start=1):
 
+    output_filename = build_output_filename(i)
+    output_path = OUTPUT_DIR / output_filename
+
+    if output_path.exists():
+        print(f"Skipping Asset #{i} — {output_filename} already exists.")
+        continue
+
     try:
         metadata = json.dumps(metadata, indent=2, ensure_ascii=False)
     except (TypeError, ValueError):
@@ -288,6 +474,9 @@ for i, metadata in enumerate(data, start=1):
 
     """
 
+
+    estimated_tokens_prompt_one = estimate_tokens(prompt_one)
+    print(f"Estimated tokens for prompt_one (Asset #{i}): {estimated_tokens_prompt_one}")
 
     tech_group_raw = model_call_with_retry(prompt_one, response_mime_type="text/plain")
     tech_group_result = normalize_tech_group_choice(tech_group_raw)
@@ -344,14 +533,22 @@ for i, metadata in enumerate(data, start=1):
 
         INSTRUCTIONS:
         1. Perform a web search to identify accurate information about this asset.
-        2. Fill ALL fields in concisely the JSON schema.
+        2. Fill ALL fields in the JSON schema concisely.
         3. If a field cannot be determined, write "Not found".
         4. For "tech_type", select ONLY from the provided list.
         5. For "tech_group", select ONLY from the provided list, pick the one that most specifically describes the asset.
-        6. Return ONLY a valid JSON object.
-        7. DO NOT write any sentences, explanations, descriptions, markdown, or text outside the JSON.
+        6. Add an extra field named "reference_urls": a list containing valid URLs;
+            - Use ONLY URLs that appear directly within the Google Search snippets obtained through the google_search tool.
+            - Do NOT invent URLs.
+            - Do NOT rewrite URLs.
+            - Do NOT fabricate product pages.
+        7. Return ONLY a valid JSON object.
+        8. DO NOT write any sentences, explanations, descriptions, markdown, or text outside the JSON.
 
     """
+
+    estimated_tokens_prompt_two = estimate_tokens(prompt_two)
+    print(f"Estimated tokens for prompt_two (Asset #{i}): {estimated_tokens_prompt_two}")
 
     json_response_text = model_call_with_retry(prompt_two, response_mime_type="application/json")
     print(json_response_text)
@@ -364,17 +561,20 @@ for i, metadata in enumerate(data, start=1):
         extracted_json = extract_json_string(json_response_text)
         # Validate JSON is parseable
         try:
-            json.loads(extracted_json)
-            output_text = extracted_json
+            parsed = json.loads(extracted_json)
+            if isinstance(parsed, dict):
+                parsed["reference_urls"] = validate_reference_urls(parsed.get("reference_urls", []))
+                output_text = json.dumps(parsed, indent=2, ensure_ascii=False)
+            else:
+                # Keep original structure if it's not a dict
+                output_text = extracted_json
         except (json.JSONDecodeError, ValueError) as e:
             print(f"Warning: Extracted JSON is invalid: {e}")
-            print(f"Falling back to raw response")
+            print("Falling back to raw response")
             output_text = json_response_text.strip() if json_response_text.strip() else "{}"
     else:
         output_text = "{}"
     
-    output_filename = build_output_filename(i, metadata, tech_group_result)
-    output_path = OUTPUT_DIR / output_filename
     with output_path.open("w", encoding="utf-8") as f:
         f.write(output_text)
         if not output_text.endswith("\n"):

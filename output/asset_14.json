@@ -1,0 +1,39 @@
+{
+  "brand": "QEMU",
+  "brand_country": "Not found",
+  "brand_domain": "www.qemu.org",
+  "tech_group": "x86 Servers",
+  "tech_type": "Virtual Machines",
+  "product_id": "Not found",
+  "product_desc": "Standard PC (Q35 + ICH9, 2009)",
+  "product_features": {
+    "Form Factor": "Virtual",
+    "Processor": "qemu virtual cpu version 2.5+",
+    "Processor Count": "4",
+    "Memory Capacity": "8 GB",
+    "Memory Type": "Not found",
+    "Drive Bays": "Not found",
+    "Storage Controller": "Not found",
+    "RAID Support": "Not found",
+    "Network Interfaces": "Intel(R) PRO/1000 MT Network Connection",
+    "Expansion Slots": "Not found",
+    "Power Supplies": "Not found",
+    "Remote Management": "Not found",
+    "Security Features": "Not found",
+    "Operating Temperature": "Not found",
+    "Dimensions": "Not found",
+    "Weight": "Not found",
+    "Energy Efficiency": "Not found",
+    "Warranty": "Not found",
+    "Management Software": "Not found",
+    "Special Features": "Not found"
+  },
+  "reference_urls": [
+    "https://www.qemu.org",
+    "https://wiki.archlinux.org/title/QEMU",
+    "https://rubix.io/glossary/qemu",
+    "https://www.qemu.org/contribute/",
+    "https://gitlab.com/qemu-project/qemu",
+    "https://qemu.weilnetz.de/w64/"
+  ]
+}

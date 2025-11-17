@@ -1,0 +1,38 @@
+{
+  "brand": "Amazon",
+  "brand_country": "USA",
+  "brand_domain": "amazon.com",
+  "tech_group": "x86 Servers",
+  "tech_type": "Virtual Machines",
+  "product_id": "t3a.medium",
+  "product_desc": "Amazon EC2 t3a.medium is a burstable general-purpose instance type offering a balance of compute, memory, and network resources, powered by AMD EPYC 7000 series processors. It provides a baseline level of CPU performance with the ability to burst CPU usage as needed.",
+  "product_features": {
+    "Form Factor": "Virtual Instance",
+    "Processor": "AMD EPYC 7571 (2.5 GHz All-core turbo)",
+    "Processor Count": "2 vCPUs",
+    "Memory Capacity": "4 GiB",
+    "Memory Type": "Not found",
+    "Drive Bays": "N/A (Uses network-attached Amazon EBS)",
+    "Storage Controller": "N/A (Managed by AWS Nitro System for EBS)",
+    "RAID Support": "Configurable via Amazon EBS",
+    "Network Interfaces": "Up to 5 Gigabit network bandwidth, Enhanced Networking (ENA)",
+    "Expansion Slots": "N/A (Virtual instance)",
+    "Power Supplies": "N/A (Virtual instance)",
+    "Remote Management": "AWS Management Console, AWS CLI, SDKs, SSH/RDP",
+    "Security Features": "AWS Nitro System, Nitro Security Chip, IAM, Security Groups, EBS Encryption",
+    "Operating Temperature": "N/A (Virtual instance)",
+    "Dimensions": "N/A (Virtual instance)",
+    "Weight": "N/A (Virtual instance)",
+    "Energy Efficiency": "N/A (Cloud provider managed)",
+    "Warranty": "AWS Service Level Agreement (SLA)",
+    "Management Software": "AWS Management Console, AWS CLI, AWS SDKs",
+    "Special Features": "Burstable performance with CPU Credits (Unlimited mode by default), powered by AWS Nitro System, EBS Optimized"
+  },
+  "reference_urls": [
+    "https://aws.amazon.com/ec2/instance-types/t3/",
+    "https://aws.amazon.com/ec2/nitro/",
+    "https://aws.amazon.com/ebs/features/",
+    "https://ec2instances.info/details/t3a.medium/",
+    "https://vantage.sh/ec2/t3a.medium"
+  ]
+}

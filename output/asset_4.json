@@ -1,0 +1,38 @@
+{
+  "brand": "HP",
+  "brand_country": "USA",
+  "brand_domain": "hp.com",
+  "tech_group": "LED Monitors",
+  "tech_type": "Hardware",
+  "product_id": "3UA73AA#ABA",
+  "product_desc": "HP 24yh 23.8-inch Full HD LED monitor with IPS technology and VESA mount.",
+  "product_features": {
+    "Panel Type": "IPS",
+    "Screen Size": "23.8 inches",
+    "Aspect Ratio": "16:9",
+    "Resolution": "1920 x 1080 (Full HD)",
+    "Refresh Rate": "60 Hz",
+    "Response Time": "5 ms",
+    "Color Gamut Coverage": "72% NTSC",
+    "Brightness": "250 cd/m²",
+    "Contrast Ratio": "1,000:1 (static), 10,000,000:1 (dynamic)",
+    "HDR Support": "Not found",
+    "Connectivity": "1x HDMI, 1x VGA, 1x DVI-D",
+    "USB Hub": "Not found",
+    "Ergonomic Adjustments": "Tilt (-5° to +20°)",
+    "VESA Mounting": "Yes (100 x 100 mm)",
+    "Built-in Speakers": "Not found",
+    "Adaptive Sync": "Not found",
+    "Blue Light Filter": "Yes (Low Blue Light Mode)",
+    "Power Consumption": "Not found",
+    "Dimensions": "With Stand: 21.52 x 8.26 x 15.95 inches (W x D x H); Without Stand: 21.52 x 1.76 x 12.64 inches (W x D x H)",
+    "Weight": "With Stand: 3.65 kg; Without Stand: 3.3 kg"
+  },
+  "reference_urls": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgPMHYXeykHxG_iBusGaj8kkLPDtM_UVsv6hLP0y_ESBsGgriEN8v3QJJq_AaeM1MTrYNNi-7uOpB5Lvjv8kYeMNhx3_ewOU4egbswRw-cF7tHdWW7DZXChr3h_MqhVaTKFL7eDUO079AC7x21cAe2V7b8uGLVrvJvvVmAOabOi0U",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQExaEb1wxXqimKVKa7J4K5u13XB9K_Xf4027rNLfStbWyJngiQfddmFzSJAsPHqTzaOAhStkvhMQjkSfXaXKDm-Am6cSygwegkLvbD3GcL5N26gPbBOwezeXdlRsad3g9a4x4U_oHpKxXIO-h7L5APXiQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFKvhvcBepztIkE9jZ-BmcDhkJRLbZp4cgR4d_9vpLLZxIsldP3SRYj4XeE2JmrW9EyNMzbXQI2WGpNKYUmQqdIWK-njNLinoWmVO9EELNx8nZbXzu_TAxsjxnnCnugn8WHWosHWmbSed1paEoXq8Y_uvLKdUNRFMTw92OqBmwEuiVKnWdjMK239CGLcu96mDmbGCym2o7GHX4dkFOV5nElKRRh0nfP4ts=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE9el8dqtKSEO3AweccadXL1ps0lgQvQ1R5KGE-rPBhRPr4UVx5s3hlHF5ABXTIuVaBeDH8UQT4Luarh-cRRMnWHSP0qMPj17y1GR5MWvX2enc-cQUv84CBzh_ZPBVrJ9W52mQcb7Fr7p5bRfWmi7MCWXmG1vXnUP1lRy2XBInQ7MH-6wPO0eNc4Y4JpLOt8t990g==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG296rTVHOuso5WnrcsXwyOqw2St8bxiLlY-7ZcUyVozV5pLshtUfrYbF7h5Q8qsd_KqEtOAInb18jtUgEAnazMo39kr3VppVtQ9_Az0GEA9UA2LXBq-tvEylZRP-YGTEc207UDy5mPDcHpSYS3HBVKBG1CTmCHUndZOkngb2PcxwjgkwdYU9Fhq0oT3u3ZEOxB3BnQs1OQpmnhxdBuhHvhZd-9QZY7CVs="
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "brand": "Microsoft",
+  "brand_country": "U.S.",
+  "brand_domain": "microsoft.com",
+  "tech_group": "Tablet Computers",
+  "tech_type": "Hardware",
+  "product_id": "Surface Pro 7",
+  "product_desc": "Microsoft Corporation - Surface Pro 7",
+  "product_features": {
+    "Device Type": "2-in-1 detachable tablet computer",
+    "Display Size": "12.3-inch",
+    "Display Resolution": "2736 x 1824",
+    "Display Technology": "PixelSense™ Display",
+    "Processor": "Intel Core i5-1035G4",
+    "Memory": "8 GB RAM",
+    "Storage Capacity": "Not found",
+    "Expandable Storage": "microSDXC™ card reader",
+    "Battery Life": "Up to 10.5 hours",
+    "Charging Interface": "USB-C™, Surface Connect port",
+    "Connectivity": "Wi-Fi 6, Bluetooth 5.0",
+    "Wireless Standards": "IEEE 802.11a/b/g/n/ac/ax (Wi-Fi 6), Bluetooth 5.0",
+    "Camera Specifications": "Windows Hello facial-recognition camera, Front-facing camera",
+    "Operating System": "Windows 11 Home",
+    "Supported Formats": "Not found",
+    "Stylus Support": "Surface Pen support",
+    "Dimensions": "11.5” x 7.9” x 0.33” (292 mm × 201 mm × 8.5 mm)",
+    "Weight": "1.70 lbs (775 g)",
+    "Accessories Included": "Not found",
+    "Special Features": "Kickstand, USB-A port, Dual microphones, Dolby Audio"
+  },
+  "reference_urls": [
+    "https://support.microsoft.com/en-us/surface/surface-pro-7-specs-and-features-7d6fb5a0-008b-7033-2895-c15764ff3f8b",
+    "https://laptopmedia.com/laptop-specs/microsoft-surface-pro-7/",
+    "https://en.wikipedia.org/wiki/Surface_Pro_7",
+    "https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4o30x",
+    "https://www.microsoft.com/"
+  ]
+}
