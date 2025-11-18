@@ -8,7 +8,10 @@ import re
 from difflib import get_close_matches
 from datetime import datetime, timedelta, timezone
 from urllib.parse import urlparse
+from typing import Optional
 import requests
+from groq import Groq
+from urllib3 import Retry
 
 # Load environment variables
 load_dotenv()
@@ -30,16 +33,27 @@ def build_client(api_key: str) -> genai.Client:
 CURRENT_API_KEY_INDEX = 0
 client = build_client(AVAILABLE_API_KEYS[CURRENT_API_KEY_INDEX])
 
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+if GROQ_API_KEY:
+    groq_client = Groq(
+        api_key=GROQ_API_KEY,
+        default_headers={"Groq-Model-Version": "latest"},
+    )
+else:
+    groq_client = None
+
 BASE_DIR = Path(__file__).resolve().parent
-TECH_GROUPS_FILE = BASE_DIR / "tech_groups.txt"
-TECH_TYPES_FILE = BASE_DIR / "tech_types.txt"
-SECOND_LEVEL_TREE_FILE = BASE_DIR / "second_level_tree.json"
-TECHGROUP_JSON_DIR = BASE_DIR / "techgroup_jsons"
-METDATA_FILE = BASE_DIR / "metadata.json"
-OUTPUT_DIR = BASE_DIR / "output"
+
+
+TECH_GROUPS_FILE = BASE_DIR.joinpath("tech_groups.txt")
+TECH_TYPES_FILE = BASE_DIR.joinpath("tech_types.txt")
+SECOND_LEVEL_TREE_FILE = BASE_DIR.joinpath("second_level_tree.json")
+TECHGROUP_JSON_DIR = BASE_DIR.joinpath("techgroup_jsons")
+METDATA_FILE = BASE_DIR.joinpath("metadata.json")
+OUTPUT_DIR = BASE_DIR.joinpath("output")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-REQUEST_TRACKING_FILE = BASE_DIR / "requests.json"
+REQUEST_TRACKING_FILE = BASE_DIR.joinpath("requests.json")
 REQUESTS_PER_DAY = 250
 
 FLASH_MODEL = "gemini-2.5-flash"
@@ -49,14 +63,22 @@ MODEL_LIMITS = {
     PRO_MODEL: 200,
 }
 CURRENT_MODEL = FLASH_MODEL
-FAIL_THRESHOLD = 3
+FAIL_THRESHOLD = 1
 FAILURE_COUNTS = {
     FLASH_MODEL: 0,
     PRO_MODEL: 0,
 }
 DEFAULT_DELAY_AFTER_REQUEST = 30.0
-API_KEY_FAIL_THRESHOLD = 5
+API_KEY_FAIL_THRESHOLD = 1
 API_KEY_FAILURE_COUNTS = [0] * len(AVAILABLE_API_KEYS)
+GROQ_USAGE_LOG = BASE_DIR.joinpath("groq_usage.json")
+GROQ_DAILY_CALL_LIMIT = 250
+PROVIDER_NAMES = ["gemini"]
+if groq_client:
+    PROVIDER_NAMES.append("groq")
+ACTIVE_PROVIDER_INDEX = 0 # for Gemini set it to 0, for Groq set it to 1
+PROVIDER_FAILURE_COUNTS = {name: 0 for name in PROVIDER_NAMES}
+PROVIDER_FAIL_THRESHOLD = 1
 
 
 def load_request_tracking() -> dict:
@@ -144,7 +166,118 @@ def switch_api_key() -> None:
     client = build_client(AVAILABLE_API_KEYS[CURRENT_API_KEY_INDEX])
     print(f"Switched to API key #{CURRENT_API_KEY_INDEX + 1}")
 
-def model_call_with_retry(prompt, response_mime_type=None, max_retries=5, base_delay=6.0, max_delay=30.0):
+
+def load_groq_usage() -> dict:
+    if not GROQ_USAGE_LOG.exists():
+        return {}
+    with GROQ_USAGE_LOG.open("r", encoding="utf-8") as f:
+        try:
+            return json.load(f)
+        except json.JSONDecodeError:
+            return {}
+
+
+def save_groq_usage(data: dict) -> None:
+    with GROQ_USAGE_LOG.open("w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2)
+
+
+def groq_check_and_update_usage(required_tokens: int) -> bool:
+    usage = load_groq_usage()
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    stats = usage.get(today, {"calls": 0, "tokens": 0})
+    if stats["calls"] >= GROQ_DAILY_CALL_LIMIT:
+        print(f"Groq daily call limit of {GROQ_DAILY_CALL_LIMIT} reached for {today}.")
+        return False
+    stats["calls"] += 1
+    stats["tokens"] += required_tokens
+    usage[today] = stats
+    save_groq_usage(usage)
+    print(f"Groq usage today — calls: {stats['calls']}/{GROQ_DAILY_CALL_LIMIT}, tokens logged: {stats['tokens']}")
+    return True
+
+
+def groq_call_with_retry(prompt: str, max_retries: int = 3, base_delay: float = 6.0, max_delay: float = 30.0) -> str:
+    if not groq_client:
+        raise RuntimeError("Groq API key not configured; cannot use Groq fallback.")
+
+    for attempt in range(max_retries + 1):
+        try:
+            estimated_tokens = estimate_tokens(prompt)
+            if not groq_check_and_update_usage(estimated_tokens):
+                raise RuntimeError("Groq daily call limit reached.")
+
+            messages = [
+                {
+                    "role": "system",
+                    "content": "You are a meticulous assistant. Follow the user's instructions exactly.",
+                },
+                {
+                    "role": "user",
+                    "content": prompt,
+                },
+            ]
+            response = groq_client.chat.completions.create(
+                model="groq/compound",
+                messages=messages,
+                temperature=0.4,
+                max_completion_tokens=2048,
+                top_p=1,
+            )
+            content = response.choices[0].message.content if response.choices else ""
+            if not content:
+                raise ValueError("Groq returned empty response")
+            time.sleep(max(10.0, DEFAULT_DELAY_AFTER_REQUEST))
+            return content
+        except Exception as e:
+            if attempt == max_retries:
+                raise
+            delay = min(base_delay * (2 ** attempt), max_delay)
+            print(f"Groq attempt {attempt + 1} failed: {e}. Retrying in {delay:.1f} seconds...")
+            time.sleep(delay)
+
+
+def call_llm_with_failover(prompt: str, response_mime_type: Optional[str] = None) -> str:
+    """
+    Attempt to generate content using the currently active provider.
+    If it fails, rotate through available providers (Gemini -> Groq -> Gemini ...).
+    """
+    if not PROVIDER_NAMES:
+        raise RuntimeError("No LLM providers available.")
+
+    global ACTIVE_PROVIDER_INDEX
+    provider_rotations = 0
+    last_error: Exception | None = None
+
+    while provider_rotations <= len(PROVIDER_NAMES):
+        provider = PROVIDER_NAMES[ACTIVE_PROVIDER_INDEX]
+        try:
+            if provider == "gemini":
+                result = gemini_call_with_retry(prompt, response_mime_type=response_mime_type)
+            elif provider == "groq":
+                # Groq always returns text; response mime ignored
+                result = groq_call_with_retry(prompt)
+            else:
+                raise RuntimeError(f"Unknown provider '{provider}'")
+
+            PROVIDER_FAILURE_COUNTS[provider] = 0
+            return result
+        except Exception as exc:
+            last_error = exc
+            PROVIDER_FAILURE_COUNTS[provider] = PROVIDER_FAILURE_COUNTS.get(provider, 0) + 1
+            print(f"{provider.upper()} provider failed ({PROVIDER_FAILURE_COUNTS[provider]} consecutive). Error: {exc}")
+            if PROVIDER_FAILURE_COUNTS[provider] >= PROVIDER_FAIL_THRESHOLD:
+                PROVIDER_FAILURE_COUNTS[provider] = 0
+                ACTIVE_PROVIDER_INDEX = (ACTIVE_PROVIDER_INDEX + 1) % len(PROVIDER_NAMES)
+                provider_rotations += 1
+                print(f"Switching to provider '{PROVIDER_NAMES[ACTIVE_PROVIDER_INDEX]}' after repeated failures.")
+            else:
+                print(f"Retrying provider '{provider}' (failure count below threshold).")
+            time.sleep(5)
+
+    raise RuntimeError(f"All LLM providers failed. Last error: {last_error}")
+
+def gemini_call_with_retry(prompt, response_mime_type=None, max_retries=5, base_delay=6.0, max_delay=30.0):
     """
     Calls the model with retries using exponential backoff.
     
@@ -215,7 +348,7 @@ def model_call_with_retry(prompt, response_mime_type=None, max_retries=5, base_d
             if attempt == max_retries:
                 raise  # all retries failed
             delay = min(base_delay * (2 ** attempt), max_delay)
-            wait_time = max(20.0, delay)
+            wait_time = max(DEFAULT_DELAY_AFTER_REQUEST, delay)
             print(f"Attempt {attempt + 1} failed: {e}. Retrying in {wait_time:.1f} seconds...")
             time.sleep(wait_time)
 
@@ -478,7 +611,7 @@ for i, metadata in enumerate(data, start=1):
     estimated_tokens_prompt_one = estimate_tokens(prompt_one)
     print(f"Estimated tokens for prompt_one (Asset #{i}): {estimated_tokens_prompt_one}")
 
-    tech_group_raw = model_call_with_retry(prompt_one, response_mime_type="text/plain")
+    tech_group_raw = call_llm_with_failover(prompt_one, response_mime_type="text/plain")
     tech_group_result = normalize_tech_group_choice(tech_group_raw)
 
     if not tech_group_result:
@@ -550,7 +683,7 @@ for i, metadata in enumerate(data, start=1):
     estimated_tokens_prompt_two = estimate_tokens(prompt_two)
     print(f"Estimated tokens for prompt_two (Asset #{i}): {estimated_tokens_prompt_two}")
 
-    json_response_text = model_call_with_retry(prompt_two, response_mime_type="application/json")
+    json_response_text = call_llm_with_failover(prompt_two, response_mime_type="application/json")
     print(json_response_text)
     # Debugging print statements
     print(f"\n--- Result for Asset #{i} ---\n{json_response_text}\n")

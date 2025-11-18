@@ -1,0 +1,37 @@
+{
+  "brand": "ASRock",
+  "brand_country": "Taiwan",
+  "brand_domain": "asrock.com",
+  "tech_group": "Motherboards (for Intel Processors)",
+  "tech_type": "Hardware",
+  "product_id": "H510M-ITX/ac",
+  "product_desc": "A Mini-ITX motherboard for 10th and 11th generation Intel Core processors with an LGA1200 socket, supporting up to 64GB of DDR4 memory, and featuring built-in Wi-Fi and Bluetooth.",
+  "product_features": {
+    "Form Factor": "Mini-ITX",
+    "Chipset": "Intel H510",
+    "Socket Type": "LGA1200",
+    "Supported Processors": "10th Gen Intel Core Processors and 11th Gen Intel Core Processors",
+    "Memory Type": "DDR4",
+    "Max Memory Capacity": "64GB",
+    "Memory Slots": "2",
+    "PCIe Slots": "1 x PCIe 4.0 x16",
+    "Storage Interfaces": "4 x SATA3, 1 x Ultra M.2 (PCIe Gen3 x4 & SATA3)",
+    "M.2 Slots": "1",
+    "SATA Ports": "4",
+    "USB Ports": "4 x USB 3.2 Gen1 (2 Rear, 2 Front), 4 x USB 2.0 (2 Rear, 2 Front)",
+    "Networking": "Intel Gigabit LAN, Intel 802.11ac WiFi + BT 4.2",
+    "Audio Codec": "7.1 CH HD Audio (Realtek ALC897 Audio Codec)",
+    "Power Phases": "6",
+    "Cooling Features": "Supports CPU fan, Chassis fan, and Chassis/Water Pump fan",
+    "BIOS Features": "128Mb AMI UEFI Legal BIOS with multilingual GUI support",
+    "Lighting Features": "ASRock Polychrome SYNC",
+    "Expansion Headers": "1 x Chassis Intrusion, 1 x Addressable LED, 1 x CPU Fan, 1 x Chassis Fan, 1 x Chassis/Water Pump Fan, 1 x Front Audio, 1 x USB 2.0, 1 x USB 3.2 Gen1",
+    "Warranty": "2 Year Replacement Warranty"
+  },
+  "reference_urls": [
+    "https://www.asrock.com/mb/Intel/H510M-ITXac/index.asp",
+    "https://www.newegg.com/asrock-h510m-itx-ac/p/9SIA4REKBW5766",
+    "https://www.asrock.com/",
+    "https://www.asrockrack.com/"
+  ]
+}

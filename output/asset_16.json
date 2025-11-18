@@ -1,0 +1,34 @@
+{
+  "brand": "VMware",
+  "brand_country": "USA",
+  "brand_domain": "vmware.com",
+  "tech_group": "Virtualization Software",
+  "tech_type": "Virtual Machines",
+  "product_id": "VMware vSphere",
+  "product_desc": "VMware vSphere is a server virtualization platform for implementing and managing large-scale virtual machine infrastructures. It allows organizations to create and manage virtualized IT environments by abstracting and pooling computing, storage, and networking resources. The core components include the ESXi hypervisor and vCenter for centralized management.",
+  "product_features": {
+    "Hypervisor Type": "Type 1 (Bare-Metal)",
+    "Supported Guest OS": "Microsoft Windows, Linux, and macOS.",
+    "Supported Host OS": "Runs directly on server hardware.",
+    "Virtual Machine Management": "Centralized management through vCenter Server for multiple ESXi hosts and VMs.",
+    "Networking Features": "Creation and management of virtual networks to optimize traffic and ensure connectivity between VMs.",
+    "Storage Management": "vSAN (Virtual Storage Area Network) creates a distributed, shared storage infrastructure using local disks.",
+    "Resource Allocation (CPU/RAM/Storage)": "Pools hardware resources from hosts into a cluster, allowing VMs to access these pooled resources.",
+    "Live Migration": "vMotion allows for the live migration of virtual machines between hosts with no interruption of service.",
+    "High Availability": "vSphere High Availability (HA) restarts virtual machines on another host in the cluster if the original host fails.",
+    "Disaster Recovery": "VMware Site Recovery Manager (SRM) automates the failover and failback of virtual machines to a secondary site.",
+    "Snapshots and Cloning": "Not found",
+    "Security Features": "Includes VM encryption, vSphere Trust Authority, and support for UEFI Secure Boot and Trusted Platform Module (TPM).",
+    "Scalability": "Allows for the addition of ESXi hosts to a cluster to scale resources.",
+    "Management Interface (GUI/CLI/API)": "vSphere Client (browser-based GUI), and vSphere PowerCLI for automation and scripting.",
+    "Integration with Cloud Platforms": "Integrates with hybrid cloud services and can run on platforms like AWS, Azure, and Google Cloud.",
+    "Performance Monitoring": "vRealize Operations Manager provides performance monitoring and optimization.",
+    "Containerization Support": "Supports running containerized workloads with Kubernetes.",
+    "Licensing Model": "Transitioned from perpetual licenses to subscription-based offerings."
+  },
+  "reference_urls": [
+    "https://www.vmware.com/",
+    "https://www.techtarget.com/searchvmware/definition/VMware",
+    "https://www.ibm.com/topics/vmware"
+  ]
+}

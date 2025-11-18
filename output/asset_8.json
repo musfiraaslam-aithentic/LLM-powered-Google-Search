@@ -5,31 +5,32 @@
   "tech_group": "Motherboards (for Intel Processors)",
   "tech_type": "Hardware",
   "product_id": "H610M H V2 DDR4 (rev. 1.0)",
-  "product_desc": "Micro-ATX motherboard supporting 14th, 13th, and 12th Gen Intel Core processors, featuring an Intel H610 chipset, DDR4 memory, PCIe 4.0, and M.2 storage.",
+  "product_desc": "Intel H610 Motherboard with 6+1+1 Hybrid Digital VRM Design, PCIe 4.0* Design, Gen3 x4 M.2, Anti-Sulfur Resistors, and Smart Fan 6, supporting 14th, 13th, and 12th Generation Intel® Core™, Pentium® Gold and Celeron® Processors.",
   "product_features": {
-    "Form Factor": "Micro-ATX",
-    "Chipset": "Intel H610 Express Chipset",
-    "Socket Type": "LGA 1700",
+    "Form Factor": "Micro ATX Form Factor (23.0cm x 21.5cm)",
+    "Chipset": "Intel® H610 Express Chipset",
+    "Socket Type": "LGA1700",
     "Supported Processors": "14th, 13th, and 12th Generation Intel® Core™, Pentium® Gold and Celeron® Processors",
-    "Memory Type": "DDR4",
-    "Max Memory Capacity": "64 GB",
+    "Memory Type": "DDR4 (DDR4 3200/3000/2933/2666/2400/2133 MT/s)",
+    "Max Memory Capacity": "64 GB (32 GB single DIMM capacity)",
     "Memory Slots": "2 x DDR4 DIMM sockets",
-    "PCIe Slots": "1 x PCI Express x16 slot (PCIe 4.0 x16), 1 x PCI Express x1 slot (PCIe 3.0 x1)",
-    "Storage Interfaces": "1 x M.2 connector (PCIe 3.0 x4/x2), 4 x SATA 6Gb/s connectors",
+    "PCIe Slots": "1 x PCI Express x16 slot (PCIe 4.0, x16 from CPU); 1 x PCI Express x1 slot (PCIe 3.0, x1 from Chipset)",
+    "Storage Interfaces": "1 x M.2 connector (Socket 3, M key, type 2280/2260 PCIe 3.0 x4/x2 SSD support); 4 x SATA 6Gb/s connectors",
     "M.2 Slots": "1",
     "SATA Ports": "4",
-    "USB Ports": "4 x USB 3.2 Gen 1 (2 rear, 2 via internal header), 8 x USB 2.0/1.1 (4 rear, 4 via internal headers)",
+    "USB Ports": "Rear Panel: 2 x USB 3.2 Gen 1, 4 x USB 2.0/1.1; Internal Headers: 2 x USB 3.2 Gen 1, 4 x USB 2.0/1.1",
     "Networking": "Realtek® GbE LAN chip (1 Gbps/100 Mbps)",
-    "Audio Codec": "Realtek® Audio CODEC, High Definition Audio, 2/4/5.1/7.1-channel, Audio Noise Guard, High-End Audio Capacitors",
-    "Power Phases": "6+1+1 Phases Hybrid Power Design",
-    "Cooling Features": "Smart Fan 6 (Multiple temperature sensors, 3 PWM/DC Fan Headers, High Current Support, Precision Control, Dual Curve Mode, Fan Stop)",
-    "BIOS Features": "New GUI BIOS, Smart Fan 6 BIOS UI, Intel Default Settings, CPU ID/Micro codes updates, SPD Write Disable Option",
+    "Audio Codec": "Realtek® Audio CODEC (High Definition Audio, 2/4/5.1/7.1-channel support)",
+    "Power Phases": "6+1+1 Phases Hybrid Digital VRM Design (with Low RDS(on) MOSFETs)",
+    "Cooling Features": "Smart Fan 6 (multiple temperature sensors, hybrid fan headers with FAN STOP, high current support, precision control, dual curve mode)",
+    "BIOS Features": "AMI BIOS with new GUI, Q-Flash/Q-Flash Plus, @BIOS, DOS Flash utility, Smart Fan 6 configuration, Tweaker (overclock/overvoltage), Boot Menu, Secure Boot, Easy Mode, Favorites (F11), CPU stability/compatibility updates, Secure Boot Database Key Update",
     "Lighting Features": "1 x RGB LED strip header",
     "Expansion Headers": "1 x 24-pin ATX main power connector, 1 x 8-pin ATX 12V power connector, 1 x CPU fan header, 2 x system fan headers, 1 x M.2 Socket 3 connector, 4 x SATA 6Gb/s connectors, 1 x RGB LED strip header, 1 x front panel header, 1 x front panel audio header, 1 x USB 3.2 Gen 1 header, 2 x USB 2.0/1.1 headers, 1 x Trusted Platform Module header, 1 x serial port header, 1 x Clear CMOS jumper",
-    "Warranty": "Not found"
+    "Warranty": "3 Year Warranty"
   },
   "reference_urls": [
-    "https://www.gigabyte.com/Motherboard/H610M-H-V2-DDR4-rev-10/Specification",
-    "https://www.gigabyte.com/Motherboard/H610M-H-V2-DDR4-rev-10/Key-Features"
+    "https://www.itgadgetsonline.com/gigabyte-h610m-h-v2-ddr4-motherboard/",
+    "https://www.itsk.sk/gigabyte-h610m-h-v2-ddr4-intel-h610-socket1700-2xddr4-matx_d855799.html",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGTweCx13COc16nroXlRZjAsqa6D1u9QZVetbgA--_2jUhcDBpu9Sg8WK_87Oc-hvQLgY-P_jQpv6dHKeLziAnaNymlxqWILyUqDlrSdDkW0fxigf7ZDJ-CNI841m0nJnaVgXBzDsHN9yIXKOruamU"
   ]
 }

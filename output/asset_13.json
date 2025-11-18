@@ -1,37 +1,36 @@
 {
   "brand": "Sceptre",
   "brand_country": "USA",
-  "brand_domain": "www.sceptre.com",
+  "brand_domain": "sceptre.com",
   "tech_group": "LED Monitors",
   "tech_type": "Hardware",
   "product_id": "F27",
-  "product_desc": "27-inch Full HD LED Computer Gaming Monitor with built-in speakers",
+  "product_desc": "A 27-inch Full HD LED gaming monitor with a 75Hz refresh rate, featuring an edgeless design, built-in speakers, and AMD FreeSync compatibility.",
   "product_features": {
     "Panel Type": "IPS",
-    "Screen Size": "27-inch",
+    "Screen Size": "27 inches",
     "Aspect Ratio": "16:9",
     "Resolution": "1920 x 1080",
     "Refresh Rate": "75Hz",
-    "Response Time": "Not found",
+    "Response Time": "1ms",
     "Color Gamut Coverage": "99% sRGB",
-    "Brightness": "320 cd/m²",
-    "Contrast Ratio": "1000:1 (Static), 1,000,000:1 (Dynamic)",
+    "Brightness": "450 cd/m2",
+    "Contrast Ratio": "3000:1",
     "HDR Support": "Not found",
     "Connectivity": "2x HDMI, 1x VGA, Audio In, Headphone Jack",
-    "USB Hub": "Not found",
-    "Ergonomic Adjustments": "Not found",
+    "USB Hub": "No",
+    "Ergonomic Adjustments": "Tilt",
     "VESA Mounting": "Not found",
     "Built-in Speakers": "Yes",
     "Adaptive Sync": "AMD FreeSync",
-    "Blue Light Filter": "Blue Light Shift",
+    "Blue Light Filter": "Yes",
     "Power Consumption": "Not found",
-    "Dimensions": "612.65 x 359.16 x 28.45 mm (without stand)",
-    "Weight": "3 kg (without stand)"
+    "Dimensions": "24.12 x 7.03 x 17.12 inches",
+    "Weight": "7.1 Pounds"
   },
   "reference_urls": [
-    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFVEz-snQnWLOQnx9a2heeawPccjBYHGODGTB8xDyTHjHJpm-n-IxLFCceIw1iHsBgbaiYEdYm-Ro1G6n2sJH3ceQVd332EDMj8ufxpjyGHTM2XR8B4WgUBVSQkMNf8TMsaxJo=",
-    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHksMp7gsKFI6VG6tO-1pBiDJUpjMaVSQxr6n324umBI1T-opC3SWodqGSel-qmc9c1f-fpvceTTU2E3Kelja_nGmrTfyk_IFwVdm9ZS9RQzR4aWEw0Btj_VpX4jWSCPBrHsDhkvM-6NA==",
-    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHFvMno2wj1YL4_Mo2apWBjyOyEmaiuwrFQfE5vDdj2v58kvc5bzMiAkxDlJJV3tljyRR7Ums-xpBYU7aSNFCExrTtpqeRvQoutAuxI-phs-vw78Q2LQESfpuv-tq3HL6g=",
-    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFGXvcZKtljJcPxCtz2SdZPZsRCeRi5-WRyUOac6d4rJgU5SWipYKar22gSYNTImHcR1iyxDLmCG3D16T4dWNPvUdEodNTc-MxTwEPL2mZhCPDT4aeRNKodgfJUSzpa-IJHNdJAjhqEgTOh6t9VTD2fHJo="
+    "https://www.sceptre.com/Monitors/LED-Monitor/E275W-FPT-27-LED-Monitor-product1247category12product1247.html",
+    "https://www.walmart.com/ip/Sceptre-IPS-27-inch-Computer-Monitor-1080p-75Hz-HDMI-Built-in-Speakers-Machine-Black-E275W-FPT/302830847",
+    "https://www.youtube.com/watch?v=Rds-y-H-vN4"
   ]
 }
