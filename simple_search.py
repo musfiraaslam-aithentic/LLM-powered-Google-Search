@@ -57,6 +57,7 @@ REQUEST_TRACKING_FILE = BASE_DIR.joinpath("requests.json")
 REQUESTS_PER_DAY = 250
 
 FLASH_MODEL = "gemini-2.5-flash"
+# gemini-2.0-flash (faster, but few outputs are not satisfactory), gemini-flash-latest, gemini-2.0-flash-001 (caused resource error once)
 PRO_MODEL = "gemini-2.5-pro"
 MODEL_LIMITS = {
     FLASH_MODEL: 250,
@@ -68,8 +69,8 @@ FAILURE_COUNTS = {
     FLASH_MODEL: 0,
     PRO_MODEL: 0,
 }
-DEFAULT_DELAY_AFTER_REQUEST = 30.0
-API_KEY_FAIL_THRESHOLD = 1
+DEFAULT_DELAY_AFTER_REQUEST = 10.0
+API_KEY_FAIL_THRESHOLD = 2
 API_KEY_FAILURE_COUNTS = [0] * len(AVAILABLE_API_KEYS)
 GROQ_USAGE_LOG = BASE_DIR.joinpath("groq_usage.json")
 GROQ_DAILY_CALL_LIMIT = 250
@@ -658,12 +659,9 @@ for i, metadata in enumerate(data, start=1):
         JSON SCHEMA TO FILL:
         {cleaned_schema}
 
-        TECH TYPE OPTIONS (choose exactly one):
-        {TECH_TYPES_JSON}
-
         VALID TECH GROUP OPTIONS (choose exactly one):
         {children_output}
-
+        NOTE: Information inside this JSON may be incomplete, inaccurate, or wrong.
         INSTRUCTIONS:
         1. Perform a web search to identify accurate information about this asset.
         2. Fill ALL fields in the JSON schema concisely.

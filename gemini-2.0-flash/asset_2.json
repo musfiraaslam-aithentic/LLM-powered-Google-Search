@@ -1,0 +1,39 @@
+{
+  "brand": "Microsoft",
+  "brand_country": "USA",
+  "brand_domain": "microsoft.com",
+  "tech_group": "Notebooks",
+  "tech_type": "Notebooks",
+  "product_id": "5093386",
+  "product_desc": "Microsoft Laptop",
+  "product_features": {
+    "Product Type": "Laptop",
+    "Primary Compatibility": "Windows",
+    "Processor": "Intel(R) Core(TM) i5-1035G4 CPU @ 1.10GHz",
+    "Memory": "8 GB RAM",
+    "Storage": "Not found",
+    "Display Size": "Not found",
+    "Display Resolution": "Not found",
+    "Graphics": "Intel® Iris® Plus Graphics",
+    "Battery Life": "Not found",
+    "Connectivity": "Wi-Fi, Bluetooth",
+    "Ports": "USB-A, USB-C, 3.5mm audio jack, Surface Connect port",
+    "Keyboard Features": "Backlit keyboard",
+    "Security Features": "Firmware TPM 2.0",
+    "Operating System": "Windows 11 Home",
+    "Dimensions": "Not found",
+    "Weight": "Not found",
+    "Accessories Included": "Not found",
+    "Durability": "Not found",
+    "Warranty": "Not found",
+    "Special Features": "Touchscreen"
+  },
+  "reference_urls": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGhkK8SWlCBGfy6XC24cVO7hTyQsYwkYdmmPcdr0SiZ4-38k9LEfhJqqpJXo0gMUWLN6UnT8MNtug4jG-0kYeqNgoZfTH2qEBSBqWoB4ICFU8D70ZVd2qIN90ZPGQvP_pGZ98c4xhYXkFsPDAKT_n0C21roYyro5IFX2KRg0eMB6JTqXlBvbNuBSV7VeQKA3Sw-cbfvwHQlxn0xu6P8wxS0Ry2cWMCUmDDkBldmURHxPe2yIYbXte7mjjQa-1mlJsnB",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGErAKPOKjcO6ihXkRb6Pu0I5acJjB3naTAAyN3NvktKr_COR2TDO5WyyZbZkv-dkXJK8pEgC07Mmwwe5phkmgupIbJKbIcG6gMXq9lGSq-Inwsfv94mJXMua8nyyM_jj4zF8dINqymr9I0hm-oUSsK-BpG4mc=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF2Btd6z0vi0zT6cZ3F7OgUEsLlkNIvF_YvMYEpjzBV2iBraK8h4qIDpGopdqBAJDygBzJ6GxYlgEznFuMJ6uazQKqitrR0oFKQ18UA8ch7j0KdxjnaxOghanRnIDOjj7VEXLfsTgPdAz2yx_Qt7Pq-ga9vU-zL7K-_AL7rahFStF-ePDr1NaCsSj7aOleAjSiT0H4GFw==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFOC6nh4_FrheuFA10Yvugg_vn9S-iwsq6ClpzjXqAWVW4JibB2YkqHxsgvuMnaOBklFT6qszsSsj9fu83Rll0wkJj69uuxxUzSK1rbf8Sb8O3mqKLgs0e9UXHrZP6noYK-1UkSrqkHTpZ6_J2gYNsSlhjj5EhEoc5gjdx7rIGphFTh3uEqHXqwOOelhQLsQHel4-mBoSCWDoSFFFeRizzWKUFWsP96k_Mea03B0bkl",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGcALu92qJzYsXS9caY418uZHZZYGLGYQ5c-YoROmG_4xCRAnQs2qu47d5v9Vch9-RRj8dnDcy2T9RwOXAApkkffE8OOPz8WL8qxxzZiRurE6T4eGboQSfgjOtJHLCEYA20OrWcJs4Rsklz9CgFBK_38vRRq8d3Kom-myag_NeoONNV9jc1wYZRzL1xVSU71t25DdTnEUZXH5QoAgrYdBp9Ymty1_k9KiPKRILhHUot",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHe1NP8JsGuJx31INovXP1Nr-XDy6i_-jQhlVYbnGvHUGLgrIMcBNA3mbB8cU5QNhzxPdlD6PQ1vBPNHfSnbcMQGW3nS9sHuQ8NLEJGIUcdUN9AHuPXcskJ0Xqkgl6HfUZnYNXqzjI="
+  ]
+}

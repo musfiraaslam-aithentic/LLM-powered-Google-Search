@@ -1,0 +1,36 @@
+{
+  "brand": "ASUS",
+  "brand_country": "Taiwan",
+  "brand_domain": "asus.com",
+  "tech_group": "Desktops & Workstations",
+  "tech_type": "Desktops",
+  "product_id": "Not found",
+  "product_desc": "Not found",
+  "product_features": {
+    "Form Factor": "Not found",
+    "Processor": "Not found",
+    "Processor Cores": "Not found",
+    "Memory Capacity": "Not found",
+    "Memory Type": "Not found",
+    "Storage Configuration": "Not found",
+    "Graphics": "Not found",
+    "Expansion Slots": "Not found",
+    "Ports": "Not found",
+    "Networking": "Not found",
+    "Operating System": "Not found",
+    "Power Supply": "Not found",
+    "Cooling": "Not found",
+    "Dimensions": "Not found",
+    "Weight": "Not found",
+    "Security Features": "Not found",
+    "Manageability": "Not found",
+    "Warranty": "Not found",
+    "Energy Efficiency": "Not found",
+    "Special Features": "Not found"
+  },
+  "reference_urls": [
+    "https://www.asus.com/sg/",
+    "https://www.asus.com/us/",
+    "https://asus.com"
+  ]
+}

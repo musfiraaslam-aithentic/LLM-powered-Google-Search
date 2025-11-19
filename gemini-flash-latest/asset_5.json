@@ -1,0 +1,37 @@
+{
+  "brand": "Philips",
+  "brand_country": "Netherlands",
+  "brand_domain": "philips.com",
+  "tech_group": "LED Monitors",
+  "tech_type": "Hardware",
+  "product_id": "196V4L",
+  "product_desc": "LCD monitor with W-LED backlight (V Line)",
+  "product_features": {
+    "Panel Type": "W-LED Backlit LCD monitor / TFT",
+    "Screen Size": "18.5 inch / 47 cm",
+    "Aspect Ratio": "16:9",
+    "Resolution": "1366 x 768",
+    "Refresh Rate": "60 Hz",
+    "Response Time": "8ms (typical)",
+    "Color Gamut Coverage": "Not found",
+    "Brightness": "250 Cd/m² (typical)",
+    "Contrast Ratio": "600:1 (typical, with SmartContrast technology)",
+    "HDR Support": "Not found",
+    "Connectivity": "VGA (Analog), DVI-D (digital, HDCP)",
+    "USB Hub": "Not found",
+    "Ergonomic Adjustments": "Tilt: -5/20 degree",
+    "VESA Mounting": "Yes",
+    "Built-in Speakers": "Not found",
+    "Adaptive Sync": "Not found",
+    "Blue Light Filter": "Not found",
+    "Power Consumption": "16.46W (typical)",
+    "Dimensions": "443 x 349 x 201 mm (with stand)",
+    "Weight": "Not found"
+  },
+  "reference_urls": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHUR5IKcfrcJh9dwWqrv79OwqlNBja9z9MHwVGziwOiBbG3aL1x3UwlibCdW5-wq_M98zMIvsiBttKFQtJqoXRQTqFyrrOGAGqCJQwdWuXvgOriZlfxqFaa8hIQsyGLB3y18O1YyByP4Lt1_VUi70XP3Ew53LkYmKN5TbzM4-xSkrHJfYkQx4ob6HO5a3jfsklDObRq3Z7hA4YZxJGiEUcpQ6KO7-R5Cg==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGVrTola4ZSnN83gYbU8RPh6CexmHASPS6tY1iTTC7dDcU3Kfv_bNVyT_YTMO1FDkDlglWOpJci-oHKJODEIv6N-YLFjGIE7j3Vrx3hD8mJqmttQlpObB46CQckfcrzLGO4iwgK6RKIK9ifrih39zEpqOArYWfAX_HhlHC81ZmxBtbO1IAG",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHLGnTXDlI0OEeyHUqNAcd5oLMYOyKIZNIaknttKr6BsHDe46Rl_dwQyIvuFG8ExOX2NStXwR8fSmCTLQ_c1ciojowQXRXRlK6mLG-ArtubNpyoBYSU9iFOvv0-FSjCcUd-zn3602l3N9SOQX3X_icLXpjJLwKQQqv9MRaCNGDlCcpZvVKe1kT0HqPPSeEZJvtR",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_nn-p3eziqXQ24fGyzZ5kQOTWsLz6UqHN2jNYyLzwHUWzwkOlUG3akLeYy9Fb7Cfs7YRfiye6Ihy3N16wop5xkch2J_xFG8LevGnxB9G1maZgYQTQR5mEYyw4FudpZlPs3C7hw_NRTxiWv50xFqfieWuWzcygzXL_bqoeJKcr6A=="
+  ]
+}

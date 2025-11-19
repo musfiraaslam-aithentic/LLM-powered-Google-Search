@@ -1,0 +1,35 @@
+{
+  "brand": "MSI",
+  "brand_country": "Taiwan",
+  "brand_domain": "msi.com",
+  "tech_group": "Motherboards (for Intel Processors)",
+  "tech_type": "Motherboards",
+  "product_id": "MS-7817",
+  "product_desc": "Micro-ATX motherboard based on the Intel H81/H87/B85 chipset for optimal system efficiency. Designed to fit the advanced Intel LGA1150 processor.",
+  "product_features": {
+    "Form Factor": "Micro ATX",
+    "Chipset": "Intel H81/H87/B85 Express Chipset",
+    "Socket Type": "LGA 1150",
+    "Supported Processors": "4th Generation Intel Core i7 / Core i5 / Core i3 / Pentium / Celeron Processors",
+    "Memory Type": "DDR3",
+    "Max Memory Capacity": "16GB",
+    "Memory Slots": "2 x DDR3 DIMM",
+    "PCIe Slots": "1 x PCIe x16, 1 x PCIe 2.0 x1",
+    "Storage Interfaces": "4x SATA ports (2 x SATAIII, 2 x SATAII)",
+    "M.2 Slots": "Not found",
+    "SATA Ports": "4",
+    "USB Ports": "2 x USB 3.0, 4 x USB 2.0",
+    "Networking": "Realtek RTL8111G Gigabit LAN",
+    "Audio Codec": "Realtek ALC892/ALC887",
+    "Power Phases": "Not found",
+    "Cooling Features": "Not found",
+    "BIOS Features": "Click BIOS 4",
+    "Lighting Features": "Not found",
+    "Expansion Headers": "TPM header",
+    "Warranty": "Not found"
+  },
+  "reference_urls": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGpp22imJzHlijfXyn3QqMXy2j2a8TVREMqhZNCi_ouNDeK5Xcrx8ntQZ2ln2HK0u8CRnBa5ika6M_jzLs2DnUkyOH1eQnKleFb4D8Is1q6cyw8pRnyPJf1_mQ4WRHwA4wLoyxiagrjhAvgux2iIIzQRhIPU7rVGacfJhcRoFeav3M=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEA1VUa3JXimm8a0BWO3mxEEY4hdOKWUVydMz8X27X37EbvEuiB0Uz-8MgLyrlanQ8EQSHN3bnieCEooY4BULelG2Yvy3nqkI0fYxXXLE0KhzrzZPlSHf9juwoVQvpiI9JFBlCJWng="
+  ]
+}

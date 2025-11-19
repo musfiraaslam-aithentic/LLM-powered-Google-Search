@@ -1,0 +1,32 @@
+{
+  "brand": "ASUS",
+  "brand_country": "Taiwan",
+  "brand_domain": "asus.com",
+  "tech_group": "Touchscreen Monitors",
+  "tech_type": "LED Monitors",
+  "product_id": "VT229",
+  "product_desc": "21.5-inch Full HD (1920x1080) Touchscreen Monitor",
+  "product_features": {
+    "Panel Type": "IPS",
+    "Screen Size": "21.5 inches",
+    "Aspect Ratio": "16:9",
+    "Resolution": "1920x1080 (Full HD)",
+    "Refresh Rate": "60 Hz",
+    "Response Time": "5ms",
+    "Color Gamut Coverage": "Not found",
+    "Brightness": "250 cd/m²",
+    "Contrast Ratio": "1000:1 (Typical), 100000000:1 (ASCR)",
+    "HDR Support": "Not found",
+    "Connectivity": "D-Sub, HDMI, USB",
+    "USB Hub": "Not found",
+    "Ergonomic Adjustments": "Tilt",
+    "VESA Mounting": "100 x 100 mm",
+    "Built-in Speakers": "1.5W x 2 Stereo RMS",
+    "Adaptive Sync": "Not found",
+    "Blue Light Filter": "Yes",
+    "Power Consumption": "Not found",
+    "Dimensions": "492.8 x 302.6 x 52.3 mm",
+    "Weight": "3.7 kg"
+  },
+  "reference_urls": []
+}

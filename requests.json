@@ -1,7 +1,10 @@
 {
     "last_reset_date": "2025-11-18T11:19:07.661743+00:00",
     "model_counts": {
-        "gemini-2.5-flash": 15,
-        "gemini-2.5-pro": 22
+        "gemini-2.5-flash": 16,
+        "gemini-2.5-pro": 30,
+        "gemini-2.0-flash": 30,
+        "gemini-flash-latest": 29,
+        "gemini-2.0-flash-001": 21
     }
 }

@@ -1,0 +1,34 @@
+{
+  "brand": "HP",
+  "brand_country": "USA",
+  "brand_domain": "hp.com",
+  "tech_group": "AMD Desktops",
+  "tech_type": "Hardware",
+  "product_id": "M01-F0xxx",
+  "product_desc": "HP Desktop M01-F0xxx series PC with AMD Ryzen 5 3400G processor.",
+  "product_features": {
+    "Form Factor": "Tower",
+    "Processor": "AMD Ryzen 5 3400G with Radeon Vega 11 Graphics",
+    "Processor Cores": "4 Cores / 8 Threads",
+    "Memory Capacity": "10 GB",
+    "Memory Type": "DDR4-2666 SDRAM",
+    "Storage Configuration": "256 GB PCIe NVMe M.2 SSD",
+    "Graphics": "Integrated AMD Radeon Vega 11 Graphics",
+    "Expansion Slots": "1 PCIe x1, 1 PCIe x16, 2 M.2",
+    "Ports": "Front: 4x USB 3.0, 1x Headphone/Mic combo. Rear: USB (various generations), HDMI, VGA, Ethernet, Audio Out.",
+    "Networking": "Integrated 10/100/1000 GbE LAN, 802.11a/b/g/n/ac Wi-Fi, Bluetooth 4.2",
+    "Operating System": "Not found",
+    "Power Supply": "Custom Low Wattage Power Supply",
+    "Cooling": "Exhaust Fan",
+    "Dimensions": "Not found",
+    "Weight": "Not found",
+    "Security Features": "Not found",
+    "Manageability": "Not found",
+    "Warranty": "Not found",
+    "Energy Efficiency": "Not found",
+    "Special Features": "Custom motherboard and power supply connections; Optional DVD-Writer."
+  },
+  "reference_urls": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWLt1O7kbTDwDvdXTE_iN_gebbOHszHhCXEwUQ9j_26L7td7RDGVBNFKN6nHRg75Wy1-2mrapYQODkN8Fvx5vFRM_hm5NTbNpSngIHoTVbCJ0VCZHAt6SrrXpcnKGlL6zlZ-ljR2I="
+  ]
+}

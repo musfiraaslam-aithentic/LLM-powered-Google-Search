@@ -1,0 +1,32 @@
+{
+  "brand": "Amazon",
+  "brand_country": "USA",
+  "brand_domain": "amazon.com",
+  "tech_group": "x86 Servers",
+  "tech_type": "x86 Rack Servers",
+  "product_id": "t3a.medium",
+  "product_desc": "Amazon EC2 t3a.medium instance",
+  "product_features": {
+    "Form Factor": "Not found",
+    "Processor": "AMD EPYC 7571",
+    "Processor Count": "1",
+    "Memory Capacity": "4 GB",
+    "Memory Type": "Unknown",
+    "Drive Bays": "Not found",
+    "Storage Controller": "NVMe",
+    "RAID Support": "Not found",
+    "Network Interfaces": "Amazon Elastic Network Adapter",
+    "Expansion Slots": "Not found",
+    "Power Supplies": "Not found",
+    "Remote Management": "AWS Management Console",
+    "Security Features": "Not found",
+    "Operating Temperature": "Not found",
+    "Dimensions": "Not found",
+    "Weight": "Not found",
+    "Energy Efficiency": "Not found",
+    "Warranty": "Not found",
+    "Management Software": "Not found",
+    "Special Features": "Not found"
+  },
+  "reference_urls": []
+}

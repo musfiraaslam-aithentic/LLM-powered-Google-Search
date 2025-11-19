@@ -1,0 +1,39 @@
+{
+  "brand": "Microsoft",
+  "brand_country": "United States of America",
+  "brand_domain": "microsoft.com",
+  "tech_group": "Tablet Computers",
+  "tech_type": "Hardware",
+  "product_id": "PUV-00001",
+  "product_desc": "Surface Pro 7",
+  "product_features": {
+    "Device Type": "Convertible 2-in-1 Laptop/Tablet",
+    "Display Size": "12.3 inches",
+    "Display Resolution": "2736 x 1824",
+    "Display Technology": "PixelSense 10-Point Touch Display",
+    "Processor": "Intel Core i5-1035G4 @ 1.10 GHz (Up to 3.7 GHz Turbo)",
+    "Memory": "8 GB LPDDR4X RAM",
+    "Storage Capacity": "256 GB SSD",
+    "Expandable Storage": "MicroSDXC Card Slot",
+    "Battery Life": "Up to 10.5 hours",
+    "Charging Interface": "Surface Connect, USB-C",
+    "Connectivity": "USB Type-C, USB Type-A, 3.5 mm combo audio, Surface Connect",
+    "Wireless Standards": "Wi-Fi 6 (802.11ax), Bluetooth 5.0",
+    "Camera Specifications": "5MP Front (Windows Hello), 8MP Rear",
+    "Operating System": "Windows 11 Home",
+    "Supported Formats": "Not found",
+    "Stylus Support": "Native Pen support (Pen sold separately)",
+    "Dimensions": "11.5” x 7.9” x 0.33” (292 mm x 201 mm x 8 mm)",
+    "Weight": "1.70 lbs (776 g) without Type Cover",
+    "Accessories Included": "Not found",
+    "Special Features": "Built-in Kickstand, Windows Hello face sign-in, Dual far-field Studio Mics, Dolby Audio"
+  },
+  "reference_urls": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG1ga_lKcfphTX_o_GaMPqqGXkKadNBHKxAyz1LBlFIn8OZ9XXT03mLw9NU85UsGCFtbI5u3slMdfWyd2_rO4HJP-7edCvBU6Vm9YgyD-UsZD2-hQcrL4o7rlg8MoY=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQESjy6d_chvrk4H3-hY4NSenuNAho7Fjr-RSKl39DOLrzkiNS4l2kBQVAgrIjeqIRsk18yrDKfCDw6_aEOb3rw1hicxfB84k9Imo-npjqwR3JX-axHCMmNVDuoN-BPHjQVdvaeBzyNZVLzqo8zmAcPa6rLXMPiqZn5pHxTgD53cSVUkLlkW45DK0HZMj-sNDVzYASGwhadVu6BhN1JrPA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGu_0cKDpucsxJ2pfyfZ1YLn9ozJStCeUfubypCQr4UJIOwBXgJzkVmT2lZ1DIdrCHU3nPd70zumjd6XaH-B6MjayJxCwNWtgQCbodTytsm-X6hNQX6jXry-Qxt-Tq2r05guvec5XYq7hFZimISICNovVLFfVWP3qH6eLVvS1QiGVF34z3sa6m5icYvPqAp_lcIp1AIGcIKf5K1UlolmFLmhMmtu_4OPOF5k3P8rUS9qq_g57Oa3VrQsdE7izaDXVz28g0cHjeUuIE5j8uLR42nPWdD0sP1IzakOCXzffRUF7KXrQIiH0s4TQLYrXjN6141crh9VyE=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFySK3NPyExHcyJLsNkbMJIUHqC44GqJyqGiUwcmZ4o2mhEGXwnY1-iu-occN2xoh2nuh6lhYLX41PO9ljCIFDLbe9iIRFlFguZznSk9qsswKMg9vvUaZuGjcHndGcdd60efsV7sTVxJ_C-OQ5bFqyEgP7Z7Kt6M6Obx6oGH9MDstO0d9gROAIFjZswY7c=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE9mm7Tlkn8ZpG-HSNzpk55H5_JN6-2_dlONBwYxeTQINm8eHmcjZD8kVYdTuZ1zd_ksp-UpeeZPHuQOfxjj6ugRpuVAJIYL5Yo6iB1zz1g8r8i7HXXSnSO1k9aWnoPW3RN-WW8vxK7YGZLW6Nc3kC4M_dOC1YTHBu5sainDxvAPePs1KYOIgIImsab7hH7guaZhIoddQdq5OdXDvy_W2ZVUlBprHrHTn9a6U8=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFtZQGi5sGuCVhYgP3rF-pTaDjNEhmNl_vlm8-fhwUBwEG3VW2qFxLIP-A1qAGhutIKir0KKoijzZ84Ubao0LC1grF-wgU_h0U7T5JXKRux1HuVo2sxhmOZoGbWYtLlJXxrLWJZ9sixagFFrunouey41icSxXhY9wkuYlPo8kSz99z3dsBPpeGgIkerX_irQCmJg67zsVVwDO2Zv7zfiDOe"
+  ]
+}

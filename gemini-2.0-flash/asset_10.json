@@ -1,0 +1,32 @@
+{
+  "brand": "Samsung",
+  "brand_country": "South Korea",
+  "brand_domain": "samsung.com",
+  "tech_group": "LED Monitors",
+  "tech_type": "Computer Monitors",
+  "product_id": "S24R35xFZ",
+  "product_desc": "24-inch LED Monitor",
+  "product_features": {
+    "Panel Type": "IPS",
+    "Screen Size": "24 inch",
+    "Aspect Ratio": "16:9",
+    "Resolution": "1920 x 1080",
+    "Refresh Rate": "75 Hz",
+    "Response Time": "5 ms",
+    "Color Gamut Coverage": "Not found",
+    "Brightness": "250 cd/m²",
+    "Contrast Ratio": "1000:1",
+    "HDR Support": "No",
+    "Connectivity": "HDMI, D-Sub",
+    "USB Hub": "No",
+    "Ergonomic Adjustments": "Tilt",
+    "VESA Mounting": "100 x 100 mm",
+    "Built-in Speakers": "No",
+    "Adaptive Sync": "AMD FreeSync",
+    "Blue Light Filter": "Yes",
+    "Power Consumption": "Not found",
+    "Dimensions": "Not found",
+    "Weight": "Not found"
+  },
+  "reference_urls": []
+}

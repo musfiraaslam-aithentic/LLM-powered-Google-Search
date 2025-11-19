@@ -1,0 +1,37 @@
+{
+  "brand": "Dell",
+  "brand_country": "United States",
+  "brand_domain": "dell.com",
+  "tech_group": "Intel Notebooks",
+  "tech_type": "Hardware",
+  "product_id": "Inspiron 7472",
+  "product_desc": "14-inch Dell Inspiron 7000 series laptop featuring a lightweight, metal-clad design with an InfinityEdge Full HD display, running on an 8th Gen Intel Core processor.",
+  "product_features": {
+    "Product Type": "Notebook / Laptop",
+    "Primary Compatibility": "Not found",
+    "Processor": "8th Generation Intel Core i5-8250U or i7-8550U",
+    "Memory": "4GB, 8GB, or 16GB DDR4 RAM",
+    "Storage": "Hybrid: 128GB/256GB SSD + up to 1TB HDD",
+    "Display Size": "14 inches",
+    "Display Resolution": "1920 x 1080 (Full HD) IPS",
+    "Graphics": "Intel UHD Graphics 620 (Integrated) and/or NVIDIA GeForce MX150 (Discrete)",
+    "Battery Life": "3-cell or 4-cell Lithium-Ion (up to 42WHr)",
+    "Connectivity": "Wi-Fi 802.11ac, Bluetooth 4.1, Gigabit Ethernet",
+    "Ports": "2 x USB 3.1 Gen 1, 1 x USB 2.0, 1 x HDMI 1.4a, 1 x Headphone/microphone combo jack",
+    "Keyboard Features": "Backlit Standard Keyboard",
+    "Security Features": "Not found",
+    "Operating System": "Microsoft Windows 10/11",
+    "Dimensions": "18.95 mm x 323 mm x 227 mm (H x W x D)",
+    "Weight": "1.6 kg (3.5 lbs)",
+    "Accessories Included": "Not found",
+    "Durability": "Metal clad premium design",
+    "Warranty": "Not found",
+    "Special Features": "InfinityEdge display, slim bezels, diamond-cut edges"
+  },
+  "reference_urls": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGatt_onn8Tfzkgua9vTnUpik9ut8ThAvD-tQ4D_CtjqhzjpLVL-n6X_mebjxTmki1382JosKbpb__AcCWXMlqFFg39eiWGlZdlYsWqX_XLb_fqnK5xpXBvdG6EHJwOU2KZzN479DzU5QHtuUo2XVfiJv95lATBHCdIdxd600x1_wvlqsI-PVDWEMY8BuZ97hq867fI",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHOI5VEkBMPvERo30Jpk4u-ggzlfm8wg3nEwoQgexrusnmaIUisW5jzdaAg9pGVoMjeDpShI7NlaSjnHbZGsZvFc4VVe6XKT4yKw_A0gPLU0WzBYmnjDtVz3-amRBHfBRth1Y1vGdBcMaXAv2zpY8ca",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEy5wTC2KzOyHJI05sJumRI5g_UjCjdVWQl3UmQfKex9KETDNSU96TexVEtbrjNxtpYWxYt0BVrMZj5J5nMAMHs1Sq74G1wR2VrEKOjqhGwjNl2AlII6JBq4KUYbJgKIn1UiskCgt_XJUbJGQbW5D0fCACY96URW8EhjlM1XTJpbYb1yz3m",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHGcKlyiwCX1YSJA4qyYv-bvUJNxpM50Vm8haIcNrKeCUKv-O_gmjNDMTp4pj3YBWQl7BM6CVbWnxooCWmCB7n6eZLQtPepI2LX99ehRi-rAW0_BEGhmmFF2nkHIY5aDvHh17CHtkv7Lu_X"
+  ]
+}

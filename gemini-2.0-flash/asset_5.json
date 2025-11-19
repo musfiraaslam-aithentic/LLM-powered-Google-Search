@@ -1,0 +1,39 @@
+{
+  "brand": "Philips",
+  "brand_country": "Netherlands",
+  "brand_domain": "www.philips.com",
+  "tech_group": "Computer Monitors",
+  "tech_type": "LED Monitors",
+  "product_id": "196V4",
+  "product_desc": "LCD monitor with LED backlight",
+  "product_features": {
+    "Panel Type": "TFT",
+    "Screen Size": "18.5 inch / 47 cm",
+    "Aspect Ratio": "16:9",
+    "Resolution": "1366 x 768 @ 60 Hz",
+    "Refresh Rate": "Not found",
+    "Response Time": "5 ms",
+    "Color Gamut Coverage": "Not found",
+    "Brightness": "200 cd/m²",
+    "Contrast Ratio": "600:1 (typical), 10,000,000:1 (SmartContrast)",
+    "HDR Support": "Not found",
+    "Connectivity": "VGA (Analog), DVI-D (digital, HDCP)",
+    "USB Hub": "Not found",
+    "Ergonomic Adjustments": "Tilt: -5/20 degree",
+    "VESA Mounting": "VESA mount allows for flexibility",
+    "Built-in Speakers": "Not found",
+    "Adaptive Sync": "Not found",
+    "Blue Light Filter": "Not found",
+    "Power Consumption": "16.46W (typical), 19.23W (max)",
+    "Dimensions": "443 x 349 x 201 mm (with stand)",
+    "Weight": "3.95 kg (with packaging)"
+  },
+  "reference_urls": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGAh1s8TEAOoBYmawkye1XZTi3BW674T9dWn5kGMhdax9yVMq2Jncc9rSROneCT3lsCw1GIGeHYMPmylmRwzEFX6ETsaiS6jtVEcdBdYmP6t3B5pM8ZaH2eMBIwLR0iJ9qDOcU95POrYWT70E8bxILQC_1SzqqVY3cgCeS7a69WKitAhz4=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFkIZq_zN07kBtySrNWppie9NBevOHQRnBRG_9UJb3eOfC-g7PvD6JlMrdOj0PRbfpvEio29zDnepQ8kfVHpjBUh2VO0E6-2GiM8wO0YAk4vbHmJp38Xnlrvy97kd7_th1oQzVfuilZW5uqnHv1saAZCYQcZu28k6vGldg0mBDwMHEk9UYcmzgn7B-LnkJGRBI=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFnrOfCW4CbwTgIGMfX9dfuAHv9czZyfX82BXFfJ7tpEevHhwG6Dg58UA4zQWbSv-83-U_kiSP29liHbgmb5eynJq6gzr2No6vsFKV3hN-D4NPjZBEBFwZfyVHh3rxfrPJ2ApDrkWZ_Pd-WF2uwIf8eRwsCWE58aU_lURvX9qIlvyKQ8K7BPpQXA7FQmLRuKixPh1Z_5R5JHv345SG31LjJOhoN4odH",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFN2_e5B4qJFF0Ru_wt_c-B6Fj4BrRFl0VEnkvOgHP6BpAhq3xnocSuajI5ei15SHfB8rjlEr85JW2Q9gUm3hIKInuqQQopwZvGcJw2Xhh-7ZK7Je-31gheZg6SVoj4nodw-qGqK9G97A4UTBh2agQm-NXpcJc=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFN2_e5B4qJFF0Ru_wt_c-B6Fj4BrRFl0VEnkvOgHP6BpAhq3xnocSuajI5ei15SHfB8rjlEr85JW2Q9gUm3hIKInuqQQopwZvGcJw2Xhh-7ZK7Je-31gheZg6SVoj4nodw-qGqK9G97A4UTBh2agQm-NXpcJc=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEkLI36PXDYKhF_0rmhqUbzkua-KwpEdhY3iRuVHVYY_NPxvJs7pxyRQc4OBgUoK_Y8GYrNwHFXUIWAxYD-IFdc0_pf0nJ-Q_gZDeYakzOcvgThxynSupFSuWPQ6jPzMhDxZxmej9FUt_f7e6B3H3olGkNgICJEBkRDrZdXWaET2uOjkl5MsB9B"
+  ]
+}

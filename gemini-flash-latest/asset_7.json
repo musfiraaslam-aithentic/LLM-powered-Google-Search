@@ -1,0 +1,40 @@
+{
+  "brand": "Amazon",
+  "brand_country": "United States",
+  "brand_domain": "aws.amazon.com",
+  "tech_group": "x86 Servers",
+  "tech_type": "Not found",
+  "product_id": "t3a.medium",
+  "product_desc": "Burstable general-purpose EC2 instance that provides a baseline level of CPU performance and the ability to burst to higher usage, featuring AMD EPYC 7000 series processors and the AWS Nitro System. ",
+  "product_features": {
+    "Form Factor": "Virtual/Cloud Instance",
+    "Processor": "AMD EPYC 7000 series processors (AMD EPYC 7571) ",
+    "Processor Count": "2 vCPUs ",
+    "Memory Capacity": "4 GiB ",
+    "Memory Type": "Not found",
+    "Drive Bays": "Not applicable (EBS Only) ",
+    "Storage Controller": "AWS Nitro System (virtualized) ",
+    "RAID Support": "Not applicable",
+    "Network Interfaces": "Up to 5 Gibps (Virtual) ",
+    "Expansion Slots": "Not applicable",
+    "Power Supplies": "Not applicable",
+    "Remote Management": "AWS Management Console/API",
+    "Security Features": "AWS Nitro System ",
+    "Operating Temperature": "Not applicable",
+    "Dimensions": "Not applicable",
+    "Weight": "Not applicable",
+    "Energy Efficiency": "Not found",
+    "Warranty": "AWS Service Level Agreement (SLA)",
+    "Management Software": "AWS Management Console/API",
+    "Special Features": "Burstable CPU performance managed by CPU Credits; Unlimited mode by default "
+  },
+  "reference_urls": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHPPElAZquw2AI6qMo43_kcos3-6W_gHlhOsqaBuCJN-qjxpinDqD9bJEPzUHTsasXFbPBL_loW8g9FQ9WW0d3X0y0w71WXrRJXsztCmIiTcvFP-nDadaGpecoBgc8HDKK8onR4FHv5Lg5z",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFXpBSYk3b-9nsbK4rsGe5smYsybqtQij3RhQA6F2beV_npQf2QYTufVw9CMGZbMgtQaPYXxEtCXyOkasWWU_PSh-6InfUzshoftEWmdx-JQXG-OwQiZ3drk682KZAsOEexI7WZdwxzZ9P1v4JmNY-gL4UMRi9r577oQjF1k-NCV5I=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQERU1XlvuOb80S9MpCPQ67U9rITfFhkFQs5zJI6uFitN7jLhts6BlGj-N56tfTIJc-nQDqLl_Gh4FERxh7UaUngO4pRMezyngN1C1SVIZQ94Nik-aKlw6CMnKaxBqeNjxCn6A9-8RpS8tyvoD0gBQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFPhF0Zt5LGQnK5S0U9rOA3opq-o1LjO5CEv43nVBi4E1jQuOQ0y_bCcOkjehhU0rcMYbrZjAT5DwiN_488AxV6pGASRqPSVEQpCLHL5OnUldVsB_hJVGbcFog7WRKY-iTvb5_hA1UymW_duQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGcpCoHQEBCYzeTXe_rtoNdXup-NdEbybhr9SDOf9qetFru5ghGO2x7LFmBC2hm1xJ4L2d85-v0iBMluU2Wd_c9nk1-okWO8fEJUHvPzdrqK1mDNTHeL8gmeYc7aGL5K4kXTflif4TUh1BB57l-o4rDHZ6xqQlHGgpaXYDOyYi1ACIqdoYe4OwZ",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEAh48KrcINUR6pXBcCBfWif65INEH_UnbRZXn5vgWvdcvsTtI2INZIS9E3jm_NsHW_5ja7eJm-9milVgW-9f04XWwShd96ObfhaV1AWhvsjdg415EkeS8P0n5XE0aammpq8_8N87QlT1o=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHuHP4wOSRVzQ-779Z76b9QQugoeWwL8WYYxceGR4HL15Ld3ehWFx2GqtEBVvmAR5n55tHO-yN0MfNJjIHTohNeBGry3T7wb05BhM4Q4pCwdUYzy-jo0tdwWA=="
+  ]
+}

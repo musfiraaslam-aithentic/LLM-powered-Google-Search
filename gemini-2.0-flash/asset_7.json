@@ -1,0 +1,40 @@
+{
+  "brand": "Amazon",
+  "brand_country": "USA",
+  "brand_domain": "amazon.com",
+  "tech_group": "x86 Servers",
+  "tech_type": "x86 Rack Servers",
+  "product_id": "t3a.medium",
+  "product_desc": "Amazon EC2 T3a instance",
+  "product_features": {
+    "Form Factor": "Not found",
+    "Processor": "AMD EPYC 7571",
+    "Processor Count": "1",
+    "Memory Capacity": "4 GiB",
+    "Memory Type": "Not found",
+    "Drive Bays": "Not found",
+    "Storage Controller": "Not found",
+    "RAID Support": "Not found",
+    "Network Interfaces": "Up to 5 Gigabit",
+    "Expansion Slots": "Not found",
+    "Power Supplies": "Not found",
+    "Remote Management": "Not found",
+    "Security Features": "Not found",
+    "Operating Temperature": "Not found",
+    "Dimensions": "Not found",
+    "Weight": "Not found",
+    "Energy Efficiency": "Not found",
+    "Warranty": "Not found",
+    "Management Software": "Not found",
+    "Special Features": "Burstable CPU Performance"
+  },
+  "reference_urls": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG9VrxXUkdRE3kkMmKRi_5K-zyHRIfLBmJxLJnVKHKa6LpGsq5mnd26Q0o4cJkZ5F8_wyydnnMOtjs5wJ6o_Z9g4L33O0H9DPAXW3ZaviDkCIQbWlbSjMIxOvjYfO_5i4Kc",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGuEcslwguEXwmwZfWyOedpurb6Bnbio2h_huzWNEW6ij2td5zRSO9ODmG59XvKldwHWENlALjbhYyRvo1Yxomju1e17-zEdyRrcwCbVApteVKtj3P-Vnnbws9RCgFMNv0x9jVTgsP6eVi1rTOggB-MlCtSflyzFrSlpy80Xlkdiw==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGvLbnCOdKRhQ4nIW4hMFH-eOczPrPSE0I2yOktWbSQjKSDk9Y3ZFBa8KHink-i2PBAgFLvl1PN8Qba0m7r7R1pqmX01XZ5OUc3kShi3a6dsMvef7rVCYd7Bj9RgEyp3Pb5NzlaEawpcl4=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGb_JNecN9UR9CtqbjRL_VEeUt7n5MJcO5wOyIdnzml1UAnP71c9n6jp-fJYFg9AnUwDFsqtt_dD5mHhO9vFaZZnL9uTCfnF4IsJkkWI5nmn_T64PZB-ai8N0Jx9nwv1sYI0gwT4yKPaVXTyoePYm6ZpaHBxtqJGR0JXdj5R_skJpcIyuODIW-eXjlufNMkb8BitWNsomg=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEnODI4Gy1Oyh1shysNoJE39_SPAuvnn5uTBtW9x6_arbV9r7Wi6q1-wNJoueuzPOtJRWAFEY_3_OeW1vZMuLWkH6pExMhwJbbLMMXtCL2NPNYB13BcPFb6gc8nn6THhWi6r9Td20vCsM4D8sjd",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZB7Agpg8AZge3mGfD-ahzApsN5ARSKC3ooRjyC7hmWGb3pt8xZDYaAjKFkN6TjSklRSNI2wx0vuDgFbJ92c1_P5ac5X1LR3iuIpAukz0Q4c-j-oiUZojwVcT1oB58oLhzqvgm-CoUj1ED",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGSfYXszelNmryOwC2MaW-L8BGhDCClCXUqIM8-WrhvAgGw1INCu88r8fjgndvOBQ9TjeBDhNSUo8qoD_xv8yiPZzsw9IPuSQMKV0J68QndoFZWJCxY3KGK0vuMgAWF2rnMgucJ52XpMvLUl93XMHelZMhyxs-AcMuXiv0QATi0rud9cLC_"
+  ]
+}

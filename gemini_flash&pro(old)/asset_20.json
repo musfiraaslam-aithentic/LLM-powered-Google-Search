@@ -1,0 +1,34 @@
+{
+  "brand": "HP",
+  "brand_country": "USA",
+  "brand_domain": "hp.com",
+  "tech_group": "Desktops",
+  "tech_type": "Hardware",
+  "product_id": "M01-F0xxx",
+  "product_desc": "Desktop PC",
+  "product_features": {
+    "Form Factor": "Mini Tower",
+    "Processor": "Intel Core i5-8500",
+    "Processor Cores": "6",
+    "Memory Capacity": "8 GB",
+    "Memory Type": "DDR4",
+    "Storage Configuration": "Not found",
+    "Graphics": "Intel UHD Graphics 630",
+    "Expansion Slots": "Not found",
+    "Ports": "4 SuperSpeed USB Type-A 5Gbps signaling rate, 4 USB 2.0 Type-A",
+    "Networking": "Realtek Wi-Fi 5 (1x1) and Bluetooth 4.2 Combo",
+    "Operating System": "Windows 10 Home",
+    "Power Supply": "Not found",
+    "Cooling": "Not found",
+    "Dimensions": "Not found",
+    "Weight": "10.41 lb approx.",
+    "Security Features": "Not found",
+    "Manageability": "Not found",
+    "Warranty": "1-year limited hardware warranty",
+    "Energy Efficiency": "ENERGY STAR qualified",
+    "Special Features": "MU-MIMO supported"
+  },
+  "reference_urls": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxj74oOMRbE91tJGqtoAC78uUmexRz4PydwQ5cKQ6QV2Xvr3j9kd3njV8lx1er_vVK9bs0Y-6XdJ7Ho4th6kXOWIWyzRwuKiziVbjgmqkrOT-64elGVlprfzefvXNeopxMJmU1AIf28-xO_jSSBEtyrGe7Zv9ZdYRbmT6tEg=="
+  ]
+}

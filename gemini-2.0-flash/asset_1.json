@@ -1,0 +1,32 @@
+{
+  "brand": "Dell",
+  "brand_country": "USA",
+  "brand_domain": "dell.com",
+  "tech_group": "Intel Notebooks",
+  "tech_type": "Notebooks",
+  "product_id": "Inspiron 7472",
+  "product_desc": "The Dell Inspiron 7472 is a 14-inch laptop.",
+  "product_features": {
+    "Product Type": "Laptop",
+    "Primary Compatibility": "Not found",
+    "Processor": "Not found",
+    "Memory": "Not found",
+    "Storage": "Not found",
+    "Display Size": "14-inch",
+    "Display Resolution": "1920 x 1080",
+    "Graphics": "Intel(R) UHD Graphics 620",
+    "Battery Life": "Not found",
+    "Connectivity": "Not found",
+    "Ports": "Not found",
+    "Keyboard Features": "Not found",
+    "Security Features": "Not found",
+    "Operating System": "Not found",
+    "Dimensions": "Not found",
+    "Weight": "Not found",
+    "Accessories Included": "Not found",
+    "Durability": "Not found",
+    "Warranty": "Not found",
+    "Special Features": "Not found"
+  },
+  "reference_urls": []
+}

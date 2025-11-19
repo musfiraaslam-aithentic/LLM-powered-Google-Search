@@ -1,0 +1,38 @@
+{
+  "brand": "Dell",
+  "brand_country": "USA",
+  "brand_domain": "dell.com",
+  "tech_group": "Notebooks",
+  "tech_type": "Intel Notebooks",
+  "product_id": "Inspiron 7472",
+  "product_desc": "The Dell Inspiron 7472 is a 14-inch laptop with an 8th generation Intel Core i5 or i7 processor, integrated Intel UHD Graphics 620, and an optional NVIDIA GeForce MX150 graphics card.",
+  "product_features": {
+    "Product Type": "Laptop",
+    "Primary Compatibility": "Not found",
+    "Processor": "Intel Core i5-8250U / i7-8550U",
+    "Memory": "Up to 16GB DDR4",
+    "Storage": "Up to 512GB SSD or 256GB SSD + 500GB HDD",
+    "Display Size": "14-inch",
+    "Display Resolution": "1920 x 1080 (Full HD)",
+    "Graphics": "Intel UHD Graphics 620 / NVIDIA GeForce MX150 (optional)",
+    "Battery Life": "Decent",
+    "Connectivity": "Wi-Fi 802.11ac, Bluetooth 4.1",
+    "Ports": "USB 3.0, USB 2.0, HDMI",
+    "Keyboard Features": "Backlit keyboard",
+    "Security Features": "Not found",
+    "Operating System": "Windows 10",
+    "Dimensions": "323 x 227 x 18.95 mm (12.72\" x 8.94\" x 0.75\")",
+    "Weight": "1.60 kg (3.5 lbs)",
+    "Accessories Included": "Not found",
+    "Durability": "Keyboard tested for 40,000 pushes",
+    "Warranty": "Not found",
+    "Special Features": "Ultra-thin bezel"
+  },
+  "reference_urls": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUBExKlOlp1gJ_Yfry-HFbFMgISN2DOQd6NMuNRFfITHNfRJ4WZu7Cx30_LK452eM-jwEloljW0DI5utzwsYuq9wpxtQXZ865phMgNtLqCteIeTKwsTZkqZ-9pwYNDUPwSgdjtE0I0l31MyItpRAAHjPV27q_PoR6rrMVFT10DuIsxb-Vu-L9sHw_bpMBn6-A1ZsJn",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEfGKoVfIemf9Bv0SvPHWyKnNuEiHPhD-pHuF9LIZ5U0O7Fowim14LWgE6Jede9oHXZ4ug8GLzRD_V7Kq1xv5c80YP3xpIixefFqEJwwfAZl0_bOJoG6BFpcC2pXdjwBsBs6zDx7Vapw7-1D-nkeiebM4aaTEt-FOja2tIySpVRMCoT-C-CbMg7LMmEinaPadCN-TPZkqBAYAn55HAuFfGXHBpvD_YRCRddTBojhn6B-Dz3OPbq_MI=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFEo7SfBjnYfsDnWGpg5JXS6UF1q5A7TAZWe8EvscY2VBw5v7EL6WkKea5p1n9CAwzoRwU_A9nzh8f4Pd5PWz647o34dHfn3t4SMXssUZAbVFeZfzrKhcUmRs_9TNQxyQrrFfaQLOX61kp9fdCT9SWoA_Voyjj78g==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH96KLPEUQpazuyKKDulxFlBhfAITP6jfKgWrjPCO5U-4pucHMC4YAo79VwypSAoVlxbYIqPFnkLc8Q6y1L5cSVI2IISM9D8B0BHh4CJftVEzzu4q0m8IFsbaeZH-KGMHV44YyFwYoemrbyoqE1a5UY",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF_hKMlMJ46We8QrHpe-xvLuXH-7UzNL06i4awCnBog1ePmd-z6vQtcYLMyWCPkd94QxnQNCNFyA06dDoIYi0gNsGu7YTUei52qmxPxkJz8jkEQLKIw82G8_MD3zXF83EKFCBHmhyk="
+  ]
+}

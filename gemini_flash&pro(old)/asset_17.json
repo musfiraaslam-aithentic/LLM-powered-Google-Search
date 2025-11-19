@@ -1,0 +1,39 @@
+{
+  "brand": "Intel",
+  "brand_country": "USA",
+  "brand_domain": "intel.com",
+  "tech_group": "Desktops",
+  "tech_type": "Hardware",
+  "product_id": "i5-5250U",
+  "product_desc": "The Intel Core i5-5250U is a mobile processor with 2 cores, launched in March 2015. It is part of the Core i5 lineup, using the Broadwell-U architecture.",
+  "product_features": {
+    "Form Factor": "Not found",
+    "Processor": "Intel Core i5-5250U",
+    "Processor Cores": "2 Cores, 4 Threads",
+    "Memory Capacity": "Up to 16 GB",
+    "Memory Type": "DDR3L 1333/1600, LPDDR3 1600/1866",
+    "Storage Configuration": "Not found",
+    "Graphics": "Intel HD Graphics 6000",
+    "Expansion Slots": "PCI Express Revision 2.0",
+    "Ports": "Not found",
+    "Networking": "Not found",
+    "Operating System": "Not found",
+    "Power Supply": "15 W TDP",
+    "Cooling": "active cooling",
+    "Dimensions": "Not found",
+    "Weight": "Not found",
+    "Security Features": "Intel Secure Key",
+    "Manageability": "Not found",
+    "Warranty": "Not found",
+    "Energy Efficiency": "Not found",
+    "Special Features": "Hyper-Threading, Turbo Boost Technology 2.0, AVX, AVX2"
+  },
+  "reference_urls": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFzTee5OHBvPeTKkaOC5DnnFyY6rdFRuXBWeJ-FpfWKqNiUwiJDUn0LfcLlqi3HA7clsYUDJGvXqRlANZR1ncbfauVpRy4xzmdmFBNYSb84eS2rSsdD3Tkyt56HLvQQwnskDaRiiKxjjPza4rLRtNApH7rt",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGg6iI0bod6w97HcWYXGg81evnOV6AeACJ67K55qLhxDkbD6PjaFNPSkiLpksknOFncVnAoqduroAGbR00W2MuJ-UlgHm1YoNieO4xLbcCj-LMtMfrlFTL1STY_WeFu6R2155E3wiIsouIWwIINpA2L0-xPOz9SVCdgJve7SXByWwzG2L3sKjzHobhQTA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGApH0KBjjE_9eAIrIwXp8LsSGFlYhzH3wi9vC6JRlBj5GBUA_1tHDoymntPmCwC4GvSwpiyRk5Hxs_2Fz2anUGQ-6Qm208qHxIBClHcmqKjLboSUfIF5eFJ9AQnS1RpEW3YI3p4sfUPiKeCJebtCsB99-zc7vNma8FC5L0mFsYzxum6rwAegDHCfZFnlPdzMFtBh7NxRG2UUOxeb8_Quja8Qmvmbb6DiPdNaiwaeOj5x_FlJA5PkJYfq1mW3zo",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGGYGpn3S9YdFduyHRuJF_WUw512GT486n3qj3If8REZZbLp5glMt3Vmq7_BzgyNRwNAkn4KQqfRHIDIf1VH-7dBB_m5p8AGckeUe_PAjHKCJbGy76PDygPBB8Au6DBmCuneaCAXg==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHHIhmjn0XzWy0lS2XUmaP6B3-3xuuiJvEumN-_3nIzb63Jyvjm7V1SAw2yQH_fOjHhnZePlXrJX9e_paiKWzo64OVm4ST6gBTWJPNqzkQZp7rMDr62dyunzWkxFzIhUmIowP9XEQhyCpH0em1NxXHt7BQEo9y_ah8ftEUbLTzfOup_L9hBdGnaV3JApcOsaYJ80hM2RC678w4P-dpiLV7KK66WLKU9Apth7z6uw-wirf9-6y796bQuPyfk4CI=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEE3u_Gd0_PNUk8X27Wj_gqj1gZ55gZ5jP6XZghFD5vK8BMDcVHuJeYK6LQKgSqeQJ_gDS06054RiUQyROjbPE1cpNAxzehOSVXxgmDYcpigbLTngnXQnltlmR2zwtuR77XhkrDoGt8"
+  ]
+}

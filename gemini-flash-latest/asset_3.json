@@ -1,0 +1,34 @@
+{
+  "brand": "MSI",
+  "brand_country": "Taiwan",
+  "brand_domain": "msi.com",
+  "tech_group": "Intel Desktops",
+  "tech_type": "Hardware",
+  "product_id": "MS-7817",
+  "product_desc": "MSI H81M-P33 micro ATX Motherboard supporting 4th Generation Intel Core/Pentium/Celeron processors on LGA 1150 socket with Intel H81 Express chipset, DDR3 memory, and USB 3.0/SATA 6 Gb/s. ",
+  "product_features": {
+    "Form Factor": "micro ATX ",
+    "Processor": "Supports Intel 4th Gen Core/Pentium/Celeron (LGA1150 Socket) ",
+    "Processor Cores": "2 (based on asset's i3-4130 CPU)",
+    "Memory Capacity": "8 GB (4096MB x 2)",
+    "Memory Type": "DDR3 (supports up to DDR3-1600/1333/1066) ",
+    "Storage Configuration": "2 x SATA 6 Gb/s and 2 x SATA 3 Gb/s ports ",
+    "Graphics": "Onboard graphics (CPU required) with VGA and DVI ports ",
+    "Expansion Slots": "1 x PCI-E x16, 1 x PCI-E x1 ",
+    "Ports": "2 x USB 3.0 (Rear), 4 x USB 2.0 (Front/Rear), 1 x LAN (Gigabit Ethernet), 1 x VGA, 1 x DVI-I, Audio ports, PS/2 mouse/keyboard ",
+    "Networking": "Gigabit LAN ",
+    "Operating System": "Not found",
+    "Power Supply": "Not found",
+    "Cooling": "Not found",
+    "Dimensions": "Not found",
+    "Weight": "Not found",
+    "Security Features": "TPM (header) ",
+    "Manageability": "Not found",
+    "Warranty": "Not found",
+    "Energy Efficiency": "Not found",
+    "Special Features": "Military Class 4 components, OC Genie, Click BIOS 4, Fast Boot, M-Flash "
+  },
+  "reference_urls": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEu4CednsQDyaP8JM9utykrqRpPEHgZGFmSD53rZmTC9CzWNBoYeji87yv5n1x1ajS13xbCBYDFBGDN12S6UPivzg8tR3j67Njw2InKqxDr8PoZdH00Lpf08F-NSFxe4JsAze_EfvgLYyWQDaUQ_QSOQxpvVawW05Yqep0tMG1kwCAuOa7-wZkBem1ocuoRV-p3DY7V"
+  ]
+}

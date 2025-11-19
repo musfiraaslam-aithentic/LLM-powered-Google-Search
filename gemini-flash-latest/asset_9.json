@@ -1,0 +1,35 @@
+{
+  "brand": "ASUS",
+  "brand_country": "Taiwan",
+  "brand_domain": "www.asus.com",
+  "tech_group": "Desktops",
+  "tech_type": "Hardware",
+  "product_id": "Not found",
+  "product_desc": "Not found",
+  "product_features": {
+    "Form Factor": "Not found",
+    "Processor": "Not found",
+    "Processor Cores": "Not found",
+    "Memory Capacity": "Not found",
+    "Memory Type": "Not found",
+    "Storage Configuration": "Not found",
+    "Graphics": "Not found",
+    "Expansion Slots": "Not found",
+    "Ports": "Not found",
+    "Networking": "Not found",
+    "Operating System": "Not found",
+    "Power Supply": "Not found",
+    "Cooling": "Not found",
+    "Dimensions": "Not found",
+    "Weight": "Not found",
+    "Security Features": "Not found",
+    "Manageability": "Not found",
+    "Warranty": "Not found",
+    "Energy Efficiency": "Not found",
+    "Special Features": "Not found"
+  },
+  "reference_urls": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFiAs9riJ4LC4geNueeBHgfiFNW3mWjSwjnJSZj35GtMuzpmkhyzwMafXZB7_zC9xpToG_IGHpytG5W865hbDAuO1dgJ1ALN-HYXdxPxFlcSedkE8PCDS52yvgE7WkEPFjRB2fA1e3eMpcTuaosMwK4FYNxpx1rZOJ6qk9K2bfbRPaX6kJALQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBgC7yaGAZt5JJ7qGPlQWVaYSCoXjVf9zhSpgW__gkOaDIR_JyAHXMXXBWfnlZozZzPEzUoZEmOs8EIoNVMmdGhy7zV0VQB1q20jt62xGdNdYXqYPGLHZQYmu7eAlfH75T3nm0J-RM2iaSuALrLJ0Pig=="
+  ]
+}

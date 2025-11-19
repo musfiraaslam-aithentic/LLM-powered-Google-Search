@@ -1,0 +1,37 @@
+{
+  "brand": "Samsung",
+  "brand_country": "South Korea",
+  "brand_domain": "samsung.com",
+  "tech_group": "LED Monitors",
+  "tech_type": "Hardware",
+  "product_id": "S24R35xFZ",
+  "product_desc": "24-inch Full HD (1080p) LED-backlit IPS Monitor with AMD FreeSync (SR35 Series)",
+  "product_features": {
+    "Panel Type": "IPS (In-plane Switching)",
+    "Screen Size": "24\" (23.8\" viewable)",
+    "Aspect Ratio": "16:9",
+    "Resolution": "1920 x 1080 Full HD",
+    "Refresh Rate": "Max 75Hz",
+    "Response Time": "5 ms (GTG)",
+    "Color Gamut Coverage": "72% NTSC (1976)",
+    "Brightness": "250 cd/m²",
+    "Contrast Ratio": "1000:1 (Static/Typical)",
+    "HDR Support": "Not found",
+    "Connectivity": "1 x HDMI, 1 x VGA (D-Sub)",
+    "USB Hub": "Not found",
+    "Ergonomic Adjustments": "Tilt (-2° to 22°); No height adjustment",
+    "VESA Mounting": "75 x 75 mm",
+    "Built-in Speakers": "No",
+    "Adaptive Sync": "AMD FreeSync",
+    "Blue Light Filter": "Yes (Eye Saver Mode)",
+    "Power Consumption": "Max 25W; DPMS Less than 0.3W",
+    "Dimensions": "With Stand: 539.7 x 425.4 x 234.6 mm (WxHxD)",
+    "Weight": "With Stand: 3.4 kg; Without Stand: 2.8 kg"
+  },
+  "reference_urls": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHzP8j2YBovi9IDyfad5TMAwMQJwxtN7SayiJCw-CtHRZgDs89vIc2KlqFOwOdqwzMIU6ZtW2rxroQrZDki6EMDz1SG6m_pFCVLhAHEyl8fxiUJmTnJR6Ku8KP1zYPiPF6nNUUSbY8BpsfNwo2SUVqWAtHfU9tJnOOa40Bg9tw2lyhRe6OsZjdouVxcuxJojy7w",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHcgxX6Y6OKiF8JykVnR8FdJIeqvuxsKICC4KEDUlBp00vNPdzzmdejX2s-CW4gYWCRazCf4MqraRQw7X6h0NbhGj7uUsAQpD9SLH924Pr8oFcnvx5WIXMpxq9OI88eHGCraDB27ulEaw==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZC35CaBfDegD6YYrLhlA8vURybKOxYUh5e4o5NutsiMad-vohoTcpoewP-Kde7aneMvC-ZWRBZBa6EKWfOGlm2If3ZpwNHluEp2qpxDtwP3bl2Uk1CQz7vPF2h7uzf8wKcmoC2-lh-boUU4VgHC5VZA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFVf_Eju7693IDe0-QOJ-r5tipHvEKEBUTp5-7H4r4qxKVn-uID6Ut_gGVip7L4QGVbsGbS-O0AMishJVwDsWzGhMkfZKPVI3yTAM9aQPLLjJq3YmkK-QTS6DCZxkRoYWtkom6gYtffv7VTuPxr_wf0XVnweVnaSvJcXGtxsJcyrVcE-cFHu0QTTyg-Sx1Ox73pIOGkKxI="
+  ]
+}

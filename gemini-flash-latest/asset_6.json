@@ -1,0 +1,38 @@
+{
+  "brand": "Acer",
+  "brand_country": "Taiwan",
+  "brand_domain": "http://www.acer.com",
+  "tech_group": "Notebooks",
+  "tech_type": "Hardware",
+  "product_id": "Acer One 14 Z8-415-A",
+  "product_desc": "A 14-inch Full HD laptop from the Acer One series with an 11th Gen Intel Core processor, SSD storage, and Windows 11, suitable for everyday computing.",
+  "product_features": {
+    "Product Type": "Notebook/Laptop",
+    "Primary Compatibility": "General Computing/Everyday Use",
+    "Processor": "Intel Core i3/i5 (11th Gen)",
+    "Memory": "8 GB DDR4 RAM (up to 16 GB in some configurations)",
+    "Storage": "512 GB SSD",
+    "Display Size": "14 inches",
+    "Display Resolution": "1920 x 1080 (Full HD)",
+    "Graphics": "Integrated Intel Iris Xe Graphics",
+    "Battery Life": "Not found",
+    "Connectivity": "Wi-Fi, Bluetooth v5.0, Ethernet (LAN)",
+    "Ports": "HDMI, 1 x USB 2.0, 2 x USB 3.0, 1 x USB Type-C, Audio Jack, Ethernet port, SD card reader",
+    "Keyboard Features": "Not found",
+    "Security Features": "HD Webcam with Privacy Camera Physical Shutter",
+    "Operating System": "Windows 11 Home/Pro",
+    "Dimensions": "21.6 mm thickness",
+    "Weight": "1.5 kg (Average)",
+    "Accessories Included": "Not found",
+    "Durability": "Not found",
+    "Warranty": "1 Year Warranty",
+    "Special Features": "Non-touchscreen display, ENERGY STAR Certified"
+  },
+  "reference_urls": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZNzwibvVtyDvQe6mAjO1mhwgX9n7aHNyP1cDwdCexgvV85LprQTLPutdYgiUAlioGsfzA06Adyx3k4hLqf9ncVN2yBlMgxUO-3y_qXOE2RSj5eQLINpRsFdXSfGzlVpzuL2Znv_uWPFyPM8C1lx8unQ9hWBa02ZI1a1z9aZ6keFOl_lCeew0=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRSp9FHhQRkvjU-ox8qbKkHIZ5uuEzFHaB_JSitQymxBJDB6NrMtUBf8t2gbXTz-4thFV3JfWzYcwEoT0pYyibktKr0R5AghTIPq46t9vaVRTCQ3rFY7LdzVyk28dbUt6deKP1a1GmeCw_9Y2i1GD1N-psaj8VnzlZBPJtLDOWsrst8d_xd4yq84CbqjrCLs1gWG8h",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHBQ27Fpk7aSxmawradyce5HfXvwSptGKJOxDMHyvU3Q4pVQEmAR5KKCPZUWgMUYbztClNI7Zn2ySFQwFCX3bdL9o2xUrXRS1ClPG6qnYsGLYsuV9dsbtEdhLV29uBpQjhG-elwQRAdTEAbotBZbx8BkQS0e-Qc5CAz9TMlE902MKNdDfqUoHQ9zDRvpgdw2HwsMLVJs-uVD9oOULB1_1AeFFKX888YrQ-koY8W2-cbVfmwxg==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFsQJzP6ymT3qPdfOuRKbRsy-IZ6WtD0TXU5vIahZqeQhyLAjRajjUKF046qlKLZCDZ3gGA5GUNe_87uRhyYo0T8wU8OXGSfSnBkKfDt8Et2XQFWUuguDgER6K-to7kiZrkWW6zP8X9AhIGIBtHL2qiQAtUiLo1o8hSBAVbQKgd",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGXroXGNn4nN84_OJ_Mq3MqyKn6KkPh69xSh52YI24RzMluL97H-gj5ryIMInQgUfheLfLLWTjdWyIMd6ENoDYV7Tz7yA6hRzAGtIKGb1l7fKY7Z-gpxXfBN5PhMRzuW7kJjHDETqBjHhRNDUVy-HfW2i0HII3m2tCm1CRB6iAN_88puphSYDL48wDdE9Tl0VHymz31Xey3oWOdkm0qBsuu-7vex6yZCyPdTNM3qEbjstYckPP-yBsg8uAwqDy6tlXie88Kh77MGTIqFEHvaQ-0hz1wtOID4484cK4="
+  ]
+}

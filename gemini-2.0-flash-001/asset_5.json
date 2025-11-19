@@ -1,0 +1,32 @@
+{
+  "brand": "Philips",
+  "brand_country": "Netherlands",
+  "brand_domain": "philips.com",
+  "tech_group": "LED Monitors",
+  "tech_type": "Computer Monitors",
+  "product_id": "196V4",
+  "product_desc": "LED Backlit LCD Monitor",
+  "product_features": {
+    "Panel Type": "Not found",
+    "Screen Size": "18.5 inches",
+    "Aspect Ratio": "16:9",
+    "Resolution": "1366 x 768",
+    "Refresh Rate": "60 Hz",
+    "Response Time": "5 ms",
+    "Color Gamut Coverage": "Not found",
+    "Brightness": "200 cd/m²",
+    "Contrast Ratio": "700:1",
+    "HDR Support": "No",
+    "Connectivity": "VGA, DVI",
+    "USB Hub": "No",
+    "Ergonomic Adjustments": "Tilt",
+    "VESA Mounting": "Yes",
+    "Built-in Speakers": "No",
+    "Adaptive Sync": "Not found",
+    "Blue Light Filter": "Not found",
+    "Power Consumption": "Not found",
+    "Dimensions": "Not found",
+    "Weight": "Not found"
+  },
+  "reference_urls": []
+}

@@ -1,0 +1,35 @@
+{
+  "brand": "GIGABYTE",
+  "brand_country": "Taiwan",
+  "brand_domain": "gigabyte.com",
+  "tech_group": "Motherboards (for Intel Processors)",
+  "tech_type": "Motherboards",
+  "product_id": "H610M H V2 DDR4",
+  "product_desc": "Motherboard",
+  "product_features": {
+    "Form Factor": "Micro ATX Form Factor [6]",
+    "Chipset": "Intel H610 Express Chipset [5]",
+    "Socket Type": "LGA 1700 [5]",
+    "Supported Processors": "Support for 14th, 13th, and 12th Generation Intel® Core™, Pentium® Gold and Celeron® Processors [5, 6]",
+    "Memory Type": "DDR4 [2, 3]",
+    "Max Memory Capacity": "64 GB [2, 5]",
+    "Memory Slots": "2 x DDR4 DIMM [2, 5]",
+    "PCIe Slots": "1 x PCIe 4.0 x16, 1 x PCIe 3.0 x1 [1, 5]",
+    "Storage Interfaces": "1 x M.2 PCIe 3.0 x4/x2, 4 x SATA 6Gb/s [2, 5]",
+    "M.2 Slots": "1 [1, 5]",
+    "SATA Ports": "4 [1, 2]",
+    "USB Ports": "4 x USB 3.2 Gen 1, 4 x USB 2.0/1.1 [2, 5]",
+    "Networking": "GbE LAN [1, 3]",
+    "Audio Codec": "Realtek® Audio CODEC [5]",
+    "Power Phases": "6+1+1 Hybrid Digital VRM Design [3, 4]",
+    "Cooling Features": "Smart Fan 6 [1, 3]",
+    "BIOS Features": "Not found",
+    "Lighting Features": "RGB LED strip header [6]",
+    "Expansion Headers": "Not found",
+    "Warranty": "3 years of limited local warranty [9]"
+  },
+  "reference_urls": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGT_uogH4Xt6CIhL08hItL-P74WA6dNLBoTOUhvyXBNnfnpDvSDwdtSw9U6mILpe65cja3c3u6ogd1MfxiylgQqTwx_z1dZew7ZfX93qOQ4XxfjqcXvKkUrGrk_hMmabZeX9J0X1pTvj_hylo5WLuQN7cj-nM-5btj51zCS44SK_uijpnuIkqVbOwK_vAFkzCa5ODm3",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHpecg-wgjNZtIcpsiif7fcgN6BIk_TJIrChP7brzE7CNA_TtNuG5nCyQ4t_w-pvbEfDT0_qkqTJI5Wb12U_Q7xKk_H7hRP6jJpKYPvXcAfYQhCucKSBKkQ90OOFR_gHT_ZFn787X7eOKsMMFtQDqF93k5TGNfB2x7FCt15eaOPMdlyNA=="
+  ]
+}

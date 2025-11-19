@@ -1,0 +1,37 @@
+{
+  "brand": "GIGABYTE",
+  "brand_country": "Taiwan",
+  "brand_domain": "www.gigabyte.com",
+  "tech_group": "Motherboards (for Intel Processors)",
+  "tech_type": "Motherboards",
+  "product_id": "H610M H V2 DDR4",
+  "product_desc": "Intel® H610 Motherboard with 6+1+1 Hybrid Phases Digital VRM Design, PCIe 4.0* Design, Gen3 x4 M.2, Anti-Sulfur Resistor, Smart Fan 6",
+  "product_features": {
+    "Form Factor": "Micro ATX Form Factor",
+    "Chipset": "Intel® H610 Express Chipset",
+    "Socket Type": "LGA 1700",
+    "Supported Processors": "Support for 14th/13th/12th Generation Intel® Core™, Pentium® Gold and Celeron® Processors",
+    "Memory Type": "DDR4",
+    "Max Memory Capacity": "64 GB",
+    "Memory Slots": "2 x DDR4 DIMM",
+    "PCIe Slots": "1 x PCI Express x16 slot, 1 x PCI Express x1 slot",
+    "Storage Interfaces": "1 x M.2 connector, 4 x SATA 6Gb/s connectors",
+    "M.2 Slots": "1 x M.2 PCIe 3.0 x4",
+    "SATA Ports": "4 x SATA 6Gb/s",
+    "USB Ports": "4 x USB 3.2 Gen 1 ports, 4 x USB 2.0/1.1 ports",
+    "Networking": "GbE LAN",
+    "Audio Codec": "Realtek® Audio CODEC",
+    "Power Phases": "6+1+1 Hybrid Digital VRM Design",
+    "Cooling Features": "Smart Fan 6",
+    "BIOS Features": "Not found",
+    "Lighting Features": "Not found",
+    "Expansion Headers": "Not found",
+    "Warranty": "Not found"
+  },
+  "reference_urls": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHhNU8gaxW5rg1gQRPWb3sYpgFCx-fKF-JE7W7mtcBG363jMGvdhbzA9jy6Ehajf7G_HOUHJ9zy2Or3g6ojqQr9HuHnck7PI6lo6UWBcgI_TYEcp2HeA1iM_-_8VkyVfJabmD6PK4PCB-612IaVEsLS5nQ0pWdZIrkvcEAoL6BBuuMd4pnHQOkB1yujQNsyZ0IyeXj7tA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFLLjt7PWSPj9rLTkgMT_sR0T-VEp-qZ_c-Xf2r9-m7hVc-SCKIbV2U9oWQE2dVrRB9pZyUtenByd9eXsnRuDslYA8bZ093A8O9lg07KKhqUUv5yHAMrlITkCx7JxicNUuOe968a3g2sAYfRoRejBwcS7lNEOJfKMeBcZ5yz0s=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFge7tUVkOlZg1s3rMPNKuYL9r5w0FvfMN32sB4fLM2wcxWiZS-FcRYJU9yqf0XGYXwfrI3sRc3TgXP4h7rPk4W7v69S3J8bdfGzb6CK2vh-UArGzteu8MaFt1xf9PLbUhEaOyY6kyZfNvrcd92G6UaT5FDe7d2qDSqERPm6wKzXEbExFw=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGDk3tWhQmLJ08GffKdwvC5EDqIAuHBP4i1ZmnSKNot2nZJp2poX6oPY8yu3NvZFwN0xjnMYVb_VFa1m35Yd3K5omSxYJkIMfy6cAIx9uq6ojVvUKPNN-GdrPyM3qPa9xTBCeaii4fDgGvppTC1Shs="
+  ]
+}

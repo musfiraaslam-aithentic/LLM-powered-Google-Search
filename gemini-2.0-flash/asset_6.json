@@ -1,0 +1,32 @@
+{
+  "brand": "Acer",
+  "brand_country": "Taiwan",
+  "brand_domain": "acer.com",
+  "tech_group": "Notebooks",
+  "tech_type": "Intel Notebooks",
+  "product_id": "One 14 Z8-415-A",
+  "product_desc": "14-inch notebook",
+  "product_features": {
+    "Product Type": "Notebook",
+    "Primary Compatibility": "Not found",
+    "Processor": "Not found",
+    "Memory": "Not found",
+    "Storage": "Not found",
+    "Display Size": "14 inch",
+    "Display Resolution": "Not found",
+    "Graphics": "Not found",
+    "Battery Life": "Not found",
+    "Connectivity": "Not found",
+    "Ports": "Not found",
+    "Keyboard Features": "Not found",
+    "Security Features": "Not found",
+    "Operating System": "Not found",
+    "Dimensions": "Not found",
+    "Weight": "Not found",
+    "Accessories Included": "Not found",
+    "Durability": "Not found",
+    "Warranty": "Not found",
+    "Special Features": "Not found"
+  },
+  "reference_urls": []
+}

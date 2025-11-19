@@ -1,0 +1,43 @@
+{
+  "brand": "MSI",
+  "brand_country": "Taiwan",
+  "brand_domain": "https://www.msi.com/",
+  "tech_group": "Desktops & Workstations",
+  "tech_type": "Barebone Systems",
+  "product_id": "MS-7817",
+  "product_desc": "MSI H81M‑E33 (MS‑7817) Micro‑ATX Motherboard",
+  "product_features": {
+    "Form Factor": "Micro‑ATX (22.6 cm × 17.3 cm)",
+    "Processor": "Intel 4th‑Gen Core i3/i5/i7, Pentium, Celeron (LGA 1150)",
+    "Processor Cores": "Up to 4 cores (8 threads)",
+    "Memory Capacity": "Maximum 32 GB DDR3",
+    "Memory Type": "DDR3‑1066/1333/1600 (2 DIMM slots, dual‑channel)",
+    "Storage Configuration": "2 × SATA 6 Gb/s + 2 × SATA 3 Gb/s",
+    "Graphics": "Integrated Intel HD Graphics 4400",
+    "Expansion Slots": "1 × PCI‑E 3.0 x16, 1 × PCI‑E x1",
+    "Ports": "USB 3.0 (4 rear, 2 front), USB 2.0, VGA, DVI, HDMI, LAN (RJ‑45)",
+    "Networking": "Gigabit Ethernet (Realtek RTL8111G)",
+    "Operating System": "",
+    "Power Supply": "",
+    "Cooling": "",
+    "Dimensions": "22.6 cm × 17.3 cm",
+    "Weight": "",
+    "Security Features": "",
+    "Manageability": "",
+    "Warranty": "",
+    "Energy Efficiency": "",
+    "Special Features": "M‑Flash BIOS, Military Class 4 components, OC Genie 4"
+  },
+  "reference_urls": [
+    "https://www.memory4less.com/msi-computer-system-board-ms-7817",
+    "https://browser.geekbench.com/v6/compute/179674",
+    "https://www.scribd.com/document/653016402/MSI-H81M-E33-MS-7817-REV-1-0",
+    "https://browser.geekbench.com/v6/cpu/baseline/5444308",
+    "https://www.userbenchmark.com/System/MSI-MS-7817/44517",
+    "https://www.furbify.eu/pc-msi-h81m-e33-ms-7817-1606892?utm_source=furbify.hu",
+    "https://gzhls.at/blob/ldb/a/5/5/1/633360e29d24054eabd133543bfcd0367356.pdf",
+    "https://www.userbenchmark.com/System/MSI-H81M-P33-MS-7817/38",
+    "https://www.ebay.com/itm/144806521008",
+    "https://www.phco.my/msi-ms7817-h81m-p33-intel-h81-s1150-mb-4719072307950"
+  ]
+}

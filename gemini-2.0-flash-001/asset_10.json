@@ -1,0 +1,34 @@
+{
+  "brand": "Samsung",
+  "brand_country": "South Korea",
+  "brand_domain": "samsung.com",
+  "tech_group": "Computer Monitors",
+  "tech_type": "LED Monitors",
+  "product_id": "LS24R350FHNXZA",
+  "product_desc": "A 24-inch Full HD monitor with a bezel-less design, IPS panel, and AMD FreeSync technology, suitable for gaming and everyday use.",
+  "product_features": {
+    "Panel Type": "IPS",
+    "Screen Size": "24 inches",
+    "Aspect Ratio": "16:9",
+    "Resolution": "1920 x 1080",
+    "Refresh Rate": "75 Hz",
+    "Response Time": "5 ms",
+    "Color Gamut Coverage": "72% NTSC",
+    "Brightness": "250 cd/m²",
+    "Contrast Ratio": "1000:1",
+    "HDR Support": "Not found",
+    "Connectivity": "HDMI, D-Sub",
+    "USB Hub": "No",
+    "Ergonomic Adjustments": "Tilt",
+    "VESA Mounting": "Yes",
+    "Built-in Speakers": "No",
+    "Adaptive Sync": "AMD FreeSync",
+    "Blue Light Filter": "Eye Saver Mode",
+    "Power Consumption": "25W (Max)",
+    "Dimensions": "53.97 cm x 23.64 cm x 42.54 cm - with stand",
+    "Weight": "3.4 kg - with stand"
+  },
+  "reference_urls": [
+    "https://www.displayspecifications.com/en/model/e1711b30"
+  ]
+}
