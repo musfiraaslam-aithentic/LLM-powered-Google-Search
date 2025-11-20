@@ -1,0 +1,22 @@
+{
+    "brand": "HP",
+    "brand_country": "United States",
+    "brand_domain": "https://www.hp.com/",
+    "tech_group": "LCD Monitors",
+    "tech_type": "Hardware",
+    "product_id": "3UA73AA#ABA",
+    "product_desc": "The HP 24yh is a 23.8-inch Full HD (1080p) LED monitor featuring an IPS panel for wide viewing angles and vibrant colors. It is designed for both work and entertainment, offering versatile connectivity options.",
+    "product_features": {
+        "Display Size": "23.8 inches",
+        "Resolution": "1920 x 1080 Full HD",
+        "Panel Type": "IPS (In-Plane Switching)",
+        "Refresh Rate": "60 Hz",
+        "Response Time": "5 ms",
+        "Connectivity": "1 x VGA, 1 x DVI-D, 1 x HDMI",
+        "Brightness": "250 cd/m²",
+        "Contrast Ratio": "1000:1 (static) / 10,000,000:1 (dynamic)",
+        "VESA Mounting": "100 x 100 mm",
+        "Display Features": "Anti-glare, Low Blue Light Mode, LED Backlights, On-screen controls, Plug and Play, User programmable, Anti-static"
+    },
+    "reference_urls": []
+}

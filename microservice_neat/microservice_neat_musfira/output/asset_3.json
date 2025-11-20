@@ -1,0 +1,28 @@
+{
+    "brand": "MSI",
+    "brand_country": "Taiwan",
+    "brand_domain": "https://www.msi.com",
+    "tech_group": "Motherboards (for Intel Processors)",
+    "tech_type": "Hardware",
+    "product_id": "H81M-P33",
+    "product_desc": "The MSI H81M-P33 is a Micro-ATX motherboard featuring the Intel H81 Express Chipset. It is designed to support 4th Generation Intel Core, Pentium, and Celeron processors with an LGA 1150 socket. This motherboard is equipped with Military Class 4 components, ensuring high quality and stability.",
+    "product_features": {
+        "CPU Support": "Supports 4th Gen Intel® Core™ / Pentium® / Celeron® processors for LGA 1150 socket.",
+        "Chipset": "Intel® H81 Express Chipset.",
+        "Memory": "Supports up to 16GB of DDR3 Memory (1066/1333/1600 MHz) via two DIMM slots.",
+        "Storage": "Equipped with 2 x SATA 6Gb/s ports and 2 x SATA 3Gb/s ports.",
+        "Expansion Slots": "Features one PCIe 2.0 x16 slot and one PCIe x1 slot.",
+        "Form Factor": "Micro-ATX.",
+        "Onboard Audio": "Realtek® ALC887 Codec for 8-channel high definition audio."
+    },
+    "reference_urls": [
+        {
+            "title": "manuals.plus",
+            "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG_ZR-D7ZpotJge04sVcx38jyXqMW3_hr3sHhNqxhA8jlRJ6yhjMW98MOkTq877tzMK5GiNW_bPm60IKsc4-Sz_EqZfCeQt_MlClsJ-usvzVMqLyaIPWizq_8cjnJEwG_ynbqnn-fSmhpsiHafKnsa2qYfTp0mx7PpvjeGDeRwTCqyJw7bZf1eL269nKD0OFMLxe5cWyp8="
+        },
+        {
+            "title": "phco.my",
+            "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG05c7SA0NU4HWYRlSyvddOxuvsRND-HvvCBtSrzaWCp5VzifexSPVP5KKHI0C5P2AhOZkUrEMscVgLkWRKXeybAJYqJ4kbpc8s_itxTK6XDSuyzYryF4okHpJ7N1Mp6BsWpViUBTHsZqVlmcRVGEZBYpn-5T9GQ70w0aUvyeckIjrzTQ=="
+        }
+    ]
+}
