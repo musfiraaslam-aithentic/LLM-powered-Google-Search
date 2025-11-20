@@ -377,7 +377,8 @@ for i, asset in enumerate(assets, start=1):
     print(f"Saved merged result to {output_path}")
 
 
-    # Optional: pause to avoid hitting rate limits
+    # This is optional but it protects the model from overloading when processing each asset 
+    # the countdown function takes 5 and that would make it 5 minutes long before calling model again
     countdown(5)
 
 
