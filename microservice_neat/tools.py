@@ -358,7 +358,7 @@ for i, asset in enumerate(assets, start=1):
     # If you want groq to print score you can set this to True
     #print_results(response, urls, i, include_score=True)
 
-    # Gemini does not have a score so you can print it like this or if you don't want gemini score you can leave empty
+    # Gemini does not have a score so you can print it like this or if you don't want groq score you can leave empty
     print_results(response, urls, i)
 
     # Save final_result to output/asset_X.json
