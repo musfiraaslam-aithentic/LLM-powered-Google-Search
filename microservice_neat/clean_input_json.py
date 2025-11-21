@@ -12,10 +12,8 @@ the normalized output to the requested location.
 
 from __future__ import annotations
 
-import argparse
 import json
 import re
-import sys
 from pathlib import Path
 from typing import Iterable, List, Tuple, Union
 
@@ -37,29 +35,6 @@ def normalize_assets_file(
     clean_assets(assets)
     write_assets(assets, output_path, original_type, indent)
     return len(assets)
-
-
-def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(
-        description="Clean Lima failed asset exports so they become valid JSON."
-    )
-    parser.add_argument(
-        "input_path",
-        help="Path to the raw JSON file (single asset or list).",
-    )
-    parser.add_argument(
-        "-o",
-        "--output",
-        default="data/failed_assets_fixed.json",
-        help="Where to write the normalized JSON (default: %(default)s).",
-    )
-    parser.add_argument(
-        "--indent",
-        type=int,
-        default=4,
-        help="Indentation level for the output JSON (default: %(default)s).",
-    )
-    return parser.parse_args()
 
 
 def remove_trailing_commas(raw_text: str) -> str:
@@ -215,17 +190,3 @@ def write_assets(
     with output_path.open("w", encoding="utf-8") as fh:
         json.dump(to_dump, fh, indent=indent)
         fh.write("\n")
-
-
-def main() -> None:
-    args = parse_args()
-    count = normalize_assets_file(
-        input_path=args.input_path,
-        output_path=args.output,
-        indent=args.indent,
-    )
-    print(f"Wrote {count} record(s) to {Path(args.output).expanduser()}", file=sys.stderr)
-
-
-if __name__ == "__main__":
-    main()

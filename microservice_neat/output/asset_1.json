@@ -1,0 +1,20 @@
+{
+    "brand": "Dell",
+    "brand_country": "United States",
+    "brand_domain": "https://www.dell.com/",
+    "tech_group": "Laptop",
+    "tech_type": "Hardware",
+    "product_id": "Inspiron 7472",
+    "product_desc": "A 14-inch laptop from the Dell Inspiron 7000 series, designed for compact elegance and versatile performance.",
+    "product_features": {
+        "Display": "14-inch Full HD (1920 x 1080) IPS Truelife LED-Backlit Display",
+        "Graphics": "Intel UHD Graphics 620 (integrated); some configurations also include NVIDIA GeForce MX150 dedicated graphics",
+        "Processor": "8th Generation Intel Core i5-8250U or Intel Core i7-8550U",
+        "Memory (RAM)": "Available in 4GB, 8GB, or 16GB DDR4 configurations",
+        "Storage": "Various configurations including 128GB SSD, 256GB SSD, and/or 500GB HDD",
+        "Operating System": "Typically shipped with Microsoft Windows 10 Professional",
+        "Connectivity": "802.11ac Wi-Fi, Bluetooth 4.0/4.1, Gigabit Ethernet",
+        "Ports": "Multiple USB ports (including USB 3.0 and USB 2.0) and HDMI output"
+    },
+    "reference_urls": []
+}

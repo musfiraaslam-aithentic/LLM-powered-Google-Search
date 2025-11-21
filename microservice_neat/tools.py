@@ -1,6 +1,6 @@
-import argparse
 import json
-from typing import Optional
+from pathlib import Path
+from typing import Any, Optional
 from google import genai
 from google.genai import types
 from groq import Groq
@@ -27,11 +27,11 @@ groq_client = Groq(
     }
 )
 
-# IMPORTANT FILES
-
-TECH_GROUP_JSON = "data/tech_groups.json"
-FAILED_ASSETS_JSON = "data/failed_assets_fixed.json"
-MODEL_USAGE_LOG = "logs/model_usage.log"
+LOG_DIR = Path("logs")
+TECH_GROUP_JSON = Path("data/tech_groups.json")
+FAILED_ASSETS_JSON = Path("data/failed_assets_fixed.json")
+MODEL_USAGE_LOG = LOG_DIR.joinpath("model_usage.log") 
+REQUESTS_JSON = LOG_DIR.joinpath("daily_model_requests.json") 
 
 # Models
 gemini_models = ["gemini-2.5-flash", "gemini-2.5-pro", "gemini-2.0-flash", "gemini-flash-latest", "gemini-2.0-flash-001"]
@@ -42,6 +42,75 @@ model_usage = {
     "gemini": {},
     "groq": {},
 }
+_tech_groups_override: Optional[Any] = None
+
+
+def _load_request_log():
+    """Load or initialize the per-day request counter file."""
+    source_path = REQUESTS_JSON 
+    if not source_path.exists():
+        return {"today": {}}
+
+    try:
+        data = json.loads(source_path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return {"today": {}}
+
+    # Normalize the daily structure to include providers
+    normalized_daily = {}
+    for day, counts in (data.get("today") or {}).items():
+        if not isinstance(counts, dict):
+            normalized_daily[day] = {}
+            continue
+
+        normalized_daily[day] = {}
+        is_provider_scoped = all(isinstance(v, dict) for v in counts.values()) and bool(counts)
+        if is_provider_scoped:
+            for provider, models in counts.items():
+                if not isinstance(models, dict):
+                    continue
+                normalized_daily[day][provider] = {
+                    model: count for model, count in models.items() if isinstance(count, int)
+                }
+            continue
+
+        for model, count in counts.items():
+            if not isinstance(count, int):
+                continue
+
+            # Getting provider name for logs
+            lowered = (model or "").lower()
+            if lowered.startswith("gemini") or model in gemini_models:
+                provider= "gemini"
+            if model in groq_models or "/" in model:
+                provider= "groq"
+     
+            provider_bucket = normalized_daily[day].setdefault(provider, {})
+            provider_bucket[model] = count
+
+    data["today"] = normalized_daily
+    return data
+
+
+
+
+def _save_request_log(data):
+    """Persist per-day request counters."""
+    REQUESTS_JSON.parent.mkdir(parents=True, exist_ok=True)
+    REQUESTS_JSON.write_text(json.dumps(data, indent=4, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
+def update_daily_request_log(provider, model_name):
+    """Increment the per-day counter for the given model."""
+    today = datetime.now(timezone.utc).date().isoformat()
+    data = _load_request_log()
+    daily = data.setdefault("daily", {})
+    by_day = daily.setdefault(today, {})
+    provider_key = (provider or "unspecified").lower()
+    models_for_provider = by_day.setdefault(provider_key, {})
+    models_for_provider[model_name] = models_for_provider.get(model_name, 0) + 1
+    data["last_update"] = datetime.now(timezone.utc).isoformat()
+    _save_request_log(data)
 
 
 def track_model_usage(provider, model_name):
@@ -59,10 +128,11 @@ def track_model_usage(provider, model_name):
     provider_usage = model_usage.setdefault(provider_key, {})
     provider_usage[model_name] = provider_usage.get(model_name, 0) + 1
 
+    # Persist per-model daily counts to JSON
+    update_daily_request_log(provider_key, model_name)
+
     # Persist usage entry to log file
-    log_dir = os.path.dirname(MODEL_USAGE_LOG)
-    if log_dir:
-        os.makedirs(log_dir, exist_ok=True)
+    MODEL_USAGE_LOG.parent.mkdir(parents=True, exist_ok=True)
 
     timestamp = datetime.now(timezone.utc).isoformat()
     log_entry = f"{timestamp} | provider={provider_key} | model={model_name} | count={provider_usage[model_name]}\n"
@@ -73,9 +143,6 @@ def track_model_usage(provider, model_name):
         print(f"Failed to write model usage log: {e}")
 
 
-def get_model_usage_summary():
-    """Return a snapshot of the current model usage counts."""
-    return model_usage.copy()
 
 def countdown(minutes):
     total_seconds = minutes * 60
@@ -87,11 +154,21 @@ def countdown(minutes):
         total_seconds -= 1
     print()  
 
+def set_tech_groups_override(tech_groups: Any) -> Any:
+    """Set an in-memory override for tech groups."""
+    global _tech_groups_override
+    _tech_groups_override = tech_groups
+    return _tech_groups_override
+
+
 def get_tech_groups():
-    
+    """Return encoded tech groups, preferring any provided override."""
+    if _tech_groups_override is not None:
+        return encode(_tech_groups_override)
+
     with open(TECH_GROUP_JSON, "r") as f:
         data = json.load(f)
-    
+
     TECH_GROUPS = data["TECH_GROUPS"]
     toon_tech_groups = encode(TECH_GROUPS)
 
@@ -321,6 +398,30 @@ def parse_ai_json(response_text):
     except json.JSONDecodeError:
         return None
 
+
+
+
+def tech_group_prompt(cleaned_asset_data, tech_groups):
+
+    prompt = f"""
+        The data provided is of an asset which we were unable to match or identify.
+
+        This is the data we received:
+            {cleaned_asset_data}
+
+        From the following list of tech groups, choose the **one group** that best represents the asset.
+        - Return **exactly one value** from the list.
+        - If there is not enough information, return **null**.
+        - Return **only the chosen value**, no explanations or extra text.
+
+        ** Your response should be 5 words or less **
+        ** If tech group can't be determined, return "Not Found" **
+
+        {tech_groups}
+    """
+
+    return prompt
+
 def merge_reference_urls(ai_json, urls):
     if ai_json is None:
         return None
@@ -342,28 +443,56 @@ def run_with_failover(data, tech_groups):
         print("  Switching to next Gemini model in 10 seconds...")
         time.sleep(10)
 
-    groq_prompt = ai_prompt(data)
+    try:
+        print("\nGemini full failure — using Groq (70B) to reduce prompt size...")
+        tech_group_guess, _ = search_with_groq(
+            groq_client,
+            tech_group_prompt(data, tech_groups),
+            model="llama-3.3-70b-versatile",
+            max_completion_tokens=5
+        )
 
-    print("\nTrying Groq...")
-    for attempt in range(1, 3):
-        try:
-            print(f"Groq attempt {attempt}/2...")
-            return search_with_groq(groq_client, groq_prompt)
-        except Exception as e:
-            print(f"  Groq attempt {attempt} failed:", e)
-            time.sleep(5)
+        print("Groq Tech Group Guess:", tech_group_guess)
+        reduced_prompt = ai_prompt(data, tech_group_guess)
+
+        for model in gemini_models:
+            print(f"\nTrying reduced Gemini prompt with model: {model}")
+            try:
+                return search_with_gemini(gemini_client, reduced_prompt, model)
+            except Exception as e:
+                print(f"  Reduced Gemini '{model}' attempt failed:", e)
+            print("  Switching to next Gemini model in 10 seconds...")
+            time.sleep(10)
+
+    except Exception as e:
+        print("Reduced Gemini fallback failed:", e)
+
+    print("\nTrying Groq-only fallback...")
+    try:
+        tech_group_guess, _ = search_with_groq(
+            groq_client,
+            tech_group_prompt(data, tech_groups),
+            model="llama-3.3-70b-versatile",
+            max_completion_tokens=5
+        )
+
+        print("Groq Tech Group Guess (final stage):", tech_group_guess)
+        reduced_prompt = ai_prompt(data, tech_group_guess)
+        countdown(3)
+
+        return search_with_groq(groq_client, reduced_prompt)
+
+    except Exception as e:
+        print("  Groq-only fallback failed:", e)
 
     print("\nAll models failed.")
     return "Model failed to return response or is currently overloaded", []
 
-
-
-
 def process_failed_assets(
     input_path: str = FAILED_ASSETS_JSON,
     output_folder: str = "output",
-    skip_existing: bool = True,
-    cooldown_minutes: int = 5,
+    skip_existing: bool = False,
+    cooldown_minutes: int = 2,
     limit: Optional[int] = None,
 ):
     """Process failed assets and write output JSON files."""
@@ -415,127 +544,25 @@ def process_failed_assets(
     return {"processed": processed, "errors": errors}
 
 
-def parse_cli_args():
-    parser = argparse.ArgumentParser(description="Process failed assets with AI.")
-    parser.add_argument(
-        "--process-assets",
-        action="store_true",
-        help="Run the asset processing pipeline. Without this flag the script only validates arguments.",
-    )
-    parser.add_argument(
-        "--input-path",
-        default=FAILED_ASSETS_JSON,
-        help=f"Path to the failed assets JSON (default: {FAILED_ASSETS_JSON}).",
-    )
-    parser.add_argument(
-        "--output-dir",
-        default="output",
-        help="Directory to write processed asset JSON files (default: output).",
-    )
-    parser.add_argument(
-        "--cooldown-minutes",
-        type=int,
-        default=5,
-        help="Minutes to wait between assets to avoid overloading models (default: 5). Use 0 to disable.",
-    )
-    parser.add_argument(
-        "--limit",
-        type=int,
-        help="Maximum number of assets to process (defaults to all).",
-    )
-    parser.add_argument(
-        "--overwrite",
-        action="store_true",
-        help="Process assets even if the output file already exists.",
-    )
-    return parser.parse_args()
-
-
 if __name__ == "__main__":
-    args = parse_cli_args()
-    if not args.process_assets:
-        print("No action requested. Use --process-assets to run the pipeline.")
-        raise SystemExit(0)
+    input_path = FAILED_ASSETS_JSON
+    output_dir = "output"
+    overwrite = False
+    cooldown_minutes = 1
 
-    summary = process_failed_assets(
-        input_path=args.input_path,
-        output_folder=args.output_dir,
-        skip_existing=not args.overwrite,
-        cooldown_minutes=args.cooldown_minutes,
-        limit=args.limit,
-    )
+    try:
+        summary = process_failed_assets(
+            input_path=input_path,
+            output_folder=output_dir,
+            skip_existing=not overwrite,
+            cooldown_minutes=cooldown_minutes,
+        )
+    except Exception as exc:
+        print(f"Processing failed: {exc}")
+        raise SystemExit(1) from exc
 
     print(
         f"Processing complete. "
         f"Processed: {len(summary['processed'])}, "
         f"Errors: {len(summary['errors'])}"
     )
-
-
-# # MAIN CODE TEST
-
-# output_folder = "output"
-# os.makedirs(output_folder, exist_ok=True)
-
-# # Load all failed assets
-# with open(FAILED_ASSETS_JSON, "r", encoding="utf-8") as f:
-#     assets = json.load(f)
-
-# # Load tech groups once
-# tech_groups = get_tech_groups()
-
-# for i, asset in enumerate(assets, start=1):
-
-#     output_path = os.path.join(output_folder, f"asset_{i}.json")
-
-#     # This code skips the asset if it already exists as a json to prevent overloading the model.
-#     if os.path.exists(output_path):
-#         print(f"Skipping Asset #{i} — {output_path} already exists.")
-#         continue
-
-
-#     print(f"\n--- Processing Asset #{i} ---\n")
-    
-#     # Clean and encode asset data
-#     data = clean_asset_data(asset)
-#     response, urls = run_with_failover(data, tech_groups)
-    
-#     # AI prompt adds tech groups
-#     #prompt = ai_prompt(data, tech_groups)
-
-#     # AI prompt only passes the failed asset data
-#     #prompt = ai_prompt(data)
-    
-#     # Call Gemini model
-#     #response, urls = search_with_gemini(gemini_client, prompt, gemini_models[0])
-
-#     # Call Groq model
-#     #response, urls = search_with_groq(groq_client, prompt)
-
-#     #print(urls)
-    
-#     # If you want groq to print score you can set this to True
-#     #print_results(response, urls, i, include_score=True)
-
-#     # Gemini does not have a score so you can print it like this or if you don't want groq score you can leave empty
-#     print_results(response, urls, i)
-
-#     # Save final_result to output/asset_X.json
-
-#     # Clean response text before parsing
-#     ai_json = parse_ai_json(response)
-#     if ai_json is None:
-#         print(f"Skipping Asset #{i} — invalid JSON from AI")
-#         continue
-
-#     merged_json = merge_reference_urls(ai_json, urls)
-
-#     with open(output_path, "w", encoding="utf-8") as f:
-#         json.dump(merged_json, f, indent=4, ensure_ascii=False)
-
-#     print(f"Saved merged result to {output_path}")
-
-
-#     # This is optional but it protects the model from overloading when processing each asset 
-#     # the countdown function takes 5 and that would make it 5 minutes long before calling model again
-#     countdown(5)
