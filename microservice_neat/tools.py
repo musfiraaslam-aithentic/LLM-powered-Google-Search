@@ -8,34 +8,7 @@ import time
 import re
 from toon import encode
 from datetime import datetime, timedelta
-from pydantic import BaseModel, Field, ValidationError, ConfigDict
-from typing import Optional, Any
 
-class Asset(BaseModel):
-    entity_name: str
-    metadata: Any  # accept any structure
-    entity_id: str
-    hardware_id: str
-    TYPE: Optional[str]
-    MODEL: Optional[str]
-    MANUFACTURER: str
-    Serial_Number: str = Field(..., alias='Serial Number')
-    data_source_id: int
-    etl_pipeline_state_status: str
-    etl_status: Optional[Any] = None
-    Block_Failed: str = Field(..., alias='Block Failed')
-    Error_Message_in_Pipeline: str = Field(..., alias='Error Message in Pipeline')
-    Date_Pipeline_Executed: str = Field(..., alias='Date Pipeline Executed')
-    client_id: int
-    retries: int
-    error_message: str
-    SourceName: str
-    process_name: str
-
-    model_config = ConfigDict(
-        populate_by_name=True,
-        extra="forbid"
-    )
 
 # Load environment variables
 load_dotenv()
@@ -62,7 +35,8 @@ MONITOR_REQUESTS = "requests.json"
 
 # Models
 gemini_models = ["gemini-2.5-flash", "gemini-2.5-pro", "gemini-2.0-flash", "gemini-flash-latest", "gemini-2.0-flash-001"]
-groq_models = []
+#locked_models = []
+#groq_models = []
 
 def track_model_requests(model_name: str):
 
@@ -95,12 +69,6 @@ def track_model_requests(model_name: str):
     with open(MONITOR_REQUESTS, "w") as f:
         json.dump(data, f, indent=4)
 
-def validate_asset(asset_json):
-    try:
-        asset = Asset(**asset_json)
-        return asset, None
-    except ValidationError as e:
-        return None, e.errors()
 
 def countdown(minutes):
     total_seconds = minutes * 60
@@ -123,16 +91,9 @@ def get_tech_groups():
     return toon_tech_groups
 
 def clean_asset_data(asset):
-    # Extract core fields
-    model = asset.get("MODEL") or ""
-    manufacturer = asset.get("MANUFACTURER") or ""
     metadata = asset.get("metadata") or {}
 
-    cleaned = {
-        "model": model,
-        "manufacturer": manufacturer,
-        "metadata": metadata
-    }
+    cleaned = metadata
 
     toon_asset_data = encode(cleaned)
 
@@ -454,6 +415,7 @@ def process_asset(asset, tech_groups):
     print("Processing Asset Data")
 
     cleaned_data = clean_asset_data(asset)
+    print("Cleaned data sent to AI:", cleaned_data)
 
     response_text, urls = run_with_failover(cleaned_data, tech_groups)
 
