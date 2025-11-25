@@ -1,0 +1,11 @@
+{
+    "models": {
+      "gemini-2.5-pro": { "requests_per_minute": 2, "tokens_per_minute": 125000, "requests_per_day": 50 },
+      "gemini-2.5-flash": { "requests_per_minute": 10, "tokens_per_minute": 250000, "requests_per_day": 250},
+      "gemini-2.0-flash": { "requests_per_minute": 15, "tokens_per_minute": 1000000, "requests_per_day": 200},
+      "gemini-flash-latest": { "requests_per_minute": 0, "tokens_per_minute": 0, "requests_per_day": 0 },
+      "gemini-2.0-flash-001": { "requests_per_minute": 0, "tokens_per_minute": 0, "requests_per_day": 0 },
+      "llama-3.3-70b-versatile": { "requests_per_minute": 30, "tokens_per_minute": 12000, "requests_per_day": 1000, "tokens_per_day": 100000},
+      "groq/compound": { "requests_per_minute": 30, "tokens_per_minute": 70000, "requests_per_day": 250}
+    }
+  }

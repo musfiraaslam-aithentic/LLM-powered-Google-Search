@@ -1,3 +1,7 @@
 google-genai
-groq
 python-dotenv
+groq
+python-toon
+fastapi
+uvicorn
+pydantic

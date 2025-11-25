@@ -1,81 +1,70 @@
-## LLM-powered Google Search 
+# Asset Data Enrichment Service
 
-This project uses language models from Groq and Google Gemini to search the web and extract relevant product information with reference URLs. Results are stored in Markdown format for each query.
+FastAPI microservice that enriches asset metadata using Gemini and Groq with web search. It takes asset's metadata and Techgroups list as input and returns structured data (brand, tech type/group, product info, reference URLs). 
 
-### Requirements
-- Dependencies are listed in `requirements.txt`.
-- Set API keys for [Google Gemini API keys](https://aistudio.google.com/api-keys) and [Groq API keys](https://console.groq.com/keys). Add them to your shell environment or the `.env` file.
+Default tech groups are loaded from `data/tech_groups.json` (last fetched: Nov 2025).
 
-### Setup
-1. Create a virtual environment and install dependencies:
+## Requirements
+- Python 3.9+ (tested on 3.12)
+- Google API key (`GOOGLE_API_KEY`)
+- Groq API key (`GROQ_API_KEY`)
+
+## Setup
 ```bash
-python3 -m venv venv
-source venv/bin/activate
 pip install -r requirements.txt
 ```
-
-2. Create a `.env` file in the project root with your API keys:
-```bash
+Create `.env` in the project root:
+```
 GOOGLE_API_KEY=your_google_api_key
 GROQ_API_KEY=your_groq_api_key
 ```
+Request counters are written to `logs/requests.json`.
 
-3. Keep your queries in `queries.txt` (one per line).
-
-### Running
-- Run the Gemini search script (default reads `queries.txt` at repo root):
+## Run
 ```bash
-python gemini_search/test_gemini.py
-```
-  - Output: `gemini_search/gemini_results/*.md`
-
-- Run the Groq compound search script (default reads `queries.txt` at repo root):
-```bash
-python groq_compound_search/test_groq.py
-```
-  - Output: `groq_compound_search/groq_results/*.md`
-
-
-### Gemini model options
-The Gemini script currently uses `gemini-2.5-flash`. You can also try:
-- `gemini-2.5-pro`
-- `gemini-2.5-flash-lite`
-
-Where to change it: in `gemini_search/test_gemini.py`, update the `model` parameter passed to `client.models.generate_content`.
-
-### CLI usage
-Both scripts accept either a direct query or a file of queries with the `@` prefix. Examples (run from project root):
-
-#### Gemini:
-- Single query:
-```bash
-python gemini_search/test_gemini.py --query "Philips 196V4"
+uvicorn main:app --reload --port 8000
 ```
 
-- Queries from file:
+## Quick Test
 ```bash
-python gemini_search/test_gemini.py @queries.txt
+curl -X POST http://localhost:8000/process \
+  -H "Content-Type: application/json" \
+  -d '{
+        "metadata": {
+          "os": "Windows 11 Home",
+          "cpu": "Intel(R) Core(TM) i5-1035G4 CPU @ 1.10GHz",
+          "ram": 7778,
+          "specs": {
+            "uuid": null,
+            "hostname": "P53D8QM-Andy",
+            "mac_address": null,
+            "serial_number": "013623694053"
+          }
+        },
+        "tech_groups": ["Notebooks", "Servers", "Monitors", "Desktops"]
+      }'
 ```
 
-- Specify output directory and model:
-```bash
-python gemini_search/test_gemini.py @queries.txt --output-dir gemini_search/gemini_results --model gemini-2.5-pro
+Expected response shape:
+```json
+{
+  "status": "success",
+  "message": "Asset successfully enriched.",
+  "result": {
+    "brand": "...",
+    "brand_country": "...",
+    "brand_domain": "...",
+    "tech_group": "...",
+    "tech_type": "...",
+    "product_id": "...",
+    "product_desc": "...",
+    "product_features": {},
+    "reference_urls": []
+  }
+}
 ```
-#### Groq:
-- Single query:
-```bash
-python groq_compound_search/test_groq.py --query "Philips 196V4"
-```
 
-- Queries from file:
-```bash
-python groq_compound_search/test_groq.py @queries.txt
-```
-
-- Specify output directory and skip existing:
-```bash
-python groq_compound_search/test_groq.py @queries.txt --output-dir groq_compound_search/groq_results 
-```
-
-
-
+## Notes
+- If `tech_groups` is omitted, the service defaults to the full list in `data/tech_groups.json`.
+- We have added .env file in repository just for testing, you can update it later.
+- Request counts per model are tracked in `logs/requests.json` and reset daily.
