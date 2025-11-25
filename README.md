@@ -4,6 +4,7 @@ FastAPI microservice that enriches asset metadata using Gemini and Groq with web
 
 Default tech groups are loaded from `data/tech_groups.json` (last fetched: Nov 2025).
 
+
 ## Requirements
 - Python 3.9+ (tested on 3.12)
 - Google API key (`GOOGLE_API_KEY`)
@@ -38,6 +39,9 @@ curl -X POST http://localhost:8000/process \
         "tech_groups": ["Notebooks", "Servers", "Monitors", "Desktops"]
       }'
 ```
+- metadata → must be a single object (dict)
+- tech_groups → optional list of strings, but tied to that ONE asset
+- Endpoint "process_asset" handles exactly one asset at a time, not a batch!
 
 Expected response shape:
 ```json
