@@ -1,0 +1,11 @@
+{
+  "TECH_TYPES": [
+    "Hardware",
+    "License",
+    "Subscription",
+    "Maintenance",
+    "Virtual Machines",
+    "Freeware",
+    "Certificate"
+  ]
+}
