@@ -1,6 +1,6 @@
 # --- Environment & Credentials ---
 .env
-*.env
+*.env 
 google_results.json
 data.json
 
