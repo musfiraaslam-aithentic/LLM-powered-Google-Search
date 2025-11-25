@@ -30,7 +30,7 @@ groq_client = Groq(
 
 # TECH_GROUP_JSON = "data/tech_groups.json"
 # FAILED_ASSETS_JSON = "data/failed_assets_fixed.json"
-# MONITOR_REQUESTS = "requests.json" # I thought this could break across different platforms (Windows/Linux)
+# MONITOR_REQUESTS = "requests.json"  #I thought this could break across different platforms (Windows/Linux)
 
 TECH_GROUP_JSON = os.path.join("data", "tech_groups.json")
 FAILED_ASSETS_JSON = os.path.join("data", "failed_assets_fixed.json")
@@ -262,7 +262,7 @@ def ai_prompt(asset_data, tech_groups=None):
         This is the data we received:
             {asset_data}
 
-        Using this data, help to find the exact model. 
+        Using this data, Do the internet search to find the exact model. 
 
         ** If the data is not specific enough to a particular model, return: "Data is not specific" **
         ** If the data is not specific enough to a particular model, do not return the json **
@@ -421,7 +421,7 @@ def process_asset(asset, tech_groups):
 
     if not cleaned_data:
         return {
-            "status": "invalid_input",
+            "status": "failure",
             "message": "Input asset data is invalid or missing.",
             "data": {}
         }
@@ -455,7 +455,7 @@ def process_asset(asset, tech_groups):
     
     tech_group = merged_json.get("tech_group")
     if tech_group in (None, "", "null", "Not Found"):
-        return {
+        return { 
             "status": "success",
             "message": "Asset enriched, but no matching tech group was found in the provided Tech Groups list.",
             "data": merged_json
