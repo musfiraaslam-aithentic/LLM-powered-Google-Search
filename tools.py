@@ -26,20 +26,17 @@ groq_client = Groq(
     }
 )
 
-# IMPORTANT FILES
-
-# TECH_GROUP_JSON = "data/tech_groups.json"
-# FAILED_ASSETS_JSON = "data/failed_assets_fixed.json"
-# MONITOR_REQUESTS = "requests.json"  #I thought this could break across different platforms (Windows/Linux)
-
 TECH_GROUP_JSON = os.path.join("data", "tech_groups.json")
+TECH_TYPES_JSON = os.path.join("data", "tech_types.json")
 FAILED_ASSETS_JSON = os.path.join("data", "failed_assets_fixed.json")
 MONITOR_REQUESTS = os.path.join("logs", "requests.json") # I think this should be inside separata Logs folder
+RATE_LIMITS = os.path.join("logs", "rate_limits.json")
 
 # Models
 gemini_models = ["gemini-2.5-flash", "gemini-2.5-pro", "gemini-2.0-flash", "gemini-flash-latest", "gemini-2.0-flash-001"]
-#locked_models = []
 #groq_models = []
+#locked_models = []
+
 
 def track_model_requests(model_name: str):
 
@@ -82,6 +79,16 @@ def countdown(minutes):
         time.sleep(1)
         total_seconds -= 1
     print()  
+
+def get_tech_types():
+    
+    with open(TECH_TYPES_JSON, "r") as f:
+        data = json.load(f)
+    
+    TECH_TYPES = data["TECH_TYPES"]
+    toon_tech_types = encode(TECH_TYPES)
+
+    return toon_tech_types
 
 def get_tech_groups():
     
@@ -248,7 +255,7 @@ def search_with_groq(client, prompt, instructions="", model="groq/compound", max
     return response, reference_urls
 
 
-def ai_prompt(asset_data, tech_groups=None):
+def ai_prompt(asset_data, tech_groups=None, tech_types=None):
 
     if tech_groups:
         tech_groups_text = f"Fill this field using this list: {tech_groups}. If it is not a list and there is only one tech group set that as the tech group."
@@ -274,7 +281,7 @@ def ai_prompt(asset_data, tech_groups=None):
         Brand/Manufacturer/Vendor: (e.g. Apple or ASUS) || null
         Brand Country: (e.g. United States) || null
         Brand Domain: (e.g. https://www.asus.com/ or https://www.apple.com/) || null
-        Tech Type: Choose one and fill this field using this list: "Hardware", "License", "Subscription", "Maintenance", "Virtual Machines", "Freeware", "Certificate" 
+        Tech Type: Choose one and fill this field using this list: {tech_types}
         Tech Group: {tech_groups_text} (If the tech group does not match any value in the list, return it as "null")
 
         Product SKU/ID: || null
@@ -352,8 +359,8 @@ def merge_reference_urls(ai_json, urls):
     ai_json["reference_urls"] = urls or []
     return ai_json
 
-def run_with_failover(data, tech_groups):
-    gemini_prompt = ai_prompt(data, tech_groups)
+def run_with_failover(data, tech_groups, tech_types):
+    gemini_prompt = ai_prompt(data, tech_groups, tech_types)
 
     for model in gemini_models:
         print(f"\nTrying Gemini model: {model}")
@@ -377,7 +384,7 @@ def run_with_failover(data, tech_groups):
         )
 
         print("Groq Tech Group Guess:", tech_group_guess)
-        reduced_prompt = ai_prompt(data, tech_group_guess)
+        reduced_prompt = ai_prompt(data, tech_group_guess, tech_types)
 
         for model in gemini_models:
             print(f"\nTrying reduced Gemini prompt with model: {model}")
@@ -401,7 +408,7 @@ def run_with_failover(data, tech_groups):
         )
 
         print("Groq Tech Group Guess (final stage):", tech_group_guess)
-        reduced_prompt = ai_prompt(data, tech_group_guess)
+        reduced_prompt = ai_prompt(data, tech_group_guess, tech_types)
         countdown(3)
 
         return search_with_groq(groq_client, reduced_prompt)
@@ -413,7 +420,7 @@ def run_with_failover(data, tech_groups):
     return "Model failed to return response or is currently overloaded", []
 
 
-def process_asset(asset, tech_groups):
+def process_asset(asset, tech_groups, tech_types):
 
     print("Processing Asset Data")
 
@@ -427,7 +434,7 @@ def process_asset(asset, tech_groups):
         }
     print("Cleaned data sent to AI:", cleaned_data)
 
-    response_text, urls = run_with_failover(cleaned_data, tech_groups)
+    response_text, urls = run_with_failover(cleaned_data, tech_groups, tech_types)
 
     if response_text is None:
         return {
