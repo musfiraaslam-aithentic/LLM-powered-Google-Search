@@ -33,13 +33,7 @@ curl -X POST http://localhost:8000/process \
         "metadata": {
           "os": "Windows 11 Home",
           "cpu": "Intel(R) Core(TM) i5-1035G4 CPU @ 1.10GHz",
-          "ram": 7778,
-          "specs": {
-            "uuid": null,
-            "hostname": "P53D8QM-Andy",
-            "mac_address": null,
-            "serial_number": "013623694053"
-          }
+          "ram": 7778
         },
         "tech_groups": ["Notebooks", "Servers", "Monitors", "Desktops"]
       }'
@@ -67,4 +61,4 @@ Expected response shape:
 ## Notes
 - If `tech_groups` is omitted, the service defaults to the full list in `data/tech_groups.json`.
 - We have added .env file in repository just for testing, you can update it later.
-- Request counts per model are tracked in `logs/requests.json` and reset daily.
+- Request counts per model are tracked in `logs/requests.json`.
