@@ -41,10 +41,10 @@ def process_asset_endpoint(request: ProcessRequest):
     # else:
     #     processed_tech_groups = default_tech_groups
 
-    if tech_types and len(tech_types) > 0:
-        processed_tech_types = tools.encode(tech_types)
-    else:
-        processed_tech_types = default_tech_types
+    # if tech_types and len(tech_types) > 0:
+    #     processed_tech_types = tools.encode(tech_types)
+    # else:
+    #     processed_tech_types = default_tech_types
 
     print("Incoming metadata:", metadata)
 
