@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "scraping": false,
+    "hardware_data": {
+      "type": "docking station",
+      "model": "Inspiron 7472",
+      "specs": {
+        "cpus": null,
+        "uuid": "4C4C4544-0043-5910-8044-B3C04F435132",
+        "sounds": [
+          {
+            "name": "Intel(R) Display Audio",
+            "description": "Intel(R) Display Audio",
+            "manufacturer": "Intel(R) Corporation"
+          },
+          {
+            "name": "Realtek Audio",
+            "description": "Realtek Audio",
+            "manufacturer": "Realtek"
+          }
+        ],
+        "videos": [
+          {
+            "name": "Intel(R) UHD Graphics 620",
+            "memory": "1024",
+            "chipset": "Intel(R) UHD Graphics Family",
+            "resolution": "1920 x 1080"
+          }
+        ],
+        "hostname": "FLAG-LPT-06",
+        "memories": null,
+        "storages": null,
+        "mac_address": "90:32:4B:4E:04:81"
+      },
+      "hardware_id": 534,
+      "manufacturer": "Dell",
+      "serial_number": "3CYDCQ2"
+    },
+    "processed_hardware_data": {
+      "cpu": [],
+      "videos": [
+        "Intel(R) UHD Graphics 620"
+      ]
+    }
+  },
+  "tech_groups": [
+    "Hardware"
+  ],
+  "tech_types": [
+    "Hardware"
+  ]
+}

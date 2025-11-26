@@ -10,6 +10,8 @@ app = FastAPI(
     )
 
 default_tech_groups = tools.get_tech_groups()
+default_tech_types = tools.get_tech_types()
+
 
 class ProcessRequest(BaseModel):
     metadata: Dict[str, Any]
@@ -38,6 +40,11 @@ def process_asset_endpoint(request: ProcessRequest):
     #     processed_tech_groups = tools.encode(tech_groups)
     # else:
     #     processed_tech_groups = default_tech_groups
+
+    if tech_types and len(tech_types) > 0:
+        processed_tech_types = tools.encode(tech_types)
+    else:
+        processed_tech_types = default_tech_types
 
     print("Incoming metadata:", metadata)
 

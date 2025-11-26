@@ -26,20 +26,19 @@ groq_client = Groq(
     }
 )
 
-# IMPORTANT FILES
-
-# TECH_GROUP_JSON = "data/tech_groups.json"
-# FAILED_ASSETS_JSON = "data/failed_assets_fixed.json"
-# MONITOR_REQUESTS = "requests.json"  #I thought this could break across different platforms (Windows/Linux)
-
 TECH_GROUP_JSON = os.path.join("data", "tech_groups.json")
+TECH_TYPES_JSON = os.path.join("data", "tech_types.json")
 FAILED_ASSETS_JSON = os.path.join("data", "failed_assets_fixed.json")
-MONITOR_REQUESTS = os.path.join("logs", "requests.json") # I think this should be inside separata Logs folder
+MONITOR_REQUESTS = os.path.join("logs", "requests.json")
+RATE_LIMITS = os.path.join("logs", "rate_limits.json")
+
+os.makedirs(os.path.dirname(MONITOR_REQUESTS), exist_ok=True)
 
 # Models
 gemini_models = ["gemini-2.5-flash", "gemini-2.5-pro", "gemini-2.0-flash", "gemini-flash-latest", "gemini-2.0-flash-001"]
-#locked_models = []
 #groq_models = []
+#locked_models = []
+
 
 def track_model_requests(model_name: str):
 
@@ -82,6 +81,16 @@ def countdown(minutes):
         time.sleep(1)
         total_seconds -= 1
     print()  
+
+def get_tech_types():
+    
+    with open(TECH_TYPES_JSON, "r") as f:
+        data = json.load(f)
+    
+    TECH_TYPES = data["TECH_TYPES"]
+    toon_tech_types = encode(TECH_TYPES)
+
+    return toon_tech_types
 
 def get_tech_groups():
     
@@ -291,7 +300,7 @@ def ai_prompt(asset_data, tech_groups=None, tech_types=None):
         Brand Country: (e.g. United States) || null
         Brand Domain: (e.g. https://www.asus.com/ or https://www.apple.com/) || null
         Tech Type: {tech_type_text}
-        Tech Group: {tech_group_text}
+        Tech Group: {tech_group_text} 
 
         Product SKU/ID: || null
         Product Description: || null
