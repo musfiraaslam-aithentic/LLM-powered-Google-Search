@@ -248,12 +248,28 @@ def search_with_groq(client, prompt, instructions="", model="groq/compound", max
     return response, reference_urls
 
 
-def ai_prompt(asset_data, tech_groups=None):
+def ai_prompt(asset_data, tech_groups=None, tech_types=None):
 
-    if tech_groups:
-        tech_groups_text = f"Fill this field using this list: {tech_groups}. If it is not a list and there is only one tech group set that as the tech group."
+    # if tech_groups:
+    #     tech_groups_text = f"Fill this field using this list: {tech_groups}. If it is not a list and there is only one tech group set that as the tech group."
+    # else:
+    #     tech_groups_text = "Fill this field with the appropriate tech group"
+    
+    if not tech_groups:
+        tech_group_text = "No tech group list was provided. Return \"null\" for tech_group."
     else:
-        tech_groups_text = "Fill this field with the appropriate tech group"
+        tech_group_text = (
+            f"Fill this field using this list: {tech_groups}. "
+            f"If the value does not match any item in the list, return \"null\"."
+        )
+
+    if not tech_types:
+        tech_type_text = "No tech type list was provided. Return \"null\" for tech_type."
+    else:
+        tech_type_text = (
+            f"Choose one and fill this field using this list: {tech_types}. "
+            f"If the value does not match any item in the list, return \"null\"."
+        )
 
     prompt = f"""
 
@@ -262,7 +278,7 @@ def ai_prompt(asset_data, tech_groups=None):
         This is the data we received:
             {asset_data}
 
-        Using this data, Do the internet search to find the exact model. 
+        Using this data, Do the Internet Search to find the exact model. 
 
         ** If the data is not specific enough to a particular model, return: "Data is not specific" **
         ** If the data is not specific enough to a particular model, do not return the json **
@@ -274,8 +290,8 @@ def ai_prompt(asset_data, tech_groups=None):
         Brand/Manufacturer/Vendor: (e.g. Apple or ASUS) || null
         Brand Country: (e.g. United States) || null
         Brand Domain: (e.g. https://www.asus.com/ or https://www.apple.com/) || null
-        Tech Type: Choose one and fill this field using this list: "Hardware", "License", "Subscription", "Maintenance", "Virtual Machines", "Freeware", "Certificate" 
-        Tech Group: {tech_groups_text} (If the tech group does not match any value in the list, return it as "null")
+        Tech Type: {tech_type_text}
+        Tech Group: {tech_group_text}
 
         Product SKU/ID: || null
         Product Description: || null
@@ -352,8 +368,8 @@ def merge_reference_urls(ai_json, urls):
     ai_json["reference_urls"] = urls or []
     return ai_json
 
-def run_with_failover(data, tech_groups):
-    gemini_prompt = ai_prompt(data, tech_groups)
+def run_with_failover(data, tech_groups, tech_types):
+    gemini_prompt = ai_prompt(data, tech_groups, tech_types)
 
     for model in gemini_models:
         print(f"\nTrying Gemini model: {model}")
@@ -377,7 +393,7 @@ def run_with_failover(data, tech_groups):
         )
 
         print("Groq Tech Group Guess:", tech_group_guess)
-        reduced_prompt = ai_prompt(data, tech_group_guess)
+        reduced_prompt = ai_prompt(data, tech_group_guess, tech_types)
 
         for model in gemini_models:
             print(f"\nTrying reduced Gemini prompt with model: {model}")
@@ -401,7 +417,7 @@ def run_with_failover(data, tech_groups):
         )
 
         print("Groq Tech Group Guess (final stage):", tech_group_guess)
-        reduced_prompt = ai_prompt(data, tech_group_guess)
+        reduced_prompt = ai_prompt(data, tech_group_guess, tech_types)
         countdown(3)
 
         return search_with_groq(groq_client, reduced_prompt)
@@ -413,7 +429,7 @@ def run_with_failover(data, tech_groups):
     return "Model failed to return response or is currently overloaded", []
 
 
-def process_asset(asset, tech_groups):
+def process_asset(asset, tech_groups, tech_types):
 
     print("Processing Asset Data")
 
@@ -427,7 +443,7 @@ def process_asset(asset, tech_groups):
         }
     print("Cleaned data sent to AI:", cleaned_data)
 
-    response_text, urls = run_with_failover(cleaned_data, tech_groups)
+    response_text, urls = run_with_failover(cleaned_data, tech_groups, tech_types)
 
     if response_text is None:
         return {
@@ -453,16 +469,39 @@ def process_asset(asset, tech_groups):
 
     merged_json = merge_reference_urls(ai_json, urls)
     
+    print(response_text)
+    print(urls)
+
     tech_group = merged_json.get("tech_group")
-    if tech_group in (None, "", "null", "Not Found"):
-        return { 
+    tech_type = merged_json.get("tech_type")
+
+    missing_group = tech_group in (None, "", "null", "Not Found")
+    missing_type = tech_type in (None, "", "null", "Not Found")
+
+    # Both are missing
+    if missing_group and missing_type:
+        return {
+            "status": "success",
+            "message": "Asset enriched, but no matching tech group and tech type were found in the provided lists.",
+            "data": merged_json
+        }
+
+    # Only tech group missing
+    if missing_group:
+        return {
             "status": "success",
             "message": "Asset enriched, but no matching tech group was found in the provided Tech Groups list.",
             "data": merged_json
         }
 
-    print(response_text)
-    print(urls)
+    # Only tech type missing
+    if missing_type:
+        return {
+            "status": "success",
+            "message": "Asset enriched, but no matching tech type was found in the provided Tech Types list.",
+            "data": merged_json
+        }
+
 
     return {
         "status": "success",

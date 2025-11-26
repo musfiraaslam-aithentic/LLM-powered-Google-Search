@@ -1,7 +1,6 @@
 {
-    "date": "2025-11-25",
+    "date": "2025-11-26",
     "models": {
-        "gemini-2.5-flash": 10,
-        "llama-3.3-70b-versatile": 1
+        "gemini-2.5-flash": 4
     }
 }
