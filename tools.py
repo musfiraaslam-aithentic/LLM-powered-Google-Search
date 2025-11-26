@@ -29,8 +29,10 @@ groq_client = Groq(
 TECH_GROUP_JSON = os.path.join("data", "tech_groups.json")
 TECH_TYPES_JSON = os.path.join("data", "tech_types.json")
 FAILED_ASSETS_JSON = os.path.join("data", "failed_assets_fixed.json")
-MONITOR_REQUESTS = os.path.join("logs", "requests.json") # I think this should be inside separata Logs folder
+MONITOR_REQUESTS = os.path.join("logs", "requests.json")
 RATE_LIMITS = os.path.join("logs", "rate_limits.json")
+
+os.makedirs(os.path.dirname(MONITOR_REQUESTS), exist_ok=True)
 
 # Models
 gemini_models = ["gemini-2.5-flash", "gemini-2.5-pro", "gemini-2.0-flash", "gemini-flash-latest", "gemini-2.0-flash-001"]
