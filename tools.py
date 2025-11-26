@@ -265,7 +265,7 @@ def ai_prompt(asset_data, tech_groups=None, tech_types=None):
     #     tech_groups_text = "Fill this field with the appropriate tech group"
     
     if not tech_groups:
-        tech_group_text = "No tech group list was provided. Return \"null\" for tech_group."
+        tech_group_text = "No tech group list was provided. Return \"null\" for tech_group. Do not create value yourself!"
     else:
         tech_group_text = (
             f"Fill this field using this list: {tech_groups}. "
@@ -273,7 +273,7 @@ def ai_prompt(asset_data, tech_groups=None, tech_types=None):
         )
 
     if not tech_types:
-        tech_type_text = "No tech type list was provided. Return \"null\" for tech_type."
+        tech_type_text = "No tech type list was provided. Return \"null\" for tech_type. Do not create value yourself!"
     else:
         tech_type_text = (
             f"Choose one and fill this field using this list: {tech_types}. "
