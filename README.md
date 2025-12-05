@@ -1,19 +1,29 @@
 # Asset Data Enrichment Service
 
-FastAPI microservice that enriches asset metadata using Gemini and Groq with web search. It takes asset's metadata and Techgroups list as input and returns structured data (brand, tech type/group, product info, reference URLs). 
+A microservice that enriches product's data using Gemini and Groq with web search. It takes product's 
 
-Default tech groups are loaded from `data/tech_groups.json` (last fetched: Nov 2025).
+* Metadata 
+* Tech Groups (Optional)
+* Tech Types (Optional)
+
+as input and returns structured data (brand info, matched tech type/group, product description, product's features, reference URLs) in the form of json. 
 
 
 ## Requirements
 - Python 3.9+ (tested on 3.12)
-- Google API key (`GOOGLE_API_KEY`)
-- Groq API key (`GROQ_API_KEY`)
+- `GOOGLE_API_KEY` https://aistudio.google.com/app/api-keys
+- `GROQ_API_KEY` https://console.groq.com/keys
 
 ## Setup
-```bash
-pip install -r requirements.txt
-```
+- Create and activate a virtual environment:
+  ```bash
+  python -m venv venv
+  source venv/bin/activate
+  ```
+- Install dependencies:
+  ```bash
+  pip install -r requirements.txt
+  ```
 Create `.env` in the project root:
 ```
 GOOGLE_API_KEY=your_google_api_key
@@ -23,7 +33,7 @@ Request counters are written to `logs/requests.json`.
 
 ## Run
 ```bash
-uvicorn main:app --reload --port 8000
+uvicorn main:app --reload 
 ```
 
 ## Quick Test
@@ -31,17 +41,43 @@ uvicorn main:app --reload --port 8000
 curl -X POST http://localhost:8000/process \
   -H "Content-Type: application/json" \
   -d '{
-        "metadata": {
-          "os": "Windows 11 Home",
-          "cpu": "Intel(R) Core(TM) i5-1035G4 CPU @ 1.10GHz",
-          "ram": 7778
-        },
-        "tech_groups": ["Notebooks", "Servers", "Monitors", "Desktops"]
-      }'
+  "metadata": {
+    "hardware_data": {
+      "type": "docking station",
+      "model": "Inspiron 7472",
+      "specs": {
+        "cpus": null,
+        "uuid": "4C4C4544-0043-5910-8044-B3C04F435132",
+        "sounds": [
+          {
+            "name": "Intel(R) Display Audio",
+            "description": "Intel(R) Display Audio",
+            "manufacturer": "Intel(R) Corporation"
+          },
+          {
+            "name": "Realtek Audio",
+            "description": "Realtek Audio",
+            "manufacturer": "Realtek"
+          }
+        ]
+      },
+      "manufacturer": "Dell",
+      "serial_number": "3CYDCQ2"
+    }
+  },
+  "tech_groups": [
+    "Desktops", "Laptops", "Tablets"
+  ],
+  "tech_types": [
+    "Hardware" , "Software"
+  ]
+}
+'
 ```
 - metadata → must be a single object (dict)
-- tech_groups → optional list of strings, but tied to that ONE asset
-- Endpoint "process_asset" handles exactly one asset at a time, not a batch!
+- tech_groups → optional list of strings
+- tech_types → optional list of strings
+
 
 Expected response shape:
 ```json
@@ -63,6 +99,6 @@ Expected response shape:
 ```
 
 ## Notes
-- If `tech_groups` is omitted, the service defaults to the full list in `data/tech_groups.json`.
+- This microservice handles exactly one asset at a time, not a batch!
 - We have added .env file in repository just for testing, you can update it later.
-- Request counts per model are tracked in `logs/requests.json`.
+- Tech groups and techtypes in data folder `data/tech_groups.json` and '`data/tech_types.json` (last fetched: Nov 2025), could also be used in microservice as default Tech groups and type, we have commented that part, you could utilize that as well.
