@@ -1,16 +1,14 @@
-from fastapi import FastAPI, Body
+from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from typing import Optional, List, Dict, Any
+from typing import Any, Dict, List, Optional
+
 import tools
-import json
+
+app = FastAPI(title="Asset Data Enrichment Service powered by AI Search Tools")
 
 
-app = FastAPI(
-    title="Asset Data Enrichment Service powered by AI Search Tools"
-    )
-
-default_tech_groups = tools.get_tech_groups()
-default_tech_types = tools.get_tech_types()
+# default_tech_groups = tools.get_tech_groups()
+# default_tech_types = tools.get_tech_types()
 
 
 class ProcessRequest(BaseModel):
@@ -28,14 +26,22 @@ def health() -> dict:
     return {"status": "ok"}
 
 @app.post("/process")
-def process_asset_endpoint(request: ProcessRequest):
+def process_asset_endpoint(
+    request: ProcessRequest
+    ):
     metadata = request.metadata
-    tech_groups = request.tech_groups
-    tech_types = request.tech_types
+    if not metadata:
+        raise HTTPException(status_code=400, detail="metadata is required")
 
-    processed_tech_groups = tools.encode(tech_groups) if tech_groups else None
-    processed_tech_types = tools.encode(tech_types) if tech_types else None
-    
+    processed_tech_groups = (
+        tools.encode(request.tech_groups) if request.tech_groups else None
+    )
+    processed_tech_types = (
+        tools.encode(request.tech_types) if request.tech_types else None
+    )
+
+    asset = {"metadata": metadata}
+
     # if tech_groups and len(tech_groups) > 0:
     #     processed_tech_groups = tools.encode(tech_groups)
     # else:
@@ -46,17 +52,18 @@ def process_asset_endpoint(request: ProcessRequest):
     # else:
     #     processed_tech_types = default_tech_types
 
-    print("Incoming metadata:", metadata)
+    try:
+        result = tools.process_asset(asset, processed_tech_groups, processed_tech_types)
+    except Exception as exc:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Unable to process asset at this time: {exc}"
+        ) from exc
 
-    asset = {"metadata": metadata}
-    result = tools.process_asset(asset, processed_tech_groups, processed_tech_types)
-
-    # return {
-    #     "status": "success",
-    #     "result": result
-    # }
-    return {
+    response = {
         "status": result.get("status"),
         "message": result.get("message"),
         "result": result.get("data")
     }
+
+    return response

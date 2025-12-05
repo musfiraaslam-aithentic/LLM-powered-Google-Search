@@ -269,7 +269,7 @@ def ai_prompt(asset_data, tech_groups=None, tech_types=None):
     else:
         tech_group_text = (
             f"Fill this field using this list: {tech_groups}. "
-            f"If the value does not match any item in the list, return \"null\"."
+            f"If the value does not match any item in the list, return \"null\". Do not create value yourself!"
         )
 
     if not tech_types:
@@ -277,7 +277,7 @@ def ai_prompt(asset_data, tech_groups=None, tech_types=None):
     else:
         tech_type_text = (
             f"Choose one and fill this field using this list: {tech_types}. "
-            f"If the value does not match any item in the list, return \"null\"."
+            f"If the value does not match any item in the list, return \"null\". Do not create value yourself!"
         )
 
     prompt = f"""
